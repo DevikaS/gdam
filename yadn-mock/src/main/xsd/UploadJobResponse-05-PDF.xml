@@ -1,0 +1,123 @@
+<UploadJobResponse xmlns:xs="http://adstream.com/xmlstream/" xs:id="7" ns0:type="UploadJobResponse" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:adstream:yadn">
+  <MessageID><![CDATA[1.0|akka://gdam/user/fsobject|5007d6e8e4b009d3f111dd51]]></MessageID>
+  <Status>CopiedToStorage</Status>
+  <FileID>d13f79dd-fd27-45b7-a772-a09300d1e703</FileID>
+  <FileName>73d5ae1e-6bdc-44ac-be7a-b47da8789792</FileName>
+  <FileDirectory><![CDATA[\5007b5eee4b009d3f110f377\2012-07-19\5007d6e8e4b009d3f111dd51\]]></FileDirectory>
+  <FileSize>223101</FileSize>
+  <MD5>76cbd40b7ad934d57d32ff264f25be8a</MD5>
+  <CRC>67a47960</CRC>
+  <Node>adstream.yadn.nodes.adgate_cs@adstream.tv</Node>
+  <SpecDBDocID>f2:application:unspecified:pdf</SpecDBDocID>
+  <metadata>
+    <property name="ElementID">
+      <Value>5007d6e8e4b009d3f111dd51</Value>
+    </property>
+    <property name="AgencyID">
+      <Value>5007b5eee4b009d3f110f377</Value>
+    </property>
+    <property name="Path">
+      <Value>tech3264-ebu-subtitle.pdf</Value>
+    </property>
+    <property name="Country">
+      <Value>Afghanistan</Value>
+    </property>
+    <property name="IsPlayout">
+      <Value>false</Value>
+    </property>
+    <property name="evaluation_exiftool">
+      <Value><![CDATA[<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+
+<rdf:Description xmlns:et="http://ns.exiftool.ca/1.0/" xmlns:ExifTool="http://ns.exiftool.ca/ExifTool/1.0/" xmlns:System="http://ns.exiftool.ca/File/System/1.0/" xmlns:File="http://ns.exiftool.ca/File/1.0/" xmlns:PDF="http://ns.exiftool.ca/PDF/PDF/1.0/" xmlns:XMP-x="http://ns.exiftool.ca/XMP/XMP-x/1.0/" xmlns:XMP-rdf="http://ns.exiftool.ca/XMP/XMP-rdf/1.0/" xmlns:XMP-pdf="http://ns.exiftool.ca/XMP/XMP-pdf/1.0/" xmlns:XMP-xmp="http://ns.exiftool.ca/XMP/XMP-xmp/1.0/" xmlns:XMP-xmpMM="http://ns.exiftool.ca/XMP/XMP-xmpMM/1.0/" xmlns:XMP-dc="http://ns.exiftool.ca/XMP/XMP-dc/1.0/" rdf:about="/media/yadn/input/20120719/5007b5eee4b009d3f110f37a/1342690888439/a35ade15-dc03-5cb2-3ace-c8bdf2d6ff1a.pdf" et:toolkit="Image::ExifTool 8.93">
+ <ExifTool:ExifToolVersion>8.93</ExifTool:ExifToolVersion>
+ <System:FileName>a35ade15-dc03-5cb2-3ace-c8bdf2d6ff1a.pdf</System:FileName>
+ <System:Directory>/media/yadn/input/20120719/5007b5eee4b009d3f110f37a/1342690888439</System:Directory>
+ <System:FileSize>218 kB</System:FileSize>
+ <System:FileModifyDate>2011:11:18 14:23:20+02:00</System:FileModifyDate>
+ <System:FilePermissions>rwxrwxrwx</System:FilePermissions>
+ <File:FileType>PDF</File:FileType>
+ <File:MIMEType>application/pdf</File:MIMEType>
+ <PDF:PDFVersion>1.5</PDF:PDFVersion>
+ <PDF:Linearized>No</PDF:Linearized>
+ <PDF:PageCount>31</PDF:PageCount>
+ <PDF:ModifyDate>2006:07:05 14:46:03+02:00</PDF:ModifyDate>
+ <PDF:CreateDate>22 April 1999 15:34</PDF:CreateDate>
+ <PDF:Title>EBU Tech 3264-1991 EBU subtitling data exchange format</PDF:Title>
+ <PDF:Creator>Microsoft Word </PDF:Creator>
+ <PDF:Author>EBU</PDF:Author>
+ <PDF:Keywords>
+  <rdf:Bag>
+   <rdf:li>EBU</rdf:li>
+   <rdf:li>Tech</rdf:li>
+   <rdf:li>3264-1991</rdf:li>
+   <rdf:li>Specification</rdf:li>
+   <rdf:li>of</rdf:li>
+   <rdf:li>the</rdf:li>
+   <rdf:li>EBU</rdf:li>
+   <rdf:li>subtitling</rdf:li>
+   <rdf:li>data</rdf:li>
+   <rdf:li>exchange</rdf:li>
+   <rdf:li>format</rdf:li>
+  </rdf:Bag>
+ </PDF:Keywords>
+ <PDF:Subject>Specification of the EBU subtitling data exchange format</PDF:Subject>
+ <PDF:Producer>Acrobat PDFWriter 3.0 for Windows</PDF:Producer>
+ <PDF:CreationDate--Text>22 April 1999 15:34</PDF:CreationDate--Text>
+ <XMP-x:XMPToolkit>XMP toolkit 2.9.1-13, framework 1.6</XMP-x:XMPToolkit>
+ <XMP-rdf:About>uuid:218c57f0-347f-42f8-9f8c-2006a2ee7075</XMP-rdf:About>
+ <XMP-pdf:CreationDate--Text>22 April 1999 15:34</XMP-pdf:CreationDate--Text>
+ <XMP-pdf:Producer>Acrobat PDFWriter 3.0 for Windows</XMP-pdf:Producer>
+ <XMP-pdf:Keywords>EBU Tech 3264-1991 Specification of the EBU subtitling data exchange format</XMP-pdf:Keywords>
+ <XMP-xmp:ModifyDate>2006:07:05 14:46:03+02:00</XMP-xmp:ModifyDate>
+ <XMP-xmp:CreatorTool>Microsoft Word </XMP-xmp:CreatorTool>
+ <XMP-xmp:MetadataDate>2006:07:05 14:46:03+02:00</XMP-xmp:MetadataDate>
+ <XMP-xmpMM:DocumentID>uuid:b04e1948-5283-4e50-94f2-4cafd1904c25</XMP-xmpMM:DocumentID>
+ <XMP-dc:Format>application/pdf</XMP-dc:Format>
+ <XMP-dc:Title>EBU Tech 3264-1991 EBU subtitling data exchange format</XMP-dc:Title>
+ <XMP-dc:Creator>EBU</XMP-dc:Creator>
+ <XMP-dc:Description>Specification of the EBU subtitling data exchange format</XMP-dc:Description>
+</rdf:Description>
+</rdf:RDF>]]></Value>
+    </property>
+    <property name="evaluation_MediaInfo">
+      <Value></Value>
+    </property>
+    <property name="evaluation_ffprobe">
+      <Value></Value>
+    </property>
+    <property name="evaluation_pdfdimensions">
+      <Value><![CDATA[<pdfdimensions xmlns="">
+ <page number="1">
+  <width>595</width>
+  <height>842</height>
+  <x_resolution>72 Undefined</x_resolution>
+  <y_resolution>72 Undefined</y_resolution>
+  <canvas_width>595</canvas_width>
+  <canvas_height>842</canvas_height>
+  <canvas_offset_x>+0</canvas_offset_x>
+  <canvas_offset_y>+0</canvas_offset_y>
+ </page>
+ <page number="2">
+  <width>595</width>
+  <height>842</height>
+  <x_resolution>72 Undefined</x_resolution>
+  <y_resolution>72 Undefined</y_resolution>
+  <canvas_width>595</canvas_width>
+  <canvas_height>842</canvas_height>
+  <canvas_offset_x>+0</canvas_offset_x>
+  <canvas_offset_y>+0</canvas_offset_y>
+ </page>
+ <page number="3">
+  <width>595</width>
+  <height>842</height>
+  <x_resolution>72 Undefined</x_resolution>
+  <y_resolution>72 Undefined</y_resolution>
+  <canvas_width>595</canvas_width>
+  <canvas_height>842</canvas_height>
+  <canvas_offset_x>+0</canvas_offset_x>
+  <canvas_offset_y>+0</canvas_offset_y>
+ </page>
+</pdfdimensions>]]></Value>
+    </property>
+  </metadata>
+</UploadJobResponse>

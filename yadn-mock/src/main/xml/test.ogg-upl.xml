@@ -1,0 +1,74 @@
+<UploadJobResponse xmlns:xs="http://adstream.com/xmlstream/" xs:id="19" ns0:type="UploadJobResponse" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:adstream:yadn">
+  <MessageID><![CDATA[1.1|akka://KV01V-A5DA502/user/head/fsobject|9764596d99e840c2aa31fdc7#1]]></MessageID>
+  <Status>UploadedToStorage</Status>
+  <FileID>33f03382-a4ec-4f6e-b340-a246010d925d</FileID>
+  <FileName>d8b08eee-b821-4e40-a06d-33dd3f51fdc8.ogg</FileName>
+  <FileDirectory><![CDATA[\00000000-0000-0000-0000-000000000000\2013-09-27\9764596d99e840c2aa31fdc7\]]></FileDirectory>
+  <FileSize>681095</FileSize>
+  <MD5>840c29e239839c93ee2eae58de514282</MD5>
+  <CRC>        </CRC>
+  <Node>adstream.yadn.nodes.outpost-a5-auto</Node>
+  <SpecDBDocID>f2:audio:unspecified</SpecDBDocID>
+  <metadata>
+    <property name="isPlayout">
+      <Value>false</Value>
+    </property>
+    <property name="ElementID">
+      <Value>9764596d99e840c2aa31fdc7</Value>
+    </property>
+    <property name="Path">
+      <Value>test.ogg</Value>
+    </property>
+    <property name="Country">
+      <Value>AF</Value>
+    </property>
+    <property name="guise">
+      <Value>master</Value>
+    </property>
+    <property name="IsPlayout">
+      <Value>false</Value>
+    </property>
+    <property name="evaluation_exiftool">
+      <Value><![CDATA[<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+
+<rdf:Description xmlns:et="http://ns.exiftool.ca/1.0/" xmlns:ExifTool="http://ns.exiftool.ca/ExifTool/1.0/" xmlns:System="http://ns.exiftool.ca/File/System/1.0/" xmlns:File="http://ns.exiftool.ca/File/1.0/" rdf:about="/media/yadn/input/20130927/509dc6f9cc63477fac2722b6/1380288063694/f292ff89-deb9-44ac-8ce4-a854495cb9bb.ogg" et:toolkit="Image::ExifTool 8.93">
+ <ExifTool:ExifToolVersion>8.93</ExifTool:ExifToolVersion>
+ <System:FileName>f292ff89-deb9-44ac-8ce4-a854495cb9bb.ogg</System:FileName>
+ <System:Directory>/media/yadn/input/20130927/509dc6f9cc63477fac2722b6/1380288063694</System:Directory>
+ <System:FileSize>665 kB</System:FileSize>
+ <System:FileModifyDate>2012:11:21 15:54:08+02:00</System:FileModifyDate>
+ <System:FilePermissions>rwxrwxrwx</System:FilePermissions>
+ <System:FileName>f292ff89-deb9-44ac-8ce4-a854495cb9bb.ogg</System:FileName>
+ <System:Directory>/media/yadn/input/20130927/509dc6f9cc63477fac2722b6/1380288063694</System:Directory>
+ <System:FileSize>665 kB</System:FileSize>
+ <System:FileModifyDate>2012:11:21 15:54:08+02:00</System:FileModifyDate>
+ <System:FilePermissions>rwxrwxrwx</System:FilePermissions>
+ <File:FileType>OGG</File:FileType>
+ <File:MIMEType>audio/x-ogg</File:MIMEType>
+</rdf:Description>
+</rdf:RDF>]]></Value>
+    </property>
+    <property name="evaluation_MediaInfo">
+      <Value></Value>
+    </property>
+    <property name="evaluation_ffprobe">
+      <Value><![CDATA[<ffprobe xmlns="">
+    <streams>
+        <stream index="0" codec_name="vorbis" codec_long_name="Vorbis" codec_type="audio" codec_time_base="1/44100" codec_tag_string="[0][0][0][0]" codec_tag="0x0000" sample_fmt="s16" sample_rate="44100" channels="2" bits_per_sample="0" r_frame_rate="0/0" avg_frame_rate="0/0" time_base="1/44100" start_pts="0" start_time="0.000000" duration_ts="3940352" duration="89.350385" bit_rate="64000">
+            <tag key="TITLE" value="Great Firewall Of China"/>
+            <tag key="ARTIST" value="Violent Arrest"/>
+            <tag key="GENRE" value="Hardcore"/>
+            <tag key="DATE" value="2011"/>
+            <tag key="ALBUM" value="Tooth and Nail"/>
+            <tag key="track" value="1"/>
+        </stream>
+    </streams>
+
+    <format filename="/media/yadn/input/20130927/509dc6f9cc63477fac2722b6/1380288063694/f292ff89-deb9-44ac-8ce4-a854495cb9bb.ogg" nb_streams="1" format_name="ogg" format_long_name="Ogg" start_time="0.000000" duration="89.350385" size="681095" bit_rate="60981"/>
+</ffprobe>]]></Value>
+    </property>
+    <property name="evaluation_pdfdimensions">
+      <Value></Value>
+    </property>
+  </metadata>
+</UploadJobResponse>

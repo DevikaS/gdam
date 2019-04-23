@@ -1,0 +1,172 @@
+{
+	"properties": {
+		"common": {
+			"properties": {
+				"campaignDates": {
+					"properties": {
+						"end": {
+							"description": "End date",
+							"type": "string"
+						},
+						"start": {
+							"description": "Start date",
+							"type": "string"
+						}
+					},
+					"type": "object",
+					"required": [
+						"end",
+						"start"
+					]
+				},
+				"jobNumber": {
+					"description": "Job number",
+					"type": "string"
+				},
+				"name": {
+					"description": "Name",
+					"type": "string"
+				},
+				"projectMediaType": {
+					"description": "Media type",
+					"maxItems": 1,
+					"type": "array",
+					"items": {
+						"type": "string",
+						"enum": [
+							"Broadcast",
+							"Cross Media",
+							"Digital",
+							"Print",
+							"Other"
+						]
+					}
+				},
+				"projectStatus": {
+					"description": "Project Status",
+					"type": "array",
+					"maxItems": 1,
+					"items": {
+						"type": "string"
+					}
+				},
+				"projectType": {
+					"description": "Project Type",
+					"type": "array",
+					"maxItems": 1,
+					"items": {
+						"type": "string"
+					}
+				},
+				"published": {
+					"default": false,
+					"description": "Published state of the project",
+					"type": "boolean"
+				},
+				"terms_and_conditions": {
+					"type": "boolean"
+				},
+				"publishDate": {
+					"type": "string",
+					"description": "Publish on (Local date)"
+				},
+				"publishDateTimezone": {
+					"type": "string",
+					"description": "Publish on (Timezone)"
+				},
+				"publishMessage": {
+					"type": "string",
+					"description": "Message to publish"
+				},
+				"noEmailNotification": {
+					"type": "boolean",
+					"description": "Do not notify"
+				},
+				"Campaign": {
+					"description": "Campaign",
+					"type": "string"
+				},
+				"advertiser": {
+					"description": "Advertiser",
+					"maxItems": 1,
+					"type": "array",
+					"additionalAnalyzers": [
+						"default"
+					],
+					"items": {
+						"type": "string",
+						"enum": [
+							"TestAdvertiser01",
+							"TestAdvertiser02",
+							"Adstream"
+						]
+					}
+				},
+				"brand": {
+					"description": "Brand",
+					"maxItems": 1,
+					"type": "array",
+					"items": {
+						"type": "string",
+						"enum": [
+							"TestAdvertiser01",
+							"TestAdvertiser02",
+							"Adstream"
+						]
+					}
+				},
+				"product": {
+					"description": "Product",
+					"maxItems": 1,
+					"type": "array",
+					"items": {
+						"type": "string",
+						"enum": [
+							"TestAdvertiser01",
+							"TestAdvertiser02",
+							"Adstream"
+						]
+					}
+				},
+				"sub_brand": {
+					"description": "Sub Brand",
+					"maxItems": 1,
+					"type": "array",
+					"items": {
+						"type": "string",
+						"enum": [
+							"TestAdvertiser01",
+							"TestAdvertiser02",
+							"Adstream"
+						]
+					}
+				}
+			},
+			"type": "object",
+			"required": [
+				"name"
+			]
+		},
+		"logo": {
+			"properties": {
+				"c": {
+					"description": "Update image",
+					"maxLength": 40960,
+					"type": "string"
+				},
+				"m": {
+					"type": "string"
+				},
+				"t": {
+					"type": "string"
+				}
+			},
+			"type": "object"
+		}
+	},
+	"type": "object",
+	"required": [
+		"common"
+	],
+	"additionalProperties": false
+}

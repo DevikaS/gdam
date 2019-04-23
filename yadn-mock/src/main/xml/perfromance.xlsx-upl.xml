@@ -1,0 +1,61 @@
+<UploadJobResponse xmlns:xs="http://adstream.com/xmlstream/" xs:id="10" ns0:type="UploadJobResponse" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:adstream:yadn">
+  <MessageID><![CDATA[1.1|akka://KV01V-A5DA502/user/head/fsobject|edb53da729924c669643b0d0#1]]></MessageID>
+  <Status>UploadedToStorage</Status>
+  <FileID>2d3a5606-f24c-447e-8b1e-a246010d8ff2</FileID>
+  <FileName>195efac7-df3b-4ad0-a957-57a10126ccc9.xlsx</FileName>
+  <FileDirectory><![CDATA[\00000000-0000-0000-0000-000000000000\2013-09-27\edb53da729924c669643b0d0\]]></FileDirectory>
+  <FileSize>16157</FileSize>
+  <MD5>4d8e4e7a9fb072f5ce1826b6f1ef4cf2</MD5>
+  <CRC>        </CRC>
+  <Node>adstream.yadn.nodes.outpost-a5-auto</Node>
+  <SpecDBDocID><![CDATA[f2:application:unspecified:vnd.openxmlformats-officedocument.spreadsheetml.sheet]]></SpecDBDocID>
+  <metadata>
+    <property name="isPlayout">
+      <Value>false</Value>
+    </property>
+    <property name="ElementID">
+      <Value>edb53da729924c669643b0d0</Value>
+    </property>
+    <property name="Path">
+      <Value>perfromance.xlsx</Value>
+    </property>
+    <property name="Country">
+      <Value>AF</Value>
+    </property>
+    <property name="guise">
+      <Value>master</Value>
+    </property>
+    <property name="IsPlayout">
+      <Value>false</Value>
+    </property>
+    <property name="evaluation_exiftool">
+      <Value><![CDATA[<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+
+<rdf:Description xmlns:et="http://ns.exiftool.ca/1.0/" xmlns:ExifTool="http://ns.exiftool.ca/ExifTool/1.0/" xmlns:System="http://ns.exiftool.ca/File/System/1.0/" xmlns:File="http://ns.exiftool.ca/File/1.0/" rdf:about="/media/yadn/input/20130927/509dc6f9cc63477fac2722b6/1380288063115/568b544e-51cf-452a-8d8f-f554ac0a2715.xlsx" et:toolkit="Image::ExifTool 8.93">
+ <ExifTool:ExifToolVersion>8.93</ExifTool:ExifToolVersion>
+ <System:FileName>568b544e-51cf-452a-8d8f-f554ac0a2715.xlsx</System:FileName>
+ <System:Directory>/media/yadn/input/20130927/509dc6f9cc63477fac2722b6/1380288063115</System:Directory>
+ <System:FileSize>16 kB</System:FileSize>
+ <System:FileModifyDate>2012:12:28 13:04:30+02:00</System:FileModifyDate>
+ <System:FilePermissions>rwxrwxrwx</System:FilePermissions>
+ <System:FileName>568b544e-51cf-452a-8d8f-f554ac0a2715.xlsx</System:FileName>
+ <System:Directory>/media/yadn/input/20130927/509dc6f9cc63477fac2722b6/1380288063115</System:Directory>
+ <System:FileSize>16 kB</System:FileSize>
+ <System:FileModifyDate>2012:12:28 13:04:30+02:00</System:FileModifyDate>
+ <System:FilePermissions>rwxrwxrwx</System:FilePermissions>
+ <File:FileType>XLSX</File:FileType>
+ <File:MIMEType>application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</File:MIMEType>
+</rdf:Description>
+</rdf:RDF>]]></Value>
+    </property>
+    <property name="evaluation_MediaInfo">
+      <Value></Value>
+    </property>
+    <property name="evaluation_ffprobe">
+      <Value></Value>
+    </property>
+    <property name="evaluation_pdfdimensions">
+      <Value></Value>
+    </property>
+  </metadata>
+</UploadJobResponse>

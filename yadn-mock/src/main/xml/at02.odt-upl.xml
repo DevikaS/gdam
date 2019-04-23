@@ -1,0 +1,62 @@
+<UploadJobResponse xmlns:xs="http://adstream.com/xmlstream/" xs:id="9" ns0:type="UploadJobResponse" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:adstream:yadn">
+  <MessageID><![CDATA[1.1|akka://KV01V-A5DA502/user/head/fsobject|cbbc1e08d5ef4a37adbba4de#1]]></MessageID>
+  <Status>UploadedToStorage</Status>
+  <FileID>4bf84982-7bc3-454d-a7cf-a246010d7121</FileID>
+  <FileName>2df8f894-5581-4423-b40b-907a90e3963b.odt</FileName>
+  <FileDirectory><![CDATA[\00000000-0000-0000-0000-000000000000\2013-09-27\cbbc1e08d5ef4a37adbba4de\]]></FileDirectory>
+  <FileSize>8306</FileSize>
+  <MD5>7e1dca89a66a61b6484198163e5efc93</MD5>
+  <CRC>        </CRC>
+  <Node>adstream.yadn.nodes.outpost-a5-auto</Node>
+  <SpecDBDocID><![CDATA[f2:application:unspecified:vnd.oasis.opendocument.text]]></SpecDBDocID>
+  <metadata>
+    <property name="isPlayout">
+      <Value>false</Value>
+    </property>
+    <property name="ElementID">
+      <Value>cbbc1e08d5ef4a37adbba4de</Value>
+    </property>
+    <property name="Path">
+      <Value>at02.odt</Value>
+    </property>
+    <property name="Country">
+      <Value>AF</Value>
+    </property>
+    <property name="guise">
+      <Value>master</Value>
+    </property>
+    <property name="IsPlayout">
+      <Value>false</Value>
+    </property>
+    <property name="evaluation_exiftool">
+      <Value><![CDATA[<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+
+<rdf:Description xmlns:et="http://ns.exiftool.ca/1.0/" xmlns:ExifTool="http://ns.exiftool.ca/ExifTool/1.0/" xmlns:System="http://ns.exiftool.ca/File/System/1.0/" xmlns:File="http://ns.exiftool.ca/File/1.0/" rdf:about="/media/yadn/input/20130927/509dc6f9cc63477fac2722b6/1380288057098/de356224-b3f6-4656-b754-d0fbf255fea0.odt" et:toolkit="Image::ExifTool 8.93">
+ <ExifTool:ExifToolVersion>8.93</ExifTool:ExifToolVersion>
+ <System:FileName>de356224-b3f6-4656-b754-d0fbf255fea0.odt</System:FileName>
+ <System:Directory>/media/yadn/input/20130927/509dc6f9cc63477fac2722b6/1380288057098</System:Directory>
+ <System:FileSize>8.1 kB</System:FileSize>
+ <System:FileModifyDate>2012:12:28 13:04:30+02:00</System:FileModifyDate>
+ <System:FilePermissions>rwxrwxrwx</System:FilePermissions>
+ <System:FileName>de356224-b3f6-4656-b754-d0fbf255fea0.odt</System:FileName>
+ <System:Directory>/media/yadn/input/20130927/509dc6f9cc63477fac2722b6/1380288057098</System:Directory>
+ <System:FileSize>8.1 kB</System:FileSize>
+ <System:FileModifyDate>2012:12:28 13:04:30+02:00</System:FileModifyDate>
+ <System:FilePermissions>rwxrwxrwx</System:FilePermissions>
+ <File:FileType>ODT</File:FileType>
+ <File:MIMEType>application/vnd.oasis.opendocument.text</File:MIMEType>
+ <File:PreviewPNG>(Binary data 839 bytes, use -b option to extract)</File:PreviewPNG>
+</rdf:Description>
+</rdf:RDF>]]></Value>
+    </property>
+    <property name="evaluation_MediaInfo">
+      <Value></Value>
+    </property>
+    <property name="evaluation_ffprobe">
+      <Value></Value>
+    </property>
+    <property name="evaluation_pdfdimensions">
+      <Value></Value>
+    </property>
+  </metadata>
+</UploadJobResponse>

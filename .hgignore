@@ -1,0 +1,14 @@
+syntax: glob
+out
+*.iml
+.idea
+custom.properties
+Tests/resources/test-data-default/files/AaDocumentOo.txt
+Tests/resources/stories/CustomStory.story
+target
+Performance/report/*.csv
+Performance/log/*.log
+Tests/resources/stories/my.story
+my.properties
+local.properties
+bs.properties

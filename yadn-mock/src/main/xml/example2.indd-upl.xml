@@ -1,0 +1,79 @@
+<UploadJobResponse xmlns:xs="http://adstream.com/xmlstream/" xs:id="33" ns0:type="UploadJobResponse" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:adstream:yadn">
+  <MessageID><![CDATA[1.1|akka://KV01V-A5DA502/user/head/fsobject|2b2e298b3481450c8f53abdf#1]]></MessageID>
+  <Status>UploadedToStorage</Status>
+  <FileID>163d7682-d613-485b-9981-a246010d8058</FileID>
+  <FileName>6f1f669a-54c2-497e-bfdc-c81c6ead4a36.indd</FileName>
+  <FileDirectory><![CDATA[\00000000-0000-0000-0000-000000000000\2013-09-27\2b2e298b3481450c8f53abdf\]]></FileDirectory>
+  <FileSize>794624</FileSize>
+  <MD5>9dab43b0b95adf873e67f0fc666ffb85</MD5>
+  <CRC>        </CRC>
+  <Node>adstream.yadn.nodes.outpost-a5-auto</Node>
+  <SpecDBDocID>f2:application:unspecified:x-indesign</SpecDBDocID>
+  <metadata>
+    <property name="isPlayout">
+      <Value>false</Value>
+    </property>
+    <property name="ElementID">
+      <Value>2b2e298b3481450c8f53abdf</Value>
+    </property>
+    <property name="Path">
+      <Value>example2.indd</Value>
+    </property>
+    <property name="Country">
+      <Value>AF</Value>
+    </property>
+    <property name="guise">
+      <Value>master</Value>
+    </property>
+    <property name="IsPlayout">
+      <Value>false</Value>
+    </property>
+    <property name="evaluation_exiftool">
+      <Value><![CDATA[<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+
+<rdf:Description xmlns:et="http://ns.exiftool.ca/1.0/" xmlns:ExifTool="http://ns.exiftool.ca/ExifTool/1.0/" xmlns:System="http://ns.exiftool.ca/File/System/1.0/" xmlns:File="http://ns.exiftool.ca/File/1.0/" xmlns:XMP-xmp="http://ns.exiftool.ca/XMP/XMP-xmp/1.0/" xmlns:XMP-xmpTPg="http://ns.exiftool.ca/XMP/XMP-xmpTPg/1.0/" rdf:about="/media/yadn/input/20130927/509dc6f9cc63477fac2722b6/1380288059807/b04ffa42-ecef-40b4-a1f2-3297896e765b.indd" et:toolkit="Image::ExifTool 8.93">
+ <ExifTool:ExifToolVersion>8.93</ExifTool:ExifToolVersion>
+ <System:FileName>b04ffa42-ecef-40b4-a1f2-3297896e765b.indd</System:FileName>
+ <System:Directory>/media/yadn/input/20130927/509dc6f9cc63477fac2722b6/1380288059807</System:Directory>
+ <System:FileSize>776 kB</System:FileSize>
+ <System:FileModifyDate>2012:11:21 15:54:08+02:00</System:FileModifyDate>
+ <System:FilePermissions>rwxrwxrwx</System:FilePermissions>
+ <System:FileName>b04ffa42-ecef-40b4-a1f2-3297896e765b.indd</System:FileName>
+ <System:Directory>/media/yadn/input/20130927/509dc6f9cc63477fac2722b6/1380288059807</System:Directory>
+ <System:FileSize>776 kB</System:FileSize>
+ <System:FileModifyDate>2012:11:21 15:54:08+02:00</System:FileModifyDate>
+ <System:FilePermissions>rwxrwxrwx</System:FilePermissions>
+ <File:FileType>INDD</File:FileType>
+ <File:MIMEType>application/x-indesign</File:MIMEType>
+ <XMP-xmp:PageImageWidth>256</XMP-xmp:PageImageWidth>
+ <XMP-xmp:PageImageHeight>256</XMP-xmp:PageImageHeight>
+ <XMP-xmp:CreateDate>2011:04:04 14:49:59+01:00</XMP-xmp:CreateDate>
+ <XMP-xmp:ModifyDate>2012:06:27 12:28:54+01:00</XMP-xmp:ModifyDate>
+ <XMP-xmpTPg:ColorantSwatchName>
+  <rdf:Bag>
+   <rdf:li>Black</rdf:li>
+   <rdf:li>C=43 M=35 Y=35 K=1</rdf:li>
+   <rdf:li>C=71 M=65 Y=64 K=69</rdf:li>
+   <rdf:li>C=73 M=28 Y=0 K=0</rdf:li>
+   <rdf:li>PANTONE 430 C copy</rdf:li>
+   <rdf:li>Paper</rdf:li>
+   <rdf:li>Registration</rdf:li>
+   <rdf:li>c94m3y1k0</rdf:li>
+   <rdf:li>r0g0b0</rdf:li>
+   <rdf:li>r102g102b102</rdf:li>
+  </rdf:Bag>
+ </XMP-xmpTPg:ColorantSwatchName>
+</rdf:Description>
+</rdf:RDF>]]></Value>
+    </property>
+    <property name="evaluation_MediaInfo">
+      <Value></Value>
+    </property>
+    <property name="evaluation_ffprobe">
+      <Value></Value>
+    </property>
+    <property name="evaluation_pdfdimensions">
+      <Value></Value>
+    </property>
+  </metadata>
+</UploadJobResponse>

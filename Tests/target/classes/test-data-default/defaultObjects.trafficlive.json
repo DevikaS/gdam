@@ -1,0 +1,202 @@
+{
+  "DefaultAdstreamGlobalAdminBU": {
+    "agency": {
+      "_cm": {
+        "common": {
+          "name": "Global Admin Business Unit",
+          "agencyType": [
+            "Agency"
+          ]
+        }
+      }
+    },
+    "users": {
+      "DefaultGlobalAdmin": {
+        "customEmail": "admin",
+        "_cm": {
+          "common": {
+            "email": "admin"
+          }
+        },
+        "password": "j0@o3ma7uk0",
+        "passwordNeverExpires": true
+      },
+      "GlobalAdmin": {
+        "customEmail": "admin",
+        "_cm": {
+          "common": {
+            "email": "admin"
+          }
+        },
+        "password": "j0@o3ma7uk0",
+        "passwordNeverExpires": true
+      }
+    }
+  },
+  "DefaultAgency": {
+    "agency": {
+      "_cm": {
+        "a4": {
+          "user": "adpath@adstream.com"
+        },
+        "common": {
+          "time_zone": [
+            "Europe-Andorra"
+          ],
+          "pin": "1",
+          "name": "Z5testOrdAdvertiser",
+          "agencyType": [
+            "Advertiser"
+          ],
+          "address": {
+            "country": [
+              "AF"
+            ]
+          },
+          "applications": {
+            "folders": true,
+            "adkits": true,
+            "library": true,
+            "ordering": true,
+            "adpath": true,
+            "presentations": true,
+            "approvals": true,
+            "annotations": true,
+            "dashboard": true
+          }
+        },
+        "passwordSettings": {
+          "passwordExpirationInDays": 30,
+          "passwordRegEx": {
+            "pattern": "((?=(.*[A-Z]){1,})(?=(.*\\d){1,}).{8,})",
+            "description": {
+              "minTotalLengthOfPassword": 8,
+              "minimumIncludingNumbers": 1,
+              "minIncludingUppercase": 1
+            }
+          }
+        }
+      }
+    },
+    "users": {
+      "AgencyAdmin": {
+        "_cm": {
+          "common": {
+            "firstName": "admin",
+            "lastName": "agency",
+            "email": "qatobabylonautotester+agencyadmin@gmail.com",
+            "language": [
+              "en-us"
+            ],
+            "passwordNeverExpires": true
+          },
+          "view": {
+            "access": {
+              "library": true,
+              "ordering": true,
+              "folders": true,
+              "adkits": true,
+              "approvals": true,
+              "presentations": true,
+              "dashboard": true
+            }
+          }
+        },
+        "password": "abcdefghA1",
+        "roles": [
+          {
+            "name": "agency.admin"
+          }
+        ]
+      }
+       }
+  },
+  "IngestAgency": {
+    "agency": {
+      "_cm": {
+        "a4": {
+          "user": "adpath@adstream.com"
+        },
+        "common": {
+          "time_zone": [
+            "Europe-Andorra"
+          ],
+          "pin": "1",
+          "name": "AdstreamQaIngest",
+          "agencyType": [
+            "Ingest"
+          ],
+          "address": {
+            "country": [
+              "AF"
+            ]
+          },
+          "applications": {
+            "adpath": true
+          }
+        },
+        "passwordSettings": {
+          "passwordExpirationInDays": 30,
+          "passwordRegEx": {
+            "pattern": "((?=(.*[A-Z]){1,})(?=(.*\\d){1,}).{8,})",
+            "description": {
+              "minTotalLengthOfPassword": 8,
+              "minimumIncludingNumbers": 1,
+              "minIncludingUppercase": 1
+            }
+          }
+        }
+      }
+    },
+    "users": {
+      "IngestAdmin": {
+        "_cm": {
+          "common": {
+            "firstName": "aldrin",
+            "lastName": "pinto@gmail.com",
+            "email": "aldrin.pinto@gmail.com",
+            "language": [
+              "en-us"
+            ],
+            "passwordNeverExpires": true
+          },
+          "view": {
+            "access": {
+              "adpath": true
+            }
+          }
+        },
+        "password": "abcdefghA1",
+        "roles": [
+          {
+            "name": "agency.admin"
+          }
+        ]
+      },
+      "trafficManager": {
+        "_cm": {
+          "common": {
+            "firstName": "tr",
+            "lastName": "tr",
+            "email": "tr.tr.manager_12@gmail.com",
+            "language": [
+              "en-us"
+            ],
+            "passwordNeverExpires": true
+          },
+          "view": {
+            "access": {
+              "adpath": true
+            }
+          }
+        },
+        "password": "abcdefghA1",
+        "roles": [
+          {
+            "name": "traffic.traffic.manager"
+          }
+        ]
+      }
+    }
+  }
+}

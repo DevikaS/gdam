@@ -1,0 +1,13 @@
+Pre Production;http://10.64.162.10:8080;admin;abcdefghA1
+Live Demo;http://10.64.96.11:8080;admin;abcdefghA1
+LIVE;http://10.128.130.10:8080;admin;K33pKa1m09
+Performance;http://perfa5-elb-internal.adstream.com:8080;admin;K33pKa1m09
+QA 10.0.25.32;http://10.0.25.32:8080;admin;abcdefghA1
+QA 10.0.25.34;http://10.0.25.34:8080;admin;abcdefghA1
+QA 10.0.25.39;http://10.0.25.39:8080;admin;abcdefghA1
+QA 10.0.26.5;http://10.0.26.5:8080;admin;abcdefghA1
+QA 10.0.26.12;http://10.0.26.12:8080;admin;abcdefghA1
+QA 10.0.26.16;http://10.0.26.16:8080;admin;abcdefghA1
+QA 10.0.26.17;http://10.0.26.17:8080;admin;abcdefghA1
+QA 10.0.26.56;http://10.0.26.56:8080;admin;abcdefghA1
+QA 10.0.26.70;http://10.0.26.70:8080;admin;abcdefghA1

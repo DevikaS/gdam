@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="APITESTING">
+
+    <test name="AddDestinationItems">
+        <classes>
+            <class name="com.publicApi.tests.Order_AddDestinationItems" />
+        </classes>
+    </test>
+    <test name="AddMediaItem">
+        <classes>
+            <class name="com.publicApi.tests.OrderItemMedia_AddMediaItem" />
+        </classes>
+    </test>
+    <test name="CreateItem">
+        <classes>
+            <class name="com.publicApi.tests.Order_CreateItem" />
+        </classes>
+    </test>
+    <test name="CreateOrder">
+        <classes>
+            <class name="com.publicApi.tests.Order_CreateOrder" />
+        </classes>
+    </test>
+    <test name="EditDestinationItems">
+        <classes>
+            <class name="com.publicApi.tests.Order_EditDestinationItems" />
+        </classes>
+    </test>
+
+    <test name="EditItem">
+        <classes>
+            <class name="com.publicApi.tests.Order_EditItem" />
+        </classes>
+    </test>
+
+    <test name="EditOrder">
+        <classes>
+            <class name="com.publicApi.tests.Order_EditOrder" />
+        </classes>
+    </test>
+
+    <test name="GenerateAClockForAnOrder">
+        <classes>
+            <class name="com.publicApi.tests.Order_GenerateAClockForAnOrder" />
+        </classes>
+    </test>
+
+    <test name="GETDestinationItems">
+        <classes>
+            <class name="com.publicApi.tests.Order_GETDestinationItems" />
+        </classes>
+    </test>
+
+    <test name="GetItem">
+        <classes>
+            <class name="com.publicApi.tests.Order_GetItem" />
+        </classes>
+    </test>
+
+    <test name="GetOrder">
+        <classes>
+            <class name="com.publicApi.tests.Order_GetOrder" />
+        </classes>
+    </test>
+
+    <test name="ListItems">
+        <classes>
+            <class name="com.publicApi.tests.Order_ListItems" />
+        </classes>
+    </test>
+
+    <test name="ListOrders">
+        <classes>
+            <class name="com.publicApi.tests.Order_ListOrders" />
+        </classes>
+    </test>
+
+    <test name="RemoveDestinationItems">
+        <classes>
+            <class name="com.publicApi.tests.Order_RemoveDestinationItems" />
+        </classes>
+    </test>
+
+    <test name="RemoveItem">
+        <classes>
+            <class name="com.publicApi.tests.Order_RemoveItem" />
+        </classes>
+    </test>
+
+    <test name="RemoveMediaItem">
+        <classes>
+            <class name="com.publicApi.tests.OrderItemMedia_RemoveMediaItem" />
+        </classes>
+    </test>
+
+    <test name="RemoveOrder">
+        <classes>
+            <class name="com.publicApi.tests.Order_RemoveOrder" />
+        </classes>
+    </test>
+    <test name="UpdateItem">
+        <classes>
+            <class name="com.publicApi.tests.Order_UpdateItem" />
+        </classes>
+    </test>
+    <test name="Order_UpdateOrder">
+        <classes>
+            <class name="com.publicApi.tests.Order_UpdateOrder" />
+        </classes>
+    </test>
+    <test name="Order_UpdateOrderItemDestination">
+        <classes>
+            <class name="com.publicApi.tests.Order_UpdateOrderItemDestination" />
+        </classes>
+    </test>
+    <test name="Order_ValidateclockinOrder">
+        <classes>
+            <class name="com.publicApi.tests.Order_ValidateClockInOrder" />
+        </classes>
+    </test>
+    <test name="Orders_ValidateclockinLibrary">
+        <classes>
+            <class name="com.publicApi.tests.Orders_ValidateclockinLibrary" />
+        </classes>
+    </test>
+    <test name="OrderItems_GenerateSpotgateCode">
+        <classes>
+            <class name="com.publicApi.tests.OrderItems_GenerateSpotgateCode" />
+        </classes>
+    </test>
+    <test name="OrderItemRights_UpdateUsageRights">
+        <classes>
+            <class name="com.publicApi.tests.OrderItemRights_UpdateUsageRights" />
+        </classes>
+    </test>
+    <test name="OrderItemRights_GetUsageRights">
+        <classes>
+            <class name="com.publicApi.tests.OrderItemRights_GetUsageRights" />
+        </classes>
+    </test>
+    <test name="OrderItemRights_DeleteUsageRights">
+        <classes>
+            <class name="com.publicApi.tests.OrderItemRights_DeleteUsageRights" />
+        </classes>
+    </test>
+    <test name="OrderMarkets_GetMarket">
+        <classes>
+            <class name="com.publicApi.tests.OrderMarkets_GetMarket" />
+        </classes>
+    </test>
+    <test name="OrderMarkets_ListMarkets">
+        <classes>
+            <class name="com.publicApi.tests.OrderMarkets_ListMarkets" />
+        </classes>
+    </test>
+    <test name="OrderMarkets_ListMarketDestinations">
+        <classes>
+            <class name="com.publicApi.tests.OrderMarkets_ListMarketDestinations" />
+        </classes>
+    </test>
+    <test name="Orders_GetOrderReport">
+        <classes>
+            <class name="com.publicApi.tests.Orders_GetOrderReport" />
+        </classes>
+    </test>
+    <test name="Order_GetDeliveryListForSpecifiedClock">
+        <classes>
+            <class name="com.publicApi.tests.Order_GetDeliveryListForSpecifiedClock" />
+        </classes>
+    </test>
+    <test name="ProcessDraftOrder">
+        <classes>
+            <class name="com.publicApi.tests.Orders_ProcessADraftOrder" />
+        </classes>
+    </test>
+    <test name="Order_SearchAssets">
+        <classes>
+            <class name="com.publicApi.tests.Order_SearchAssets" />
+        </classes>
+    </test>
+ </suite>

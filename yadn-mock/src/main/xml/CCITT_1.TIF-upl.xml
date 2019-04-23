@@ -1,0 +1,66 @@
+<UploadJobResponse xmlns:xs="http://adstream.com/xmlstream/" xs:id="61" ns0:type="UploadJobResponse" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:adstream:yadn">
+  <MessageID><![CDATA[1.1|akka://KV01V-A5DA502/user/head/fsobject|f1898a1b066f40c78f166140#1]]></MessageID>
+  <Status>UploadedToStorage</Status>
+  <FileID>f3789dbd-2338-4505-9f13-a246010d7de9</FileID>
+  <FileName>55a6343d-7e45-4f80-996d-9b94b58770bc.TIF</FileName>
+  <FileDirectory><![CDATA[\00000000-0000-0000-0000-000000000000\2013-09-27\f1898a1b066f40c78f166140\]]></FileDirectory>
+  <FileSize>18382</FileSize>
+  <MD5>a4e7b0e875e88f786334262c001ac611</MD5>
+  <CRC>        </CRC>
+  <Node>adstream.yadn.nodes.outpost-a5-auto</Node>
+  <SpecDBDocID>f2:image:unspecified</SpecDBDocID>
+  <metadata>
+    <property name="isPlayout">
+      <Value>false</Value>
+    </property>
+    <property name="ElementID">
+      <Value>f1898a1b066f40c78f166140</Value>
+    </property>
+    <property name="Path">
+      <Value>CCITT_1.TIF</Value>
+    </property>
+    <property name="Country">
+      <Value>AF</Value>
+    </property>
+    <property name="guise">
+      <Value>master</Value>
+    </property>
+    <property name="IsPlayout">
+      <Value>false</Value>
+    </property>
+    <property name="evaluation_exiftool">
+      <Value><![CDATA[<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+
+<rdf:Description xmlns:et="http://ns.exiftool.ca/1.0/" xmlns:ExifTool="http://ns.exiftool.ca/ExifTool/1.0/" xmlns:System="http://ns.exiftool.ca/File/System/1.0/" xmlns:File="http://ns.exiftool.ca/File/1.0/" xmlns:IFD0="http://ns.exiftool.ca/EXIF/IFD0/1.0/" rdf:about="/media/yadn/input/20130927/509dc6f9cc63477fac2722b6/1380288059332/0da2d846-b26c-4940-bcf7-7fe36c71477a.TIF" et:toolkit="Image::ExifTool 8.93">
+ <ExifTool:ExifToolVersion>8.93</ExifTool:ExifToolVersion>
+ <System:FileName>0da2d846-b26c-4940-bcf7-7fe36c71477a.TIF</System:FileName>
+ <System:Directory>/media/yadn/input/20130927/509dc6f9cc63477fac2722b6/1380288059332</System:Directory>
+ <System:FileSize>18 kB</System:FileSize>
+ <System:FileModifyDate>2012:11:21 15:54:09+02:00</System:FileModifyDate>
+ <System:FilePermissions>rwxrwxrwx</System:FilePermissions>
+ <System:FileName>0da2d846-b26c-4940-bcf7-7fe36c71477a.TIF</System:FileName>
+ <System:Directory>/media/yadn/input/20130927/509dc6f9cc63477fac2722b6/1380288059332</System:Directory>
+ <System:FileSize>18 kB</System:FileSize>
+ <System:FileModifyDate>2012:11:21 15:54:09+02:00</System:FileModifyDate>
+ <System:FilePermissions>rwxrwxrwx</System:FilePermissions>
+ <File:FileType>TIFF</File:FileType>
+ <File:MIMEType>image/tiff</File:MIMEType>
+ <File:ExifByteOrder>Little-endian (Intel, II)</File:ExifByteOrder>
+ <IFD0:Orientation>Horizontal (normal)</IFD0:Orientation>
+ <IFD0:XResolution>200</IFD0:XResolution>
+ <IFD0:YResolution>200</IFD0:YResolution>
+ <IFD0:ResolutionUnit>inches</IFD0:ResolutionUnit>
+</rdf:Description>
+</rdf:RDF>]]></Value>
+    </property>
+    <property name="evaluation_MediaInfo">
+      <Value></Value>
+    </property>
+    <property name="evaluation_ffprobe">
+      <Value></Value>
+    </property>
+    <property name="evaluation_pdfdimensions">
+      <Value></Value>
+    </property>
+  </metadata>
+</UploadJobResponse>

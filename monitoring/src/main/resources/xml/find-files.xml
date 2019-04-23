@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Script xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="schema.xsd">
+    <applicationURL>https://a5.adstream.com</applicationURL>
+    <action>
+        <method>authSSO</method>
+        <argument>
+            <type>String</type>
+            <value>monitoring@adstream.com</value>
+        </argument>
+        <argument>
+            <type>String</type>
+            <value>Password1</value>
+        </argument>
+    </action>
+    <action>
+        <method>findFoldersContent</method>
+        <argument>
+            <type>String</type>
+            <!-- folder id -->
+            <value>51f90227e4b0d99fd28bebab</value>
+        </argument>
+        <argument>
+            <type>Search</type>
+        </argument>
+        <assertion>
+            <sizeMin>1</sizeMin>
+        </assertion>
+    </action>
+    <action>
+        <method>getContent</method>
+        <argument>
+            <type>String</type>
+            <value>51f9024ae4b0d99fd28bebad</value>
+        </argument>
+        <assertion>
+            <name>monitoring_file.jpg</name>
+        </assertion>
+    </action>
+    <action>
+        <method>logoutSSO</method>
+    </action>
+</Script>

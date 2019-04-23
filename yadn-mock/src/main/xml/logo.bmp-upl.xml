@@ -1,0 +1,71 @@
+<UploadJobResponse xmlns:xs="http://adstream.com/xmlstream/" xs:id="65" ns0:type="UploadJobResponse" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:adstream:yadn">
+  <MessageID><![CDATA[1.1|akka://KV01V-A5DA502/user/head/fsobject|aa710e4141b245d69da2a70c#1]]></MessageID>
+  <Status>UploadedToStorage</Status>
+  <FileID>d94b78b6-b759-45d0-9266-a246010d95eb</FileID>
+  <FileName>18519af7-88c2-474e-89d4-978b3fe9a145.bmp</FileName>
+  <FileDirectory><![CDATA[\00000000-0000-0000-0000-000000000000\2013-09-27\aa710e4141b245d69da2a70c\]]></FileDirectory>
+  <FileSize>12342</FileSize>
+  <MD5>873bf60b466bbb8ea861731846e7199a</MD5>
+  <CRC>        </CRC>
+  <Node>adstream.yadn.nodes.outpost-a5-auto</Node>
+  <SpecDBDocID>f2:image:unspecified</SpecDBDocID>
+  <metadata>
+    <property name="isPlayout">
+      <Value>false</Value>
+    </property>
+    <property name="ElementID">
+      <Value>aa710e4141b245d69da2a70c</Value>
+    </property>
+    <property name="Path">
+      <Value>logo.bmp</Value>
+    </property>
+    <property name="Country">
+      <Value>AF</Value>
+    </property>
+    <property name="guise">
+      <Value>master</Value>
+    </property>
+    <property name="IsPlayout">
+      <Value>false</Value>
+    </property>
+    <property name="evaluation_exiftool">
+      <Value><![CDATA[<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+
+<rdf:Description xmlns:et="http://ns.exiftool.ca/1.0/" xmlns:ExifTool="http://ns.exiftool.ca/ExifTool/1.0/" xmlns:System="http://ns.exiftool.ca/File/System/1.0/" xmlns:File="http://ns.exiftool.ca/File/1.0/" rdf:about="/media/yadn/input/20130927/509dc6f9cc63477fac2722b6/1380288064514/2e325274-a4b4-49c3-aa84-b0cbf158d32a.bmp" et:toolkit="Image::ExifTool 8.93">
+ <ExifTool:ExifToolVersion>8.93</ExifTool:ExifToolVersion>
+ <System:FileName>2e325274-a4b4-49c3-aa84-b0cbf158d32a.bmp</System:FileName>
+ <System:Directory>/media/yadn/input/20130927/509dc6f9cc63477fac2722b6/1380288064514</System:Directory>
+ <System:FileSize>12 kB</System:FileSize>
+ <System:FileModifyDate>2013:06:03 13:28:15+03:00</System:FileModifyDate>
+ <System:FilePermissions>rwxrwxrwx</System:FilePermissions>
+ <System:FileName>2e325274-a4b4-49c3-aa84-b0cbf158d32a.bmp</System:FileName>
+ <System:Directory>/media/yadn/input/20130927/509dc6f9cc63477fac2722b6/1380288064514</System:Directory>
+ <System:FileSize>12 kB</System:FileSize>
+ <System:FileModifyDate>2013:06:03 13:28:15+03:00</System:FileModifyDate>
+ <System:FilePermissions>rwxrwxrwx</System:FilePermissions>
+ <File:FileType>BMP</File:FileType>
+ <File:MIMEType>image/bmp</File:MIMEType>
+ <File:ImageWidth>64</File:ImageWidth>
+ <File:ImageHeight>64</File:ImageHeight>
+ <File:Planes>1</File:Planes>
+ <File:BitDepth>24</File:BitDepth>
+ <File:Compression>None</File:Compression>
+ <File:ImageLength>0</File:ImageLength>
+ <File:PixelsPerMeterX>3937</File:PixelsPerMeterX>
+ <File:PixelsPerMeterY>3937</File:PixelsPerMeterY>
+ <File:NumColors>Use BitDepth</File:NumColors>
+ <File:NumImportantColors>All</File:NumImportantColors>
+</rdf:Description>
+</rdf:RDF>]]></Value>
+    </property>
+    <property name="evaluation_MediaInfo">
+      <Value></Value>
+    </property>
+    <property name="evaluation_ffprobe">
+      <Value></Value>
+    </property>
+    <property name="evaluation_pdfdimensions">
+      <Value></Value>
+    </property>
+  </metadata>
+</UploadJobResponse>

@@ -1,0 +1,95 @@
+<UploadJobResponse xmlns:xs="http://adstream.com/xmlstream/" xs:id="99" ns0:type="UploadJobResponse" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:adstream:yadn">
+  <MessageID><![CDATA[1.0|akka://gdam/user/fsobject|500eac9de4b02dec99de56ce]]></MessageID>
+  <Status>UploadedToStorage</Status>
+  <FileID>791dfc1d-b688-494e-bc2d-a098011aeb46</FileID>
+  <FileName>96ec7906-9ede-4149-aa0a-054ff9c9dc38</FileName>
+  <FileDirectory><![CDATA[\500e6936e4b00e34ff5b6ebc\2012-07-24\500eac9de4b02dec99de56ce\]]></FileDirectory>
+  <FileSize>27648</FileSize>
+  <MD5>93c432495d60f60971081e9f2e3e0f79</MD5>
+  <CRC>8a81b93b</CRC>
+  <Node>adstream.yadn.nodes.adgate_lin_1@adstream.tv.ua</Node>
+  <SpecDBDocID>f2:unknown-file-type</SpecDBDocID>
+  <metadata>
+    <property name="uploader">
+      <Value>500e6936e4b00e34ff5b6ebf</Value>
+    </property>
+    <property name="ElementID">
+      <Value>500eac9de4b02dec99de56ce</Value>
+    </property>
+    <property name="AgencyID">
+      <Value>500e6936e4b00e34ff5b6ebc</Value>
+    </property>
+    <property name="Path">
+      <Value>anketa.doc</Value>
+    </property>
+    <property name="Country">
+      <Value>Afghanistan</Value>
+    </property>
+    <property name="guise">
+      <Value>master</Value>
+    </property>
+    <property name="IsPlayout">
+      <Value>false</Value>
+    </property>
+    <property name="evaluation_exiftool">
+      <Value><![CDATA[<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+
+<rdf:Description xmlns:et="http://ns.exiftool.ca/1.0/" xmlns:ExifTool="http://ns.exiftool.ca/ExifTool/1.0/" xmlns:System="http://ns.exiftool.ca/File/System/1.0/" xmlns:File="http://ns.exiftool.ca/File/1.0/" xmlns:FlashPix="http://ns.exiftool.ca/FlashPix/FlashPix/1.0/" rdf:about="/media/yadn/input/20120724/500e6936e4b00e34ff5b6ebf/1343138974152/81f1a53c-495a-44b6-0dba-7f0fef07c93b.doc" et:toolkit="Image::ExifTool 8.93">
+ <ExifTool:ExifToolVersion>8.93</ExifTool:ExifToolVersion>
+ <System:FileName>81f1a53c-495a-44b6-0dba-7f0fef07c93b.doc</System:FileName>
+ <System:Directory>/media/yadn/input/20120724/500e6936e4b00e34ff5b6ebf/1343138974152</System:Directory>
+ <System:FileSize>27 kB</System:FileSize>
+ <System:FileModifyDate>2012:04:24 11:22:22+03:00</System:FileModifyDate>
+ <System:FilePermissions>rwxrwxrwx</System:FilePermissions>
+ <File:FileType>DOC</File:FileType>
+ <File:MIMEType>application/msword</File:MIMEType>
+ <FlashPix:CodePage>Windows Cyrillic</FlashPix:CodePage>
+ <FlashPix:Title>?????? ??? ?????????? ???? ? ?????</FlashPix:Title>
+ <FlashPix:Subject/>
+ <FlashPix:Author>Tur-5</FlashPix:Author>
+ <FlashPix:Keywords/>
+ <FlashPix:Comments/>
+ <FlashPix:Template>Normal</FlashPix:Template>
+ <FlashPix:LastModifiedBy>vaio</FlashPix:LastModifiedBy>
+ <FlashPix:RevisionNumber>2</FlashPix:RevisionNumber>
+ <FlashPix:Software>Microsoft Office Word</FlashPix:Software>
+ <FlashPix:TotalEditTime>2.0 minutes</FlashPix:TotalEditTime>
+ <FlashPix:LastPrinted>2010:04:23 08:02:00</FlashPix:LastPrinted>
+ <FlashPix:CreateDate>2012:04:20 14:43:00</FlashPix:CreateDate>
+ <FlashPix:ModifyDate>2012:04:20 14:43:00</FlashPix:ModifyDate>
+ <FlashPix:Pages>1</FlashPix:Pages>
+ <FlashPix:Words>280</FlashPix:Words>
+ <FlashPix:Characters>1602</FlashPix:Characters>
+ <FlashPix:Security>None</FlashPix:Security>
+ <FlashPix:CodePage>Windows Cyrillic</FlashPix:CodePage>
+ <FlashPix:Company>?????? ????-??????</FlashPix:Company>
+ <FlashPix:Lines>13</FlashPix:Lines>
+ <FlashPix:Paragraphs>3</FlashPix:Paragraphs>
+ <FlashPix:CharCountWithSpaces>1879</FlashPix:CharCountWithSpaces>
+ <FlashPix:AppVersion>11.8028</FlashPix:AppVersion>
+ <FlashPix:ScaleCrop>No</FlashPix:ScaleCrop>
+ <FlashPix:LinksUpToDate>No</FlashPix:LinksUpToDate>
+ <FlashPix:SharedDoc>No</FlashPix:SharedDoc>
+ <FlashPix:HyperlinksChanged>No</FlashPix:HyperlinksChanged>
+ <FlashPix:TitleOfParts>?????? ??? ?????????? ???? ? ?????</FlashPix:TitleOfParts>
+ <FlashPix:HeadingPairs>
+  <rdf:Bag>
+   <rdf:li>????????</rdf:li>
+   <rdf:li>1</rdf:li>
+  </rdf:Bag>
+ </FlashPix:HeadingPairs>
+ <FlashPix:CompObjUserTypeLen>31</FlashPix:CompObjUserTypeLen>
+ <FlashPix:CompObjUserType rdf:datatype="http://www.w3.org/2001/XMLSchema#base64Binary">
+xO7q8+zl7fIgTWljcm9zb2Z0IE9mZmljZSBXb3Jk
+</FlashPix:CompObjUserType>
+</rdf:Description>
+</rdf:RDF>]]></Value>
+    </property>
+    <property name="evaluation_MediaInfo">
+      <Value></Value>
+    </property>
+    <property name="evaluation_ffprobe">
+      <Value></Value>
+    </property>
+  </metadata>
+</UploadJobResponse>

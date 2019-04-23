@@ -1,0 +1,33 @@
+<TranscodeJobResponse xmlns:xs="http://adstream.com/xmlstream/" xs:id="22" ns0:type="TranscodeJobResponse" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:adstream:yadn">
+  <MessageID><![CDATA[1.1|akka://KV01V-A5DA502/user/head/fsobject|f7aa995df58b41d8b4b35ba7#1]]></MessageID>
+  <Status>Completed</Status>
+  <FileID>a41795a5-ca6b-4e75-b460-a246010d810b</FileID>
+  <FileStorage>701c9931-5044-4e91-af1d-3358da7eb7a7</FileStorage>
+  <IsDefault>true</IsDefault>
+  <TranscodeFiles xs:id="23">
+    <TranscodeFile xs:id="24">
+      <FileID>2bac3d7e-16a3-48ba-8658-a246010e51a6</FileID>
+      <FileDirectory><![CDATA[/00000000-0000-0000-0000-000000000000/2013-09-27/f7aa995df58b41d8b4b35ba7/9ecead0b-beb3-4a01-a04d-74889674eb3f]]></FileDirectory>
+      <FileName>9ecead0b-beb3-4a01-a04d-74889674eb3f_preview.png</FileName>
+      <FileSize>1914</FileSize>
+      <SpecDBDocID>f1:image:Preview:PNG:variableSize:RGB</SpecDBDocID>
+      <properties>
+        <property name="a5_type" value="image_proxy" />
+        <property name="guise" value="preview" />
+        <property name="proxy_guise" value="true" />
+      </properties>
+    </TranscodeFile>
+    <TranscodeFile xs:id="25">
+      <FileID>c5795f96-7ab4-48a9-bae5-a246010e51a6</FileID>
+      <FileDirectory><![CDATA[/00000000-0000-0000-0000-000000000000/2013-09-27/f7aa995df58b41d8b4b35ba7/9ecead0b-beb3-4a01-a04d-74889674eb3f]]></FileDirectory>
+      <FileName><![CDATA[9ecead0b-beb3-4a01-a04d-74889674eb3f_thumbnail.jpeg]]></FileName>
+      <FileSize>48254</FileSize>
+      <SpecDBDocID>f1:image:Thumbnail:JPEG:variableSize:RGB</SpecDBDocID>
+      <properties>
+        <property name="a5_type" value="thumbnail" />
+        <property name="guise" value="preview" />
+        <property name="proxy_guise" value="true" />
+      </properties>
+    </TranscodeFile>
+  </TranscodeFiles>
+</TranscodeJobResponse>

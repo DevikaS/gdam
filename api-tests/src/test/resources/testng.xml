@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="MT test suit" parallel="classes" thread-count="4">
+
+    <parameter name="applicationUrl" value="http://10.0.26.17" />
+    <parameter name="globalAdminLogin" value="admin" />
+    <parameter name="globalAdminPassword" value="abcdefghA1" />
+    <parameter name="defaultAgency" value="A5ApiTestAgency" />
+    <parameter name="defaultStorageId" value="52f12d23e4b0faebacc599c9" />
+    <parameter name="defaultUser" value="babylonautotester+apitestagencyadmin@gmail.com" />
+    <parameter name="defaultPassword" value="abcdefghA1" />
+    <parameter name="useUniqueAgencyNames" value="true" />
+    <parameter name="useUniqueUserEmails" value="true" />
+
+    <test name="MT api test">
+        <classes>
+            <class name="com.adstream.automate.babylon.tests.api.tests.LoginTest" />
+            <class name="com.adstream.automate.babylon.tests.api.tests.ProjectCRUDTest" />
+            <class name="com.adstream.automate.babylon.tests.api.tests.FolderCRUDTest" />
+            <class name="com.adstream.automate.babylon.tests.api.tests.FileCRUDTest" />
+            <class name="com.adstream.automate.babylon.tests.api.tests.AssetCRUDTest" />
+            <class name="com.adstream.automate.babylon.tests.api.tests.PresentationCRUDTest" />
+        </classes>
+    </test>
+</suite>

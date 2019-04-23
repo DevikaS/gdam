@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><s:Envelope xmlns:a="http://www.w3.org/2005/08/addressing" xmlns:s="http://www.w3.org/2003/05/soap-envelope">
+    <s:Header>
+        <a:Action s:mustUnderstand="1">urn:adstream:AMS/IAsset/SaveIngestionDataWithStatus</a:Action>
+        <a:MessageID>urn:uuid:2774a559-7fa5-4226-a3e2-6435a7afdfc9</a:MessageID>
+        <a:ReplyTo>
+            <a:Address>http://www.w3.org/2005/08/addressing/anonymous</a:Address>
+        </a:ReplyTo>
+        <a:To s:mustUnderstand="1">http://10.44.127.41/AMS/Asset.svc</a:To>
+    </s:Header>
+    <s:Body>
+        <SaveIngestionDataWithStatus xmlns="urn:adstream:AMS">
+            <AssetGuid>AssetGUID</AssetGuid>
+            <Filename>AssetGUID_master.mpeg</Filename>
+            <Duration>1125</Duration>
+            <FirstActiveFrame>0</FirstActiveFrame>
+            <MPEGDuration>1250</MPEGDuration>
+            <ClosedCaptionStatusID>7000</ClosedCaptionStatusID>
+            <IngestUserGUID>1a32771e-bb19-48db-a728-08f7e0181ddf</IngestUserGUID>
+            <statusId>4</statusId>
+            <FileCRC32>234</FileCRC32>
+            <FileSize>31604736</FileSize>
+            <specDbDocId>f1:video:master:SD:720x576i@25fps:PAL:16x9:50Mbps</specDbDocId>
+            <fileId>fileID</fileId>
+            <SessionID>sessionID</SessionID>
+        </SaveIngestionDataWithStatus>
+    </s:Body>
+</s:Envelope>

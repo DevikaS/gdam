@@ -1,0 +1,1 @@
+java -cp "lib/*" -Djava.net.preferIPv4Stack=true -Dcustomers=customers.json com.adstream.automate.babylon.performance.Executor ./configBilling.json

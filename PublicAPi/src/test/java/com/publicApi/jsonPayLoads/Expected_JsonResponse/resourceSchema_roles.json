@@ -1,0 +1,36 @@
+{
+	"properties": {
+		"common": {
+			"properties": {
+				"allow": {
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				},
+				"deny": {
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				},
+				"hiddenInAgencies": {
+					"default": [],
+					"items": {
+						"type": "string"
+					},
+					"type": "array"
+				},
+				"name": {
+					"type": "string"
+				}
+			},
+			"type": "object"
+		}
+	},
+	"type": "object",
+	"required": [
+		"common"
+	],
+	"additionalProperties": false
+}

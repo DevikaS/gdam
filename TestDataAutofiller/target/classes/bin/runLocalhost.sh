@@ -1,0 +1,1 @@
+java -cp "lib/*" -Djava.net.preferIPv4Stack=true com.adstream.automate.babylon.TestDataAutofiller ./resources/properties/devLocalhostEnv.properties ./resources/data/defaultObjects.DEV.json ./resources/data/generateList.DEV.json

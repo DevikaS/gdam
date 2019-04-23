@@ -1,0 +1,17 @@
+{
+    "coreUrl": "http://10.0.26.5:8080/",
+    "agencyAdminLogin": "agencyadmin@test.com",
+    "agencyAdminPassword": "1",
+    "useGDN": false,
+    "testTimeMinutes": 10,
+    "threadsCount": 1,
+    "uploadFilePath": [
+        "Tests/resources/test-data-default/images/logo.jpeg"
+    ],
+    "log4jProperties": {
+        "log4j.rootLogger": "INFO,console",
+        "log4j.appender.console": "org.apache.log4j.ConsoleAppender",
+        "log4j.appender.console.layout": "org.apache.log4j.PatternLayout",
+        "log4j.appender.console.layout.ConversionPattern": "%d %-5p %t %c{1} %m%n"
+    }
+}

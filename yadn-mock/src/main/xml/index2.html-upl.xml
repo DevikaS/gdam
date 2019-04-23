@@ -1,0 +1,61 @@
+<UploadJobResponse xmlns:xs="http://adstream.com/xmlstream/" xs:id="15" ns0:type="UploadJobResponse" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:adstream:yadn">
+  <MessageID><![CDATA[1.1|akka://KV01V-A5DA502/user/head/fsobject|5f4fc81de1dc4ba793ade229#1]]></MessageID>
+  <Status>UploadedToStorage</Status>
+  <FileID>b0acfccc-bdc4-45b6-8485-a246010d8d96</FileID>
+  <FileName>5ba8798e-a20c-4c39-977f-543ceb2aadc2.html</FileName>
+  <FileDirectory><![CDATA[\00000000-0000-0000-0000-000000000000\2013-09-27\5f4fc81de1dc4ba793ade229\]]></FileDirectory>
+  <FileSize>1486</FileSize>
+  <MD5>07db807f6e731dcbff91f7bdb7102d90</MD5>
+  <CRC>        </CRC>
+  <Node>adstream.yadn.nodes.outpost-a5-auto</Node>
+  <SpecDBDocID>f2:text:unspecified:html</SpecDBDocID>
+  <metadata>
+    <property name="isPlayout">
+      <Value>false</Value>
+    </property>
+    <property name="ElementID">
+      <Value>5f4fc81de1dc4ba793ade229</Value>
+    </property>
+    <property name="Path">
+      <Value>index2.html</Value>
+    </property>
+    <property name="Country">
+      <Value>AF</Value>
+    </property>
+    <property name="guise">
+      <Value>master</Value>
+    </property>
+    <property name="IsPlayout">
+      <Value>false</Value>
+    </property>
+    <property name="evaluation_exiftool">
+      <Value><![CDATA[<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+
+<rdf:Description xmlns:et="http://ns.exiftool.ca/1.0/" xmlns:ExifTool="http://ns.exiftool.ca/ExifTool/1.0/" xmlns:System="http://ns.exiftool.ca/File/System/1.0/" xmlns:File="http://ns.exiftool.ca/File/1.0/" rdf:about="/media/yadn/input/20130927/509dc6f9cc63477fac2722b6/1380288062452/934cff9a-eb4b-4894-a624-f373a4423253.html" et:toolkit="Image::ExifTool 8.93">
+ <ExifTool:ExifToolVersion>8.93</ExifTool:ExifToolVersion>
+ <System:FileName>934cff9a-eb4b-4894-a624-f373a4423253.html</System:FileName>
+ <System:Directory>/media/yadn/input/20130927/509dc6f9cc63477fac2722b6/1380288062452</System:Directory>
+ <System:FileSize>1486 bytes</System:FileSize>
+ <System:FileModifyDate>2012:12:28 13:04:30+02:00</System:FileModifyDate>
+ <System:FilePermissions>rwxrwxrwx</System:FilePermissions>
+ <System:FileName>934cff9a-eb4b-4894-a624-f373a4423253.html</System:FileName>
+ <System:Directory>/media/yadn/input/20130927/509dc6f9cc63477fac2722b6/1380288062452</System:Directory>
+ <System:FileSize>1486 bytes</System:FileSize>
+ <System:FileModifyDate>2012:12:28 13:04:30+02:00</System:FileModifyDate>
+ <System:FilePermissions>rwxrwxrwx</System:FilePermissions>
+ <File:FileType>HTML</File:FileType>
+ <File:MIMEType>text/html</File:MIMEType>
+</rdf:Description>
+</rdf:RDF>]]></Value>
+    </property>
+    <property name="evaluation_MediaInfo">
+      <Value></Value>
+    </property>
+    <property name="evaluation_ffprobe">
+      <Value></Value>
+    </property>
+    <property name="evaluation_pdfdimensions">
+      <Value></Value>
+    </property>
+  </metadata>
+</UploadJobResponse>

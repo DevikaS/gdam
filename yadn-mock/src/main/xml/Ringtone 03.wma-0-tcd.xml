@@ -1,0 +1,21 @@
+<TranscodeJobResponse xmlns:xs="http://adstream.com/xmlstream/" xs:id="98" ns0:type="TranscodeJobResponse" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:adstream:yadn">
+  <MessageID><![CDATA[1.1|akka://KV01V-A5DA502/user/head/fsobject|2ef6bb6ce107444babba4d84#1]]></MessageID>
+  <Status>Completed</Status>
+  <FileID>45e5219f-1139-4af0-93c2-a246010d907a</FileID>
+  <FileStorage>62f9bb41-08dc-4153-a7fb-b7666e0077ee</FileStorage>
+  <IsDefault>true</IsDefault>
+  <TranscodeFiles xs:id="99">
+    <TranscodeFile xs:id="100">
+      <FileID>bc926e21-fdb1-42ca-990c-a246010ea047</FileID>
+      <FileDirectory><![CDATA[/00000000-0000-0000-0000-000000000000/2013-09-27/2ef6bb6ce107444babba4d84/3718dc06-095a-4f36-9cd2-0fd6b90ce818]]></FileDirectory>
+      <FileName>3718dc06-095a-4f36-9cd2-0fd6b90ce818_MP3_128k.mp3</FileName>
+      <FileSize>34051</FileSize>
+      <SpecDBDocID>f1:audio:proxy:custom:fromUnspecifiedAudio:MP3</SpecDBDocID>
+      <properties>
+        <property name="a5_type" value="audio_proxy" />
+        <property name="guise" value="preview" />
+        <property name="proxy_guise" value="true" />
+      </properties>
+    </TranscodeFile>
+  </TranscodeFiles>
+</TranscodeJobResponse>

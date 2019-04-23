@@ -1,0 +1,309 @@
+{
+    "DefaultAgency": {
+        "agency": {
+            "_cm": {
+                "common": {
+                    "time_zone": ["Europe-Andorra" ],
+                    "pin": "1",
+                    "name": "A5testAdvertiser",
+                    "agencyType": ["Advertiser"],
+                    "address": {
+                        "country": ["AF" ]
+                    },
+                    "applications": {
+                        "folders": true,
+                        "adkits": true,
+                        "library": true,
+                        "ordering": true,
+                        "adpath": true,
+                        "presentations": true,
+                        "approvals": true,
+                        "annotations": true,
+                        "dashboard": true
+                    }
+                }
+            }
+        },
+        "users": {
+            "GlobalAdmin": {
+                "_cm": {
+                    "common": {
+                        "email": "admin"
+                    }
+                },
+                "password": "abcdefghA1"
+            },
+            "AgencyAdmin": {
+                "_cm": {
+                    "common": {
+                        "firstName": "admin",
+                        "lastName": "agency",
+                        "email": "agencyadmin@test.com"
+                    },
+                    "view": {
+                        "access": {
+                            "library": true,
+                            "ordering": true,
+                            "folders": true,
+                            "approvals": true,
+                            "presentations": true,
+                            "dashboard": true
+                        }
+                    }
+                },
+                "password": "abcdefghA1",
+                "roles": [{"name":"agency.admin"}]
+            },
+            "AnotherAdmin": {
+                "_cm": {
+                    "common": {
+                        "firstName": "admin",
+                        "lastName": "another",
+                        "email": "anotheradmin@test.com"
+                    },
+                    "view": {
+                        "access": {
+                            "library": true,
+                            "ordering": true,
+                            "folders": true,
+                            "approvals": true,
+                            "presentations": true,
+                            "dashboard": true
+                        }
+                    }
+                },
+                "password": "abcdefghA1",
+                "roles": [{"name":"agency.admin"}]
+            },
+            "AgencyUser": {
+                "_cm": {
+                    "common": {
+                        "firstName": "user",
+                        "lastName": "agency",
+                        "email": "agencyuser@test.com"
+                    },
+                    "view": {
+                        "access": {
+                            "library": true,
+                            "ordering": true,
+                            "folders": true,
+                            "approvals": true,
+                            "presentations": true,
+                            "dashboard": true
+                        }
+                    }
+                },
+                "password": "abcdefghA1"
+            }
+        }
+    },
+    "QAAgency": {
+        "agency": {
+            "_cm": {
+                "common": {
+                    "time_zone": ["Europe-Andorra" ],
+                    "pin": "1",
+                    "name": "qa agency",
+                    "agencyType": ["Advertiser"],
+                    "address": {
+                        "country": ["AF" ]
+                    },
+                    "applications": {
+                        "folders": true,
+                        "adkits": true,
+                        "library": true,
+                        "ordering": true,
+                        "adpath": true,
+                        "presentations": true,
+                        "approvals": true,
+                        "annotations": true,
+                        "dashboard": true
+                    }
+                }
+            }
+        },
+        "users": {
+            "QAAgencyAdmin": {
+                "_cm": {
+                    "common": {
+                        "firstName": "admin",
+                        "lastName": "qa agency",
+                        "email": "admin@adstream.com"
+                    },
+                    "view": {
+                        "access": {
+                            "library": true,
+                            "ordering": true,
+                            "folders": true,
+                            "approvals": true,
+                            "presentations": true,
+                            "dashboard": true
+                        }
+                    }
+                },
+                "password": "abcdefghA1",
+                "roles": [{"name":"agency.admin"}]
+            },
+            "QAAgencyAdmin2": {
+                "_cm": {
+                    "common": {
+                        "firstName": "admin 2",
+                        "lastName": "qa agency",
+                        "email": "admin2@adstream.com"
+                    },
+                    "view": {
+                        "access": {
+                            "library": true,
+                            "ordering": true,
+                            "folders": true,
+                            "approvals": true,
+                            "presentations": true,
+                            "dashboard": true
+                        }
+                    }
+                },
+                "password": "abcdefghA1",
+                "roles": [{"name":"agency.admin"}]
+            }
+        }
+    },
+    "Agency0": {
+        "agency": {
+            "_cm": {
+                "common": {
+                    "time_zone": ["Europe-Andorra" ],
+                    "pin": "1",
+                    "name": "JJ Stereo",
+                    "agencyType": ["Agency"],
+                    "address": {
+                        "country": ["AF" ]
+                    },
+                    "applications": {
+                        "folders": true,
+                        "adkits": true,
+                        "library": true,
+                        "ordering": true,
+                        "adpath": true,
+                        "presentations": true,
+                        "approvals": true,
+                        "annotations": true,
+                        "dashboard": true
+                    }
+                }
+            }
+        },
+        "users": {
+            "User0": {
+                "_cm": {
+                    "common": {
+                        "firstName": "Olivier",
+                        "lastName": "Samuel",
+                        "email": "oliver@jjstereo.com.ua"
+                    },
+                    "view": {
+                        "access": {
+                            "library": true,
+                            "ordering": true,
+                            "folders": true,
+                            "approvals": true,
+                            "presentations": true,
+                            "dashboard": true
+                        }
+                    }
+                },
+                "password": "abcdefghA1",
+                "roles": [{"name":"agency.admin"}]
+            },
+            "User1": {
+                "_cm": {
+                    "common": {
+                        "firstName": "John",
+                        "lastName": "Bannister",
+                        "email": "johnb@jjbstereo.com.ua"
+                    },
+                    "view": {
+                        "access": {
+                            "library": true,
+                            "ordering": true,
+                            "folders": true,
+                            "approvals": true,
+                            "presentations": true,
+                            "dashboard": true
+                        }
+                    }
+                },
+                "password": "abcdefghA1",
+                "roles": [{"name":"agency.admin"}]
+            }
+        }
+    },
+    "NewAgency": {
+        "agency": {
+            "_cm": {
+                "common": {
+                    "time_zone": ["Europe-Andorra" ],
+                    "pin": "1",
+                    "name": "New Agency",
+                    "agencyType": ["Advertiser"],
+                    "address": {
+                        "country": ["AF" ]
+                    },
+                    "applications": {
+                        "folders": true,
+                        "adkits": true,
+                        "library": true,
+                        "ordering": true,
+                        "adpath": true,
+                        "presentations": true,
+                        "approvals": true,
+                        "annotations": true,
+                        "dashboard": true
+                    }
+                }
+            }
+        },
+        "users": {
+            "NewAdmin": {
+                "_cm": {
+                    "common": {
+                        "firstName": "New",
+                        "lastName": "Admin",
+                        "email": "newadmin@gmail.com"
+                    },
+                    "view": {
+                        "access": {
+                            "library": true,
+                            "ordering": true,
+                            "folders": true,
+                            "approvals": true,
+                            "presentations": true,
+                            "dashboard": true
+                        }
+                    }
+                },
+                "password": "abcdefghA1",
+                "roles": [{"name":"agency.admin"}]
+            },
+            "NewUser": {
+                "_cm": {
+                    "common": {
+                        "firstName": "Boris",
+                        "lastName": "Britva",
+                        "email": "boris.boris@mailinator.com"
+                    },
+                    "view": {
+                        "access": {
+                            "library": true,
+                            "ordering": true,
+                            "folders": true,
+                            "approvals": true,
+                            "presentations": true,
+                            "dashboard": true
+                        }
+                    }
+                },
+                "password": "abcdefghA1"
+            }
+        }
+    }
+}

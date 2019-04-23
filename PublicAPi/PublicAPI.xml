@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="PUBLICAPITESTING">
+ <test name="Attachments_CreateAttachment">
+        <classes>
+            <class name="com.publicApi.tests.Attachments_CreateAttachment" />
+        </classes>
+    </test>
+    <test name="Attachments_EditAttachment">
+        <classes>
+            <class name="com.publicApi.tests.Attachments_EditAttachment"/>
+        </classes>
+    </test>
+    <test name="Attachments_ListAttachments">
+        <classes>
+            <class name="com.publicApi.tests.Attachments_ListAttachments"/>
+        </classes>
+    </test>
+    <test name="Attachments_RemoveAttachment">
+        <classes>
+            <class name="com.publicApi.tests.Attachments_RemoveAttachment"/>
+        </classes>
+    </test>
+    <test name="Media_UploadMedia">
+        <classes>
+            <class name="com.publicApi.tests.Media_UploadMedia"/>
+        </classes>
+    </test>
+    <test name="Media_CompleteMedia">
+        <classes>
+            <class name="com.publicApi.tests.Media_CompleteMedia"/>
+        </classes>
+    </test>
+    <test name="Media_DownloadMedia">
+        <classes>
+            <class name="com.publicApi.tests.Media_DownloadMedia"/>
+        </classes>
+    </test>
+    <test name="Media_RegisterMedia">
+        <classes>
+            <class name="com.publicApi.tests.Media_RegisterMedia"/>
+        </classes>
+    </test>
+    <test name="Media_CompleteS3UploadandPrepareforIngestion">
+        <classes>
+            <class name="com.publicApi.tests.Media_CompleteS3UploadandPrepareforIngestion"/>
+        </classes>
+    </test>
+    <test name="Schema_GetMarketSchema">
+        <classes>
+            <class name="com.publicApi.tests.Schema_GetMarketSchema"/>
+        </classes>
+    </test>
+    <test name="Schema_GetOrderItemDestinationSchema">
+        <classes>
+            <class name="com.publicApi.tests.Schema_GetOrderItemDestinationSchema"/>
+        </classes>
+    </test>
+    <test name="Schema_GetOrderItemSchema">
+        <classes>
+            <class name="com.publicApi.tests.Schema_GetOrderItemSchema"/>
+        </classes>
+    </test>
+    <test name="Schema_GetResourceSchema">
+        <classes>
+            <class name="com.publicApi.tests.Schema_GetResourceSchema"/>
+        </classes>
+    </test>
+    <test name="Dictionary_updateDictionary">
+        <classes>
+            <class name="com.publicApi.tests.Dictionary_UpdateDictionary"/>
+        </classes>
+    </test>
+    <test name="Dictionary_listDictionary">
+        <classes>
+            <class name="com.publicApi.tests.Dictionary_ListDictionaries"/>
+        </classes>
+    </test>
+    <test name="Dictionary_getDictionary">
+        <classes>
+            <class name="com.publicApi.tests.Dictionary_GetDictionary"/>
+        </classes>
+    </test>
+    <test name="Dictionary_deleteDictionaryElement">
+        <classes>
+            <class name="com.publicApi.tests.Dictionary_DeleteDictionaryElement"/>
+        </classes>
+    </test>
+    <test name="Dictionary_deleteChildDictionaryElement">
+        <classes>
+            <class name="com.publicApi.tests.Dictionary_DeleteChildDictionaryElement"/>
+        </classes>
+    </test>
+    <test name="Agencies_getUserAgencies">
+        <classes>
+            <class name="com.publicApi.tests.Agencies_GetUserAgencies"/>
+        </classes>
+    </test>
+    <test name="Auth_GetCurrentUser">
+        <classes>
+            <class name="com.publicApi.tests.Auth_GetCurrentUser"/>
+        </classes>
+    </test>
+    <test name="Logos_GetLogo">
+        <classes>
+            <class name="com.publicApi.tests.Logos_GetLogo"/>
+        </classes>
+    </test>
+    <test name="Relations_GetRelated">
+        <classes>
+            <class name="com.publicApi.tests.Relations_GetRelated"/>
+        </classes>
+    </test>
+    <test name="Relations_createRelation">
+        <classes>
+            <class name="com.publicApi.tests.Relations_CreateRelation"/>
+        </classes>
+    </test>
+    <test name="Relations_DeleteRelation">
+        <classes>
+            <class name="com.publicApi.tests.Relations_DeleteRelation"/>
+        </classes>
+    </test>
+    <test name="Relations_ListRelationTypes">
+        <classes>
+            <class name="com.publicApi.tests.Relations_ListRelationTypes"/>
+        </classes>
+    </test>
+    <test name="Roles_SearchRoles">
+        <classes>
+            <class name="com.publicApi.tests.Roles_SearchRoles"/>
+        </classes>
+    </test>
+    <test name="Teams_SearchTeams">
+        <classes>
+            <class name="com.publicApi.tests.Teams_SearchTeams"/>
+        </classes>
+    </test>
+    <test name="Teams_CreateATeam">
+        <classes>
+            <class name="com.publicApi.tests.Teams_CreateATeam"/>
+        </classes>
+    </test>
+    <test name="Teams_AddUserToTeam">
+        <classes>
+            <class name="com.publicApi.tests.Teams_AddUserToTeam"/>
+        </classes>
+    </test>
+    <test name="Teams_DeleteUserFromATeam">
+          <classes>
+              <class name="com.publicApi.tests.Teams_DeleteUserFromATeam"/>
+          </classes>
+    </test>
+    <test name="Teams_DeleteATeam">
+        <classes>
+            <class name="com.publicApi.tests.Teams_DeleteATeam"/>
+        </classes>
+    </test>
+    <test name="Users_Getuserinfo">
+        <classes>
+            <class name="com.publicApi.tests.Users_GetUserInfo"/>
+        </classes>
+    </test>
+    <test name="Contacts_AddContact">
+        <classes>
+            <class name="com.publicApi.tests.Contacts_AddContact"/>
+        </classes>
+    </test>
+    <test name="Contacts_DeleteContact">
+        <classes>
+            <class name="com.publicApi.tests.Contacts_DeleteContact"/>
+        </classes>
+    </test>
+    <test name="Contacts_SearchContact">
+        <classes>
+            <class name="com.publicApi.tests.Contacts_SearchContact"/>
+        </classes>
+    </test>
+    <test name="Agencies_GetStorageForAnAgency">
+        <classes>
+            <class name="com.publicApi.tests.Agencies_GetStorageForAnAgency"/>
+        </classes>
+    </test>
+    <test name="SchemaGroup_GetRawSchemaGroup">
+        <classes>
+            <class name="com.publicApi.tests.SchemaGroup_GetRawSchemaGroup"/>
+        </classes>
+    </test>
+</suite>

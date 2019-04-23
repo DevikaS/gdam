@@ -1,0 +1,72 @@
+
+<story path="Test Aldrin.story" title="Feature:">
+<narrative keyword="Narrative:">
+<asA keyword="As a">AgencyAdmin</asA>
+<iWantTo keyword="I want to">Check functionality</iWantTo>
+<soThat keyword="So that"></soThat>
+</narrative>
+<scenario keyword="Scenario:" title="Check that presentation query returns more relavent results">   
+<meta>
+<property keyword="@" name="library" value=""/>
+<property keyword="@" name="gdam" value=""/>
+</meta>
+<step outcome="successful">
+Given I uploaded following assetsNEWLIB:
+ <parameter><table>
+<headers>
+<header>Name</header>
+</headers>
+<row>
+<value>/files/_file1.gif</value>
+</row>
+</table>
+</parameter>
+</step>
+<step outcome="successful">
+And waited while preview is visible on library page for collection &apos;My Assets&apos; for assets &apos;_file1.gif&apos;NEWLIB
+</step>
+<step outcome="successful">
+And I created following reels:
+ <parameter><table>
+<headers>
+<header>Name</header>
+<header>Description</header>
+</headers>
+<row>
+<value>PRAATP_P2</value>
+<value>DDD_1</value>
+</row>
+<row>
+<value>PR_P2</value>
+<value>DDD_2</value>
+</row>
+<row>
+<value>PRP2</value>
+<value>DDD_3</value>
+</row>
+<row>
+<value>PRAA P2</value>
+<value>DDD_2</value>
+</row>
+<row>
+<value>P2 PR</value>
+<value>DDD_3</value>
+</row>
+</table>
+</parameter>
+</step>
+<step outcome="successful">
+When I go to the library page for collection &apos;My Assets&apos;NEWLIB
+</step>
+<step outcome="successful">
+Then I &apos;should&apos; see following presentation search results for text &apos;PR&apos; while adding asset &apos;_file1.gif&apos; from collection &apos;My Assets&apos; pageNEWLIB:
+|SearchResults|AssetCount|
+|PRAATP_P2    | (0 assets)    |
+|PR_P2        |(0 assets)    |
+|PRP2         |(0 assets)    |
+|PRAA P2      |(0 assets)    |
+|P2 <parameter>PR</parameter>        |(0 assets)    |
+</step>
+</scenario> 
+</story>
+

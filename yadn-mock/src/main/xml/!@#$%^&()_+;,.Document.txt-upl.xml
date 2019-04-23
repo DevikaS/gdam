@@ -1,0 +1,44 @@
+<UploadJobResponse xmlns:xs="http://adstream.com/xmlstream/" xs:id="2" ns0:type="UploadJobResponse" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:adstream:yadn">
+  <MessageID><![CDATA[1.1|akka://KV01V-A5DA502/user/head/fsobject|de8349ccb4cd46548c5d5b96#1]]></MessageID>
+  <Status>UploadedToStorage</Status>
+  <FileID>a69865fe-51f0-496f-8f09-a246010d6e12</FileID>
+  <FileName>36a618e3-d90c-4b59-b474-401adb395a9f.txt</FileName>
+  <FileDirectory><![CDATA[\00000000-0000-0000-0000-000000000000\2013-09-27\de8349ccb4cd46548c5d5b96\]]></FileDirectory>
+  <FileSize>1</FileSize>
+  <MD5>c4ca4238a0b923820dcc509a6f75849b</MD5>
+  <CRC>        </CRC>
+  <Node>adstream.yadn.nodes.outpost-a5-auto</Node>
+  <SpecDBDocID>f2:unknown-file-type</SpecDBDocID>
+  <metadata>
+    <property name="isPlayout">
+      <Value>false</Value>
+    </property>
+    <property name="ElementID">
+      <Value>de8349ccb4cd46548c5d5b96</Value>
+    </property>
+    <property name="Path">
+      <Value>!@#$%^&amp;()_+;,.Document.txt</Value>
+    </property>
+    <property name="Country">
+      <Value>AF</Value>
+    </property>
+    <property name="guise">
+      <Value>master</Value>
+    </property>
+    <property name="IsPlayout">
+      <Value>false</Value>
+    </property>
+    <property name="evaluation_exiftool">
+      <Value></Value>
+    </property>
+    <property name="evaluation_MediaInfo">
+      <Value></Value>
+    </property>
+    <property name="evaluation_ffprobe">
+      <Value></Value>
+    </property>
+    <property name="evaluation_pdfdimensions">
+      <Value></Value>
+    </property>
+  </metadata>
+</UploadJobResponse>

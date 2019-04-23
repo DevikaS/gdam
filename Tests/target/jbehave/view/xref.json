@@ -1,0 +1,22 @@
+{"xref": {
+  "whenMade": 1556025731988,
+  "createdBy": "JBehave",
+  "metaFilter": "-skip",
+  "meta": [],
+  "stories": [
+    {
+      "description": "Feature:",
+      "narrative": "In order to \nAs a AgencyAdmin\nI want to Check functionality\n",
+      "name": "Test Aldrin.story",
+      "path": "Test Aldrin.story",
+      "html": "Test Aldrin.html",
+      "meta": "gdam=\nlibrary=\n",
+      "scenarios": "Scenario:Check that presentation query returns more relavent results\nGiven I uploaded following assetsNEWLIB:\n| Name               |\n| /files/_file1.gif  |\nAnd waited while preview is visible on library page for collection 'My Assets' for assets '_file1.gif'NEWLIB\nAnd I created following reels:\n| Name          | Description |\n| PRAATP_P2     | DDD_1       |\n| PR_P2         | DDD_2       |\n| PRP2          | DDD_3       |\n| PRAA P2       | DDD_2       |\n| P2 PR         | DDD_3       |\nWhen I go to the library page for collection 'My Assets'NEWLIB\nThen I 'should' see following presentation search results for text 'PR' while adding asset '_file1.gif' from collection 'My Assets' pageNEWLIB:\n|SearchResults|AssetCount|\n|PRAATP_P2    | (0 assets)    |\n|PR_P2        |(0 assets)    |\n|PRP2         |(0 assets)    |\n|PRAA P2      |(0 assets)    |\n|P2 PR        |(0 assets)    |\n\n\n",
+      "passed": true,
+      "pending": false,
+      "started": 1556025660502,
+      "duration": 70774
+    }
+  ],
+  "stepMatches": []
+}}

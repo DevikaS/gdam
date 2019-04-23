@@ -1,0 +1,80 @@
+<UploadJobResponse xmlns:xs="http://adstream.com/xmlstream/" xs:id="22" ns0:type="UploadJobResponse" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:adstream:yadn">
+  <MessageID><![CDATA[1.1|akka://KV01V-A5DA502/user/head/fsobject|0a3ba0f195064b4386af4c82#1]]></MessageID>
+  <Status>UploadedToStorage</Status>
+  <FileID>0e96e074-207a-41aa-aa1b-a246010d9314</FileID>
+  <FileName>98daa038-ce2a-407a-b110-e97afe9dfe3e.swf</FileName>
+  <FileDirectory><![CDATA[\00000000-0000-0000-0000-000000000000\2013-09-27\0a3ba0f195064b4386af4c82\]]></FileDirectory>
+  <FileSize>12844</FileSize>
+  <MD5>6ad864af892a98763901e234ea21c569</MD5>
+  <CRC>        </CRC>
+  <Node>adstream.yadn.nodes.outpost-a5-auto</Node>
+  <SpecDBDocID>f2:application:unspecified:x-shockwave-flash</SpecDBDocID>
+  <metadata>
+    <property name="isPlayout">
+      <Value>false</Value>
+    </property>
+    <property name="ElementID">
+      <Value>0a3ba0f195064b4386af4c82</Value>
+    </property>
+    <property name="Path">
+      <Value>uploader.swf</Value>
+    </property>
+    <property name="Country">
+      <Value>AF</Value>
+    </property>
+    <property name="guise">
+      <Value>master</Value>
+    </property>
+    <property name="IsPlayout">
+      <Value>false</Value>
+    </property>
+    <property name="evaluation_exiftool">
+      <Value><![CDATA[<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+
+<rdf:Description xmlns:et="http://ns.exiftool.ca/1.0/" xmlns:ExifTool="http://ns.exiftool.ca/ExifTool/1.0/" xmlns:System="http://ns.exiftool.ca/File/System/1.0/" xmlns:File="http://ns.exiftool.ca/File/1.0/" rdf:about="/media/yadn/input/20130927/509dc6f9cc63477fac2722b6/1380288063903/19eb62d4-dae9-401e-8296-a184238b33db.swf" et:toolkit="Image::ExifTool 8.93">
+ <ExifTool:ExifToolVersion>8.93</ExifTool:ExifToolVersion>
+ <System:FileName>19eb62d4-dae9-401e-8296-a184238b33db.swf</System:FileName>
+ <System:Directory>/media/yadn/input/20130927/509dc6f9cc63477fac2722b6/1380288063903</System:Directory>
+ <System:FileSize>13 kB</System:FileSize>
+ <System:FileModifyDate>2013:01:19 18:09:43+02:00</System:FileModifyDate>
+ <System:FilePermissions>rwxrwxrwx</System:FilePermissions>
+ <System:FileName>19eb62d4-dae9-401e-8296-a184238b33db.swf</System:FileName>
+ <System:Directory>/media/yadn/input/20130927/509dc6f9cc63477fac2722b6/1380288063903</System:Directory>
+ <System:FileSize>13 kB</System:FileSize>
+ <System:FileModifyDate>2013:01:19 18:09:43+02:00</System:FileModifyDate>
+ <System:FilePermissions>rwxrwxrwx</System:FilePermissions>
+ <File:FileType>SWF</File:FileType>
+ <File:MIMEType>application/x-shockwave-flash</File:MIMEType>
+</rdf:Description>
+</rdf:RDF>]]></Value>
+    </property>
+    <property name="evaluation_MediaInfo">
+      <Value><![CDATA[<Mediainfo xmlns="" version="0.7.61">
+<File>
+<track type="General">
+<Complete_name>/media/yadn/input/20130927/509dc6f9cc63477fac2722b6/1380288063903/19eb62d4-dae9-401e-8296-a184238b33db.swf</Complete_name>
+<Format>ShockWave</Format>
+<File_size>12.5 KiB</File_size>
+<Duration>42ms</Duration>
+<Overall_bit_rate>2 446 Kbps</Overall_bit_rate>
+</track>
+
+<track type="Video">
+<Duration>42ms</Duration>
+<Width>10 pixels</Width>
+<Height>10 pixels</Height>
+<Display_aspect_ratio>1.000</Display_aspect_ratio>
+<Frame_rate>24.000 fps</Frame_rate>
+</track>
+
+</File>
+</Mediainfo>]]></Value>
+    </property>
+    <property name="evaluation_ffprobe">
+      <Value></Value>
+    </property>
+    <property name="evaluation_pdfdimensions">
+      <Value></Value>
+    </property>
+  </metadata>
+</UploadJobResponse>

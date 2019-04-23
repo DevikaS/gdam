@@ -1,0 +1,63 @@
+<UploadJobResponse xmlns:xs="http://adstream.com/xmlstream/" xs:id="2" ns0:type="UploadJobResponse" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:adstream:yadn">
+  <MessageID><![CDATA[1.1|akka://KV01V-A5DA502/user/head/fsobject|3b135835f2b14efabf4ca2f4#1]]></MessageID>
+  <Status>UploadedToStorage</Status>
+  <FileID>97cc1a5a-c88d-41a1-a1d9-a246010d8e48</FileID>
+  <FileName>fc4b9a95-8055-4bf8-a641-c39c6e5da4a0.svg</FileName>
+  <FileDirectory><![CDATA[\00000000-0000-0000-0000-000000000000\2013-09-27\3b135835f2b14efabf4ca2f4\]]></FileDirectory>
+  <FileSize>220588</FileSize>
+  <MD5>3242f8e27bf547dd3e4efc5323f5f482</MD5>
+  <CRC>        </CRC>
+  <Node>adstream.yadn.nodes.outpost-a5-auto</Node>
+  <SpecDBDocID>f2:image:unspecified</SpecDBDocID>
+  <metadata>
+    <property name="isPlayout">
+      <Value>false</Value>
+    </property>
+    <property name="ElementID">
+      <Value>3b135835f2b14efabf4ca2f4</Value>
+    </property>
+    <property name="Path">
+      <Value>ISO_12233-reschart.svg</Value>
+    </property>
+    <property name="Country">
+      <Value>AF</Value>
+    </property>
+    <property name="guise">
+      <Value>master</Value>
+    </property>
+    <property name="IsPlayout">
+      <Value>false</Value>
+    </property>
+    <property name="evaluation_exiftool">
+      <Value><![CDATA[<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+
+<rdf:Description xmlns:et="http://ns.exiftool.ca/1.0/" xmlns:ExifTool="http://ns.exiftool.ca/ExifTool/1.0/" xmlns:System="http://ns.exiftool.ca/File/System/1.0/" xmlns:File="http://ns.exiftool.ca/File/1.0/" xmlns:XMP-xmp="http://ns.exiftool.ca/XMP/XMP-xmp/1.0/" rdf:about="/media/yadn/input/20130927/509dc6f9cc63477fac2722b6/1380288062620/5896f5ad-9a3c-4250-81f5-d235f10a9851.svg" et:toolkit="Image::ExifTool 8.93">
+ <ExifTool:ExifToolVersion>8.93</ExifTool:ExifToolVersion>
+ <System:FileName>5896f5ad-9a3c-4250-81f5-d235f10a9851.svg</System:FileName>
+ <System:Directory>/media/yadn/input/20130927/509dc6f9cc63477fac2722b6/1380288062620</System:Directory>
+ <System:FileSize>215 kB</System:FileSize>
+ <System:FileModifyDate>2012:11:21 15:54:08+02:00</System:FileModifyDate>
+ <System:FilePermissions>rwxrwxrwx</System:FilePermissions>
+ <System:FileName>5896f5ad-9a3c-4250-81f5-d235f10a9851.svg</System:FileName>
+ <System:Directory>/media/yadn/input/20130927/509dc6f9cc63477fac2722b6/1380288062620</System:Directory>
+ <System:FileSize>215 kB</System:FileSize>
+ <System:FileModifyDate>2012:11:21 15:54:08+02:00</System:FileModifyDate>
+ <System:FilePermissions>rwxrwxrwx</System:FilePermissions>
+ <File:FileType>SVG</File:FileType>
+ <File:MIMEType>image/svg+xml</File:MIMEType>
+ <XMP-xmp:CreateDate>2002:01:30 10:22:03-04:00</XMP-xmp:CreateDate>
+ <XMP-xmp:ModifyDate>2004:10:19 20:05:34Z</XMP-xmp:ModifyDate>
+</rdf:Description>
+</rdf:RDF>]]></Value>
+    </property>
+    <property name="evaluation_MediaInfo">
+      <Value></Value>
+    </property>
+    <property name="evaluation_ffprobe">
+      <Value></Value>
+    </property>
+    <property name="evaluation_pdfdimensions">
+      <Value></Value>
+    </property>
+  </metadata>
+</UploadJobResponse>

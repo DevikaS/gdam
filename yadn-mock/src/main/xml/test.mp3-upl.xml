@@ -1,0 +1,83 @@
+<UploadJobResponse xmlns:xs="http://adstream.com/xmlstream/" xs:id="18" ns0:type="UploadJobResponse" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:adstream:yadn">
+  <MessageID><![CDATA[1.1|akka://KV01V-A5DA502/user/head/fsobject|f869e5d55d97468198846d3b#1]]></MessageID>
+  <Status>UploadedToStorage</Status>
+  <FileID>b5d027d0-0c0a-4f6b-80b0-a246010d9220</FileID>
+  <FileName>463d91e5-da8f-4459-940b-8b9bc9a57e54.mp3</FileName>
+  <FileDirectory><![CDATA[\00000000-0000-0000-0000-000000000000\2013-09-27\f869e5d55d97468198846d3b\]]></FileDirectory>
+  <FileSize>1428901</FileSize>
+  <MD5>d7b9e6ad9f70ff87f2e6344aeb4b215e</MD5>
+  <CRC>        </CRC>
+  <Node>adstream.yadn.nodes.outpost-a5-auto</Node>
+  <SpecDBDocID>f2:audio:unspecified</SpecDBDocID>
+  <metadata>
+    <property name="isPlayout">
+      <Value>false</Value>
+    </property>
+    <property name="ElementID">
+      <Value>f869e5d55d97468198846d3b</Value>
+    </property>
+    <property name="Path">
+      <Value>test.mp3</Value>
+    </property>
+    <property name="Country">
+      <Value>AF</Value>
+    </property>
+    <property name="guise">
+      <Value>master</Value>
+    </property>
+    <property name="IsPlayout">
+      <Value>true</Value>
+    </property>
+    <property name="evaluation_exiftool">
+      <Value><![CDATA[<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+
+<rdf:Description xmlns:et="http://ns.exiftool.ca/1.0/" xmlns:ExifTool="http://ns.exiftool.ca/ExifTool/1.0/" xmlns:System="http://ns.exiftool.ca/File/System/1.0/" xmlns:File="http://ns.exiftool.ca/File/1.0/" xmlns:ID3v1="http://ns.exiftool.ca/ID3/ID3v1/1.0/" xmlns:MPEG="http://ns.exiftool.ca/MPEG/MPEG/1.0/" rdf:about="/media/yadn/input/20130927/509dc6f9cc63477fac2722b6/1380288063596/3024f1e2-d7fd-4aa6-b828-29b83ac70796.mp3" et:toolkit="Image::ExifTool 8.93">
+ <ExifTool:ExifToolVersion>8.93</ExifTool:ExifToolVersion>
+ <System:FileName>3024f1e2-d7fd-4aa6-b828-29b83ac70796.mp3</System:FileName>
+ <System:Directory>/media/yadn/input/20130927/509dc6f9cc63477fac2722b6/1380288063596</System:Directory>
+ <System:FileSize>1395 kB</System:FileSize>
+ <System:FileModifyDate>2012:11:21 15:54:03+02:00</System:FileModifyDate>
+ <System:FilePermissions>rwxrwxrwx</System:FilePermissions>
+ <System:FileName>3024f1e2-d7fd-4aa6-b828-29b83ac70796.mp3</System:FileName>
+ <System:Directory>/media/yadn/input/20130927/509dc6f9cc63477fac2722b6/1380288063596</System:Directory>
+ <System:FileSize>1395 kB</System:FileSize>
+ <System:FileModifyDate>2012:11:21 15:54:03+02:00</System:FileModifyDate>
+ <System:FilePermissions>rwxrwxrwx</System:FilePermissions>
+ <File:FileType>MP3</File:FileType>
+ <File:MIMEType>audio/mpeg</File:MIMEType>
+ <File:ID3Size>1152</File:ID3Size>
+ <ID3v1:Comment/>
+ <MPEG:MPEGAudioVersion>1</MPEG:MPEGAudioVersion>
+ <MPEG:AudioLayer>3</MPEG:AudioLayer>
+</rdf:Description>
+</rdf:RDF>]]></Value>
+    </property>
+    <property name="evaluation_MediaInfo">
+      <Value></Value>
+    </property>
+    <property name="evaluation_ffprobe">
+      <Value><![CDATA[<ffprobe xmlns="">
+    <streams>
+        <stream index="0" codec_name="mp3" codec_long_name="MP3 (MPEG audio layer 3)" codec_type="audio" codec_time_base="1/44100" codec_tag_string="[0][0][0][0]" codec_tag="0x0000" sample_fmt="s16" sample_rate="44100" channels="2" bits_per_sample="0" r_frame_rate="0/0" avg_frame_rate="0/0" time_base="1/14112000" start_pts="0" start_time="0.000000" duration_ts="630145341" duration="44.653156" bit_rate="256000"/>
+    </streams>
+
+    <format filename="/media/yadn/input/20130927/509dc6f9cc63477fac2722b6/1380288063596/3024f1e2-d7fd-4aa6-b828-29b83ac70796.mp3" nb_streams="1" format_name="mp3" format_long_name="MP2/3 (MPEG audio layer 2/3)" start_time="0.000000" duration="44.653156" size="1428901" bit_rate="256000">
+        <tag key="album_artist" value="Walter Isaacson"/>
+        <tag key="composer" value="Nelson Runger"/>
+        <tag key="disc" value="15/21"/>
+        <tag key="publisher" value="Recorded Books"/>
+        <tag key="encoder" value="Audiograbber 1.83.01, Fraunhofer acm, 256 kBit/s, 44,100 Hz, Stereo, HQ = on"/>
+        <tag key="genre" value="Audio Book: History"/>
+        <tag key="album" value="Benjamin Franklin: An American Life"/>
+        <tag key="artist" value="Walter Isaacson"/>
+        <tag key="title" value="Benjamin Franklin15e"/>
+        <tag key="track" value="5"/>
+        <tag key="date" value="2004"/>
+    </format>
+</ffprobe>]]></Value>
+    </property>
+    <property name="evaluation_pdfdimensions">
+      <Value></Value>
+    </property>
+  </metadata>
+</UploadJobResponse>

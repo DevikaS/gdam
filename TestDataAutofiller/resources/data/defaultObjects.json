@@ -1,0 +1,720 @@
+{
+    "DefaultAgency": {
+        "agency": {
+            "_cm": {
+                "a4" : {
+                    "user" : "alejandra.medina@mccann.com.mx.ua",
+                    "password": "b3tat3st3r",
+                    "createAssetInA4": true,
+                    "agencyId": "C1DCD2C9-02B9-498F-9653-9B23C6F982FD"
+                },
+                "common": {
+                    "time_zone": ["Europe-Andorra" ],
+                    "pin": "1",
+                    "name": "A5testAdvertiser",
+                    "agencyType": ["Advertiser"],
+                    "address": {
+                        "country": ["AF" ]
+                    },
+                    "applications": {
+                        "folders": true,
+                        "adkits": true,
+                        "library": true,
+                        "ordering": true,
+                        "adpath": true,
+                        "presentations": true,
+                        "approvals": true,
+                        "annotations": true,
+                        "dashboard": true
+                    }
+                },
+                "passwordSettings": {
+                    "passwordExpirationInDays": 30,
+                    "passwordRegEx": {
+                        "pattern" : "((?=(.*[A-Z]){0,})(?=(.*\\d){0,}).{1,})",
+                        "description": {
+                            "minTotalLengthOfPassword": 1,
+                            "minimumIncludingNumbers": 0,
+                            "minIncludingUppercase": 0
+                        }
+                    }
+                }
+            }
+        },
+        "users": {
+            "GlobalAdmin": {
+                "_cm": {
+                    "common": {
+                        "email": "admin"
+                    }
+                },
+                "password": "abcdefghA1"
+            },
+            "AgencyAdmin": {
+                "_cm": {
+                    "common": {
+                        "firstName": "admin",
+                        "lastName": "agency",
+                        "email": "qatbabylonautotester+agencyadmin@gmail.com",
+                        "language": ["en-us"]
+                    },
+                    "view": {
+                        "access": {
+                            "library": true,
+                            "ordering": true,
+                            "folders": true
+                        }
+                    }
+                },
+                "password": "1",
+                "roles": [{"name":"agency.admin"}]
+            },
+            "ClassicAgencyAdmin": {
+                "_cm": {
+                    "common": {
+                        "firstName": "admin",
+                        "lastName": "agency",
+                        "email": "agencyadmin@test.com",
+                        "language": ["en-us"]
+                    },
+                    "view": {
+                        "access": {
+                            "library": true,
+                            "ordering": true,
+                            "folders": true
+                        }
+                    }
+                },
+                "password": "1",
+                "roles": [{"name":"agency.admin"}]
+            },
+            "AnotherAdmin": {
+                "_cm": {
+                    "common": {
+                        "firstName": "anotheradmin",
+                        "lastName": "agency",
+                        "email": "qatbabylonautotester+anotheradmin@gmail.com",
+                        "language": ["en-us"]
+                    },
+                    "view": {
+                        "access": {
+                            "library": true,
+                            "ordering": true,
+                            "folders": true
+                        }
+                    }
+                },
+                "password": "1",
+                "roles": [{"name":"agency.admin"}]
+            },
+            "GuestUser": {
+                "_cm": {
+                    "common": {
+                        "firstName": "guestuser",
+                        "lastName": "agency",
+                        "email": "qatbabylonautotester+agencyguestuser@gmail.com",
+                        "language": ["en-us"]
+                    },
+                    "view": {
+                        "access": {
+                            "library": true,
+                            "ordering": true,
+                            "folders": true
+                        }
+                    }
+                },
+                "password": "1",
+                "roles": [{"name":"guest.user"}]
+            },
+            "AgencyUser": {
+                "_cm": {
+                    "common": {
+                        "firstName": "user",
+                        "lastName": "agency",
+                        "email": "qatbabylonautotester+agencyuser@gmail.com",
+                        "language": ["en-us"]
+                    },
+                    "view": {
+                        "access": {
+                            "library": true,
+                            "ordering": true,
+                            "folders": true
+                        }
+                    }
+                },
+                "password": "1",
+                "roles": [{"name":"agency.user"}]
+            }
+        }
+    },
+    "AnotherAgency": {
+        "agency": {
+            "_cm": {
+                "a4" : {
+                    "user" : "alejandra.medina@mccann.com.mx.ua",
+                    "password": "b3tat3st3r",
+                    "createAssetInA4": true,
+                    "agencyId": "C1DCD2C9-02B9-498F-9653-9B23C6F982FD"
+                },
+                "common": {
+                    "time_zone": ["Europe-Andorra" ],
+                    "pin": "1",
+                    "name": "another qa agency",
+                    "agencyType": ["Advertiser"],
+                    "address": {
+                        "country": ["AF" ]
+                    },
+                    "applications": {
+                        "folders": true,
+                        "adkits": true,
+                        "library": true,
+                        "ordering": true,
+                        "adpath": true,
+                        "presentations": true,
+                        "approvals": true,
+                        "annotations": true,
+                        "dashboard": true
+                    }
+                },
+                "passwordSettings": {
+                    "passwordExpirationInDays": 30,
+                    "passwordRegEx": {
+                        "pattern" : "((?=(.*[A-Z]){0,})(?=(.*\\d){0,}).{1,})",
+                        "description": {
+                            "minTotalLengthOfPassword": 1,
+                            "minimumIncludingNumbers": 0,
+                            "minIncludingUppercase": 0
+                        }
+                    }
+                }
+            }
+        },
+        "users": {
+            "AnotherAgencyAdmin": {
+                "_cm": {
+                    "common": {
+                        "firstName": "admin",
+                        "lastName": "anotheragency",
+                        "email": "qatbabylonautotester+anotheragencyadmin@gmail.com",
+                        "language": ["en-us"]
+                    },
+                    "view": {
+                        "access": {
+                            "library": true,
+                            "ordering": true,
+                            "folders": true
+                        }
+                    }
+                },
+                "password": "1",
+                "roles": [{"name":"agency.admin"}]
+            }
+        }
+    },
+    "AdpathAgency": {
+        "agency": {
+            "_cm": {
+                "common": {
+                    "time_zone": ["Europe-Andorra" ],
+                    "pin": "1",
+                    "name": "Adstream",
+                    "agencyType": ["Advertiser"],
+                    "address": {
+                        "country": ["AF" ]
+                    },
+                    "applications": {
+                        "folders": true,
+                        "adkits": true,
+                        "library": true,
+                        "ordering": true,
+                        "adpath": true,
+                        "presentations": true,
+                        "approvals": true,
+                        "annotations": true,
+                        "dashboard": true
+                    }
+                },
+                "a4": {
+                    "agencyId": "C1DCD2C9-02B9-498F-9653-9B23C6F982FD",
+                    "user": "alejandra.medina@mccann.com.mx.ua",
+                    "password": "b3tat3st3r",
+                    "createAssetInA4": true
+                },
+                "passwordSettings": {
+                    "passwordExpirationInDays": 30,
+                    "passwordRegEx": {
+                        "pattern" : "((?=(.*[A-Z]){0,})(?=(.*\\d){0,}).{1,})",
+                        "description": {
+                            "minTotalLengthOfPassword": 1,
+                            "minimumIncludingNumbers": 0,
+                            "minIncludingUppercase": 0
+                        }
+                    }
+                }
+            }
+        },
+        "users": {
+            "AdminAdstream": {
+                "_cm": {
+                    "common": {
+                        "firstName": "Admin",
+                        "lastName": "Adstream",
+                        "email": "admin@adstream.com",
+                        "language": ["en-us"]
+                    },
+                    "view": {
+                        "access": {
+                            "library": true,
+                            "ordering": true,
+                            "folders": true
+                        }
+                    }
+                },
+                "password": "1",
+                "roles": [{"name":"agency.admin"}]
+            },
+            "AdPathAdmin": {
+                "_cm": {
+                    "common": {
+                        "firstName": "Adpath",
+                        "lastName": "Admin",
+                        "email": "Adpath@adstream.com",
+                        "language": ["en-us"]
+                    },
+                    "view": {
+                        "access": {
+                            "library": true,
+                            "ordering": true,
+                            "folders": true
+                        }
+                    }
+                },
+                "password": "b3tat3st3r",
+                "roles": [{"name":"agency.admin"}]
+            },
+            "AdpathAgencyAdmin": {
+                "_cm": {
+                    "common": {
+                        "firstName": "dmitry",
+                        "lastName": "reznik@gmail.com",
+                        "email": "dmitry.reznik@gmail.com",
+                        "language": ["en-us"]
+                    },
+                    "view": {
+                        "access": {
+                            "library": true,
+                            "ordering": true,
+                            "folders": true
+                        }
+                    }
+                },
+                "password": "1",
+                "roles": [{"name":"agency.admin"}]
+            },
+            "AdpathBorisApproverUser": {
+                "_cm": {
+                    "common": {
+                        "firstName": "Boris",
+                        "lastName": "Approver",
+                        "email": "boris.approver@mailinator.com",
+                        "language": ["en-us"]
+                    },
+                    "view": {
+                        "access": {
+                            "library": true,
+                            "ordering": true,
+                            "folders": true
+                        }
+                    }
+                },
+                "password": "1"
+            },
+            "AdpathIvanApproverUser": {
+                "_cm": {
+                    "common": {
+                        "firstName": "Ivan",
+                        "lastName": "Approver",
+                        "email": "ivan.approver@mailinator.com",
+                        "language": ["en-us"]
+                    },
+                    "view": {
+                        "access": {
+                            "library": true,
+                            "ordering": true,
+                            "folders": true
+                        }
+                    }
+                },
+                "password": "1"
+            },
+            "AdpathIvanBerkhamUser": {
+                "_cm": {
+                    "common": {
+                        "firstName": "Ivan",
+                        "lastName": "Berkham",
+                        "email": "Ivan.Berkham@mailinator.com",
+                        "language": ["en-us"]
+                    },
+                    "view": {
+                        "access": {
+                            "library": true,
+                            "ordering": true,
+                            "folders": true
+                        }
+                    }
+                },
+                "password": "1",
+                "roles": [{"name":"guest.user"}]
+            }
+        }
+    },
+    "AdpathKharkovAgency": {
+        "agency": {
+            "_cm": {
+                "a4" : {
+                    "user" : "alejandra.medina@mccann.com.mx.ua",
+                    "password": "b3tat3st3r",
+                    "createAssetInA4": true,
+                    "agencyId": "C1DCD2C9-02B9-498F-9653-9B23C6F982FD"
+                },
+                "common": {
+                    "time_zone": ["Europe-Andorra" ],
+                    "pin": "1",
+                    "name": "AdstreamKharkov",
+                    "agencyType": ["Advertiser"],
+                    "address": {
+                        "country": ["AF" ]
+                    },
+                    "applications": {
+                        "folders": true,
+                        "adkits": true,
+                        "library": true,
+                        "ordering": true,
+                        "adpath": true,
+                        "presentations": true,
+                        "approvals": true,
+                        "annotations": true,
+                        "dashboard": true
+                    }
+                },
+                "passwordSettings": {
+                    "passwordExpirationInDays": 30,
+                    "passwordRegEx": {
+                        "pattern" : "((?=(.*[A-Z]){0,})(?=(.*\\d){0,}).{1,})",
+                        "description": {
+                            "minTotalLengthOfPassword": 1,
+                            "minimumIncludingNumbers": 0,
+                            "minIncludingUppercase": 0
+                        }
+                    }
+                }
+            }
+        },
+        "users": {
+            "AdpathKharkovAgencyAdmin": {
+                "_cm": {
+                    "common": {
+                        "firstName": "Admin",
+                        "lastName": "Kharkov",
+                        "email": "admin.kharkov@mailinator.com",
+                        "language": ["en-us"]
+                    },
+                    "view": {
+                        "access": {
+                            "library": true,
+                            "ordering": true,
+                            "folders": true
+                        }
+                    }
+                },
+                "password": "1",
+                "roles": [{"name":"agency.admin"}]
+            },
+            "AdpathKharkovBorisApprover": {
+                "_cm": {
+                    "common": {
+                        "firstName": "Kharkov",
+                        "lastName": "Boris",
+                        "email": "kharkov.boris@mailinator.com",
+                        "language": ["en-us"]
+                    },
+                    "view": {
+                        "access": {
+                            "library": true,
+                            "ordering": true,
+                            "folders": true
+                        }
+                    }
+                },
+                "password": "1"
+            },
+            "AdpathKharkovIvanApprover": {
+                "_cm": {
+                    "common": {
+                        "firstName": "Kharkov",
+                        "lastName": "Ivan",
+                        "email": "kharkov.ivan@mailinator.com",
+                        "language": ["en-us"]
+                    },
+                    "view": {
+                        "access": {
+                            "library": true,
+                            "ordering": true,
+                            "folders": true
+                        }
+                    }
+                },
+                "password": "1",
+                "roles": [{"name":"agency.admin"}, {"name":"agency.user"}]
+            },
+            "AdpathKharkovPetrExternal": {
+                "_cm": {
+                    "common": {
+                        "firstName": "Kharkov",
+                        "lastName": "Petr",
+                        "email": "kharkov.petr@mailinator.com",
+                        "language": ["en-us"]
+                    },
+                    "view": {
+                        "access": {
+                            "library": true,
+                            "ordering": true,
+                            "folders": true
+                        }
+                    }
+                },
+                "password": "1",
+                "roles": [{"name":"agency.user"}, {"name":"guest.user"}]
+            }
+        }
+    },
+    "AdpathAutoAgency": {
+        "agency": {
+            "_cm": {
+                "a4" : {
+                    "user" : "alejandra.medina@mccann.com.mx.ua",
+                    "password": "b3tat3st3r",
+                    "createAssetInA4": true,
+                    "agencyId": "C1DCD2C9-02B9-498F-9653-9B23C6F982FD"
+                },
+                "common": {
+                    "time_zone": ["Europe-Andorra" ],
+                    "pin": "1",
+                    "name": "AdpathKharkovAuto",
+                    "agencyType": ["Advertiser"],
+                    "address": {
+                        "country": ["AF" ]
+                    },
+                    "applications": {
+                        "folders": true,
+                        "adkits": true,
+                        "library": true,
+                        "ordering": true,
+                        "adpath": true,
+                        "presentations": true,
+                        "approvals": true,
+                        "annotations": true,
+                        "dashboard": true
+                    }
+                },
+                "passwordSettings": {
+                    "passwordExpirationInDays": 30,
+                    "passwordRegEx": {
+                        "pattern" : "((?=(.*[A-Z]){0,})(?=(.*\\d){0,}).{1,})",
+                        "description": {
+                            "minTotalLengthOfPassword": 1,
+                            "minimumIncludingNumbers": 0,
+                            "minIncludingUppercase": 0
+                        }
+                    }
+                }
+            }
+        },
+        "users": {
+            "AdpathAutoAgencyAdmin": {
+                "_cm": {
+                    "common": {
+                        "firstName": "admin",
+                        "lastName": "auto@mailinator.com",
+                        "email": "admin.auto@mailinator.com",
+                        "language": ["en-us"]
+                    },
+                    "view": {
+                        "access": {
+                            "library": true,
+                            "ordering": true,
+                            "folders": true
+                        }
+                    }
+                },
+                "password": "1",
+                "roles": [{"name":"agency.admin"}]
+            },
+            "AdpathAutoBorisApprover": {
+                "_cm": {
+                    "common": {
+                        "firstName": "Auto",
+                        "lastName": "Boris",
+                        "email": "auto.boris@mailinator.com",
+                        "language": ["en-us"]
+                    },
+                    "view": {
+                        "access": {
+                            "library": true,
+                            "ordering": true,
+                            "folders": true
+                        }
+                    }
+                },
+                "password": "1"
+            },
+            "AdpathAutoIvanApprover": {
+                "_cm": {
+                    "common": {
+                        "firstName": "Auto",
+                        "lastName": "Ivan",
+                        "email": "auto.ivan@mailinator.com",
+                        "language": ["en-us"]
+                    },
+                    "view": {
+                        "access": {
+                            "library": true,
+                            "ordering": true,
+                            "folders": true
+                        }
+                    }
+                },
+                "password": "1"
+            }
+        }
+    },
+    "KievTest": {
+        "agency": {
+            "_cm": {
+               "a4" : {
+                    "user" : "alejandra.medina@mccann.com.mx.ua",
+                    "password": "b3tat3st3r",
+                    "createAssetInA4": true,
+                    "agencyId": "C1DCD2C9-02B9-498F-9653-9B23C6F982FD"
+               },
+                "common": {
+                    "time_zone": ["Europe-Andorra" ],
+                    "pin": "1",
+                    "name": "KievTest",
+                    "agencyType": ["Advertiser"],
+                    "address": {
+                        "country": ["AF" ]
+                    },
+                    "applications": {
+                        "folders": true,
+                        "adkits": true,
+                        "library": true,
+                        "ordering": true,
+                        "adpath": true,
+                        "presentations": true,
+                        "approvals": true,
+                        "annotations": true,
+                        "dashboard": true
+                    }
+                },
+                "passwordSettings": {
+                    "passwordExpirationInDays": 30,
+                    "passwordRegEx": {
+                        "pattern" : "((?=(.*[A-Z]){0,})(?=(.*\\d){0,}).{1,})",
+                        "description": {
+                            "minTotalLengthOfPassword": 1,
+                            "minimumIncludingNumbers": 0,
+                            "minIncludingUppercase": 0
+                        }
+                    }
+                }
+            }
+        },
+        "users": {
+            "KievTestAdmin": {
+                "_cm": {
+                    "common": {
+                        "firstName": "admin",
+                        "lastName": "kievtest",
+                        "email": "qa_kiev@adstream.com",
+                        "language": ["en-us"]
+                    },
+                    "view": {
+                        "access": {
+                            "library": true,
+                            "ordering": true,
+                            "folders": true
+                        }
+                    }
+                },
+                "password": "1",
+                "roles": [{"name":"agency.admin"}]
+            }
+        }
+    },
+    "KievTest4": {
+        "agency": {
+            "_cm": {
+                "a4" : {
+                    "user" : "alejandra.medina@mccann.com.mx.ua",
+                    "password": "b3tat3st3r",
+                    "createAssetInA4": true,
+                    "agencyId": "C1DCD2C9-02B9-498F-9653-9B23C6F982FD"
+                },
+                "common": {
+                    "time_zone": ["Europe-Andorra" ],
+                    "pin": "1",
+                    "nVergeAllowed": true,
+                    "name": "KievTest_4.0.5-No",
+                    "agencyType": ["Advertiser"],
+                    "address": {
+                        "country": ["AF" ]
+                    },
+                    "applications": {
+                        "folders": true,
+                        "adkits": true,
+                        "library": true,
+                        "ordering": true,
+                        "adpath": true,
+                        "presentations": true,
+                        "approvals": true,
+                        "annotations": true,
+                        "dashboard": true
+                    }
+                },
+                "passwordSettings": {
+                    "passwordExpirationInDays": 30,
+                    "passwordRegEx": {
+                        "pattern" : "((?=(.*[A-Z]){0,})(?=(.*\\d){0,}).{1,})",
+                        "description": {
+                            "minTotalLengthOfPassword": 1,
+                            "minimumIncludingNumbers": 0,
+                            "minIncludingUppercase": 0
+                        }
+                    }
+                }
+            }
+        },
+        "users": {
+            "KievTestAdmin": {
+                "_cm": {
+                    "common": {
+                        "firstName": "admin",
+                        "lastName": "kievtest4",
+                        "email": "norway@qa.com",
+                        "language": ["en-us"]
+                    },
+                    "view": {
+                        "access": {
+                            "library": true,
+                            "ordering": true,
+                            "folders": true
+                        }
+                    }
+                },
+                "password": "1",
+                "roles": [{"name":"agency.admin"}]
+            }
+        }
+    }
+}

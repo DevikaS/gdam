@@ -1,0 +1,2391 @@
+{
+	"properties": {
+		"arpp": {
+			"type": "object",
+			"properties": {
+				"version": {
+					"type": "string",
+					"description": "ARPP version number"
+				},
+				"sNumber": {
+					"type": "string",
+					"description": "ARPP submission number"
+				},
+				"sResults": {
+					"type": "string",
+					"description": "ARPP submission results"
+				},
+				"sCommentsCode": {
+					"type": "string",
+					"description": "ARPP submission comments code"
+				},
+				"sDetails": {
+					"type": "string",
+					"description": "ARPP submission details"
+				}
+			}
+		},
+		"asset": {
+			"type": "object",
+			"properties": {
+				"common": {
+					"type": "object",
+					"properties": {
+						"isPlayout": {
+							"description": "Is playout",
+							"type": "boolean"
+						},
+						"mediaSubType": {
+							"description": "Media sub-type",
+							"maxItems": 1,
+							"type": "array",
+							"items": {
+								"type": "string",
+								"enum": ["audio", "digital", "document", "image", "other", "print", "video"]
+							}
+						},
+						"mediaType": {
+							"description": "Media type",
+							"maxItems": 1,
+							"type": "array",
+							"items": {
+								"type": "string",
+								"enum": ["audio", "digital", "document", "image", "other", "print", "video"]
+							}
+						},
+						"name": {
+							"description": "Title",
+							"type": "string",
+							"additionalAnalyzers": ["default"]
+						},
+						"status": {
+							"description": "Status",
+							"type": "string"
+						},
+						"ingestedDateTime": {
+							"description": "Ingested Date",
+							"type": "string"
+						},
+						"Campaign": {
+							"description": "Campaign",
+							"type": "string"
+						},
+						"advertiser": {
+							"description": "Advertiser",
+							"maxItems": 1,
+							"type": "array",
+							"additionalAnalyzers": ["default"],
+							"items": {
+								"type": "string",
+								"enum": ["TestAdvertiser01", "TestAdvertiser02", "Adstream"]
+							}
+						},
+						"brand": {
+							"description": "Brand",
+							"maxItems": 1,
+							"type": "array",
+							"items": {
+								"type": "string",
+								"enum": ["TestAdvertiser01", "TestAdvertiser02", "Adstream"]
+							}
+						},
+						"product": {
+							"description": "Product",
+							"maxItems": 1,
+							"type": "array",
+							"items": {
+								"type": "string",
+								"enum": ["TestAdvertiser01", "TestAdvertiser02", "Adstream"]
+							}
+						},
+						"sub_brand": {
+							"description": "Sub Brand",
+							"maxItems": 1,
+							"type": "array",
+							"items": {
+								"type": "string",
+								"enum": ["TestAdvertiser01", "TestAdvertiser02", "Adstream"]
+							}
+						}
+					},
+					"required": ["name"]
+				},
+				"video": {
+					"type": "object",
+					"properties": {
+						"2DArtists": {
+							"description": "2D Artists",
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						},
+						"2DLeadArtists": {
+							"description": "2D Lead Artists",
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						},
+						"2DSupervisor": {
+							"description": "2D Supervisor",
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						},
+						"3DArtists": {
+							"description": "3D Artists",
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						},
+						"3DLeadArtists": {
+							"description": "3D Lead Artists",
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						},
+						"AccountDirector": {
+							"description": "Account Director",
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						},
+						"AccountManager": {
+							"description": "Account Manager",
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						},
+						"Advertisingagency": {
+							"description": "Advertising agency",
+							"type": "array",
+							"maxItems": 1,
+							"items": {
+								"type": "string"
+							}
+						},
+						"AgencyJobreference": {
+							"description": "Agency Job reference",
+							"type": "string"
+						},
+						"AgencyTVProducer": {
+							"description": "Agency TV Producer",
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						},
+						"Animationcompany": {
+							"description": "Animation company",
+							"type": "array",
+							"maxItems": 1,
+							"items": {
+								"type": "string"
+							}
+						},
+						"Animator": {
+							"description": "Animator",
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						},
+						"ApprovedForBroadcast": {
+							"description": "Approved For Broadcast",
+							"type": "array",
+							"maxItems": 1,
+							"items": {
+								"type": "string",
+								"enum": ["Yes", "No"]
+							}
+						},
+						"ArtDirector": {
+							"description": "Art Director",
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						},
+						"Artbuyer": {
+							"description": "Artbuyer",
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						},
+						"Assist": {
+							"description": "Assist",
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						},
+						"AudioPost": {
+							"description": "Audio Post",
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						},
+						"Brief": {
+							"description": "Brief",
+							"type": "string"
+						},
+						"Category": {
+							"description": "Category",
+							"maxItems": 1,
+							"type": "array",
+							"items": {
+								"type": "string",
+								"enum": ["Alcoholic Drinks", "Soft Drinks", "Food", "Home", "Home Appliances ", "IT, phones, Av and computers ", "Utilities ", "Finance/insurance ", "Business and Services", "Automotive", "Travel", "Clothing/Fashion", "Beauty/Health", "Retail and Restaurants ", "Pharmacy", "Sports and Leisure", "Corporate and Social", "Publications and media "]
+							}
+						},
+						"ChiefCreativeOfficer": {
+							"description": "Chief Creative Officer",
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						},
+						"Colourist": {
+							"description": "Colourist",
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						},
+						"Composer": {
+							"description": "Composer",
+							"type": "array",
+							"maxItems": 1,
+							"items": {
+								"type": "string"
+							}
+						},
+						"Copywriter": {
+							"description": "Copywriter",
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						},
+						"CostumeDesigner": {
+							"description": "Costume Designer",
+							"type": "array",
+							"maxItems": 1,
+							"items": {
+								"type": "string"
+							}
+						},
+						"CreativeDirector": {
+							"description": "Creative Director",
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						},
+						"Description": {
+							"description": "Description",
+							"type": "string"
+						},
+						"Director": {
+							"description": "Director",
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						},
+						"DirectorofPhotography": {
+							"description": "Director of Photography",
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						},
+						"EditAssistant": {
+							"description": "Edit Assistant",
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						},
+						"Editcompany": {
+							"description": "Edit company",
+							"type": "array",
+							"maxItems": 1,
+							"items": {
+								"type": "string"
+							}
+						},
+						"Editor": {
+							"description": "Editor",
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						},
+						"ExecutiveCreativeDirector": {
+							"description": "Executive Creative Director",
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						},
+						"ExecutiveProducer_Agency": {
+							"description": "Executive Producer",
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						},
+						"ExecutiveProducer_Post": {
+							"description": "Executive Producer",
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						},
+						"ExecutiveProducer_Prod": {
+							"description": "Executive Producer",
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						},
+						"FilmProcessingLab": {
+							"description": "Film Processing Lab",
+							"type": "array",
+							"maxItems": 1,
+							"items": {
+								"type": "string"
+							}
+						},
+						"Genre": {
+							"description": "Genre",
+							"type": "array",
+							"items": {
+								"type": "string",
+								"enum": ["Comedy", "Visual VFX", "People", "Tabletop", "Animation", "Fashion & Beauty", "Luxury", "Action", "Scenic", "Storytelling", "Dialogue", "Live Action", "Performance", "Children's", "Family", "Food", "Sport"]
+							}
+						},
+						"HeadofTV": {
+							"description": "Head of TV",
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						},
+						"IDFilmARPPUsersonly": {
+							"description": "ID Film (ARPP Users only)",
+							"type": "string"
+						},
+						"LyricalArtist": {
+							"description": "Lyrical Artist",
+							"type": "array",
+							"maxItems": 1,
+							"items": {
+								"type": "string"
+							}
+						},
+						"Lyricist": {
+							"description": "Lyricist",
+							"type": "array",
+							"maxItems": 1,
+							"items": {
+								"type": "string"
+							}
+						},
+						"MakeupArtist": {
+							"description": "Make up Artist",
+							"type": "array",
+							"maxItems": 1,
+							"items": {
+								"type": "string"
+							}
+						},
+						"MarketSector": {
+							"description": "Market Sector",
+							"type": "array",
+							"maxItems": 1,
+							"items": {
+								"type": "string"
+							}
+						},
+						"MattePainting": {
+							"description": "Matte Painting",
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						},
+						"MediaAgency": {
+							"description": "Media Agency",
+							"type": "array",
+							"maxItems": 1,
+							"items": {
+								"type": "string"
+							}
+						},
+						"MediaAgencyPlanner": {
+							"description": "Media Agency Planner",
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						},
+						"MediaPlanner": {
+							"description": "Media Planner",
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						},
+						"MotionGraphics": {
+							"description": "Motion Graphics",
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						},
+						"MusicArranger": {
+							"description": "Music Arranger",
+							"type": "array",
+							"maxItems": 1,
+							"items": {
+								"type": "string"
+							}
+						},
+						"MusicCompany": {
+							"description": "Music Company",
+							"type": "array",
+							"maxItems": 1,
+							"items": {
+								"type": "string"
+							}
+						},
+						"MusicPerformer": {
+							"description": "Music Performer",
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						},
+						"Musicrecordedat": {
+							"description": "Music recorded at",
+							"type": "array",
+							"maxItems": 1,
+							"items": {
+								"type": "string"
+							}
+						},
+						"Planner": {
+							"description": "Planner",
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						},
+						"Postproduction": {
+							"description": "Post-production",
+							"type": "array",
+							"maxItems": 1,
+							"items": {
+								"type": "string"
+							}
+						},
+						"Producer": {
+							"description": "Producer",
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						},
+						"ProductionCompanyProducer": {
+							"description": "Production Company Producer",
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						},
+						"ProductionDesigner": {
+							"description": "Production Designer",
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						},
+						"ProductionManager": {
+							"description": "Production Manager",
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						},
+						"Productioncompany": {
+							"description": "Production company",
+							"type": "array",
+							"maxItems": 1,
+							"items": {
+								"type": "string"
+							}
+						},
+						"RecordingEngineer": {
+							"description": "Recording Engineer",
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						},
+						"ShootDates": {
+							"description": "Shoot Dates",
+							"type": "string"
+						},
+						"ShootSupervisor": {
+							"description": "Shoot Supervisor",
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						},
+						"SoundDesign": {
+							"description": "Sound Design",
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						},
+						"Strategist": {
+							"description": "Strategist",
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						},
+						"Studio": {
+							"description": "Studio",
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						},
+						"StudioLocation": {
+							"description": "Studio/Location",
+							"type": "array",
+							"maxItems": 1,
+							"items": {
+								"type": "string"
+							}
+						},
+						"SubCategory": {
+							"description": "Sub Category",
+							"maxItems": 1,
+							"type": "array",
+							"items": {
+								"type": "string",
+								"enum": ["Alcoholic Drinks", "Soft Drinks", "Food", "Home", "Home Appliances ", "IT, phones, Av and computers ", "Utilities ", "Finance/insurance ", "Business and Services", "Automotive", "Travel", "Clothing/Fashion", "Beauty/Health", "Retail and Restaurants ", "Pharmacy", "Sports and Leisure", "Corporate and Social", "Publications and media "]
+							}
+						},
+						"VFXProducer": {
+							"description": "VFX  Producer",
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						},
+						"VoiceOverArtist": {
+							"description": "Voice Over Artist",
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						},
+						"additionalInfo": {
+							"description": "Additional Details",
+							"type": "string"
+						},
+						"airDate": {
+							"description": "Air Date",
+							"type": "string"
+						},
+						"artist": {
+							"description": "Artist",
+							"type": "string"
+						},
+						"client": {
+							"description": "Client",
+							"type": "string"
+						},
+						"clientSupervisor": {
+							"description": "Client supervisor",
+							"type": "string"
+						},
+						"clockNumber": {
+							"description": "Clock number",
+							"pattern": "\\S*",
+							"type": "string",
+							"additionalAnalyzers": ["default"],
+							"autogenerate": {
+								"patterns": [{
+									"items": [{
+										"type": "sequence",
+										"characters": 10
+									}, {
+										"type": "string",
+										"pattern": "MMddYYYY"
+									}]
+								}]
+							},
+							"pickOnTheFly": false
+						},
+						"country": {
+							"description": "Country",
+							"type": "array",
+							"maxItems": 1,
+							"items": {
+								"type": "string",
+								"enum": ["AF", "AX", "AL", "DZ", "AS", "AD", "AO", "AI", "AQ", "AG", "AR", "AM", "AW", "AU", "AT", "AZ", "BS", "BH", "BD", "BB", "BY", "BE", "BZ", "BJ", "BM", "BT", "BO", "BQ", "BA", "BW", "BV", "BR", "IO", "BN", "BG", "BF", "BI", "KH", "CM", "CA", "CV", "KY", "CF", "TD", "CL", "CN", "CX", "CC", "CO", "KM", "CG", "CD", "CK", "CR", "CI", "HR", "CU", "CW", "CY", "CZ", "DK", "DJ", "DM", "DO", "EC", "EG", "SV", "GQ", "ER", "EE", "ET", "EU", "FK", "FO", "FJ", "FI", "FR", "GF", "PF", "TF", "GA", "GM", "GE", "DE", "GH", "GI", "GR", "GL", "GD", "GP", "GU", "GT", "GG", "GN", "GW", "GY", "HT", "HM", "VA", "HN", "HK", "HU", "IS", "IN", "ID", "IR", "IQ", "IE", "IM", "IL", "IT", "JM", "JP", "JE", "JO", "KZ", "KE", "KI", "KP", "KR", "KW", "KG", "LA", "LV", "LB", "LS", "LR", "LY", "LI", "LT", "LU", "MO", "MK", "MG", "MW", "MY", "MV", "ML", "MT", "MH", "MQ", "MR", "MU", "YT", "MX", "FM", "MD", "MC", "MN", "ME", "MS", "MA", "MZ", "MM", "NA", "NR", "NP", "NL", "NC", "NZ", "NI", "NE", "NG", "NU", "NF", "MP", "NO", "OM", "PK", "PW", "PS", "PA", "PG", "PY", "PE", "PH", "PN", "PL", "PT", "PR", "QA", "RE", "RO", "RU", "RW", "BL", "SH", "KN", "LC", "MF", "PM", "VC", "WS", "SM", "ST", "SA", "SN", "RS", "SC", "SL", "SG", "SX", "SK", "SI", "SB", "SO", "ZA", "GS", "ES", "LK", "SD", "SR", "SJ", "SZ", "SE", "CH", "SY", "TW", "TJ", "TZ", "TH", "TL", "TG", "TK", "TO", "TT", "TN", "TR", "TM", "TC", "TV", "UG", "UA", "AE", "GB", "US", "UM", "UY", "UZ", "VU", "VE", "VN", "VG", "VI", "WF", "EH", "YE", "ZM", "ZW", "all", "PC", "C#"]
+							}
+						},
+						"description": {
+							"description": "Description",
+							"type": "string"
+						},
+						"designer": {
+							"description": "Designer",
+							"type": "string"
+						},
+						"directorOfAdvertisingProduction": {
+							"description": "Director of advertising production",
+							"type": "string"
+						},
+						"duration": {
+							"description": "Duration",
+							"type": "string"
+						},
+						"executiveProducer": {
+							"description": "Executive producer",
+							"type": "string"
+						},
+						"filmEditor": {
+							"description": "Film editor",
+							"type": "string"
+						},
+						"keywords": {
+							"description": "Keywords",
+							"type": "string"
+						},
+						"lightingCameraman": {
+							"description": "Lighting cameraman",
+							"type": "string"
+						},
+						"madeBy": {
+							"description": "Made by",
+							"type": "string"
+						},
+						"postHouse": {
+							"description": "Post house",
+							"type": "string"
+						},
+						"productionAssistant": {
+							"description": "Production Assistant",
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						},
+						"region": {
+							"description": "Region",
+							"maxItems": 1,
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						},
+						"releasedDate": {
+							"description": "Year",
+							"type": "string"
+						},
+						"screen": {
+							"description": "Screen",
+							"type": "array",
+							"maxItems": 1,
+							"items": {
+								"type": "string",
+								"enum": ["Spot", "Spons Billboard", "Spons Break bumper", "Spons Billboard and break bumper", "Trailer", "Ident & Blip", "Programme", "Music Promo", "Infomercial", "Tune-in", "Billboard", "Vignette", "Blipvert", "Trailer showcase", "Channel ID", "Exclusive Media Piece", "Series Moment", "Featurette", "TV Commercial", "BTS", "Content"]
+							}
+						},
+						"soundEngineer": {
+							"description": "Sound designer",
+							"type": "string"
+						},
+						"volume": {
+							"description": "Volume",
+							"type": "string"
+						},
+						"writer": {
+							"description": "Writer",
+							"type": "string"
+						},
+						"writtenLocation": {
+							"description": "Written location",
+							"type": "string"
+						},
+						"AudioChannels": {
+							"description": "Audio Channels",
+							"type": "string"
+						},
+						"postHouseContactPhone": {
+							"description": "Contact Phone at PostHouse",
+							"type": "string"
+						},
+						"postHouseContactName": {
+							"description": "Contact Name at PostHouse",
+							"type": "string"
+						},
+						"dateOfProduction": {
+							"description": "Date of Production",
+							"type": "string"
+						}
+					}
+				},
+				"audio": {
+					"properties": {
+						"AccountDirector": {
+							"description": "Account Director",
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						},
+						"AccountManager": {
+							"description": "Account Manager",
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						},
+						"Advertisingagency": {
+							"description": "Advertising agency",
+							"type": "array",
+							"maxItems": 1,
+							"items": {
+								"type": "string"
+							}
+						},
+						"AgencyPlanner": {
+							"description": "Agency Planner",
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						},
+						"AgencyProducer": {
+							"description": "Agency Producer",
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						},
+						"ApprovedForBroadcast": {
+							"description": "Approved For Broadcast",
+							"type": "array",
+							"maxItems": 1,
+							"items": {
+								"type": "string",
+								"enum": ["Yes", "No"]
+							}
+						},
+						"ArtDirector": {
+							"description": "Art Director",
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						},
+						"AudioPost": {
+							"description": "Audio Post",
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						},
+						"Brief": {
+							"description": "Brief",
+							"type": "string"
+						},
+						"Category": {
+							"description": "Category",
+							"type": "array",
+							"maxItems": 1,
+							"items": {
+								"type": "string",
+								"enum": ["Alcoholic Drinks", "Soft Drinks", "Food", "Home", "Home Appliances ", "IT, phones, Av and computers ", "Utilities ", "Finance/insurance ", "Business and Services", "Automotive", "Travel", "Clothing/Fashion", "Beauty/Health", "Retail and Restaurants ", "Pharmacy", "Sports and Leisure", "Corporate and Social", "Publications and media "]
+							}
+						},
+						"ChiefCreativeOfficer": {
+							"description": "Chief Creative Officer",
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						},
+						"Composer": {
+							"description": "Composer",
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						},
+						"Copywriter": {
+							"description": "Copywriter",
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						},
+						"CountryofBroadcast": {
+							"description": "Country of Broadcast",
+							"type": "array",
+							"maxItems": 1,
+							"items": {
+								"type": "string"
+							}
+						},
+						"CreativeDirector": {
+							"description": "Creative Director",
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						},
+						"Description": {
+							"description": "Description",
+							"type": "string"
+						},
+						"ExecutiveCreativeDirector": {
+							"description": "Executive Creative Director",
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						},
+						"ExecutiveProducer": {
+							"description": "Executive Producer",
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						},
+						"Genre": {
+							"description": "Genre",
+							"type": "array",
+							"items": {
+								"type": "string",
+								"enum": ["Comedy", "Visual VFX", "People", "Tabletop", "Animation", "Fashion & Beauty", "Luxury", "Action", "Scenic", "Storytelling", "Dialogue", "Live Action", "Performance", "Children's", "Family", "Food", "Sport"]
+							}
+						},
+						"JCNNumber": {
+							"description": "JCN Number",
+							"type": "string"
+						},
+						"LyricalArtist": {
+							"description": "Lyrical Artist",
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						},
+						"Lyricist": {
+							"description": "Lyricist",
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						},
+						"MarketSector": {
+							"description": "Market Sector",
+							"type": "array",
+							"maxItems": 1,
+							"items": {
+								"type": "string"
+							}
+						},
+						"MediaAgency": {
+							"description": "Media Agency",
+							"type": "array",
+							"maxItems": 1,
+							"items": {
+								"type": "string"
+							}
+						},
+						"MediaAgencyPlanner": {
+							"description": "Media Agency Planner",
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						},
+						"MediaPlanner": {
+							"description": "Media Planner",
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						},
+						"MusicArranger": {
+							"description": "Music Arranger",
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						},
+						"MusicCompany": {
+							"description": "Music Company",
+							"type": "array",
+							"maxItems": 1,
+							"items": {
+								"type": "string"
+							}
+						},
+						"MusicPerformer": {
+							"description": "Music Performer",
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						},
+						"Musicrecordedat": {
+							"description": "Music recorded at",
+							"type": "array",
+							"maxItems": 1,
+							"items": {
+								"type": "string"
+							}
+						},
+						"Planner": {
+							"description": "Planner",
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						},
+						"Producer": {
+							"description": "Producer",
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						},
+						"RACCApproval": {
+							"description": "RACC Approval",
+							"type": "string"
+						},
+						"RecordingEngineer": {
+							"description": "Recording Engineer",
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						},
+						"SoundDesign": {
+							"description": "Sound Design",
+							"type": "array",
+							"maxItems": 1,
+							"items": {
+								"type": "string"
+							}
+						},
+						"Strategist": {
+							"description": "Strategist",
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						},
+						"SubCategory": {
+							"description": "Sub Category",
+							"type": "array",
+							"maxItems": 1,
+							"items": {
+								"type": "string",
+								"enum": ["Alcoholic Drinks", "Soft Drinks", "Food", "Home", "Home Appliances ", "IT, phones, Av and computers ", "Utilities ", "Finance/insurance ", "Business and Services", "Automotive", "Travel", "Clothing/Fashion", "Beauty/Health", "Retail and Restaurants ", "Pharmacy", "Sports and Leisure", "Corporate and Social", "Publications and media "]
+							}
+						},
+						"VoiceOverArtist": {
+							"description": "Voice Over Artist",
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						},
+						"airDate": {
+							"description": "Air date",
+							"type": "string"
+						},
+						"duration": {
+							"description": "Duration",
+							"type": "string"
+						},
+						"clockNumber": {
+							"description": "Clock Number",
+							"type": "string"
+						},
+						"recordingDate": {
+							"description": "Recording Date",
+							"type": "string"
+						},
+						"lastTransmissionDate": {
+							"description": "Last Transmission Date",
+							"type": "string"
+						},
+						"adbank_level": {
+							"properties": {
+								"id": {
+									"description": "Adbank Id",
+									"maxItems": 1,
+									"type": "array",
+									"items": {
+										"type": "string",
+										"enum": ["0", "1", "2", "3", "4"]
+									}
+								},
+								"name": {
+									"description": "Adbank Name",
+									"type": "string"
+								}
+							},
+							"type": "object"
+						}
+					},
+					"type": "object"
+				},
+				"digital": {
+					"properties": {},
+					"type": "object"
+				},
+				"document": {
+					"properties": {},
+					"type": "object"
+				},
+				"image": {
+					"properties": {},
+					"type": "object"
+				},
+				"other": {
+					"properties": {},
+					"type": "object"
+				},
+				"print": {
+					"properties": {
+						"country": {
+							"description": "Country",
+							"type": "array",
+							"maxItems": 1,
+							"items": {
+								"type": "string",
+								"enum": ["AF", "AX", "AL", "DZ", "AS", "AD", "AO", "AI", "AQ", "AG", "AR", "AM", "AW", "AU", "AT", "AZ", "BS", "BH", "BD", "BB", "BY", "BE", "BZ", "BJ", "BM", "BT", "BO", "BQ", "BA", "BW", "BV", "BR", "IO", "BN", "BG", "BF", "BI", "KH", "CM", "CA", "CV", "KY", "CF", "TD", "CL", "CN", "CX", "CC", "CO", "KM", "CG", "CD", "CK", "CR", "CI", "HR", "CU", "CW", "CY", "CZ", "DK", "DJ", "DM", "DO", "EC", "EG", "SV", "GQ", "ER", "EE", "ET", "EU", "FK", "FO", "FJ", "FI", "FR", "GF", "PF", "TF", "GA", "GM", "GE", "DE", "GH", "GI", "GR", "GL", "GD", "GP", "GU", "GT", "GG", "GN", "GW", "GY", "HT", "HM", "VA", "HN", "HK", "HU", "IS", "IN", "ID", "IR", "IQ", "IE", "IM", "IL", "IT", "JM", "JP", "JE", "JO", "KZ", "KE", "KI", "KP", "KR", "KW", "KG", "LA", "LV", "LB", "LS", "LR", "LY", "LI", "LT", "LU", "MO", "MK", "MG", "MW", "MY", "MV", "ML", "MT", "MH", "MQ", "MR", "MU", "YT", "MX", "FM", "MD", "MC", "MN", "ME", "MS", "MA", "MZ", "MM", "NA", "NR", "NP", "NL", "NC", "NZ", "NI", "NE", "NG", "NU", "NF", "MP", "NO", "OM", "PK", "PW", "PS", "PA", "PG", "PY", "PE", "PH", "PN", "PL", "PT", "PR", "QA", "RE", "RO", "RU", "RW", "BL", "SH", "KN", "LC", "MF", "PM", "VC", "WS", "SM", "ST", "SA", "SN", "RS", "SC", "SL", "SG", "SX", "SK", "SI", "SB", "SO", "ZA", "GS", "ES", "LK", "SD", "SR", "SJ", "SZ", "SE", "CH", "SY", "TW", "TJ", "TZ", "TH", "TL", "TG", "TK", "TO", "TT", "TN", "TR", "TM", "TC", "TV", "UG", "UA", "AE", "GB", "US", "UM", "UY", "UZ", "VU", "VE", "VN", "VG", "VI", "WF", "EH", "YE", "ZM", "ZW", "all", "PC", "C#"]
+							}
+						},
+						"ingestLanguages": {
+							"description": "Ingest languages",
+							"type": "array",
+							"maxItems": 1,
+							"items": {
+								"type": "string",
+								"enum": ["af", "af-ZA", "sq", "sq-AL", "gsw", "gsw-FR", "am", "am-ET", "ar", "ar-DZ", "ar-BH", "ar-EG", "ar-IQ", "ar-JO", "ar-KW", "ar-LB", "ar-LY", "ar-MA", "ar-OM", "ar-QA", "ar-SA", "ar-SY", "ar-TN", "ar-AE", "ar-YE", "hy", "hy-AM", "as", "as-IN", "az", "az-Cyrl", "az-Cyrl-AZ", "az-Latn", "az-Latn-AZ", "ba", "ba-RU", "eu", "eu-ES", "be", "be-BY", "bn", "bn-BD", "bn-IN", "bs", "bs-Cyrl", "bs-Cyrl-BA", "bs-Latn", "bs-Latn-BA", "br", "br-FR", "bg", "bg-BG", "ca", "ca-ES", "zh", "zh-Hans", "zh-CHS", "zh-CN", "zh-SG", "zh-Hant", "zh-CHT", "zh-HK", "zh-MO", "zh-TW", "co", "co-FR", "hr", "hr-HR", "hr-BA", "cs", "cs-CZ", "da", "da-DK", "prs", "prs-AF", "dv", "dv-MV", "nl", "nl-BE", "nl-NL", "en", "en-AU", "en-BZ", "en-CA", "en-029", "en-IN", "en-IE", "en-JM", "en-MY", "en-NZ", "en-PH", "en-SG", "en-ZA", "en-TT", "en-GB", "en-US", "en-ZW", "et", "et-EE", "fo", "fo-FO", "fil", "fil-PH", "fi", "fi-FI", "fr", "fr-BE", "fr-CA", "fr-FR", "fr-LU", "fr-MC", "fr-CH", "fy", "fy-NL", "gl", "gl-ES", "ka", "ka-GE", "de", "de-AT", "de-DE", "de-LI", "de-LU", "de-CH", "el", "el-GR", "kl", "kl-GL", "gu", "gu-IN", "ha", "ha-Latn", "ha-Latn-NG", "he", "he-IL", "hi", "hi-IN", "hu", "hu-HU", "is", "is-IS", "ig", "ig-NG", "id", "id-ID", "iu", "iu-Latn", "iu-Latn-CA", "iu-Cans", "iu-Cans-CA", "ga", "ga-IE", "xh", "xh-ZA", "zu", "zu-ZA", "it", "it-IT", "it-CH", "ja", "ja-JP", "kn", "kn-IN", "kk", "kk-KZ", "km", "km-KH", "qut", "qut-GT", "rw", "rw-RW", "sw", "sw-KE", "kok", "kok-IN", "ko", "ko-KR", "ky", "ky-KG", "lo", "lo-LA", "lv", "lv-LV", "lt", "lt-LT", "dsb", "dsb-DE", "lb", "lb-LU", "mk-MK", "mk", "ms", "ms-BN", "ms-MY", "ml", "ml-IN", "mt", "mt-MT", "mi", "mi-NZ", "arn", "arn-CL", "mr", "mr-IN", "moh", "moh-CA", "mn", "mn-Cyrl", "mn-MN", "mn-Mong", "mn-Mong-CN", "ne", "ne-NP", "no", "nb", "nn", "nb-NO", "nn-NO", "oc", "oc-FR", "or", "or-IN", "ps", "ps-AF", "fa", "fa-IR", "pl", "pl-PL", "pt", "pt-BR", "pt-PT", "pa", "pa-IN", "quz", "quz-BO", "quz-EC", "quz-PE", "ro", "ro-RO", "rm", "rm-CH", "ru", "ru-RU", "smn", "smj", "se", "sms", "sma", "smn-FI", "smj-NO", "smj-SE", "se-FI", "se-NO", "se-SE", "sms-FI", "sma-NO", "sma-SE", "sa", "sa-IN", "gd", "gd-GB", "sr", "sr-Cyrl", "sr-Cyrl-BA", "sr-Cyrl-ME", "sr-Cyrl-CS", "sr-Cyrl-RS", "sr-Latn", "sr-Latn-BA", "sr-Latn-ME", "sr-Latn-CS", "sr-Latn-RS", "nso", "nso-ZA", "tn", "tn-ZA", "si", "si-LK", "sk", "sk-SK", "sl", "sl-SI", "es", "es-AR", "es-VE", "es-BO", "es-CL", "es-CO", "es-CR", "es-DO", "es-EC", "es-SV", "es-GT", "es-HN", "es-MX", "es-NI", "es-PA", "es-PY", "es-PE", "es-PR", "es-ES", "es-US", "es-UY", "sv", "sv-FI", "sv-SE", "syr", "syr-SY", "tg", "tg-Cyrl", "tg-Cyrl-TJ", "tzm", "tzm-Latn", "tzm-Latn-DZ", "ta", "ta-IN", "tt", "tt-RU", "te", "te-IN", "th", "th-TH", "bo", "bo-CN", "tr", "tr-TR", "tk", "tk-TM", "uk", "uk-UA", "hsb", "hsb-DE", "ur", "ur-PK", "ug", "ug-CN", "uz", "uz-Cyrl", "uz-Cyrl-UZ", "uz-Latn", "uz-Latn-UZ", "vi", "vi-VN", "cy", "cy-GB", "wo", "wo-SN", "sah", "sah-RU", "ii", "ii-CN", "yo", "yo-NG"]
+							}
+						},
+						"AccountDirector": {
+							"description": "Account Director",
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						},
+						"AccountManager": {
+							"description": "Account Manager",
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						},
+						"Advertisingagency": {
+							"description": "Advertising agency",
+							"type": "array",
+							"maxItems": 1,
+							"items": {
+								"type": "string"
+							}
+						},
+						"AgencyPlanner": {
+							"description": "Agency Planner",
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						},
+						"ArtDirector": {
+							"description": "Art Director",
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						},
+						"Artbuyer": {
+							"description": "Artbuyer",
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						},
+						"Brief": {
+							"description": "Brief",
+							"type": "string"
+						},
+						"Category": {
+							"description": "Category",
+							"type": "array",
+							"maxItems": 1,
+							"items": {
+								"type": "string",
+								"enum": ["Alcoholic Drinks", "Soft Drinks", "Food", "Home", "Home Appliances ", "IT, phones, Av and computers ", "Utilities ", "Finance/insurance ", "Business and Services", "Automotive", "Travel", "Clothing/Fashion", "Beauty/Health", "Retail and Restaurants ", "Pharmacy", "Sports and Leisure", "Corporate and Social", "Publications and media "]
+							}
+						},
+						"ChiefCreativeOfficer": {
+							"description": "Chief Creative Officer",
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						},
+						"Copywriter": {
+							"description": "Copywriter",
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						},
+						"CreativeDirector": {
+							"description": "Creative Director",
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						},
+						"Description": {
+							"description": "Description",
+							"type": "string"
+						},
+						"ExecutiveCreativeDirector": {
+							"description": "Executive Creative Director",
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						},
+						"Genre": {
+							"description": "Genre",
+							"type": "array",
+							"items": {
+								"type": "string",
+								"enum": ["Comedy", "Visual VFX", "People", "Tabletop", "Animation", "Fashion & Beauty", "Luxury", "Action", "Scenic", "Storytelling", "Dialogue", "Live Action", "Performance", "Children's", "Family", "Food", "Sport"]
+							}
+						},
+						"Location": {
+							"description": "Location/Studio",
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						},
+						"MarketSector": {
+							"description": "Market Sector",
+							"type": "array",
+							"maxItems": 1,
+							"items": {
+								"type": "string"
+							}
+						},
+						"MediaAgencyPlanner": {
+							"description": "Media Agency Planner",
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						},
+						"MediaAgency": {
+							"description": "Media Agency",
+							"type": "array",
+							"maxItems": 1,
+							"items": {
+								"type": "string"
+							}
+						},
+						"MediaPlanner": {
+							"description": "Media Planner",
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						},
+						"Photographer": {
+							"description": "Photographer",
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						},
+						"Planner": {
+							"description": "Planner",
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						},
+						"Retoucher": {
+							"description": "Retoucher",
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						},
+						"ShootDate": {
+							"description": "Shoot Date",
+							"type": "string"
+						},
+						"Strategist": {
+							"description": "Strategist",
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						},
+						"StudioName": {
+							"description": "Studio Name",
+							"type": "array",
+							"maxItems": 1,
+							"items": {
+								"type": "string"
+							}
+						},
+						"SubCategory": {
+							"description": "Sub Category",
+							"type": "array",
+							"maxItems": 1,
+							"items": {
+								"type": "string",
+								"enum": ["Alcoholic Drinks", "Soft Drinks", "Food", "Home", "Home Appliances ", "IT, phones, Av and computers ", "Utilities ", "Finance/insurance ", "Business and Services", "Automotive", "Travel", "Clothing/Fashion", "Beauty/Health", "Retail and Restaurants ", "Pharmacy", "Sports and Leisure", "Corporate and Social", "Publications and media "]
+							}
+						}
+					},
+					"type": "object"
+				}
+			}
+		},
+		"common": {
+			"properties": {
+				"additionalInformation": {
+					"description": "Additional Details",
+					"type": "string"
+				},
+				"clockNumber": {
+					"description": "Clock Number",
+					"pattern": "^[&|#_\\\\/a-zA-Z0-9-]*$",
+					"type": "string",
+					"additionalAnalyzers": ["default"],
+					"autogenerate": {
+						"patterns": [{
+							"items": [{
+								"type": "sequence",
+								"characters": 10
+							}, {
+								"type": "string",
+								"pattern": "MMddYYYY"
+							}]
+						}]
+					},
+					"pickOnTheFly": false
+				},
+				"duration": {
+					"description": "Duration",
+					"pattern": "^((\\d+)|((\\d+h)?\\s*(\\d+mn)?\\s*(\\d+s)?\\s*(\\d+ms)?))$",
+					"type": "string"
+				},
+				"firstAirDate": {
+					"description": "First Air Date",
+					"type": "string"
+				},
+				"format": {
+					"description": "Format",
+					"maxItems": 1,
+					"type": "array",
+					"items": {
+						"type": "string",
+						"enum": ["f1:video:master:HD:1920x1080i@29.97fps:NTSC:16x9:MPEG2:TS:I-Frame", "f1:video:master:HD:1920x1080i@25fps:PAL:16x9:MPEG2:TS:I-Frame", "f1:video:master:SD:720x480i@29.97fps:NTSC:4x3:50Mbps", "f1:video:master:SD:720x576i@25fps:PAL:16x9:50Mbps", "f1:video:master:SD:720x576i@25fps:PAL:4x3:50Mbps"]
+					}
+				},
+				"item_type": {
+					"type": "string",
+					"enum": ["delivery", "ingest"],
+					"default": "delivery"
+				},
+				"title": {
+					"description": "Title",
+					"type": "string",
+					"pattern": "^.{1,100}$"
+				},
+				"uploadedFiles": {
+					"description": "Upload Document",
+					"items": {
+						"type": "file"
+					},
+					"type": "array"
+				},
+				"mediaAgency": {
+					"description": "Media Agency",
+					"type": "array",
+					"maxItems": 1,
+					"items": {
+						"type": "string"
+					}
+				},
+				"creativeAgency": {
+					"description": "Creative Agency",
+					"type": "array",
+					"maxItems": 1,
+					"items": {
+						"type": "string"
+					}
+				},
+				"posthouse": {
+					"description": "Posthouse",
+					"type": "array",
+					"maxItems": 1,
+					"items": {
+						"type": "string"
+					}
+				},
+				"masterArrived": {
+					"type": "object",
+					"properties": {
+						"date": {
+							"description": "Master Arrived Date",
+							"type": "string"
+						},
+						"comment": {
+							"description": "Master Arrived Comment",
+							"type": "string"
+						},
+						"tapeNumber": {
+							"description": "Tape Number",
+							"type": "string"
+						}
+					},
+					"required": ["date"]
+				},
+				"postHouseAgency": {
+					"type": "object",
+					"properties": {
+						"_id": {
+							"type": "string"
+						},
+						"name": {
+							"type": "string"
+						}
+					},
+					"required": ["_id", "name"]
+				},
+				"clockNumberPattern": {
+					"description": "Clock Number Generation Pattern",
+					"type": "string"
+				},
+				"2DArtists": {
+					"description": "2D Artists",
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				},
+				"2DLeadArtists": {
+					"description": "2D Lead Artists",
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				},
+				"2DSupervisor": {
+					"description": "2D Supervisor",
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				},
+				"3DArtists": {
+					"description": "3D Artists",
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				},
+				"3DLeadArtists": {
+					"description": "3D Lead Artists",
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				},
+				"AccountDirector": {
+					"description": "Account Director",
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				},
+				"AccountManager": {
+					"description": "Account Manager",
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				},
+				"Advertisingagency": {
+					"description": "Advertising agency",
+					"type": "array",
+					"maxItems": 1,
+					"items": {
+						"type": "string"
+					}
+				},
+				"AgencyJobreference": {
+					"description": "Agency Job reference",
+					"type": "string"
+				},
+				"AgencyTVProducer": {
+					"description": "Agency TV Producer",
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				},
+				"Animationcompany": {
+					"description": "Animation company",
+					"type": "array",
+					"maxItems": 1,
+					"items": {
+						"type": "string"
+					}
+				},
+				"Animator": {
+					"description": "Animator",
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				},
+				"ApprovedForBroadcast": {
+					"description": "Approved For Broadcast",
+					"type": "array",
+					"maxItems": 1,
+					"items": {
+						"type": "string",
+						"enum": ["Yes", "No"]
+					}
+				},
+				"ArtDirector": {
+					"description": "Art Director",
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				},
+				"Artbuyer": {
+					"description": "Artbuyer",
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				},
+				"Assist": {
+					"description": "Assist",
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				},
+				"AudioPost": {
+					"description": "Audio Post",
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				},
+				"Brief": {
+					"description": "Brief",
+					"type": "string"
+				},
+				"Category": {
+					"description": "Category",
+					"maxItems": 1,
+					"type": "array",
+					"items": {
+						"type": "string",
+						"enum": ["Alcoholic Drinks", "Soft Drinks", "Food", "Home", "Home Appliances ", "IT, phones, Av and computers ", "Utilities ", "Finance/insurance ", "Business and Services", "Automotive", "Travel", "Clothing/Fashion", "Beauty/Health", "Retail and Restaurants ", "Pharmacy", "Sports and Leisure", "Corporate and Social", "Publications and media "]
+					}
+				},
+				"ChiefCreativeOfficer": {
+					"description": "Chief Creative Officer",
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				},
+				"Colourist": {
+					"description": "Colourist",
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				},
+				"Composer": {
+					"description": "Composer",
+					"type": "array",
+					"maxItems": 1,
+					"items": {
+						"type": "string"
+					}
+				},
+				"Copywriter": {
+					"description": "Copywriter",
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				},
+				"CostumeDesigner": {
+					"description": "Costume Designer",
+					"type": "array",
+					"maxItems": 1,
+					"items": {
+						"type": "string"
+					}
+				},
+				"CreativeDirector": {
+					"description": "Creative Director",
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				},
+				"Description": {
+					"description": "Description",
+					"type": "string"
+				},
+				"Director": {
+					"description": "Director",
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				},
+				"DirectorofPhotography": {
+					"description": "Director of Photography",
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				},
+				"EditAssistant": {
+					"description": "Edit Assistant",
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				},
+				"Editcompany": {
+					"description": "Edit company",
+					"type": "array",
+					"maxItems": 1,
+					"items": {
+						"type": "string"
+					}
+				},
+				"Editor": {
+					"description": "Editor",
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				},
+				"ExecutiveCreativeDirector": {
+					"description": "Executive Creative Director",
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				},
+				"ExecutiveProducer_Agency": {
+					"description": "Executive Producer",
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				},
+				"ExecutiveProducer_Post": {
+					"description": "Executive Producer",
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				},
+				"ExecutiveProducer_Prod": {
+					"description": "Executive Producer",
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				},
+				"FilmProcessingLab": {
+					"description": "Film Processing Lab",
+					"type": "array",
+					"maxItems": 1,
+					"items": {
+						"type": "string"
+					}
+				},
+				"Genre": {
+					"description": "Genre",
+					"type": "array",
+					"items": {
+						"type": "string",
+						"enum": ["Comedy", "Visual VFX", "People", "Tabletop", "Animation", "Fashion & Beauty", "Luxury", "Action", "Scenic", "Storytelling", "Dialogue", "Live Action", "Performance", "Children's", "Family", "Food", "Sport"]
+					}
+				},
+				"HeadofTV": {
+					"description": "Head of TV",
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				},
+				"IDFilmARPPUsersonly": {
+					"description": "ID Film (ARPP Users only)",
+					"type": "string"
+				},
+				"LyricalArtist": {
+					"description": "Lyrical Artist",
+					"type": "array",
+					"maxItems": 1,
+					"items": {
+						"type": "string"
+					}
+				},
+				"Lyricist": {
+					"description": "Lyricist",
+					"type": "array",
+					"maxItems": 1,
+					"items": {
+						"type": "string"
+					}
+				},
+				"MakeupArtist": {
+					"description": "Make up Artist",
+					"type": "array",
+					"maxItems": 1,
+					"items": {
+						"type": "string"
+					}
+				},
+				"MarketSector": {
+					"description": "Market Sector",
+					"type": "array",
+					"maxItems": 1,
+					"items": {
+						"type": "string"
+					}
+				},
+				"MattePainting": {
+					"description": "Matte Painting",
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				},
+				"MediaAgency": {
+					"description": "Media Agency",
+					"type": "array",
+					"maxItems": 1,
+					"items": {
+						"type": "string"
+					}
+				},
+				"MediaAgencyPlanner": {
+					"description": "Media Agency Planner",
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				},
+				"MediaPlanner": {
+					"description": "Media Planner",
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				},
+				"MotionGraphics": {
+					"description": "Motion Graphics",
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				},
+				"MusicArranger": {
+					"description": "Music Arranger",
+					"type": "array",
+					"maxItems": 1,
+					"items": {
+						"type": "string"
+					}
+				},
+				"MusicCompany": {
+					"description": "Music Company",
+					"type": "array",
+					"maxItems": 1,
+					"items": {
+						"type": "string"
+					}
+				},
+				"MusicPerformer": {
+					"description": "Music Performer",
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				},
+				"Musicrecordedat": {
+					"description": "Music recorded at",
+					"type": "array",
+					"maxItems": 1,
+					"items": {
+						"type": "string"
+					}
+				},
+				"Planner": {
+					"description": "Planner",
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				},
+				"Postproduction": {
+					"description": "Post-production",
+					"type": "array",
+					"maxItems": 1,
+					"items": {
+						"type": "string"
+					}
+				},
+				"Producer": {
+					"description": "Producer",
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				},
+				"ProductionCompanyProducer": {
+					"description": "Production Company Producer",
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				},
+				"ProductionDesigner": {
+					"description": "Production Designer",
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				},
+				"ProductionManager": {
+					"description": "Production Manager",
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				},
+				"Productioncompany": {
+					"description": "Production company",
+					"type": "array",
+					"maxItems": 1,
+					"items": {
+						"type": "string"
+					}
+				},
+				"RecordingEngineer": {
+					"description": "Recording Engineer",
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				},
+				"ShootDates": {
+					"description": "Shoot Dates",
+					"type": "string"
+				},
+				"ShootSupervisor": {
+					"description": "Shoot Supervisor",
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				},
+				"SoundDesign": {
+					"description": "Sound Design",
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				},
+				"Strategist": {
+					"description": "Strategist",
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				},
+				"Studio": {
+					"description": "Studio",
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				},
+				"StudioLocation": {
+					"description": "Studio/Location",
+					"type": "array",
+					"maxItems": 1,
+					"items": {
+						"type": "string"
+					}
+				},
+				"SubCategory": {
+					"description": "Sub Category",
+					"maxItems": 1,
+					"type": "array",
+					"items": {
+						"type": "string",
+						"enum": ["Alcoholic Drinks", "Soft Drinks", "Food", "Home", "Home Appliances ", "IT, phones, Av and computers ", "Utilities ", "Finance/insurance ", "Business and Services", "Automotive", "Travel", "Clothing/Fashion", "Beauty/Health", "Retail and Restaurants ", "Pharmacy", "Sports and Leisure", "Corporate and Social", "Publications and media "]
+					}
+				},
+				"VFXProducer": {
+					"description": "VFX  Producer",
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				},
+				"VoiceOverArtist": {
+					"description": "Voice Over Artist",
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				},
+				"additionalInfo": {
+					"description": "Additional Details",
+					"type": "string"
+				},
+				"airDate": {
+					"description": "Air Date",
+					"type": "string"
+				},
+				"artist": {
+					"description": "Artist",
+					"type": "string"
+				},
+				"client": {
+					"description": "Client",
+					"type": "string"
+				},
+				"clientSupervisor": {
+					"description": "Client supervisor",
+					"type": "string"
+				},
+				"country": {
+					"description": "Country",
+					"type": "array",
+					"maxItems": 1,
+					"items": {
+						"type": "string",
+						"enum": ["AF", "AX", "AL", "DZ", "AS", "AD", "AO", "AI", "AQ", "AG", "AR", "AM", "AW", "AU", "AT", "AZ", "BS", "BH", "BD", "BB", "BY", "BE", "BZ", "BJ", "BM", "BT", "BO", "BQ", "BA", "BW", "BV", "BR", "IO", "BN", "BG", "BF", "BI", "KH", "CM", "CA", "CV", "KY", "CF", "TD", "CL", "CN", "CX", "CC", "CO", "KM", "CG", "CD", "CK", "CR", "CI", "HR", "CU", "CW", "CY", "CZ", "DK", "DJ", "DM", "DO", "EC", "EG", "SV", "GQ", "ER", "EE", "ET", "EU", "FK", "FO", "FJ", "FI", "FR", "GF", "PF", "TF", "GA", "GM", "GE", "DE", "GH", "GI", "GR", "GL", "GD", "GP", "GU", "GT", "GG", "GN", "GW", "GY", "HT", "HM", "VA", "HN", "HK", "HU", "IS", "IN", "ID", "IR", "IQ", "IE", "IM", "IL", "IT", "JM", "JP", "JE", "JO", "KZ", "KE", "KI", "KP", "KR", "KW", "KG", "LA", "LV", "LB", "LS", "LR", "LY", "LI", "LT", "LU", "MO", "MK", "MG", "MW", "MY", "MV", "ML", "MT", "MH", "MQ", "MR", "MU", "YT", "MX", "FM", "MD", "MC", "MN", "ME", "MS", "MA", "MZ", "MM", "NA", "NR", "NP", "NL", "NC", "NZ", "NI", "NE", "NG", "NU", "NF", "MP", "NO", "OM", "PK", "PW", "PS", "PA", "PG", "PY", "PE", "PH", "PN", "PL", "PT", "PR", "QA", "RE", "RO", "RU", "RW", "BL", "SH", "KN", "LC", "MF", "PM", "VC", "WS", "SM", "ST", "SA", "SN", "RS", "SC", "SL", "SG", "SX", "SK", "SI", "SB", "SO", "ZA", "GS", "ES", "LK", "SD", "SR", "SJ", "SZ", "SE", "CH", "SY", "TW", "TJ", "TZ", "TH", "TL", "TG", "TK", "TO", "TT", "TN", "TR", "TM", "TC", "TV", "UG", "UA", "AE", "GB", "US", "UM", "UY", "UZ", "VU", "VE", "VN", "VG", "VI", "WF", "EH", "YE", "ZM", "ZW", "all", "PC", "C#"]
+					}
+				},
+				"description": {
+					"description": "Description",
+					"type": "string"
+				},
+				"designer": {
+					"description": "Designer",
+					"type": "string"
+				},
+				"directorOfAdvertisingProduction": {
+					"description": "Director of advertising production",
+					"type": "string"
+				},
+				"executiveProducer": {
+					"description": "Executive producer",
+					"type": "string"
+				},
+				"filmEditor": {
+					"description": "Film editor",
+					"type": "string"
+				},
+				"keywords": {
+					"description": "Keywords",
+					"type": "string"
+				},
+				"lightingCameraman": {
+					"description": "Lighting cameraman",
+					"type": "string"
+				},
+				"madeBy": {
+					"description": "Made by",
+					"type": "string"
+				},
+				"postHouse": {
+					"description": "Post house",
+					"type": "string"
+				},
+				"productionAssistant": {
+					"description": "Production Assistant",
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				},
+				"region": {
+					"description": "Region",
+					"maxItems": 1,
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				},
+				"releasedDate": {
+					"description": "Year",
+					"type": "string"
+				},
+				"screen": {
+					"description": "Screen",
+					"type": "array",
+					"maxItems": 1,
+					"items": {
+						"type": "string",
+						"enum": ["Spot", "Spons Billboard", "Spons Break bumper", "Spons Billboard and break bumper", "Trailer", "Ident & Blip", "Programme", "Music Promo", "Infomercial", "Tune-in", "Billboard", "Vignette", "Blipvert", "Trailer showcase", "Channel ID", "Exclusive Media Piece", "Series Moment", "Featurette", "TV Commercial", "BTS", "Content"]
+					}
+				},
+				"soundEngineer": {
+					"description": "Sound designer",
+					"type": "string"
+				},
+				"volume": {
+					"description": "Volume",
+					"type": "string"
+				},
+				"writer": {
+					"description": "Writer",
+					"type": "string"
+				},
+				"writtenLocation": {
+					"description": "Written location",
+					"type": "string"
+				},
+				"AudioChannels": {
+					"description": "Audio Channels",
+					"type": "string"
+				},
+				"postHouseContactPhone": {
+					"description": "Contact Phone at PostHouse",
+					"type": "string"
+				},
+				"postHouseContactName": {
+					"description": "Contact Name at PostHouse",
+					"type": "string"
+				},
+				"dateOfProduction": {
+					"description": "Date of Production",
+					"type": "string"
+				}
+			},
+			"type": "object",
+			"required": ["clockNumber", "duration", "item_type", "title"]
+		},
+		"destinations": {
+			"properties": {
+				"count": {
+					"properties": {
+						"atDestination": {
+							"type": "number",
+							"default": 0,
+							"description": "calc by core"
+						},
+						"cancelled": {
+							"type": "number",
+							"default": 0,
+							"description": "calc by core"
+						},
+						"total": {
+							"type": "number",
+							"default": 0,
+							"description": "calc by core"
+						}
+					},
+					"type": "object"
+				},
+				"items": {
+					"items": {
+						"properties": {
+							"a4Id": {
+								"type": "string"
+							},
+							"actuallyDelivered": {
+								"type": "string"
+							},
+							"approvalStatus": {
+								"type": "string",
+								"enum": ["on_hold", "approved"]
+							},
+							"comment": {
+								"type": "string"
+							},
+							"commentStorageID": {
+								"type": "string"
+							},
+							"countryCode": {
+								"type": "string"
+							},
+							"delivered": {
+								"type": "string"
+							},
+							"destinationStatusId": {
+								"type": "string"
+							},
+							"houseNumber": {
+								"type": "string"
+							},
+							"id": {
+								"maxItems": 1,
+								"type": "array",
+								"items": {
+									"type": "string"
+								}
+							},
+							"isCommentMandatory": {
+								"type": "boolean"
+							},
+							"masterApproval": {
+								"type": "boolean"
+							},
+							"name": {
+								"type": "string"
+							},
+							"proxyApproval": {
+								"type": "boolean"
+							},
+							"qcAssetId": {
+								"type": "string",
+								"description": "qc spec calculator"
+							},
+							"serviceLevel": {
+								"properties": {
+									"id": {
+										"maxItems": 1,
+										"type": "array",
+										"items": {
+											"type": "string"
+										}
+									},
+									"name": {
+										"type": "string"
+									}
+								},
+								"type": "object",
+								"required": ["id"]
+							},
+							"status": {
+								"default": "New",
+								"type": "string"
+							},
+							"statusId": {
+								"default": ["9"],
+								"maxItems": 1,
+								"type": "array",
+								"items": {
+									"type": "string",
+									"enum": ["9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "43", "45", "48", "49", "56", "67", "138", "139", "198", "199", "206", "207", "411", "412"]
+								}
+							},
+							"utcOffset": {
+								"type": "string"
+							},
+							"viewStatus": {
+								"type": "array",
+								"maxItems": 1,
+								"default": ["Order Placed"],
+								"items": {
+									"type": "string",
+									"enum": ["Order Placed", "Received Media", "Passed QC", "Transferring", "At Destination", "Failed", "Cancelled"]
+								}
+							},
+							"targetFormat": {
+								"type": "string",
+								"description": "Target Media Format"
+							}
+						},
+						"type": "object",
+						"required": ["statusId"]
+					},
+					"minItems": 0,
+					"type": "array"
+				}
+			},
+			"type": "object"
+		},
+		"media": {
+			"properties": {
+				"uploadRequest": {
+					"properties": {
+						"alreadySupplied": {
+							"type": "boolean",
+							"default": false
+						},
+						"arrivalTime": {
+							"type": "string",
+							"pattern": "[0-2]\\d:\\d{2}",
+							"description": "Arrival Time"
+						},
+						"assignees": {
+							"type": "array",
+							"items": {
+								"type": "email"
+							}
+						},
+						"daysBeforeFirstAirDate": {
+							"type": "number",
+							"description": "Days before First Air Date"
+						},
+						"deadlineDate": {
+							"type": "string"
+						},
+						"message": {
+							"type": "string"
+						},
+						"postHouse": {
+							"type": "string",
+							"description": "Post House"
+						},
+						"uploadType": {
+							"type": "array",
+							"maxItems": 1,
+							"items": {
+								"type": "string",
+								"enum": ["FTP", "Physical", "nVerge"]
+							}
+						},
+						"postHouseAgency": {
+							"type": "object",
+							"properties": {
+								"_id": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							},
+							"required": ["_id", "name"]
+						}
+					},
+					"type": "object"
+				}
+			},
+			"type": "object"
+		},
+		"nonBroadcastDestinations": {
+			"properties": {
+				"items": {
+					"items": {
+						"properties": {
+							"deliveryDetails": {
+								"description": "Delivery Details",
+								"type": "string"
+							},
+							"destination": {
+								"description": "Destination",
+								"type": "string"
+							},
+							"format": {
+								"description": "Format",
+								"type": "array",
+								"items": {
+									"type": "string",
+									"enum": ["Data DVD", "DVD", "FTP Upload", "nVerge Send", "Tape", "Generics Upload", "USB Flash Drive"]
+								}
+							},
+							"mediaCompile": {
+								"description": "Media Compile",
+								"type": "array",
+								"items": {
+									"type": "string",
+									"enum": ["Compile 1", "Compile 2", "Compile 3", "Compile 4", "Compile 5"]
+								}
+							},
+							"method": {
+								"description": "Type",
+								"maxItems": 1,
+								"type": "array",
+								"items": {
+									"type": "string",
+									"enum": ["Data DVD", "DVD", "FTP Upload", "nVerge Send", "Tape", "Generics Upload", "USB Flash Drive"]
+								}
+							},
+							"noOfCopies": {
+								"description": "No. copies",
+								"pattern": "^([1-9][0-9]*)$",
+								"type": "string"
+							},
+							"notesAndLabels": {
+								"description": "Notes & Labels",
+								"type": "string"
+							},
+							"serviceLevel": {
+								"description": "Service Level",
+								"properties": {
+									"id": {
+										"maxItems": 1,
+										"type": "array",
+										"items": {
+											"type": "string",
+											"enum": ["2", "3"]
+										}
+									},
+									"name": {
+										"type": "string"
+									}
+								},
+								"type": "object",
+								"required": ["id"]
+							},
+							"specification": {
+								"description": "Specification",
+								"type": "array",
+								"maxItems": 1,
+								"items": {
+									"type": "string",
+									"enum": ["Same as Master", "f1:video:master:HD:1920x1080i@29.97fps:NTSC:16x9:MPEG2:TS:I-Frame", "f1:video:master:HD:1920x1080i@25fps:PAL:16x9:MPEG2:TS:I-Frame", "f1:video:master:SD:720x480i@29.97fps:NTSC:4x3:50Mbps", "f1:video:master:SD:720x576i@25fps:PAL:16x9:50Mbps", "f1:video:master:SD:720x576i@25fps:PAL:4x3:50Mbps", "As required"]
+								}
+							},
+							"destinationId": {
+								"description": "Destination id",
+								"type": "string"
+							},
+							"cancelled": {
+								"description": "Cancelled",
+								"type": "boolean"
+							}
+						},
+						"type": "object",
+						"required": ["destination", "format", "noOfCopies"]
+					},
+					"maxItems": 10,
+					"type": "array"
+				}
+			},
+			"type": "object"
+		},
+		"productionServices": {
+			"properties": {
+				"items": {
+					"items": {
+						"properties": {
+							"serviceType": {
+								"description": "Type",
+								"type": "array",
+								"items": {
+									"type": "string",
+									"enum": ["Conversion HD<>SD", "Conversion PAL<>NTSC", "Hardings Test", "Marriage/Piggyback SD", "Marriage/Piggyback HD", "Reslate SD", "Reslate HD", "Tagging SD", "Tagging HD", "Harding (PSE) Upto 60\"", "Harding (PSE) Upto 1800\"", "Audio Addition/Correction (R68, R128, LKFS)", "Video Correction", "Create Slate/Clapper/Correction", "Aspect Ratio Conversion Upto 60\" (16:9 to 4:3 LB)", "Aspect Ratio Conversion Upto 60\" (16:9 to 4:3 Centre Cut)", "Aspect Ratio Conversion Upto 60\" (4:3 to 16:9)", "Aspect Ratio Conversion Upto 60\" (4:3 LB to 16:9)", "Aspect Ratio Conversion Upto 1800\" (16:9 to 4:3 LB)", "Aspect Ratio Conversion Upto 1800\" (16:9 to 4:3 Centre Cut)", "Aspect Ratio Conversion Upto 1800\" (4:3 to 16:9)", "Aspect Ratio Conversion Upto 1800\" (4:3LB to 16:9)", "Standards Conversion HD to SD Upto 60\"", "Standards Conversion HD to SD Upto 1800\"", "Standards Conversion SD to HD Upto 60\"", "Standards Conversion SD to HD Upto 1800\"", "Digital Downconversion Less than 90s", "Digital Downconversion Less than 5mins", "Digital Downconversion Less than 30mins", "Standards Conversion PAL to NTSC (25fps - 29.97fps)", "Standards Conversion PAL to NTSC (25fps - 23.98fps)", "Standards Conversion NTSC to PAL (29.97fps - 25fps)", "Standards Conversion NTSC to PAL (23.98fps - 25fps)", "Transcode Image Sequence Upto 60\"", "Transcode Image Sequence Upto 1800\"", "Clearcast Clearance file Upto 60\"", "Clearcast Clearance file Upto 1800\"", "ARPP Clearance file Upto 60\"", "ARPP Clearance file Upto 1800\"", "Transcode SD H.264 .MOV Upto 60\"", "Transcode SD H.264 .MOV Upto 1800\"", "Transcode SD Video Upto 120\"", "Transcode SD Video Longer than 120\"", "Transcode HD Video Upto 120\"", "Transcode HD Video Longer than 120\"", "Transcode SD Pro Res Upto 120\"", "Transcode SD Pro Res Longer than 120\"", "Transcode HD Pro Res Upto 120\"", "Transcode HD Pro Res Longer than 120\"", "Transcode SD Uncompressed QT Upto 120\"", "Transcode SD Uncompressed QT Longer than 120\"", "Transcode HD Uncompressed QT Upto 120\"", "Transcode HD Uncompressed QT Longer than 120\"", "Transcoding - Video QT SD UpTo :120 per spot", "Transcoding - Video QT SD Longer :120 per spot", "Transcoding - Video QT HD UpTo :120 per spot", "Transcoding - Video QT HD Longer :120 per spot", "Transcode SD FLV file upto 120\"", "Transcode SD FLV file longer than 120\"", "Transcode HD FLV file upto 120\"", "Transcode HD FLV file longer than 120\"", "Transcode SD H.264 MP4 Upto 120\"", "Transcode SD H.264 MP4 longer than 120\"", "Transcode HD H.264 MP4 Upto 120\"", "Transcode HD H.264 MP4 longer than 120\"", "Transcode SD WMV file Upto 120\"", "Transcode SD WMV file longer than 120\"", "Transcode HD WMV file Upto 120\"", "Transcode HD WMV file longer than 120\"", "Transcode SD AVI file Upto 120\"", "Transcode SD AVI file longer than 120\"", "Transcode HD AVI file Upto 120\"", "Transcode HD AVI file longer than 120\"", "Transcode SD TGA file Upto 120\"", "Transcode SD TGA file longer than 120\"", "Transcode HD TGA file Upto 120\"", "Transcode HD TGA file longer than 120\"", "Longform compliance file Upto 60\"", "Longform compliane file Upto 1800\"", "UK compliance file Upto 60\"", "UK compliance file Upto 1800\"", "Music Video compliance file Upto 60\"", "Music Video compliance file Upto 1800\"", "Clearence Application HD", "Clearence Application SD", "Preflight Adpro check (F.O.C)", "Preflight Adpro check", "Preflight Adpro Cinema QC", "Preflight Adpro Longform QC", "Preflight Adpro International QC upto 60\"", "Preflight Adpro International QC upto 1800\"", "Cinema DCP", "Cinema Audio Mixing", "Cinema Audio Conversion", "Cinema Video Conversion", "SD Production Tagging", "HD Production Tagging", "Production Addition of Disclaimer/Legal Text", "Production Audio Edit/Assemble/Layoff", "Production SD Video Edit/Assemble/Layoff", "Production HD Video Edit/Assemble/Layoff", "Editing Services", "Frame extension", "Re-ingest", "Resend", "Restripe", "Script Creation", "Special Compile request", "Addition overtime charges (per person - per hour)", "Harding (PSE) Upto 60\"", "Harding (PSE) Upto 1800\"", "Audio Addition/Correction (R68, R128, LKFS)", "Video Correction", "Create Slate/Clapper/Correction", "Aspect Ratio Conversion Upto 60\" (16:9 to 4:3 LB)", "Aspect Ratio Conversion Upto 60\" (16:9 to 4:3 Centre Cut)", "Aspect Ratio Conversion Upto 60\" (4:3 to 16:9)", "Aspect Ratio Conversion Upto 60\" (4:3 LB to 16:9)", "Aspect Ratio Conversion Upto 1800\" (16:9 to 4:3 LB)", "Aspect Ratio Conversion Upto 1800\" (16:9 to 4:3 Centre Cut)", "Aspect Ratio Conversion Upto 1800\" (4:3 to 16:9)", "Aspect Ratio Conversion Upto 1800\" (4:3LB to 16:9)", "Standards Conversion HD to SD Upto 60\"", "Standards Conversion HD to SD Upto 1800\"", "Standards Conversion SD to HD Upto 60\"", "Standards Conversion SD to HD Upto 1800\"", "Digital Downconversion Less than 90s", "Digital Downconversion Less than 5mins", "Digital Downconversion Less than 30mins", "Standards Conversion PAL to NTSC (25fps - 29.97fps)", "Standards Conversion PAL to NTSC (25fps - 23.98fps)", "Standards Conversion NTSC to PAL (29.97fps - 25fps)", "Standards Conversion NTSC to PAL (23.98fps - 25fps)", "Transcode Image Sequence Upto 60\"", "Transcode Image Sequence Upto 1800\"", "Clearcast Clearance file Upto 60\"", "Clearcast Clearance file Upto 1800\"", "ARPP Clearance file Upto 60\"", "ARPP Clearance file Upto 1800\"", "Transcode SD H.264 .MOV Upto 60\"", "Transcode SD H.264 .MOV Upto 1800\"", "Transcode SD Video Upto 120\"", "Transcode SD Video Longer than 120\"", "Transcode HD Video Upto 120\"", "Transcode HD Video Longer than 120\"", "Transcode SD Pro Res Upto 120\"", "Transcode SD Pro Res Longer than 120\"", "Transcode HD Pro Res Upto 120\"", "Transcode HD Pro Res Longer than 120\"", "Transcode SD Uncompressed QT Upto 120\"", "Transcode SD Uncompressed QT Longer than 120\"", "Transcode HD Uncompressed QT Upto 120\"", "Transcode HD Uncompressed QT Longer than 120\"", "Transcoding - Video QT SD UpTo :120 per spot", "Transcoding - Video QT SD Longer :120 per spot", "Transcoding - Video QT HD UpTo :120 per spot", "Transcoding - Video QT HD Longer :120 per spot", "Transcode SD FLV file upto 120\"", "Transcode SD FLV file longer than 120\"", "Transcode HD FLV file upto 120\"", "Transcode HD FLV file longer than 120\"", "Transcode SD H.264 MP4 Upto 120\"", "Transcode SD H.264 MP4 longer than 120\"", "Transcode HD H.264 MP4 Upto 120\"", "Transcode HD H.264 MP4 longer than 120\"", "Transcode SD WMV file Upto 120\"", "Transcode SD WMV file longer than 120\"", "Transcode HD WMV file Upto 120\"", "Transcode HD WMV file longer than 120\"", "Transcode SD AVI file Upto 120\"", "Transcode SD AVI file longer than 120\"", "Transcode HD AVI file Upto 120\"", "Transcode HD AVI file longer than 120\"", "Transcode SD TGA file Upto 120\"", "Transcode SD TGA file longer than 120\"", "Transcode HD TGA file Upto 120\"", "Transcode HD TGA file longer than 120\"", "Longform compliance file Upto 60\"", "Longform compliane file Upto 1800\"", "UK compliance file Upto 60\"", "UK compliance file Upto 1800\"", "Music Video compliance file Upto 60\"", "Music Video compliance file Upto 1800\"", "Clearence Application HD", "Clearence Application SD", "Preflight Adpro check (F.O.C)", "Preflight Adpro check", "Preflight Adpro Cinema QC", "Preflight Adpro Longform QC", "Preflight Adpro International QC upto 60\"", "Preflight Adpro International QC upto 1800\"", "Cinema DCP", "Cinema Audio Mixing", "Cinema Audio Conversion", "Cinema Video Conversion", "SD Production Tagging", "HD Production Tagging", "Production Addition of Disclaimer/Legal Text", "Production Audio Edit/Assemble/Layoff", "Production SD Video Edit/Assemble/Layoff", "Production HD Video Edit/Assemble/Layoff", "Editing Services", "Frame extension", "Re-ingest", "Resend", "Restripe", "Script Creation", "Special Compile request", "Addition overtime charges (per person - per hour)"]
+								}
+							},
+							"notes": {
+								"description": "Notes",
+								"type": "string"
+							},
+							"destinationId": {
+								"description": "Destination id",
+								"type": "string"
+							},
+							"cancelled": {
+								"description": "Cancelled",
+								"type": "boolean"
+							}
+						},
+						"type": "object",
+						"required": ["serviceType"]
+					},
+					"maxItems": 9,
+					"type": "array"
+				}
+			},
+			"type": "object"
+		},
+		"tv": {
+			"properties": {
+				"market": {
+					"type": "string"
+				},
+				"marketCountry": {
+					"type": "string"
+				},
+				"marketId": {
+					"description": "Market",
+					"maxItems": 1,
+					"type": "array",
+					"items": {
+						"type": "string",
+						"enum": ["242", "243", "248", "251", "352", "353", "359", "400", "432", "461", "465", "470", "473", "477", "486", "513", "528", "537", "538", "544", "547", "554", "561", "567", "573", "592", "4", "7", "8", "11", "14", "18", "21", "24", "25", "28", "31", "34", "38", "41", "42", "96", "146", "169", "182", "187", "196", "199", "202", "203", "206", "209", "212", "217", "221", "222", "226", "230", "233", "239", "622", "645", "14001", "14006", "14007", "2430-uber", "14004", "1", "5", "9", "12", "15", "19", "22", "26", "29", "35", "39", "43", "77", "125", "176", "183", "193", "197", "200", "204", "207", "210", "213", "218", "223", "228", "231", "234", "240", "244", "249", "322", "341", "349", "354", "378", "404", "433", "462", "468", "471", "481", "530", "542", "545", "552", "558", "563", "574", "593", "619", "17", "14002", "2370-uber", "2431-uber", "3", "6", "10", "13", "16", "20", "23", "27", "33", "37", "40", "57", "78", "160", "173", "184", "195", "198", "201", "205", "208", "211", "216", "219", "225", "229", "232", "235", "241", "245", "335", "351", "355", "399", "405", "435", "451", "464", "469", "482", "511", "534", "546", "553", "560", "564", "575", "616", "621", "634", "220", "14005", "2400-uber"]
+					}
+				},
+				"orderReference": {
+					"type": "number"
+				},
+				"ingestLocation": {
+					"type": "string"
+				}
+			},
+			"type": "object"
+		},
+		"metadata": {
+			"type": "object",
+			"properties": {
+				"subtitlesRequired": {
+					"description": "Subtitles Required",
+					"maxItems": 1,
+					"type": "array",
+					"items": {
+						"type": "string",
+						"enum": ["Adtext HD and SD", "Adtext HD", "Adtext SD", "BTI Studios", "Already Supplied", "None", "IMS"]
+					}
+				}
+			},
+			"required": ["subtitlesRequired"]
+		}
+	},
+	"type": "object",
+	"required": ["tv"],
+	"additionalProperties": false
+}

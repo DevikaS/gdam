@@ -1,0 +1,61 @@
+<UploadJobResponse xmlns:xs="http://adstream.com/xmlstream/" xs:id="11" ns0:type="UploadJobResponse" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:adstream:yadn">
+  <MessageID><![CDATA[1.1|akka://KV01V-A5DA502/user/head/fsobject|969d98b58b724016be82974b#1]]></MessageID>
+  <Status>UploadedToStorage</Status>
+  <FileID>5d00bef8-6e4d-49f9-9636-a246010d902f</FileID>
+  <FileName>31165740-0108-4872-9a22-40081ef7c8f7.ppt</FileName>
+  <FileDirectory><![CDATA[\00000000-0000-0000-0000-000000000000\2013-09-27\969d98b58b724016be82974b\]]></FileDirectory>
+  <FileSize>147968</FileSize>
+  <MD5>3ea02d1158334e604e15f5a25f78756f</MD5>
+  <CRC>        </CRC>
+  <Node>adstream.yadn.nodes.outpost-a5-auto</Node>
+  <SpecDBDocID>f2:application:unspecified:vnd.ms-powerpoint</SpecDBDocID>
+  <metadata>
+    <property name="isPlayout">
+      <Value>false</Value>
+    </property>
+    <property name="ElementID">
+      <Value>969d98b58b724016be82974b</Value>
+    </property>
+    <property name="Path">
+      <Value>presentation.ppt</Value>
+    </property>
+    <property name="Country">
+      <Value>AF</Value>
+    </property>
+    <property name="guise">
+      <Value>master</Value>
+    </property>
+    <property name="IsPlayout">
+      <Value>false</Value>
+    </property>
+    <property name="evaluation_exiftool">
+      <Value><![CDATA[<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+
+<rdf:Description xmlns:et="http://ns.exiftool.ca/1.0/" xmlns:ExifTool="http://ns.exiftool.ca/ExifTool/1.0/" xmlns:System="http://ns.exiftool.ca/File/System/1.0/" xmlns:File="http://ns.exiftool.ca/File/1.0/" rdf:about="/media/yadn/input/20130927/509dc6f9cc63477fac2722b6/1380288063207/76e77236-704a-4c05-80d3-01bd6bc15ae9.ppt" et:toolkit="Image::ExifTool 8.93">
+ <ExifTool:ExifToolVersion>8.93</ExifTool:ExifToolVersion>
+ <System:FileName>76e77236-704a-4c05-80d3-01bd6bc15ae9.ppt</System:FileName>
+ <System:Directory>/media/yadn/input/20130927/509dc6f9cc63477fac2722b6/1380288063207</System:Directory>
+ <System:FileSize>144 kB</System:FileSize>
+ <System:FileModifyDate>2013:03:06 11:45:29+02:00</System:FileModifyDate>
+ <System:FilePermissions>rwxrwxrwx</System:FilePermissions>
+ <System:FileName>76e77236-704a-4c05-80d3-01bd6bc15ae9.ppt</System:FileName>
+ <System:Directory>/media/yadn/input/20130927/509dc6f9cc63477fac2722b6/1380288063207</System:Directory>
+ <System:FileSize>144 kB</System:FileSize>
+ <System:FileModifyDate>2013:03:06 11:45:29+02:00</System:FileModifyDate>
+ <System:FilePermissions>rwxrwxrwx</System:FilePermissions>
+ <File:FileType>PPT</File:FileType>
+ <File:MIMEType>application/vnd.ms-powerpoint</File:MIMEType>
+</rdf:Description>
+</rdf:RDF>]]></Value>
+    </property>
+    <property name="evaluation_MediaInfo">
+      <Value></Value>
+    </property>
+    <property name="evaluation_ffprobe">
+      <Value></Value>
+    </property>
+    <property name="evaluation_pdfdimensions">
+      <Value></Value>
+    </property>
+  </metadata>
+</UploadJobResponse>

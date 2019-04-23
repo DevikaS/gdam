@@ -1,0 +1,1 @@
+java -Djava.net.preferIPv4Stack=true -Xmx512m -cp "lib/*" com.adstream.automate.babylon.swing.DesktopAdmin > messages.log

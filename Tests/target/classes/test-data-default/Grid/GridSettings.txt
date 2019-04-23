@@ -1,0 +1,23 @@
+44 Grid [25/05/2018] - very right one
+
+Hub
+java -cp ".;grid-servletsnew.jar;selenium-server-standalone-3.4.0.jar" org.openqa.grid.selenium.GridLauncherV3 -role hub -servlets com.adstream.automate.grid.SlotFilteringServlet,com.adstream.automate.grid.TerminateAllSlots -timeout 300000 -browserTimeout 0
+
+Node
+java -Dwebdriver.gecko.driver="C:\Adstream_new\geckodriver.exe" -Dwebdriver.chrome.driver=C:\Adstream_new\chromedriver.exe -Dwebdriver.firefox.marionette=true -Dwebdriver.safari.noinstall=true -jar selenium-server-standalone-3.4.0.jar -role node -hub http://10.44.127.44:4444/grid/register -maxSession 6 -browser browserName=firefox,maxInstances=6 -browser browserName="internet explorer",maxInstances=1 -browser browserName=chrome,maxInstances=6 -browser browserName=safari,maxInstances=1
+
+Browser
+FF 54.0.1(64 bit)
+
+********************************************************************************
+105 Grid [25/05/2018] --altered adding Browser timeout to hub and node registration cycle
+
+Hub
+java -cp ".;grid-servletsnew.jar;selenium-server-standalone-3.4.0.jar" org.openqa.grid.selenium.GridLauncherV3 -role hub -servlets com.adstream.automate.grid.SlotFilteringServlet,com.adstream.automate.grid.TerminateAllSlots -timeout 300000 -browserTimeout 5000
+
+Node
+java -Dwebdriver.gecko.driver="C:\Adstream_new\geckodriver.exe" -Dwebdriver.chrome.driver=C:\Adstream_new\chromedriver.exe -Dwebdriver.firefox.marionette=true -Dwebdriver.safari.noinstall=true -jar selenium-server-standalone-3.4.0.jar -role node -hub http://10.44.127.108:4444/grid/register -maxSession 6 -registerCycle 100000 -browser browserName=firefox,maxInstances=6 -browser browserName="internet explorer",maxInstances=1 -browser browserName=chrome,maxInstances=6 -browser browserName=safari,maxInstances=1
+
+Browser
+FF 54.0.1(32 bit)
+*********************************************************************************

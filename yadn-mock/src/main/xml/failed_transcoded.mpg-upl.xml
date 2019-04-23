@@ -1,0 +1,94 @@
+<UploadJobResponse xmlns:xs="http://adstream.com/xmlstream/" xs:id="40" ns0:type="UploadJobResponse" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:adstream:yadn">
+  <MessageID><![CDATA[1.1|akka://KV01V-A5DA502/user/head/fsobject|45ca8dae71e9401a8b48fa64#1]]></MessageID>
+  <Status>UploadedToStorage</Status>
+  <FileID>87868515-26c2-4052-9b61-a246010d81a5</FileID>
+  <FileName>27f59cce-f316-40f5-8826-dabc0186e312.mpg</FileName>
+  <FileDirectory><![CDATA[\00000000-0000-0000-0000-000000000000\2013-09-27\45ca8dae71e9401a8b48fa64\]]></FileDirectory>
+  <FileSize>62842</FileSize>
+  <MD5>2f4562f9681e76642c8bb301f665c087</MD5>
+  <CRC>        </CRC>
+  <Node>adstream.yadn.nodes.outpost-a5-auto</Node>
+  <SpecDBDocID>f2:video:unspecified</SpecDBDocID>
+  <metadata>
+    <property name="isPlayout">
+      <Value>false</Value>
+    </property>
+    <property name="ElementID">
+      <Value>45ca8dae71e9401a8b48fa64</Value>
+    </property>
+    <property name="Path">
+      <Value>failed_transcoded.mpg</Value>
+    </property>
+    <property name="Country">
+      <Value>AF</Value>
+    </property>
+    <property name="guise">
+      <Value>master</Value>
+    </property>
+    <property name="IsPlayout">
+      <Value>false</Value>
+    </property>
+    <property name="evaluation_exiftool">
+      <Value><![CDATA[<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+
+<rdf:Description xmlns:et="http://ns.exiftool.ca/1.0/" xmlns:ExifTool="http://ns.exiftool.ca/ExifTool/1.0/" xmlns:System="http://ns.exiftool.ca/File/System/1.0/" xmlns:File="http://ns.exiftool.ca/File/1.0/" rdf:about="/media/yadn/input/20130927/509dc6f9cc63477fac2722b6/1380288060118/d819a615-bbf3-498f-8d1a-1f6a02a9ac41.mpg" et:toolkit="Image::ExifTool 8.93">
+ <ExifTool:ExifToolVersion>8.93</ExifTool:ExifToolVersion>
+ <System:FileName>d819a615-bbf3-498f-8d1a-1f6a02a9ac41.mpg</System:FileName>
+ <System:Directory>/media/yadn/input/20130927/509dc6f9cc63477fac2722b6/1380288060118</System:Directory>
+ <System:FileSize>61 kB</System:FileSize>
+ <System:FileModifyDate>2013:02:14 11:14:30+02:00</System:FileModifyDate>
+ <System:FilePermissions>rwxrwxrwx</System:FilePermissions>
+ <System:FileName>d819a615-bbf3-498f-8d1a-1f6a02a9ac41.mpg</System:FileName>
+ <System:Directory>/media/yadn/input/20130927/509dc6f9cc63477fac2722b6/1380288060118</System:Directory>
+ <System:FileSize>61 kB</System:FileSize>
+ <System:FileModifyDate>2013:02:14 11:14:30+02:00</System:FileModifyDate>
+ <System:FilePermissions>rwxrwxrwx</System:FilePermissions>
+ <File:FileType>MPEG</File:FileType>
+ <File:MIMEType>video/mpeg</File:MIMEType>
+</rdf:Description>
+</rdf:RDF>]]></Value>
+    </property>
+    <property name="evaluation_MediaInfo">
+      <Value><![CDATA[<Mediainfo xmlns="" version="0.7.61">
+<File>
+<track type="General">
+<Complete_name>/media/yadn/input/20130927/509dc6f9cc63477fac2722b6/1380288060118/d819a615-bbf3-498f-8d1a-1f6a02a9ac41.mpg</Complete_name>
+<Format>MPEG Video</Format>
+<Format_version>Version 1</Format_version>
+<File_size>61.4 KiB</File_size>
+<Duration>400ms</Duration>
+<Overall_bit_rate_mode>Variable</Overall_bit_rate_mode>
+<Overall_bit_rate>1 257 Kbps</Overall_bit_rate>
+</track>
+
+<track type="Video">
+<Format>MPEG Video</Format>
+<Format_version>Version 1</Format_version>
+<Format_settings__BVOP>Yes</Format_settings__BVOP>
+<Format_settings__Matrix>Default</Format_settings__Matrix>
+<Duration>400ms</Duration>
+<Bit_rate_mode>Variable</Bit_rate_mode>
+<Width>400 pixels</Width>
+<Height>400 pixels</Height>
+<Display_aspect_ratio>1.000</Display_aspect_ratio>
+<Frame_rate>30.000 fps</Frame_rate>
+<Color_space>YUV</Color_space>
+<Bit_depth>8 bits</Bit_depth>
+<Scan_type>Progressive</Scan_type>
+<Compression_mode>Lossy</Compression_mode>
+<Alignment>MPEG stream encoded by UCB Encoder (mpeg_encode) v1.5b on Mon Feb  7 17:27:59 2000 / .</Alignment>
+<Title>MPEG stream encoded by UCB Encoder (mpeg_encode) v1.5b on Mon Feb  7 17:27:59 2000 / .</Title>
+<Writing_library>MPEG stream encoded by UCB Encoder (mpeg_encode) v1.5b on Mon Feb  7 17:27:59 2000 / .</Writing_library>
+</track>
+
+</File>
+</Mediainfo>]]></Value>
+    </property>
+    <property name="evaluation_ffprobe">
+      <Value></Value>
+    </property>
+    <property name="evaluation_pdfdimensions">
+      <Value></Value>
+    </property>
+  </metadata>
+</UploadJobResponse>

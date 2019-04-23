@@ -1,0 +1,67 @@
+<UploadJobResponse xmlns:xs="http://adstream.com/xmlstream/" xs:id="33" ns0:type="UploadJobResponse" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:adstream:yadn">
+  <MessageID><![CDATA[1.0|akka://gdam/user/fsobject|500eac9ee4b02dec99de56d8]]></MessageID>
+  <Status>UploadedToStorage</Status>
+  <FileID>fa301c77-ced1-4ee7-a375-a098011af04f</FileID>
+  <FileName>045557e6-5212-4036-890d-40d5886f1fa0</FileName>
+  <FileDirectory><![CDATA[\500e6936e4b00e34ff5b6ebc\2012-07-24\500eac9ee4b02dec99de56d8\]]></FileDirectory>
+  <FileSize>112705</FileSize>
+  <MD5>d674757f9a58cf1fdc1dc217637666b3</MD5>
+  <CRC>74f4b385</CRC>
+  <Node>adstream.yadn.nodes.adgate_lin_1@adstream.tv.ua</Node>
+  <SpecDBDocID>f2:image:unspecified</SpecDBDocID>
+  <metadata>
+    <property name="uploader">
+      <Value>500e6936e4b00e34ff5b6ebf</Value>
+    </property>
+    <property name="ElementID">
+      <Value>500eac9ee4b02dec99de56d8</Value>
+    </property>
+    <property name="AgencyID">
+      <Value>500e6936e4b00e34ff5b6ebc</Value>
+    </property>
+    <property name="Path">
+      <Value>306.jpg</Value>
+    </property>
+    <property name="Country">
+      <Value>Afghanistan</Value>
+    </property>
+    <property name="guise">
+      <Value>master</Value>
+    </property>
+    <property name="IsPlayout">
+      <Value>false</Value>
+    </property>
+    <property name="evaluation_exiftool">
+      <Value><![CDATA[<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+
+<rdf:Description xmlns:et="http://ns.exiftool.ca/1.0/" xmlns:ExifTool="http://ns.exiftool.ca/ExifTool/1.0/" xmlns:System="http://ns.exiftool.ca/File/System/1.0/" xmlns:File="http://ns.exiftool.ca/File/1.0/" xmlns:JFIF="http://ns.exiftool.ca/JFIF/JFIF/1.0/" xmlns:Composite="http://ns.exiftool.ca/Composite/1.0/" rdf:about="/media/yadn/input/20120724/500e6936e4b00e34ff5b6ebf/1343138974152/4ab6bf25-f99b-56f8-8b28-da7aee0efe57.jpg" et:toolkit="Image::ExifTool 8.93">
+ <ExifTool:ExifToolVersion>8.93</ExifTool:ExifToolVersion>
+ <System:FileName>4ab6bf25-f99b-56f8-8b28-da7aee0efe57.jpg</System:FileName>
+ <System:Directory>/media/yadn/input/20120724/500e6936e4b00e34ff5b6ebf/1343138974152</System:Directory>
+ <System:FileSize>110 kB</System:FileSize>
+ <System:FileModifyDate>2012:03:07 14:48:10+02:00</System:FileModifyDate>
+ <System:FilePermissions>rwxrwxrwx</System:FilePermissions>
+ <File:FileType>JPEG</File:FileType>
+ <File:MIMEType>image/jpeg</File:MIMEType>
+ <File:ImageWidth>562</File:ImageWidth>
+ <File:ImageHeight>618</File:ImageHeight>
+ <File:EncodingProcess>Baseline DCT, Huffman coding</File:EncodingProcess>
+ <File:BitsPerSample>8</File:BitsPerSample>
+ <File:ColorComponents>3</File:ColorComponents>
+ <File:YCbCrSubSampling>YCbCr4:2:0 (2 2)</File:YCbCrSubSampling>
+ <JFIF:JFIFVersion>1.01</JFIF:JFIFVersion>
+ <JFIF:ResolutionUnit>None</JFIF:ResolutionUnit>
+ <JFIF:XResolution>300</JFIF:XResolution>
+ <JFIF:YResolution>300</JFIF:YResolution>
+ <Composite:ImageSize>562x618</Composite:ImageSize>
+</rdf:Description>
+</rdf:RDF>]]></Value>
+    </property>
+    <property name="evaluation_MediaInfo">
+      <Value></Value>
+    </property>
+    <property name="evaluation_ffprobe">
+      <Value></Value>
+    </property>
+  </metadata>
+</UploadJobResponse>

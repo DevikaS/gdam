@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="urn:adstream:yadn" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Node" type="xs:string"/>
+  <xs:element name="ExternalID" type="xs:string"/>
+  <xs:element name="File" type="xs:string"/>
+  <xs:element name="Archive" type="xs:string"/>
+  <xs:element name="Value">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="false"/>
+        <xs:enumeration value="51fb7b243e041a2678462973"/>
+        <xs:enumeration value="first_file.txt"/>
+        <xs:enumeration value="ua"/>
+        <xs:enumeration value="master"/>
+        <xs:enumeration value="51fb7b223e041a2678462960"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="System" type="xs:string"/>
+  <xs:element name="metadata">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="urn:property" maxOccurs="unbounded" minOccurs="0" xmlns:urn="urn:adstream:yadn"/>
+      </xs:sequence>
+      <xs:attribute type="xs:string" name="id"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Upload">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="urn:ExternalID" xmlns:urn="urn:adstream:yadn"/>
+        <xs:element ref="urn:File" xmlns:urn="urn:adstream:yadn"/>
+        <xs:element ref="urn:Archive" xmlns:urn="urn:adstream:yadn"/>
+        <xs:element ref="urn:System" xmlns:urn="urn:adstream:yadn"/>
+        <xs:element ref="urn:Node" xmlns:urn="urn:adstream:yadn"/>
+        <xs:element ref="urn:metadata" xmlns:urn="urn:adstream:yadn"/>
+      </xs:sequence>
+      <xs:attribute type="xs:string" name="id"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="property">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="urn:Value" xmlns:urn="urn:adstream:yadn"/>
+      </xs:sequence>
+      <xs:attribute type="xs:string" name="name" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

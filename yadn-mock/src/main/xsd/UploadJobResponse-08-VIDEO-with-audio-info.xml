@@ -1,0 +1,125 @@
+<UploadJobResponse xmlns:xs="http://adstream.com/xmlstream/" xs:id="10" ns0:type="UploadJobResponse" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:adstream:yadn">
+  <MessageID><![CDATA[1.0|akka://gdam/user/fsobject|505c0b01e4b0ac262b6ad80e]]></MessageID>
+  <Status>UploadedToStorage</Status>
+  <FileID>fa411800-ae02-486a-a413-a0d3009ebd78</FileID>
+  <FileName>d936ddca-df33-4a19-b08e-a184fed43225</FileName>
+  <FileDirectory><![CDATA[\505c0404e4b0ac262b6abf05\2012-09-21\505c0b01e4b0ac262b6ad80e\]]></FileDirectory>
+  <FileSize>16005124</FileSize>
+  <MD5>ef1fdc471b39abf527daecf256dd18a8</MD5>
+  <CRC>54e092ab</CRC>
+  <Node>adstream.yadn.nodes.adgate_lin_1@adstream.tv.ua</Node>
+  <SpecDBDocID>f2:video:unspecified</SpecDBDocID>
+  <metadata>
+    <property name="uploader">
+      <Value>505c0407e4b0ac262b6abf13</Value>
+    </property>
+    <property name="ElementID">
+      <Value>505c0b01e4b0ac262b6ad80e</Value>
+    </property>
+    <property name="AgencyID">
+      <Value>505c0404e4b0ac262b6abf05</Value>
+    </property>
+    <property name="Path">
+      <Value>Nike Soccer Commercial.mpg</Value>
+    </property>
+    <property name="Country">
+      <Value>Afghanistan</Value>
+    </property>
+    <property name="guise">
+      <Value>master</Value>
+    </property>
+    <property name="IsPlayout">
+      <Value>false</Value>
+    </property>
+    <property name="IsPlayout">
+      <Value>false</Value>
+    </property>
+    <property name="evaluation_exiftool">
+      <Value><![CDATA[<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+
+<rdf:Description xmlns:et="http://ns.exiftool.ca/1.0/" xmlns:ExifTool="http://ns.exiftool.ca/ExifTool/1.0/" xmlns:System="http://ns.exiftool.ca/File/System/1.0/" xmlns:File="http://ns.exiftool.ca/File/1.0/" xmlns:MPEG="http://ns.exiftool.ca/MPEG/MPEG/1.0/" xmlns:Composite="http://ns.exiftool.ca/Composite/1.0/" rdf:about="/media/yadn/input/20120921/505c0407e4b0ac262b6abf13/1348209301531/c39f740d-2b42-ba3b-eefa-e945042754f5.mpg" et:toolkit="Image::ExifTool 8.93">
+ <ExifTool:ExifToolVersion>8.93</ExifTool:ExifToolVersion>
+ <System:FileName>c39f740d-2b42-ba3b-eefa-e945042754f5.mpg</System:FileName>
+ <System:Directory>/media/yadn/input/20120921/505c0407e4b0ac262b6abf13/1348209301531</System:Directory>
+ <System:FileSize>15 MB</System:FileSize>
+ <System:FileModifyDate>2010:09:28 20:35:34+03:00</System:FileModifyDate>
+ <System:FilePermissions>rwxrwxrwx</System:FilePermissions>
+ <File:FileType>MPEG</File:FileType>
+ <File:MIMEType>video/mpeg</File:MIMEType>
+ <MPEG:MPEGAudioVersion>1</MPEG:MPEGAudioVersion>
+ <MPEG:AudioLayer>1</MPEG:AudioLayer>
+ <MPEG:AudioBitrate>96 kbps</MPEG:AudioBitrate>
+ <MPEG:SampleRate>44100</MPEG:SampleRate>
+ <MPEG:ChannelMode>Stereo</MPEG:ChannelMode>
+ <MPEG:ModeExtension>Bands 4-31</MPEG:ModeExtension>
+ <MPEG:CopyrightFlag>False</MPEG:CopyrightFlag>
+ <MPEG:OriginalMedia>False</MPEG:OriginalMedia>
+ <MPEG:Emphasis>None</MPEG:Emphasis>
+ <MPEG:ImageWidth>352</MPEG:ImageWidth>
+ <MPEG:ImageHeight>288</MPEG:ImageHeight>
+ <MPEG:AspectRatio>4:3, 625 line, PAL, CCIR601</MPEG:AspectRatio>
+ <MPEG:FrameRate>25 fps</MPEG:FrameRate>
+ <MPEG:VideoBitrate>1.15 Mbps</MPEG:VideoBitrate>
+ <Composite:Duration>0:01:42 (approx)</Composite:Duration>
+ <Composite:ImageSize>352x288</Composite:ImageSize>
+</rdf:Description>
+</rdf:RDF>]]></Value>
+    </property>
+    <property name="evaluation_MediaInfo">
+      <Value><![CDATA[<Mediainfo xmlns="" version="0.7.58">
+<File>
+<track type="General">
+<Complete_name>/media/yadn/input/20120921/505c0407e4b0ac262b6abf13/1348209301531/c39f740d-2b42-ba3b-eefa-e945042754f5.mpg</Complete_name>
+<Format>MPEG-PS</Format>
+<File_size>15.3 MiB</File_size>
+<Duration>1mn 34s</Duration>
+<Overall_bit_rate>1 362 Kbps</Overall_bit_rate>
+</track>
+
+<track type="Video">
+<ID>224 (0xE0)</ID>
+<Format>MPEG Video</Format>
+<Format_version>Version 1</Format_version>
+<Format_settings__BVOP>Yes</Format_settings__BVOP>
+<Format_settings__Matrix>Default</Format_settings__Matrix>
+<Duration>1mn 34s</Duration>
+<Bit_rate>1 150 Kbps</Bit_rate>
+<Width>352 pixels</Width>
+<Height>288 pixels</Height>
+<Display_aspect_ratio>4:3</Display_aspect_ratio>
+<Frame_rate>25.000 fps</Frame_rate>
+<Standard>PAL</Standard>
+<Color_space>YUV</Color_space>
+<Bit_depth>8 bits</Bit_depth>
+<Scan_type>Progressive</Scan_type>
+<Compression_mode>Lossy</Compression_mode>
+<Bits__Pixel_Frame_>0.454</Bits__Pixel_Frame_>
+<Stream_size>12.8 MiB (84%)</Stream_size>
+</track>
+
+<track type="Audio">
+<ID>192 (0xC0)</ID>
+<Format>MPEG Audio</Format>
+<Format_version>Version 1</Format_version>
+<Format_profile>Layer 2</Format_profile>
+<Duration>1mn 33s</Duration>
+<Bit_rate_mode>Constant</Bit_rate_mode>
+<Bit_rate>192 Kbps</Bit_rate>
+<Channel_s_>2 channels</Channel_s_>
+<Sampling_rate>44.1 KHz</Sampling_rate>
+<Compression_mode>Lossy</Compression_mode>
+<Delay_relative_to_video>-80ms</Delay_relative_to_video>
+<Stream_size>2.15 MiB (14%)</Stream_size>
+</track>
+
+</File>
+</Mediainfo>]]></Value>
+    </property>
+    <property name="evaluation_ffprobe">
+      <Value></Value>
+    </property>
+    <property name="evaluation_pdfdimensions">
+      <Value></Value>
+    </property>
+  </metadata>
+</UploadJobResponse>

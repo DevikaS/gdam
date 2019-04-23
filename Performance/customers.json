@@ -1,0 +1,52 @@
+{
+    "item": {
+        "country": "GB",
+        "customer": "ADGB0003"
+    },
+    "items": [
+        {
+            "country": "GB",
+            "customer": "ADGB0003"
+        },
+        {
+            "country": "ES",
+            "customer": "ADES0309"
+        },
+        {
+            "country": "DE",
+            "customer": "ADDE0717"
+        },
+        {
+            "country": "FR",
+            "customer": "ADFR0059"
+        },
+        {
+            "country": "IT",
+            "customer": "ADIT0616"
+        },
+        {
+            "country": "MY",
+            "customer": "ADMY0917"
+        },
+        {
+            "country": "SG",
+            "customer": "ADSG0007"
+        },
+        {
+            "country": "US",
+            "customer": "ADUS0254"
+        },
+        {
+            "country": "HK",
+            "customer": "ADHK0066"
+        },
+        {
+           "country": "IN",
+           "customer": "ADIN0096"
+        },
+        {
+           "country": "DK",
+           "customer": "ADDK0196"
+        }
+    ]
+}

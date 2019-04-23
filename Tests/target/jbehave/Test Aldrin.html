@@ -1,0 +1,78 @@
+
+<html>
+<body>
+<div class="story"><h1>Feature:</h1>
+<div class="path">Test Aldrin.story</div>
+<div class="narrative"><h2>Narrative:</h2>
+<div class="element asA"><span class="keyword asA">As a</span> AgencyAdmin</div>
+<div class="element iWantTo"><span class="keyword iWantTo">I want to</span> Check functionality</div>
+<div class="element soThat"><span class="keyword soThat">So that</span> </div>
+</div>
+<div class="scenario"><h2>Scenario: Check that presentation query returns more relavent results</h2>   
+<div class="meta">
+<div class="keyword">Meta:</div>
+<div class="property">@library </div>
+<div class="property">@gdam </div>
+</div>
+ <!-- normal scenario steps -->
+<div class="step successful">Given I uploaded following assetsNEWLIB:
+ <span class="step parameter"><table>
+<thead><tr>
+<th>Name</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>/files/_file1.gif</td>
+</tr>
+</tbody>
+</table>
+</span> </div>
+
+<div class="step successful">And waited while preview is visible on library page for collection 'My Assets' for assets '_file1.gif'NEWLIB </div>
+
+<div class="step successful">And I created following reels:
+ <span class="step parameter"><table>
+<thead><tr>
+<th>Name</th>
+<th>Description</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>PRAATP_P2</td>
+<td>DDD_1</td>
+</tr>
+<tr>
+<td>PR_P2</td>
+<td>DDD_2</td>
+</tr>
+<tr>
+<td>PRP2</td>
+<td>DDD_3</td>
+</tr>
+<tr>
+<td>PRAA P2</td>
+<td>DDD_2</td>
+</tr>
+<tr>
+<td>P2 PR</td>
+<td>DDD_3</td>
+</tr>
+</tbody>
+</table>
+</span> </div>
+
+<div class="step successful">When I go to the library page for collection 'My Assets'NEWLIB </div>
+
+<div class="step successful">Then I should see following presentation search results for text PR while adding asset _file1.gif from collection My Assets pageNEWLIB:
+|SearchResults|AssetCount|
+|PRAATP_P2    | (0 assets)    |
+|PR_P2        |(0 assets)    |
+|PRP2         |(0 assets)    |
+|PRAA P2      |(0 assets)    |
+|P2 <span class="step parameter">PR</span>        |(0 assets)    | </div>
+
+</div> <!-- end scenario -->
+</div> <!-- end story -->
+</body>
+</html>
+

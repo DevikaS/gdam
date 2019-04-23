@@ -1,0 +1,71 @@
+<UploadJobResponse xmlns:xs="http://adstream.com/xmlstream/" xs:id="6" ns0:type="UploadJobResponse" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:adstream:yadn">
+  <MessageID><![CDATA[1.1|akka://KV01V-A5DA502/user/head/fsobject|0814b31c0d2d4c6182af1072#1]]></MessageID>
+  <Status>UploadedToStorage</Status>
+  <FileID>f1375911-082b-4434-8e10-a246010d6f43</FileID>
+  <FileName>2bf6adb6-0c8d-4f89-ad55-ea17f30ecd0a.ai</FileName>
+  <FileDirectory><![CDATA[\00000000-0000-0000-0000-000000000000\2013-09-27\0814b31c0d2d4c6182af1072\]]></FileDirectory>
+  <FileSize>142428</FileSize>
+  <MD5>1844b2077de2902f243b48c1d2259f83</MD5>
+  <CRC>        </CRC>
+  <Node>adstream.yadn.nodes.outpost-a5-auto</Node>
+  <SpecDBDocID>f2:application:unspecified:vnd.adobe.illustrator</SpecDBDocID>
+  <metadata>
+    <property name="isPlayout">
+      <Value>false</Value>
+    </property>
+    <property name="ElementID">
+      <Value>0814b31c0d2d4c6182af1072</Value>
+    </property>
+    <property name="Path">
+      <Value>4002c.ai</Value>
+    </property>
+    <property name="Country">
+      <Value>AF</Value>
+    </property>
+    <property name="guise">
+      <Value>master</Value>
+    </property>
+    <property name="IsPlayout">
+      <Value>false</Value>
+    </property>
+    <property name="evaluation_exiftool">
+      <Value><![CDATA[<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+
+<rdf:Description xmlns:et="http://ns.exiftool.ca/1.0/" xmlns:ExifTool="http://ns.exiftool.ca/ExifTool/1.0/" xmlns:System="http://ns.exiftool.ca/File/System/1.0/" xmlns:File="http://ns.exiftool.ca/File/1.0/" xmlns:Composite="http://ns.exiftool.ca/Composite/1.0/" xmlns:PDF="http://ns.exiftool.ca/PDF/PDF/1.0/" xmlns:XMP-xmp="http://ns.exiftool.ca/XMP/XMP-xmp/1.0/" rdf:about="/media/yadn/input/20130927/509dc6f9cc63477fac2722b6/1380288056888/f9c1899d-0bcd-42cc-84a0-176e025de93e.ai" et:toolkit="Image::ExifTool 8.93">
+ <ExifTool:ExifToolVersion>8.93</ExifTool:ExifToolVersion>
+ <System:FileName>f9c1899d-0bcd-42cc-84a0-176e025de93e.ai</System:FileName>
+ <System:Directory>/media/yadn/input/20130927/509dc6f9cc63477fac2722b6/1380288056888</System:Directory>
+ <System:FileSize>139 kB</System:FileSize>
+ <System:FileModifyDate>2013:03:06 11:46:42+02:00</System:FileModifyDate>
+ <System:FilePermissions>rwxrwxrwx</System:FilePermissions>
+ <System:FileName>f9c1899d-0bcd-42cc-84a0-176e025de93e.ai</System:FileName>
+ <System:Directory>/media/yadn/input/20130927/509dc6f9cc63477fac2722b6/1380288056888</System:Directory>
+ <System:FileSize>139 kB</System:FileSize>
+ <System:FileModifyDate>2013:03:06 11:46:42+02:00</System:FileModifyDate>
+ <System:FilePermissions>rwxrwxrwx</System:FilePermissions>
+ <File:FileType>AI</File:FileType>
+ <File:MIMEType>application/vnd.adobe.illustrator</File:MIMEType>
+ <PDF:PDFVersion>1.5</PDF:PDFVersion>
+ <PDF:Linearized>No</PDF:Linearized>
+ <PDF:PageCount>1</PDF:PageCount>
+ <PDF:CreateDate>2013:02:18 15:43:55-05:00</PDF:CreateDate>
+ <PDF:Creator>Adobe Illustrator CS5</PDF:Creator>
+ <PDF:Producer>Adobe PDF library 9.90</PDF:Producer>
+ <PDF:ModifyDate>2013:02:18 15:43:55-05:00</PDF:ModifyDate>
+ <PDF:Title>4002c_elhu_chrt_blood_gluc</PDF:Title>
+ <XMP-xmp:CreateDate>2013:02:18 15:43:55-05:00</XMP-xmp:CreateDate>
+ <XMP-xmp:ModifyDate>2013:02:18 15:43:55-05:00</XMP-xmp:ModifyDate>
+</rdf:Description>
+</rdf:RDF>]]></Value>
+    </property>
+    <property name="evaluation_MediaInfo">
+      <Value></Value>
+    </property>
+    <property name="evaluation_ffprobe">
+      <Value></Value>
+    </property>
+    <property name="evaluation_pdfdimensions">
+      <Value></Value>
+    </property>
+  </metadata>
+</UploadJobResponse>

@@ -1,0 +1,21 @@
+<TranscodeJobResponse xmlns:xs="http://adstream.com/xmlstream/" xs:id="14" ns0:type="TranscodeJobResponse" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:adstream:yadn">
+  <MessageID><![CDATA[1.1|akka://KV01V-A5DA502/user/head/fsobject|8372dc6401f247ae83be7c0f#1]]></MessageID>
+  <Status>Completed</Status>
+  <FileID>728e261b-8ad4-405b-80c3-a246010d7f69</FileID>
+  <FileStorage>701c9931-5044-4e91-af1d-3358da7eb7a7</FileStorage>
+  <IsDefault>true</IsDefault>
+  <TranscodeFiles xs:id="15">
+    <TranscodeFile xs:id="16">
+      <FileID>ec2b1bcf-fdb7-41f2-81a9-a246010e524a</FileID>
+      <FileDirectory><![CDATA[/00000000-0000-0000-0000-000000000000/2013-09-27/8372dc6401f247ae83be7c0f/d97b56df-f620-4dee-832e-c2457bc639e8]]></FileDirectory>
+      <FileName><![CDATA[d97b56df-f620-4dee-832e-c2457bc639e8_annotation-proxy.zip]]></FileName>
+      <FileSize>2400872</FileSize>
+      <SpecDBDocID>f1:application:annotation:zip</SpecDBDocID>
+      <properties>
+        <property name="a5_type" value="annotation-proxy" />
+        <property name="guise" value="annotation-proxy" />
+        <property name="proxy_guise" value="false" />
+      </properties>
+    </TranscodeFile>
+  </TranscodeFiles>
+</TranscodeJobResponse>

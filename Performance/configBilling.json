@@ -1,0 +1,60 @@
+{
+    "threadingTestTimeSeconds": 60,
+    "degradationTestTimeMinutes": 30,
+    "complexIterationTimeSeconds": 60,
+    "responseTimeLimitSeconds": 50,
+    "maxThread": 64,
+    "startWithIteration": 0,
+    "globalParams": {
+        "login": "test",
+        "password": "test",
+        "useSSO": "true",
+        "filePath": "resources/logo.jpg"
+    },
+    "destinations": {
+        "core": {
+            "isA5": false,
+            "type": "CORE",
+            "url": "http://LNO1V-SAPUAPP01.sydney.adstream.com.au:8080/"
+        }
+    },
+    "tests": {
+        "Get Price Order Test": {
+           "enabled": false,
+           "threadingDelay": 10000,
+           "threadGroups": {
+               "Get Price Order Test": {
+                   "destination": "core",
+                   "testClass": "com.adstream.automate.babylon.performance.tests.ordering.GetPriceOrderTest",
+                   "params": {
+                       "getPriceEndPointUrl": "B1iXcellerator/exec/ipo/vP.0010000121.in_HCSX/com.sap.b1i.vplatform.runtime/INB_HT_CALL_SYNC_XPT/INB_HT_CALL_SYNC_XPT.ipo/proc?GetPriceV2=GetPriceV2",
+                       "clocksCount": 1,
+                       "clockDestinationsCount": 1,
+                       "isMultiCountry": false,
+                       "sapServiceId": "SSUB00001"
+                   }
+               }
+           }
+        },
+        "Bill Order Test": {
+           "enabled": true,
+           "threadingDelay": 10000,
+           "threadGroups": {
+               "Bill Order Test": {
+                   "destination": "core",
+                   "testClass": "com.adstream.automate.babylon.performance.tests.ordering.BillOrderTest",
+                   "params": {
+                       "getPriceEndPointUrl": "B1iXcellerator/exec/ipo/vP.0010000121.in_HCSX/com.sap.b1i.vplatform.runtime/INB_HT_CALL_SYNC_XPT/INB_HT_CALL_SYNC_XPT.ipo/proc?GetPriceV2=GetPriceV2",
+                       "confirmEndPointUrl": "B1iXcellerator/exec/ipo/vP.0010000111.in_HCSX/com.sap.b1i.vplatform.runtime/INB_HT_CALL_SYNC_XPT/INB_HT_CALL_SYNC_XPT.ipo/proc?ConfirmOrder=ConfirmOrder",
+                       "clocksCount": 1,
+                       "clockDestinationsCount": 1,
+                       "catalogueItemsCount": 4,
+                       "isMultiCountry": true,
+                       "withMetadataStuff": false,
+                       "sapServiceId": "SSUB00001"
+                   }
+               }
+           }
+        }
+    }
+}

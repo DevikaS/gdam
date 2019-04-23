@@ -1,0 +1,97 @@
+<UploadJobResponse xmlns:xs="http://adstream.com/xmlstream/" xs:id="37" ns0:type="UploadJobResponse" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:adstream:yadn">
+  <MessageID><![CDATA[1.1|akka://KV01V-A5DA502/user/head/fsobject|62b3936375d24845a986152b#1]]></MessageID>
+  <Status>UploadedToStorage</Status>
+  <FileID>caa7f5f6-2cf5-4835-88ae-a246010d8143</FileID>
+  <FileName>7ccd3ac2-d814-4ae5-8f4e-2cf6ed0a3f75.psd</FileName>
+  <FileDirectory><![CDATA[\00000000-0000-0000-0000-000000000000\2013-09-27\62b3936375d24845a986152b\]]></FileDirectory>
+  <FileSize>31182</FileSize>
+  <MD5>503d394f8fb48eb49a6c8abb6eb6c130</MD5>
+  <CRC>        </CRC>
+  <Node>adstream.yadn.nodes.outpost-a5-auto</Node>
+  <SpecDBDocID>f2:application:unspecified:vnd.adobe.photoshop</SpecDBDocID>
+  <metadata>
+    <property name="isPlayout">
+      <Value>false</Value>
+    </property>
+    <property name="ElementID">
+      <Value>62b3936375d24845a986152b</Value>
+    </property>
+    <property name="Path">
+      <Value>example6.psd</Value>
+    </property>
+    <property name="Country">
+      <Value>AF</Value>
+    </property>
+    <property name="guise">
+      <Value>master</Value>
+    </property>
+    <property name="IsPlayout">
+      <Value>false</Value>
+    </property>
+    <property name="evaluation_exiftool">
+      <Value><![CDATA[<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+
+<rdf:Description xmlns:et="http://ns.exiftool.ca/1.0/" xmlns:ExifTool="http://ns.exiftool.ca/ExifTool/1.0/" xmlns:System="http://ns.exiftool.ca/File/System/1.0/" xmlns:File="http://ns.exiftool.ca/File/1.0/" xmlns:ExifIFD="http://ns.exiftool.ca/EXIF/ExifIFD/1.0/" xmlns:ICC_Profile="http://ns.exiftool.ca/ICC_Profile/ICC_Profile/1.0/" xmlns:IFD0="http://ns.exiftool.ca/EXIF/IFD0/1.0/" xmlns:Photoshop="http://ns.exiftool.ca/Photoshop/Photoshop/1.0/" xmlns:XMP-xmp="http://ns.exiftool.ca/XMP/XMP-xmp/1.0/" rdf:about="/media/yadn/input/20130927/509dc6f9cc63477fac2722b6/1380288060069/e9b05e48-bfb1-4a02-b664-0dac39374a6e.psd" et:toolkit="Image::ExifTool 8.93">
+ <ExifTool:ExifToolVersion>8.93</ExifTool:ExifToolVersion>
+ <System:FileName>e9b05e48-bfb1-4a02-b664-0dac39374a6e.psd</System:FileName>
+ <System:Directory>/media/yadn/input/20130927/509dc6f9cc63477fac2722b6/1380288060069</System:Directory>
+ <System:FileSize>30 kB</System:FileSize>
+ <System:FileModifyDate>2013:01:17 12:42:07+02:00</System:FileModifyDate>
+ <System:FilePermissions>rwxrwxrwx</System:FilePermissions>
+ <System:FileName>e9b05e48-bfb1-4a02-b664-0dac39374a6e.psd</System:FileName>
+ <System:Directory>/media/yadn/input/20130927/509dc6f9cc63477fac2722b6/1380288060069</System:Directory>
+ <System:FileSize>30 kB</System:FileSize>
+ <System:FileModifyDate>2013:01:17 12:42:07+02:00</System:FileModifyDate>
+ <System:FilePermissions>rwxrwxrwx</System:FilePermissions>
+ <File:FileType>PSD</File:FileType>
+ <File:MIMEType>application/vnd.adobe.photoshop</File:MIMEType>
+ <File:ExifByteOrder>Big-endian (Motorola, MM)</File:ExifByteOrder>
+ <ExifIFD:ColorSpace>sRGB</ExifIFD:ColorSpace>
+ <ExifIFD:ExifImageWidth>100</ExifIFD:ExifImageWidth>
+ <ExifIFD:ExifImageHeight>100</ExifIFD:ExifImageHeight>
+ <ExifIFD:ColorSpace>sRGB</ExifIFD:ColorSpace>
+ <ExifIFD:ExifImageWidth>100</ExifIFD:ExifImageWidth>
+ <ExifIFD:ExifImageHeight>100</ExifIFD:ExifImageHeight>
+ <ICC_Profile:ProfileCopyright>Copyright (c) 1998 Hewlett-Packard Company</ICC_Profile:ProfileCopyright>
+ <ICC_Profile:ProfileDescription>sRGB IEC61966-2.1</ICC_Profile:ProfileDescription>
+ <ICC_Profile:MediaWhitePoint>0.95045 1 1.08905</ICC_Profile:MediaWhitePoint>
+ <ICC_Profile:MediaBlackPoint>0 0 0</ICC_Profile:MediaBlackPoint>
+ <ICC_Profile:RedMatrixColumn>0.43607 0.22249 0.01392</ICC_Profile:RedMatrixColumn>
+ <ICC_Profile:GreenMatrixColumn>0.38515 0.71687 0.09708</ICC_Profile:GreenMatrixColumn>
+ <ICC_Profile:BlueMatrixColumn>0.14307 0.06061 0.7141</ICC_Profile:BlueMatrixColumn>
+ <ICC_Profile:DeviceMfgDesc>IEC http://www.iec.ch</ICC_Profile:DeviceMfgDesc>
+ <ICC_Profile:DeviceModelDesc>IEC 61966-2.1 Default RGB colour space - sRGB</ICC_Profile:DeviceModelDesc>
+ <ICC_Profile:ViewingCondDesc>Reference Viewing Condition in IEC61966-2.1</ICC_Profile:ViewingCondDesc>
+ <ICC_Profile:Luminance>76.03647 80 87.12462</ICC_Profile:Luminance>
+ <ICC_Profile:Technology>Cathode Ray Tube Display</ICC_Profile:Technology>
+ <IFD0:Orientation>Horizontal (normal)</IFD0:Orientation>
+ <IFD0:XResolution>72</IFD0:XResolution>
+ <IFD0:YResolution>72</IFD0:YResolution>
+ <IFD0:ResolutionUnit>inches</IFD0:ResolutionUnit>
+ <IFD0:Software>Adobe Photoshop CS2 Windows</IFD0:Software>
+ <IFD0:ModifyDate>2006:01:06 11:09:46</IFD0:ModifyDate>
+ <Photoshop:NumChannels>4</Photoshop:NumChannels>
+ <Photoshop:ImageWidth>100</Photoshop:ImageWidth>
+ <Photoshop:ImageHeight>100</Photoshop:ImageHeight>
+ <Photoshop:BitDepth>8</Photoshop:BitDepth>
+ <Photoshop:ColorMode>RGB</Photoshop:ColorMode>
+ <Photoshop:XResolution>72</Photoshop:XResolution>
+ <Photoshop:XResolution>72</Photoshop:XResolution>
+ <Photoshop:DisplayedUnitsX>inches</Photoshop:DisplayedUnitsX>
+ <Photoshop:DisplayedUnitsY>inches</Photoshop:DisplayedUnitsY>
+ <XMP-xmp:CreateDate>2006:01:06 11:09:46-08:00</XMP-xmp:CreateDate>
+ <XMP-xmp:ModifyDate>2006:01:06 11:09:46-08:00</XMP-xmp:ModifyDate>
+</rdf:Description>
+</rdf:RDF>]]></Value>
+    </property>
+    <property name="evaluation_MediaInfo">
+      <Value></Value>
+    </property>
+    <property name="evaluation_ffprobe">
+      <Value></Value>
+    </property>
+    <property name="evaluation_pdfdimensions">
+      <Value></Value>
+    </property>
+  </metadata>
+</UploadJobResponse>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="UIMap" type="UIMapType"/>
+  <xs:complexType name="UIMapType" mixed="true">
+    <xs:sequence>
+      <xs:element type="pageType" name="page" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="pageType">
+    <xs:sequence>
+      <xs:element type="elementType" name="element" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element type="xs:string" name="name"/>
+      <xs:element name="url"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="locatorType">
+    <xs:sequence>
+      <xs:element name="type">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="NAME"/>
+            <xs:enumeration value="CLASS_NAME"/>
+            <xs:enumeration value="LINK_TEXT"/>
+            <xs:enumeration value="CSS"/>
+            <xs:enumeration value="XPATH"/>
+            <xs:enumeration value="ID"/>
+            <xs:enumeration value="TAG_NAME"/>
+            <xs:enumeration value="PARTIAL_LINK_TEXT"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="xs:string" name="value"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="elementType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="alias"/>
+      <xs:element type="locatorType" name="locator"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

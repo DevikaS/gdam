@@ -1,0 +1,816 @@
+{
+  "DefaultAgency": {
+    "agency": {
+      "_cm": {
+        "common": {
+          "time_zone": [
+            "Europe-Andorra"
+          ],
+          "pin": "1",
+          "name": "Adstream",
+          "agencyType": [
+            "Agency"
+          ],
+          "address": {
+            "country": [
+              "AF"
+            ]
+          },
+          "saveInLibrary": true,
+          "allowUserChangeSaveInLibrary": true,
+          "applications": {
+            "folders": true,
+            "adkits": true,
+            "library": true,
+            "ordering": true,
+            "presentations": true,
+            "approvals": true,
+            "annotations": true,
+            "dashboard": true
+          }
+        },
+        "a4": {
+          "user": "alejandra.medina@mccann.com.mx.ua",
+          "password": "b3tat3st3r",
+          "createAssetInA4": true
+        }
+      }
+    },
+    "users": {
+      "GlobalAdmin": {
+        "_cm": {
+          "common": {
+            "email": "admin"
+          }
+        },
+        "password": "abcdefghA1"
+      },
+      "DeliveryUser": {
+        "_cm": {
+          "common": {
+            "firstName": "admin@adstream.com",
+            "email": "admin@adstream.com",
+            "language": [
+              "en-us"
+            ]
+          },
+          "view": {
+            "access": {
+              "library": true,
+              "ordering": true,
+              "folders": true,
+              "presentations": true,
+              "approvals": true,
+              "annotations": true,
+              "dashboard": true
+            }
+          }
+        },
+        "password": "abcdefghA1",
+        "roles": [
+          {
+            "name": "agency.admin"
+          }
+        ]
+      },
+      "AdstreamUser": {
+        "_cm": {
+          "common": {
+            "firstName": "user",
+            "lastName": "@adstream.com",
+            "email": "user@adstream.com",
+            "language": [
+              "en-us"
+            ]
+          },
+          "view": {
+            "access": {
+              "library": true,
+              "ordering": true,
+              "folders": true,
+              "presentations": true
+            }
+          }
+        },
+        "password": "abcdefghA1",
+        "roles": [
+          {
+            "name": "agency.user"
+          }
+        ]
+      },
+      "Guest": {
+        "_cm": {
+          "common": {
+            "firstName": "guest@adstream.com",
+            "email": "guest@adstream.com"
+          },
+          "view": {
+            "access": {
+              "library": true,
+              "ordering": true,
+              "folders": true
+            }
+          }
+        },
+        "password": "abcdefghA1",
+        "roles": [
+          {
+            "name": "agency.user"
+          }
+        ]
+      }
+    }
+  },
+  "BSkyB 3 (non-approval, online)": {
+    "agency": {
+      "_cm": {
+        "a4": {
+          "user": "alejandra.medina@mccann.com.mx.ua",
+          "password": "b3tat3st3r",
+          "createAssetInA4": true
+        },
+        "traffic": {
+          "approvalType": "none",
+          "approvers": {
+            "lowres": [],
+            "master": []
+          }
+        },
+        "common": {
+          "time_zone": [
+            "Europe-London"
+          ],
+          "pin": "1",
+          "name": "BSkyB",
+          "agencyType": [
+            "TV Broadcaster"
+          ],
+          "market": [
+            "3"
+          ],
+          "destinationID": 1,
+          "address": {
+            "country": [
+              "GB"
+            ]
+          },
+          "labels": [
+            "dubbing_services",
+            "FTP",
+            "Physical"
+          ],
+          "saveInLibrary": true,
+          "allowUserChangeSaveInLibrary": true,
+          "applications": {
+            "folders": true,
+            "adkits": true,
+            "library": true,
+            "ordering": true,
+            "adpath": true,
+            "presentations": true,
+            "approvals": true,
+            "annotations": true,
+            "dashboard": true
+          }
+        }
+      }
+    },
+    "users": {
+      "BskyBAdmin": {
+        "_cm": {
+          "common": {
+            "firstName": "admin@bskyb.com",
+            "email": "admin@bskyb.com"
+          }
+        },
+        "password": "abcdefghA1",
+        "roles": [
+          {
+            "name": "agency.admin"
+          }
+        ]
+      },
+      "BskyB_BC_Manager": {
+        "_cm": {
+          "common": {
+            "firstName": "bc.manager@bskyb.com",
+            "email": "bc.manager@bskyb.com"
+          },
+          "view": {
+            "access": {
+              "adpath": true
+            }
+          }
+        },
+        "password": "abcdefghA1",
+        "roles": [
+          {
+            "name": "broadcast.traffic.manager"
+          }
+        ]
+      }
+    }
+  },
+  "TV Broadcaster non-approval, online": {
+    "agency": {
+      "_cm": {
+        "a4": {
+          "user": "alejandra.medina@mccann.com.mx.ua",
+          "password": "b3tat3st3r",
+          "createAssetInA4": true
+        },
+        "traffic": {
+          "approvalType": "none",
+          "approvers": {
+            "lowres": [],
+            "master": []
+          }
+        },
+        "common": {
+          "time_zone": [
+            "Europe-London"
+          ],
+          "pin": "1",
+          "name": "dailyme",
+          "agencyType": [
+            "TV Broadcaster"
+          ],
+          "market": [
+            "13"
+          ],
+          "destinationID": 7386,
+          "address": {
+            "country": [
+              "DE"
+            ]
+          },
+          "labels": [
+            "dubbing_services",
+            "FTP",
+            "Physical"
+          ],
+          "saveInLibrary": true,
+          "allowUserChangeSaveInLibrary": true,
+          "applications": {
+            "folders": true,
+            "adkits": true,
+            "library": true,
+            "ordering": true,
+            "adpath": true,
+            "presentations": true,
+            "approvals": true,
+            "annotations": true,
+            "dashboard": true
+          }
+        }
+      }
+    },
+    "users": {
+      "DailymeAdmin": {
+        "_cm": {
+          "common": {
+            "firstName": "admin@daily.me",
+            "email": "admin@daily.me"
+          },
+          "view": {
+            "access": {
+              "adpath": false,
+              "ordering": false
+            }
+          }
+        },
+        "password": "abcdefghA1",
+        "roles": [
+          {
+            "name": "agency.admin"
+          }
+        ]
+      },
+      "BskyB_BC_Manager": {
+        "_cm": {
+          "common": {
+            "firstName": "bc.manager@daily.me",
+            "email": "bc.manager@daily.me"
+          },
+          "view": {
+            "access": {
+              "adpath": true,
+              "ordering": false
+            }
+          }
+        },
+        "password": "abcdefghA1",
+        "roles": [
+          {
+            "name": "broadcast.traffic.manager"
+          }
+        ]
+      }
+    }
+  },
+  "TV Broadcaster FacebookDE (2stage approval, online)": {
+    "agency": {
+      "_cm": {
+        "a4": {
+          "user": "alejandra.medina@mccann.com.mx.ua",
+          "password": "b3tat3st3r",
+          "createAssetInA4": true
+        },
+        "traffic": {
+          "approvalType": "two",
+          "approvers": {
+            "lowres": [],
+            "master": []
+          }
+        },
+        "common": {
+          "time_zone": [
+            "Europe-London"
+          ],
+          "pin": "1",
+          "name": "Facebook DE",
+          "agencyType": [
+            "TV Broadcaster"
+          ],
+          "market": [
+            "13"
+          ],
+          "destinationID": 8111,
+          "address": {
+            "country": [ "DE" ]
+          },
+          "labels": [
+            "dubbing_services",
+            "FTP",
+            "Physical"
+          ],
+          "saveInLibrary": true,
+          "allowUserChangeSaveInLibrary": true,
+          "applications": {
+            "adkits": true,
+            "library": true,
+            "adpath": true
+          }
+        }
+      }
+    },
+    "users": {
+      "FBAdmin": {
+        "_cm": {
+          "common": {
+            "firstName": "admin@fb.com",
+            "email": "admin@fb.com"
+          },
+          "view": {
+            "access": {
+              "ordering": false
+            }
+          }
+        },
+        "password": "abcdefghA1",
+        "roles": [
+          {
+            "name": "agency.admin"
+          }
+        ]
+      },
+      "FB_BC_Manager": {
+        "_cm": {
+          "common": {
+            "firstName": "bc.manager@fb.com",
+            "email": "bc.manager@fb.com"
+          },
+          "view": {
+            "access": {
+              "adpath": true,
+              "ordering": false
+            }
+          }
+        },
+        "password": "abcdefghA1",
+        "roles": [
+          {
+            "name": "broadcast.traffic.manager"
+          }
+        ]
+      }
+    }
+  },
+  "TV Broadcaster (2stage approval, online)": {
+    "agency": {
+      "_cm": {
+        "a4": {
+          "user": "alejandra.medina@mccann.com.mx.ua",
+          "password": "b3tat3st3r",
+          "createAssetInA4": true
+        },
+        "traffic": {
+          "approvalType": "two",
+          "approvers": {
+            "lowres": [],
+            "master": []
+          }
+        },
+        "common": {
+          "time_zone": [
+            "Europe-London"
+          ],
+          "pin": "1",
+          "name": "MBC Group",
+          "agencyType": [
+            "TV Broadcaster"
+          ],
+          "market": [
+            "352"
+          ],
+          "destinationID": 58877,
+          "address": {
+            "country": [
+              "AE"
+            ]
+          },
+          "labels": [
+            "dubbing_services",
+            "FTP",
+            "Physical"
+          ],
+          "saveInLibrary": true,
+          "allowUserChangeSaveInLibrary": true,
+          "applications": {
+            "folders": true,
+            "adkits": true,
+            "library": true,
+            "ordering": true,
+            "adpath": true,
+            "presentations": true,
+            "approvals": true,
+            "annotations": true,
+            "dashboard": true
+          }
+        }
+      }
+    },
+    "users": {
+      "MBCAdmin": {
+        "_cm": {
+          "common": {
+            "firstName": "admin@mbc.com",
+            "email": "admin@mbc.com"
+          },
+          "view": {
+            "access": {
+              "ordering": false
+            }
+          }
+        },
+        "password": "abcdefghA1",
+        "roles": [
+          {
+            "name": "agency.admin"
+          }
+        ]
+      },
+      "MBC_BC_Manager": {
+        "_cm": {
+          "common": {
+            "firstName": "bc.manager@mbc.com",
+            "email": "bc.manager@mbc.com"
+          },
+          "view": {
+            "access": {
+              "adpath": true,
+              "ordering": false
+            }
+          }
+        },
+        "password": "abcdefghA1",
+        "roles": [
+          {
+            "name": "broadcast.traffic.manager"
+          }
+        ]
+      },
+      "MBC_ProxyApprover": {
+        "_cm": {
+          "common": {
+            "firstName": "proxy.approver@mbc.com",
+            "email": "proxy.approver@mbc.com"
+          },
+          "view": {
+            "access": {
+              "adpath": true,
+              "ordering": false
+            }
+          }
+        },
+        "password": "abcdefghA1",
+        "roles": [
+          {
+            "name": "broadcast.traffic.manager"
+          }
+        ]
+      },
+      "MBC_MasterApprover": {
+        "_cm": {
+          "common": {
+            "firstName": "master.approver@mbc.com",
+            "email": "master.approver@mbc.com"
+          },
+          "view": {
+            "access": {
+              "adpath": true,
+              "ordering": false
+            }
+          }
+        },
+        "password": "abcdefghA1",
+        "roles": [
+          {
+            "name": "broadcast.traffic.manager"
+          }
+        ]
+      }
+    }
+  },
+  "TV Broadcaster 2 (2stage approval, online)": {
+    "agency": {
+      "_cm": {
+        "a4": {
+          "user": "alejandra.medina@mccann.com.mx.ua",
+          "password": "b3tat3st3r",
+          "createAssetInA4": true
+        },
+        "traffic": {
+          "approvalType": "two",
+          "approvers": {
+            "lowres": [],
+            "master": []
+          }
+        },
+        "common": {
+          "time_zone": [
+            "Europe-London"
+          ],
+          "pin": "1",
+          "name": "MBC 2 MOVIES CHANNEL",
+          "agencyType": [
+            "TV Broadcaster"
+          ],
+          "market": [
+            "352"
+          ],
+          "destinationID": 7413,
+          "address": {
+            "country": [
+              "AE"
+            ]
+          },
+          "labels": [
+            "dubbing_services",
+            "FTP",
+            "Physical"
+          ],
+          "saveInLibrary": true,
+          "allowUserChangeSaveInLibrary": true,
+          "applications": {
+            "folders": true,
+            "adkits": true,
+            "library": true,
+            "ordering": true,
+            "adpath": true,
+            "presentations": true,
+            "approvals": true,
+            "annotations": true,
+            "dashboard": true
+          }
+        }
+      }
+    },
+    "users": {
+      "MBCAdmin": {
+        "_cm": {
+          "common": {
+            "firstName": "admin@mbc2.com",
+            "email": "admin@mbc2.com"
+          },
+          "view": {
+            "access": {
+              "ordering": false
+            }
+          }
+        },
+        "password": "abcdefghA1",
+        "roles": [
+          {
+            "name": "agency.admin"
+          }
+        ]
+      },
+      "MBC_BC_Manager": {
+        "_cm": {
+          "common": {
+            "firstName": "bc.manager@mbc2.com",
+            "email": "bc.manager@mbc2.com"
+          },
+          "view": {
+            "access": {
+              "adpath": true,
+              "ordering": false
+            }
+          }
+        },
+        "password": "abcdefghA1",
+        "roles": [
+          {
+            "name": "broadcast.traffic.manager"
+          }
+        ]
+      }
+    }
+  },
+  "TV Broadcaster HUB (2stage approval)": {
+    "agency": {
+      "_cm": {
+        "a4": {
+          "user": "alejandra.medina@mccann.com.mx.ua",
+          "password": "b3tat3st3r",
+          "createAssetInA4": true
+        },
+        "traffic": {
+          "hubmembers": [
+            "MBC Group",
+            "MBC 2 MOVIES CHANNEL"
+          ],
+          "approvalType": "two",
+          "approvers": {
+            "lowres": [],
+            "master": []
+          }
+        },
+        "common": {
+          "time_zone": [
+            "Europe-London"
+          ],
+          "pin": "1",
+          "name": "MBC Hub",
+          "agencyType": [
+            "TV Broadcaster Hub"
+          ],
+          "market": [
+            "352"
+          ],
+          "address": {
+            "country": [
+              "AE"
+            ]
+          },
+          "labels": [
+            "dubbing_services",
+            "FTP",
+            "Physical"
+          ],
+          "saveInLibrary": true,
+          "allowUserChangeSaveInLibrary": true,
+          "applications": {
+            "folders": true,
+            "adkits": true,
+            "library": true,
+            "ordering": true,
+            "adpath": true,
+            "presentations": true,
+            "approvals": true,
+            "annotations": true,
+            "dashboard": true
+          }
+        }
+      }
+    },
+    "users": {
+      "MBCAdmin Hub": {
+        "_cm": {
+          "common": {
+            "firstName": "admin@mbc.hub",
+            "email": "admin@mbc.hub"
+          },
+          "view": {
+            "access": {
+              "ordering": false
+            }
+          }
+        },
+        "password": "abcdefghA1",
+        "roles": [
+          {
+            "name": "agency.admin"
+          }
+        ]
+      },
+      "MBC_BC_Manager": {
+        "_cm": {
+          "common": {
+            "firstName": "bc.manager@mbc.hub",
+            "email": "bc.manager@mbc.hub"
+          },
+          "view": {
+            "access": {
+              "adpath": true,
+              "ordering": false
+            }
+          }
+        },
+        "password": "abcdefghA1",
+        "roles": [
+          {
+            "name": "broadcast.traffic.manager"
+          }
+        ]
+      }
+    }
+  },
+  "Ingest": {
+    "agency": {
+      "_cm": {
+        "a4": {
+          "user": "alejandra.medina@mccann.com.mx.ua",
+          "password": "b3tat3st3r",
+          "createAssetInA4": true,
+          "agencyId": "C1DCD2C9-02B9-498F-9653-9B23C6F982FD"
+        },
+        "common": {
+          "time_zone": [
+            "Europe-London"
+          ],
+          "pin": "123",
+          "name": "Ingest",
+          "agencyType": [
+            "Ingest"
+          ],
+          "address": {
+            "country": [
+              "AF"
+            ]
+          },
+          "labels": [
+            "dubbing_services",
+            "FTP",
+            "Physical"
+          ],
+          "saveInLibrary": true,
+          "allowUserChangeSaveInLibrary": true,
+          "description": "add members MBC Group and MBC 2 manually",
+          "applications": {
+            "folders": true,
+            "adkits": true,
+            "library": true,
+            "ordering": true,
+            "adpath": true
+          }
+        }
+      }
+    },
+    "users": {
+      "IngestAdmin": {
+        "_cm": {
+          "common": {
+            "firstName": "admin@ingest.com",
+            "email": "admin@ingest.com"
+          },
+          "view": {
+            "access": {
+              "library": true,
+              "ordering": true,
+              "folders": true
+            }
+          }
+        },
+        "password": "abcdefghA1",
+        "roles": [
+          {
+            "name": "agency.admin"
+          }
+        ]
+      },
+      "TrTrManager": {
+        "_cm": {
+          "common": {
+            "firstName": "tr.tr.manager@ingest.com",
+            "email": "tr.tr.manager@ingest.com"
+          },
+          "view": {
+            "access": {
+              "adpath": true,
+              "ordering": false
+            }
+          }
+        },
+        "password": "abcdefghA1",
+        "roles": [
+          {
+            "name": "traffic.traffic.manager"
+          }
+        ]
+      }
+    }
+  }
+}

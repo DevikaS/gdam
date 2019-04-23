@@ -1,0 +1,100 @@
+<UploadJobResponse xmlns:xs="http://adstream.com/xmlstream/" xs:id="31" ns0:type="UploadJobResponse" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:adstream:yadn">
+  <MessageID><![CDATA[1.1|akka://KV01V-A5DA502/user/head/fsobject|ec7ca7cd966c43aaa748dd58#1]]></MessageID>
+  <Status>UploadedToStorage</Status>
+  <FileID>b269cd5d-6931-4d72-b1f2-a246010d7cd4</FileID>
+  <FileName>3fb2d881-95af-45de-806a-2512a300f8c7.avi</FileName>
+  <FileDirectory><![CDATA[\00000000-0000-0000-0000-000000000000\2013-09-27\ec7ca7cd966c43aaa748dd58\]]></FileDirectory>
+  <FileSize>31744</FileSize>
+  <MD5>cecfda865db60d3cf09a68c7f2030e9e</MD5>
+  <CRC>        </CRC>
+  <Node>adstream.yadn.nodes.outpost-a5-auto</Node>
+  <SpecDBDocID>f2:video:unspecified</SpecDBDocID>
+  <metadata>
+    <property name="isPlayout">
+      <Value>false</Value>
+    </property>
+    <property name="ElementID">
+      <Value>ec7ca7cd966c43aaa748dd58</Value>
+    </property>
+    <property name="Path">
+      <Value>boxed-delete.avi</Value>
+    </property>
+    <property name="Country">
+      <Value>AF</Value>
+    </property>
+    <property name="guise">
+      <Value>master</Value>
+    </property>
+    <property name="IsPlayout">
+      <Value>false</Value>
+    </property>
+    <property name="evaluation_exiftool">
+      <Value><![CDATA[<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+
+<rdf:Description xmlns:et="http://ns.exiftool.ca/1.0/" xmlns:ExifTool="http://ns.exiftool.ca/ExifTool/1.0/" xmlns:System="http://ns.exiftool.ca/File/System/1.0/" xmlns:File="http://ns.exiftool.ca/File/1.0/" rdf:about="/media/yadn/input/20130927/509dc6f9cc63477fac2722b6/1380288059124/bfae0336-f584-4484-9845-d4ee99f51a89.avi" et:toolkit="Image::ExifTool 8.93">
+ <ExifTool:ExifToolVersion>8.93</ExifTool:ExifToolVersion>
+ <System:FileName>bfae0336-f584-4484-9845-d4ee99f51a89.avi</System:FileName>
+ <System:Directory>/media/yadn/input/20130927/509dc6f9cc63477fac2722b6/1380288059124</System:Directory>
+ <System:FileSize>31 kB</System:FileSize>
+ <System:FileModifyDate>2012:12:28 13:04:30+02:00</System:FileModifyDate>
+ <System:FilePermissions>rwxrwxrwx</System:FilePermissions>
+ <System:FileName>bfae0336-f584-4484-9845-d4ee99f51a89.avi</System:FileName>
+ <System:Directory>/media/yadn/input/20130927/509dc6f9cc63477fac2722b6/1380288059124</System:Directory>
+ <System:FileSize>31 kB</System:FileSize>
+ <System:FileModifyDate>2012:12:28 13:04:30+02:00</System:FileModifyDate>
+ <System:FilePermissions>rwxrwxrwx</System:FilePermissions>
+ <File:FileType>AVI</File:FileType>
+ <File:MIMEType>video/x-msvideo</File:MIMEType>
+ <File:ImageWidth>165</File:ImageWidth>
+ <File:ImageHeight>97</File:ImageHeight>
+ <File:Planes>1</File:Planes>
+ <File:BitDepth>8</File:BitDepth>
+ <File:Compression>8-Bit RLE</File:Compression>
+ <File:ImageLength>32010</File:ImageLength>
+ <File:PixelsPerMeterX>0</File:PixelsPerMeterX>
+ <File:PixelsPerMeterY>0</File:PixelsPerMeterY>
+ <File:NumColors>252</File:NumColors>
+ <File:NumImportantColors>All</File:NumImportantColors>
+</rdf:Description>
+</rdf:RDF>]]></Value>
+    </property>
+    <property name="evaluation_MediaInfo">
+      <Value><![CDATA[<Mediainfo xmlns="" version="0.7.61">
+<File>
+<track type="General">
+<Complete_name>/media/yadn/input/20130927/509dc6f9cc63477fac2722b6/1380288059124/bfae0336-f584-4484-9845-d4ee99f51a89.avi</Complete_name>
+<Format>AVI</Format>
+<Format_Info>Audio Video Interleave</Format_Info>
+<File_size>31.0 KiB</File_size>
+<Duration>4s 900ms</Duration>
+<Overall_bit_rate>51.8 Kbps</Overall_bit_rate>
+</track>
+
+<track type="Video">
+<ID>0</ID>
+<Format>RLE</Format>
+<Format_Info>Run-length encoding</Format_Info>
+<Codec_ID>0x00000001</Codec_ID>
+<Codec_ID_Info>Run length encoded 8bpp RGB image</Codec_ID_Info>
+<Duration>4s 900ms</Duration>
+<Bit_rate>40.8 Kbps</Bit_rate>
+<Width>165 pixels</Width>
+<Height>97 pixels</Height>
+<Display_aspect_ratio>1.701</Display_aspect_ratio>
+<Frame_rate>20.000 fps</Frame_rate>
+<Bits__Pixel_Frame_>0.127</Bits__Pixel_Frame_>
+<Stream_size>24.4 KiB (79%)</Stream_size>
+<Title>AVI4CDD.tmp.avi Video #1</Title>
+</track>
+
+</File>
+</Mediainfo>]]></Value>
+    </property>
+    <property name="evaluation_ffprobe">
+      <Value></Value>
+    </property>
+    <property name="evaluation_pdfdimensions">
+      <Value></Value>
+    </property>
+  </metadata>
+</UploadJobResponse>

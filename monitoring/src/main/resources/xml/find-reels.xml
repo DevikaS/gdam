@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Script xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="schema.xsd">
+    <applicationURL>https://a5.adstream.com</applicationURL>
+    <action>
+        <method>authSSO</method>
+        <argument>
+            <type>String</type>
+            <value>monitoring@adstream.com</value>
+        </argument>
+        <argument>
+            <type>String</type>
+            <value>Password1</value>
+        </argument>
+    </action>
+    <action>
+        <method>findReels</method>
+        <argument>
+            <type>Search</type>
+        </argument>
+        <assertion>
+            <sizeMin>1</sizeMin>
+        </assertion>
+    </action>
+    <action>
+        <method>getReel</method>
+        <argument>
+            <type>String</type>
+            <value>51f9034ee4b055f8b35d8e89</value>
+        </argument>
+        <assertion>
+            <name>monitoring_presentation</name>
+        </assertion>
+    </action>
+    <action>
+        <method>logoutSSO</method>
+    </action>
+</Script>

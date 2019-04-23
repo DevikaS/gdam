@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="LIBRARAYAPITESTING">
+   <test name="Asset_CreateAsset">
+        <classes>
+            <class name="com.publicApi.tests.Asset_CreateAsset" />
+        </classes>
+    </test>
+    <test name="Asset_UploadAsset">
+        <classes>
+            <class name="com.publicApi.tests.Asset_UploadAsset" />
+        </classes>
+    </test>
+    <test name="Asset_CompleteAsset">
+        <classes>
+            <class name="com.publicApi.tests.Asset_CompleteAsset" />
+        </classes>
+    </test>
+    <test name="Asset_UpdateAsset">
+        <classes>
+            <class name="com.publicApi.tests.Asset_UpdateAsset" />
+        </classes>
+    </test>
+    <test name="Asset_GetAsset">
+        <classes>
+            <class name="com.publicApi.tests.Asset_GetAsset" />
+        </classes>
+    </test>
+    <test name="Asset_CreateAttachment">
+        <classes>
+            <class name="com.publicApi.tests.Asset_CreateAttachment" />
+        </classes>
+    </test>
+    <test name="Asset_EditAttachment">
+        <classes>
+            <class name="com.publicApi.tests.Asset_EditAttachment" />
+        </classes>
+    </test>
+    <test name="Asset_ListAttachment">
+        <classes>
+            <class name="com.publicApi.tests.Asset_ListAttachment" />
+        </classes>
+    </test>
+    <test name="Asset_SearchAsset">
+        <classes>
+            <class name="com.publicApi.tests.Asset_SearchAsset" />
+        </classes>
+    </test>
+    <test name="Asset_RemoveAsset">
+        <classes>
+            <class name="com.publicApi.tests.Asset_RemoveAsset" />
+        </classes>
+    </test>
+    <test name="Collection_CreateCollection">
+        <classes>
+            <class name="com.publicApi.tests.Collection_CreateCollection" />
+        </classes>
+    </test>
+    <test name="Collection_CreateChildCollection">
+        <classes>
+            <class name="com.publicApi.tests.Collection_CreateChildCollection"/>
+        </classes>
+    </test>
+    <test name="Collection_UpdateCollection">
+        <classes>
+            <class name="com.publicApi.tests.Collection_UpdateCollection"/>
+        </classes>
+    </test>
+    <test name="Collection_ShareCollection">
+        <classes>
+            <class name="com.publicApi.tests.Collection_ShareCollection"/>
+        </classes>
+    </test>
+    <test name="Collection_ListCollections">
+        <classes>
+            <class name="com.publicApi.tests.Collection_ListCollections"/>
+        </classes>
+    </test>
+    <test name="Collection_ListCollectionAssets">
+        <classes>
+            <class name="com.publicApi.tests.Collection_ListCollectionAssets"/>
+        </classes>
+    </test>
+    <test name="Collection_DeleteCollection">
+        <classes>
+            <class name="com.publicApi.tests.Collection_DeleteCollection"/>
+        </classes>
+    </test>
+    <test name="Collections_AddAssetToCollection">
+        <classes>
+            <class name="com.publicApi.tests.Collections_AddAssetToCollection"/>
+        </classes>
+    </test>
+    <test name="Collections_RemoveAssetFromCollection">
+        <classes>
+            <class name="com.publicApi.tests.Collections_RemoveAssetFromCollection"/>
+        </classes>
+    </test>
+    <test name="Presentations_CreatePresentation">
+        <classes>
+            <class name="com.publicApi.tests.Presentations_CreatePresentation"/>
+        </classes>
+    </test>
+    <test name="Presentations_Addassets">
+        <classes>
+            <class name="com.publicApi.tests.Presentations_AddAssets"/>
+        </classes>
+    </test>
+    <test name="Presentations_Orderassets">
+        <classes>
+            <class name="com.publicApi.tests.Presentations_OrderAssets"/>
+        </classes>
+    </test>
+    <test name="Presentations_GetPresentation">
+        <classes>
+            <class name="com.publicApi.tests.Presentations_GetPresentation"/>
+        </classes>
+    </test>
+    <test name="Presentations_SearchPresentations">
+        <classes>
+            <class name="com.publicApi.tests.Presentations_SearchPresentations"/>
+        </classes>
+    </test>
+    <test name="Presentations_Removeassets">
+        <classes>
+            <class name="com.publicApi.tests.Presentations_RemoveAssets"/>
+        </classes>
+    </test>
+    <test name="Presentations_SharePresentation">
+        <classes>
+            <class name="com.publicApi.tests.Presentations_SharePresentation"/>
+        </classes>
+    </test>
+    <test name="Presentations_StopSharingPresentation">
+        <classes>
+            <class name="com.publicApi.tests.Presentations_StopSharingPresentation"/>
+        </classes>
+    </test>
+    <test name="Presentation_DeletePresentation">
+        <classes>
+            <class name="com.publicApi.tests.Presentation_DeletePresentation"/>
+        </classes>
+    </test>
+    <test name="Asset_CreateAPublicShare">
+        <classes>
+            <class name="com.publicApi.tests.Asset_CreateAPublicShare"/>
+        </classes>
+    </test>
+    <test name="Asset_UpdateAPublicShare">
+        <classes>
+            <class name="com.publicApi.tests.Asset_UpdateAPublicShare"/>
+        </classes>
+    </test>
+    <test name="Presentations_CreateAPublicShare">
+        <classes>
+            <class name="com.publicApi.tests.Presentations_CreateAPublicShare"/>
+        </classes>
+    </test>
+    <test name="Presentations_UpdateAPublicShare">
+        <classes>
+            <class name="com.publicApi.tests.Presentations_UpdateAPublicShare"/>
+        </classes>
+    </test>
+    <test name="Assets_GetAssetShares">
+        <classes>
+            <class name="com.publicApi.tests.Assets_GetAssetShares"/>
+        </classes>
+    </test>
+</suite>

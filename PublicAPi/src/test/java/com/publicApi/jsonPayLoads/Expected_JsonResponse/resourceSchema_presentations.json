@@ -1,0 +1,118 @@
+{
+	"properties": {
+		"common": {
+			"type": "object",
+			"properties": {
+				"name": {
+					"type": "string"
+				},
+				"description": {
+					"type": "string"
+				},
+				"publicUrl": {
+					"type": "string"
+				},
+				"expirationDate": {
+					"type": "string"
+				},
+				"downloadOriginal": {
+					"type": "boolean"
+				}
+			},
+			"required": [
+				"name"
+			]
+		},
+		"view": {
+			"properties": {
+				"allowDownload": {
+					"type": "boolean"
+				},
+				"background": {
+					"type": "string"
+				},
+				"backgroundFileName": {
+					"type": "string"
+				},
+				"betweenAsset": {
+					"type": "number"
+				},
+				"customInfoMask": {
+					"items": {
+						"type": "object",
+						"properties": {
+							"field": {
+								"type": "string"
+							},
+							"title": {
+								"type": "string"
+							},
+							"type": {
+								"type": "string"
+							}
+						}
+					},
+					"type": "array"
+				},
+				"emailConfirmation": {
+					"type": "boolean"
+				},
+				"enableSharing": {
+					"type": "boolean"
+				},
+				"includePodcast": {
+					"type": "boolean"
+				},
+				"noDurationFor": {
+					"type": "number"
+				},
+				"scale": {
+					"type": "string",
+					"enum": [
+						"scale",
+						"tile"
+					],
+					"default": "scale"
+				},
+				"screen": {
+					"type": "string"
+				},
+				"style": {
+					"type": "string",
+					"enum": [
+						"dark",
+						"light"
+					],
+					"default": "dark"
+				},
+				"thumbnails": {
+					"type": "string"
+				},
+				"titleFileName": {
+					"type": "string"
+				},
+				"titleIcon": {
+					"type": "string"
+				},
+				"useDefaultLogo": {
+					"type": "boolean"
+				},
+				"titleIconId": {
+					"type": "string"
+				},
+				"backgroundId": {
+					"type": "string"
+				},
+				"autoPlay": {
+					"type": "boolean"
+				}
+			},
+			"type": "object"
+		}
+	},
+	"type": "object",
+	"required": [
+		"common"
+	],
+	"additionalProperties": false
+}

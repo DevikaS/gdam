@@ -1,0 +1,12 @@
+{
+    "AgencyAdmin": {
+        "users": 30,
+        "projects": 30,
+        "templates": 30
+    },
+    "AnotherAdmin": {
+        "users": 30,
+        "projects": 30,
+        "templates": 30
+    }
+}

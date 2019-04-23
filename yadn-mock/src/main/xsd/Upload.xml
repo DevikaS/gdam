@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<yadn:Upload xmlns:yadn="urn:adstream:yadn" id="1">
+	<yadn:ExternalID>1.1|akka://node1/user/head/fsobject|51fb7b243e041a2678462973#1</yadn:ExternalID>
+	<yadn:File>/tmp/test-bt1/first_file.txt</yadn:File>
+	<yadn:Archive>false</yadn:Archive>
+	<yadn:System>adbank5</yadn:System>
+	<yadn:Node>4d375675-b2fc-4399-9407-9d872a42ece5</yadn:Node>
+	<yadn:metadata id="2">
+		<yadn:property name="isPlayout">
+			<yadn:Value>false</yadn:Value>
+		</yadn:property>
+		<yadn:property name="ElementID">
+			<yadn:Value>51fb7b243e041a2678462973</yadn:Value>
+		</yadn:property>
+		<yadn:property name="Path">
+			<yadn:Value>first_file.txt</yadn:Value>
+		</yadn:property>
+		<yadn:property name="Country">
+			<yadn:Value>ua</yadn:Value>
+		</yadn:property>
+		<yadn:property name="guise">
+			<yadn:Value>master</yadn:Value>
+		</yadn:property>
+		<yadn:property name="AgencyID">
+			<yadn:Value>51fb7b223e041a2678462960</yadn:Value>
+		</yadn:property>
+	</yadn:metadata>
+</yadn:Upload>

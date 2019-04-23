@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+
+<suite name="All Scenarios">
+	<suite-files>
+		<suite-file path="EnvironmentTestSuite.xml" />
+		<suite-file path="projectAPIs.xml" />
+		<suite-file path="LibraryAPIs.xml"/>
+		<suite-file path="PublicAPI.xml"/>
+		<suite-file path="DeliveryAPI.xml"/>
+	</suite-files>
+</suite>

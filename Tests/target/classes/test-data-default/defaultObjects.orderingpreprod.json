@@ -1,0 +1,620 @@
+{
+  "DefaultAdstreamGlobalAdminBU": {
+    "agency": {
+      "_cm": {
+        "common": {
+          "name": "Global Admin Business Unit",
+          "agencyType": [
+            "Agency"
+          ]
+        }
+      }
+    },
+    "users": {
+      "DefaultGlobalAdmin": {
+        "customEmail": "admin",
+        "_cm": {
+          "common": {
+            "email": "admin"
+          }
+        },
+        "password": "W1nt3r1sc0m1ng",
+        "passwordNeverExpires": true
+      },
+      "GlobalAdmin": {
+        "customEmail": "customGlobalAdmin",
+        "_cm": {
+          "common": {
+            "firstName": "GA",
+            "lastName": "ForQaAutomation",
+            "email": "GA.ForQaAutomation",
+            "jobTitle": "CustomGlobalAdmin"
+          }
+        },
+        "password": "abcdefghA1",
+        "passwordNeverExpires": true
+      }
+    }
+  },
+  "DefaultAgency": {
+    "agency": {
+      "_cm": {
+        "a4" : {
+          "user" : "adpath@adstream.com"
+        },
+        "common": {
+          "time_zone": ["Europe-Andorra"],
+          "pin": "1",
+          "name": "Z5testOrdAdvertiser",
+          "agencyType": ["Advertiser"],
+          "address": {
+            "country": ["AF"]
+          },
+          "applications": {
+            "folders": true,
+            "adkits": true,
+            "library": true,
+            "ordering": true,
+            "adpath": true,
+            "presentations": true,
+            "approvals": true,
+            "annotations": true,
+            "dashboard": true
+          }
+        },
+        "passwordSettings": {
+          "passwordExpirationInDays": 30,
+          "passwordRegEx": {
+            "pattern" : "((?=(.*[A-Z]){1,})(?=(.*\\d){1,}).{8,})",
+            "description": {
+              "minTotalLengthOfPassword": 8,
+              "minimumIncludingNumbers": 1,
+              "minIncludingUppercase": 1
+            }
+          }
+        }
+      }
+    },
+    "users": {
+      "AgencyAdmin": {
+        "_cm": {
+          "common": {
+            "firstName": "admin",
+            "lastName": "agency",
+            "email": "qatobabylonautotester+agencyadmin@gmail.com",
+            "language": ["en-us"],
+            "passwordNeverExpires":true
+          },
+          "view": {
+            "access": {
+              "library": true,
+              "ordering": true,
+              "folders": true,
+              "adkits": true,
+              "approvals": true,
+              "presentations": true,
+              "dashboard": true
+            }
+          }
+        },
+        "password": "abcdefghA1",
+        "roles": [{"name":"agency.admin"}]
+      },
+      "ClassicAgencyAdmin": {
+        "_cm": {
+          "common": {
+            "firstName": "admin",
+            "lastName": "agency",
+            "email": "agencyadmin@test.com",
+            "language": ["en-us"],
+            "passwordNeverExpires":true
+          },
+          "view": {
+            "access": {
+              "library": true,
+              "ordering": true,
+              "folders": true,
+              "adkits": true,
+              "approvals": true,
+              "presentations": true,
+              "dashboard": true
+            }
+          }
+        },
+        "password": "abcdefghA1",
+        "roles": [{"name":"agency.admin"}]
+      },
+      "AnotherAdmin": {
+        "_cm": {
+          "common": {
+            "firstName": "anotheradmin",
+            "lastName": "agency",
+            "email": "qatobabylonautotester+anotheradmin@gmail.com",
+            "language": ["en-us"],
+            "passwordNeverExpires":true
+          },
+          "view": {
+            "access": {
+              "library": true,
+              "ordering": true,
+              "folders": true,
+              "adkits": true,
+              "approvals": true,
+              "presentations": true,
+              "dashboard": true
+            }
+          }
+        },
+        "password": "abcdefghA1",
+        "roles": [{"name":"agency.admin"}]
+      },
+      "GuestUser": {
+        "_cm": {
+          "common": {
+            "firstName": "guestuser",
+            "lastName": "agency",
+            "email": "qatobabylonautotester+agencyguestuser@gmail.com",
+            "language": ["en-us"],
+            "passwordNeverExpires":true
+          },
+          "view": {
+            "access": {
+              "library": true,
+              "ordering": true,
+              "folders": true,
+              "adkits": true,
+              "approvals": true,
+              "presentations": true,
+              "dashboard": true
+            }
+          }
+        },
+        "password": "abcdefghA1",
+        "roles": [{"name":"guest.user"}]
+      },
+      "AgencyUser": {
+        "_cm": {
+          "common": {
+            "firstName": "user",
+            "lastName": "agency",
+            "email": "qatobabylonautotester+agencyuser@gmail.com",
+            "language": ["en-us"],
+            "passwordNeverExpires":true
+          },
+          "view": {
+            "access": {
+              "library": true,
+              "ordering": true,
+              "folders": true,
+              "adkits": true,
+              "approvals": true,
+              "presentations": true,
+              "dashboard": true
+            }
+          }
+        },
+        "password": "abcdefghA1",
+        "roles": [{"name":"agency.user"}]
+      }
+    }
+  },
+  "AnotherAgency": {
+    "agency": {
+      "_cm": {
+        "a4" : {
+          "user" : "adpath@adstream.com"
+        },
+        "common": {
+          "time_zone": ["Europe-Andorra"],
+          "pin": "1",
+          "name": "ZAnotherA5testOrdAdvertiser",
+          "agencyType": ["Advertiser"],
+          "address": {
+            "country": ["AF"]
+          },
+          "applications": {
+            "folders": true,
+            "adkits": true,
+            "library": true,
+            "ordering": true,
+            "adpath": true,
+            "presentations": true,
+            "approvals": true,
+            "annotations": true,
+            "dashboard": true
+          }
+        },
+        "passwordSettings": {
+          "passwordExpirationInDays": 30,
+          "passwordRegEx": {
+            "pattern" : "((?=(.*[A-Z]){1,})(?=(.*\\d){1,}).{8,})",
+            "description": {
+              "minTotalLengthOfPassword": 8,
+              "minimumIncludingNumbers": 1,
+              "minIncludingUppercase": 1
+            }
+          }
+        }
+      }
+    },
+    "users": {
+      "AnotherAgencyAdmin": {
+        "_cm": {
+          "common": {
+            "firstName": "admin",
+            "lastName": "anotheragency",
+            "email": "qatobabylonautotester+anotheragencyadmin@gmail.com",
+            "language": ["en-us"],
+            "passwordNeverExpires":true
+          },
+          "view": {
+            "access": {
+              "library": true,
+              "ordering": true,
+              "folders": true,
+              "adkits": true,
+              "approvals": true,
+              "presentations": true,
+              "dashboard": true
+            }
+          }
+        },
+        "password": "abcdefghA1",
+        "roles": [{"name":"agency.admin"}]
+      }
+    }
+  },
+  "AdpathAgency": {
+    "agency": {
+      "_cm": {
+        "a4" : {
+          "user" : "adpath@adstream.com"
+        },
+        "common": {
+          "time_zone": ["Europe-Andorra"],
+          "pin": "1",
+          "name": "Adstreamadpath",
+          "agencyType": ["Advertiser"],
+          "address": {
+            "country": ["AF"]
+          },
+          "applications": {
+            "folders": true,
+            "adkits": true,
+            "library": true,
+            "ordering": true,
+            "adpath": true,
+            "presentations": true,
+            "approvals": true,
+            "annotations": true,
+            "dashboard": true
+          }
+        },
+        "passwordSettings": {
+          "passwordExpirationInDays": 30,
+          "passwordRegEx": {
+            "pattern" : "((?=(.*[A-Z]){1,})(?=(.*\\d){1,}).{8,})",
+            "description": {
+              "minTotalLengthOfPassword": 8,
+              "minimumIncludingNumbers": 1,
+              "minIncludingUppercase": 1
+            }
+          }
+        }
+      }
+    },
+    "users": {
+      "AdpathAgencyAdmin": {
+        "_cm": {
+          "common": {
+            "firstName": "dmitry",
+            "lastName": "reznik@gmail.com",
+            "email": "dmitry.reznik@gmail.com",
+            "language": ["en-us"],
+            "passwordNeverExpires":true
+          },
+          "view": {
+            "access": {
+              "library": true,
+              "ordering": true,
+              "folders": true,
+              "adkits": true,
+              "approvals": true,
+              "presentations": true,
+              "dashboard": true
+            }
+          }
+        },
+        "password": "abcdefghA1",
+        "roles": [{"name":"agency.admin"}]
+      }
+    }
+  },
+  "IngestAgency": {
+    "agency": {
+      "_cm": {
+        "a4": {
+          "user": "adpath@adstream.com"
+        },
+        "common": {
+          "time_zone": ["Europe-Andorra"],
+          "pin": "1",
+          "name": "AdstreamQaIngest",
+          "agencyType": ["Ingest"],
+          "address": {
+            "country": ["AF"]
+          },
+          "applications": {
+            "adpath": true
+          }
+        },
+        "passwordSettings": {
+          "passwordExpirationInDays": 30,
+          "passwordRegEx": {
+            "pattern": "((?=(.*[A-Z]){1,})(?=(.*\\d){1,}).{8,})",
+            "description": {
+              "minTotalLengthOfPassword": 8,
+              "minimumIncludingNumbers": 1,
+              "minIncludingUppercase": 1
+            }
+          }
+        }
+      }
+    },
+    "users": {
+      "IngestAdmin": {
+        "_cm": {
+          "common": {
+            "firstName": "aldrin",
+            "lastName": "pinto@gmail.com",
+            "email": "aldrin.pinto@gmail.com",
+            "language": ["en-us"],
+            "passwordNeverExpires":true
+          },
+          "view": {
+            "access": {
+              "adpath":true
+            }
+          }
+        },
+        "password": "abcdefghA1",
+        "roles": [{"name": "agency.admin"}]
+      },
+      "trafficManager": {
+        "_cm": {
+          "common": {
+            "firstName": "tr",
+            "lastName": "tr",
+            "email": "tr.tr.manager_12@gmail.com",
+            "language": ["en-us"],
+            "passwordNeverExpires":true
+          },
+          "view": {
+            "access": {
+              "adpath": true
+            }
+          }
+        },
+        "password": "abcdefghA1",
+        "roles": [{"name": "traffic.traffic.manager"}]
+      }
+    }
+
+  },
+  "BroadCasterAgencyTwoStage": {
+    "agency": {
+      "_cm": {
+        "a4": {
+          "user": "alejandra.medina@mccann.com.mx.ua"
+        },
+        "common": {
+          "time_zone": ["Europe-Andorra"],
+          "pin": "1",
+          "name": "Z5testBroadcastTwoStage",
+          "destinationID": 2521,
+          "market": "13",
+          "agencyType": ["TV Broadcaster"],
+          "address": {
+            "country": ["AF"]
+          },
+          "applications": {
+            "adpath": true
+          }
+        },
+        "passwordSettings": {
+          "passwordExpirationInDays": 30,
+          "passwordRegEx": {
+            "pattern": "((?=(.*[A-Z]){1,})(?=(.*\\d){1,}).{8,})",
+            "description": {
+              "minTotalLengthOfPassword": 8,
+              "minimumIncludingNumbers": 1,
+              "minIncludingUppercase": 1
+            }
+          }
+        }
+      }
+    },
+    "users": {
+      "broadcasterTrafficManagerTwo": {
+        "_cm": {
+          "common": {
+            "firstName": "bd",
+            "lastName": "tr",
+            "email": "broadcast.tr.manager_two_2521@gmail.com",
+            "language": ["en-us"]
+          },
+          "view": {
+            "access": {
+              "adpath": true
+            }
+          }
+        },
+        "password": "abcdefghA1",
+        "passwordNeverExpires":true,
+        "roles": [{"name":"broadcast.traffic.manager"}]
+      }
+    }
+  },
+  "BroadCasterAgencyTwoStage_1": {
+    "agency": {
+      "_cm": {
+        "a4": {
+          "user": "alejandra.medina@mccann.com.mx.ua"
+        },
+        "common": {
+          "time_zone": ["Europe-Andorra"],
+          "pin": "1",
+          "name": "Z5testBroadcastTwoStage_1",
+          "destinationID": 5235,
+          "market": "13",
+          "agencyType": ["TV Broadcaster"],
+          "address": {
+            "country": ["AF"]
+          },
+          "applications": {
+            "adpath": true
+          }
+        },
+        "passwordSettings": {
+          "passwordExpirationInDays": 30,
+          "passwordRegEx": {
+            "pattern": "((?=(.*[A-Z]){1,})(?=(.*\\d){1,}).{8,})",
+            "description": {
+              "minTotalLengthOfPassword": 8,
+              "minimumIncludingNumbers": 1,
+              "minIncludingUppercase": 1
+            }
+          }
+        }
+      }
+    },
+    "users": {
+      "broadcasterTrafficManagerTwo_1": {
+        "_cm": {
+          "common": {
+            "firstName": "bd",
+            "lastName": "tr",
+            "email": "broadcast.tr.manager_two_5235@gmail.com",
+            "language": ["en-us"]
+          },
+          "view": {
+            "access": {
+              "adpath": true
+            }
+          }
+        },
+        "password": "abcdefghA1",
+        "passwordNeverExpires":true,
+        "roles": [{"name":"broadcast.traffic.manager"}]
+      }
+    }
+  },
+  "BroadCasterAgencyOneStage": {
+    "agency": {
+      "_cm": {
+        "a4" : {
+          "user" : "alejandra.medina@mccann.com.mx.ua"
+        },
+        "common": {
+          "time_zone": ["Europe-Andorra"],
+          "pin": "1",
+          "name": "Z5testBroadcastOneStage",
+          "destinationID" : 2412,
+          "market" : "13",
+          "agencyType": ["TV Broadcaster"],
+          "address": {
+            "country": ["AF"]
+          },
+          "applications": {
+            "adpath":true
+          }
+        },
+        "passwordSettings": {
+          "passwordExpirationInDays": 30,
+          "passwordRegEx": {
+            "pattern" : "((?=(.*[A-Z]){1,})(?=(.*\\d){1,}).{8,})",
+            "description": {
+              "minTotalLengthOfPassword": 8,
+              "minimumIncludingNumbers": 1,
+              "minIncludingUppercase": 1
+            }
+          }
+        }
+      }
+    },
+    "users": {
+      "broadcasterTrafficManagerOne": {
+        "_cm": {
+          "common": {
+            "firstName": "bd",
+            "lastName": "tr",
+            "email": "broadcast.tr.manager_one@gmail.com",
+            "language": ["en-us"]
+          },
+          "view": {
+            "access": {
+              "adpath": true
+            }
+          }
+        },
+        "password": "abcdefghA1",
+        "passwordNeverExpires":true,
+        "roles": [{"name":"broadcast.traffic.manager"}]
+      }
+    }
+  },
+  "BroadCasterAgencyNoApproval": {
+    "agency": {
+      "_cm": {
+        "a4" : {
+          "user" : "alejandra.medina@mccann.com.mx.ua"
+        },
+        "common": {
+          "time_zone": ["Europe-Andorra"],
+          "pin": "1",
+          "name": "Z5testBroadcastNoApproval",
+          "destinationID" : 4238,
+          "market" : "13",
+          "agencyType": ["TV Broadcaster"],
+          "address": {
+            "country": ["AF"]
+          },
+          "applications": {
+            "adpath":true
+          }
+        },
+        "passwordSettings": {
+          "passwordExpirationInDays": 30,
+          "passwordRegEx": {
+            "pattern" : "((?=(.*[A-Z]){1,})(?=(.*\\d){1,}).{8,})",
+            "description": {
+              "minTotalLengthOfPassword": 8,
+              "minimumIncludingNumbers": 1,
+              "minIncludingUppercase": 1
+            }
+          }
+        }
+      }
+    },
+    "users": {
+      "broadcasterTrafficManagerNoApproval": {
+        "_cm": {
+          "common": {
+            "firstName": "bd",
+            "lastName": "tr",
+            "email": "broadcast.tr.manager_noapproval@gmail.com",
+            "language": ["en-us"]
+          },
+          "view": {
+            "access": {
+              "adpath": true
+            }
+          }
+        },
+        "password": "abcdefghA1",
+        "passwordNeverExpires":true,
+        "roles": [{"name":"broadcast.traffic.manager"}]
+      }
+    }
+  }
+}

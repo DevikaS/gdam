@@ -1,0 +1,51 @@
+{
+    "threadingTestTimeSeconds": 60,
+    "degradationTestTimeMinutes": 30,
+    "complexIterationTimeSeconds": 60,
+    "responseTimeLimitSeconds": 7,
+    "maxThread": 64,
+    "startWithIteration": 0,
+    "mongoDbHost": "localhost",
+    "mongoDbPort": 17017,
+    "elasticSearchHost": "localhost",
+    "elasticSearchPort": 19200,
+    "globalParams": {
+        "login": "babylonautotester+agencyadmin@gmail.com",
+        "password": "abcdefghA1",
+        "useSSO": "false",
+        "filePath": "resources/logo.jpg",
+        "storageId": "52eb80a9e4b0b8658df33b45"
+    },
+    "destinations": {
+        "core": {
+            "type": "CORE",
+            "url": "http://localhost:18080/"
+        },
+        "front": {
+            "type": "FRONT",
+            "url": "http://localhost:10080/"
+        },
+        "nverge": {
+            "type": "NVERGE",
+            "url": "http://localhost/"
+        }
+    },
+    "tests": {
+         "Copy folder": {
+                   "enabled": true,
+                   "volume": true,
+                   "desiredNumOfIterations": 5,
+                   "threadGroups": {
+                       "Move folder": {
+                           "destination": "core",
+                           "testClass": "com.adstream.automate.babylon.performance.tests.MoveFolderVolumeTest",
+                                              "params": {
+                                                                      "login": "admin",
+                                                                      "password": "abcdefghA1"
+                                                                  }
+                       }
+                   }
+
+               }
+    }
+}

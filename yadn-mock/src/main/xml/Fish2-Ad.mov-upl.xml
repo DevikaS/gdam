@@ -1,0 +1,117 @@
+<UploadJobResponse xmlns:xs="http://adstream.com/xmlstream/" xs:id="77" ns0:type="UploadJobResponse" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:adstream:yadn">
+  <MessageID><![CDATA[1.1|akka://KV01V-A5DA502/user/head/fsobject|872c7b6c6d7b4ed6a30d3fff#1]]></MessageID>
+  <Status>UploadedToStorage</Status>
+  <FileID>e0cf28e5-ca9a-49a2-8b73-a246010d891e</FileID>
+  <FileName>f1d2f7dc-9c74-4d23-9e12-e6574f084471.mov</FileName>
+  <FileDirectory><![CDATA[\00000000-0000-0000-0000-000000000000\2013-09-27\872c7b6c6d7b4ed6a30d3fff\]]></FileDirectory>
+  <FileSize>392669</FileSize>
+  <MD5>46adfc82219709fbef070401f59fa223</MD5>
+  <CRC>        </CRC>
+  <Node>adstream.yadn.nodes.outpost-a5-auto</Node>
+  <SpecDBDocID>f2:video:unspecified</SpecDBDocID>
+  <metadata>
+    <property name="isPlayout">
+      <Value>false</Value>
+    </property>
+    <property name="ElementID">
+      <Value>872c7b6c6d7b4ed6a30d3fff</Value>
+    </property>
+    <property name="Path">
+      <Value>Fish2-Ad.mov</Value>
+    </property>
+    <property name="Country">
+      <Value>AF</Value>
+    </property>
+    <property name="guise">
+      <Value>master</Value>
+    </property>
+    <property name="IsPlayout">
+      <Value>false</Value>
+    </property>
+    <property name="evaluation_exiftool">
+      <Value><![CDATA[<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+
+<rdf:Description xmlns:et="http://ns.exiftool.ca/1.0/" xmlns:ExifTool="http://ns.exiftool.ca/ExifTool/1.0/" xmlns:System="http://ns.exiftool.ca/File/System/1.0/" xmlns:File="http://ns.exiftool.ca/File/1.0/" xmlns:Track1="http://ns.exiftool.ca/QuickTime/Track1/1.0/" rdf:about="/media/yadn/input/20130927/509dc6f9cc63477fac2722b6/1380288061386/9974cd73-cfe0-434e-9905-5481be0fb792.mov" et:toolkit="Image::ExifTool 8.93">
+ <ExifTool:ExifToolVersion>8.93</ExifTool:ExifToolVersion>
+ <System:FileName>9974cd73-cfe0-434e-9905-5481be0fb792.mov</System:FileName>
+ <System:Directory>/media/yadn/input/20130927/509dc6f9cc63477fac2722b6/1380288061386</System:Directory>
+ <System:FileSize>383 kB</System:FileSize>
+ <System:FileModifyDate>2012:11:21 15:54:02+02:00</System:FileModifyDate>
+ <System:FilePermissions>rwxrwxrwx</System:FilePermissions>
+ <System:FileName>9974cd73-cfe0-434e-9905-5481be0fb792.mov</System:FileName>
+ <System:Directory>/media/yadn/input/20130927/509dc6f9cc63477fac2722b6/1380288061386</System:Directory>
+ <System:FileSize>383 kB</System:FileSize>
+ <System:FileModifyDate>2012:11:21 15:54:02+02:00</System:FileModifyDate>
+ <System:FilePermissions>rwxrwxrwx</System:FilePermissions>
+ <File:FileType>MOV</File:FileType>
+ <File:MIMEType>video/quicktime</File:MIMEType>
+ <Track1:ImageWidth>134</Track1:ImageWidth>
+ <Track1:ImageHeight>100</Track1:ImageHeight>
+</rdf:Description>
+</rdf:RDF>]]></Value>
+    </property>
+    <property name="evaluation_MediaInfo">
+      <Value><![CDATA[<Mediainfo xmlns="" version="0.7.61">
+<File>
+<track type="General">
+<Complete_name>/media/yadn/input/20130927/509dc6f9cc63477fac2722b6/1380288061386/9974cd73-cfe0-434e-9905-5481be0fb792.mov</Complete_name>
+<Format>QuickTime</Format>
+<Format_Info>Original Apple specifications</Format_Info>
+<File_size>383 KiB</File_size>
+<Duration>6s 33ms</Duration>
+<Overall_bit_rate_mode>Variable</Overall_bit_rate_mode>
+<Overall_bit_rate>521 Kbps</Overall_bit_rate>
+<Encoded_date>UTC 1998-06-02 17:14:33</Encoded_date>
+<Tagged_date>UTC 1998-06-02 17:14:33</Tagged_date>
+<Writing_library>Apple QuickTime</Writing_library>
+</track>
+
+<track type="Video">
+<ID>1</ID>
+<Format>Cinepack</Format>
+<Codec_ID>cvid</Codec_ID>
+<Duration>6s 33ms</Duration>
+<Duration_LastFrame>-67ms</Duration_LastFrame>
+<Bit_rate_mode>Variable</Bit_rate_mode>
+<Bit_rate>335 Kbps</Bit_rate>
+<Width>134 pixels</Width>
+<Height>100 pixels</Height>
+<Display_aspect_ratio>4:3</Display_aspect_ratio>
+<Frame_rate_mode>Constant</Frame_rate_mode>
+<Frame_rate>10.000 fps</Frame_rate>
+<Bits__Pixel_Frame_>2.503</Bits__Pixel_Frame_>
+<Stream_size>250 KiB (65%)</Stream_size>
+<Language>English</Language>
+<Encoded_date>UTC 1998-05-29 12:02:59</Encoded_date>
+<Tagged_date>UTC 1998-06-02 17:14:33</Tagged_date>
+</track>
+
+<track type="Audio">
+<ID>2</ID>
+<Format>PCM</Format>
+<Format_settings__Endianness>Little</Format_settings__Endianness>
+<Format_settings__Sign>Unsigned</Format_settings__Sign>
+<Codec_ID>raw </Codec_ID>
+<Duration>6s 33ms</Duration>
+<Bit_rate_mode>Constant</Bit_rate_mode>
+<Bit_rate>176.4 Kbps</Bit_rate>
+<Channel_s_>1 channel</Channel_s_>
+<Sampling_rate>22.3 KHz</Sampling_rate>
+<Bit_depth>8 bits</Bit_depth>
+<Stream_size>131 KiB (34%)</Stream_size>
+<Language>English</Language>
+<Encoded_date>UTC 1998-05-29 12:02:59</Encoded_date>
+<Tagged_date>UTC 1998-06-02 17:14:33</Tagged_date>
+</track>
+
+</File>
+</Mediainfo>]]></Value>
+    </property>
+    <property name="evaluation_ffprobe">
+      <Value></Value>
+    </property>
+    <property name="evaluation_pdfdimensions">
+      <Value></Value>
+    </property>
+  </metadata>
+</UploadJobResponse>

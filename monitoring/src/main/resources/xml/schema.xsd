@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="Script" type="ScriptType"/>
+    <xs:complexType name="ScriptType" mixed="true">
+        <xs:sequence>
+            <xs:element name="applicationURL" type="xs:string"/>
+            <xs:element name="action" type="ActionType" maxOccurs="unbounded" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="ActionType">
+        <xs:sequence>
+            <xs:element name="method">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="authSSO"/>
+                        <xs:enumeration value="logoutSSO"/>
+                        <xs:enumeration value="getProject"/>
+                        <xs:enumeration value="findProjects"/>
+                        <xs:enumeration value="findFoldersContent"/>
+                        <xs:enumeration value="findAssets"/>
+                        <xs:enumeration value="findReels"/>
+                        <xs:enumeration value="getReel"/>
+                        <xs:enumeration value="getContent"/>
+                        <xs:enumeration value="getAsset"/>
+                        <xs:enumeration value="downloadFile"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="argument" type="ArgumentType" maxOccurs="unbounded" minOccurs="0"/>
+            <xs:element name="assertion" type="AssertionType" maxOccurs="unbounded" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="ArgumentType">
+        <xs:sequence>
+            <xs:element name="type">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="String"/>
+                        <xs:enumeration value="Search"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="value" type="xs:string" minOccurs="0"/>
+            <xs:element name="searchValue" type="SearchValueType" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="SearchValueType">
+        <xs:sequence>
+            <xs:element name="query" type="xs:string" minOccurs="0"/>
+            <xs:element name="page" type="xs:int" minOccurs="0"/>
+            <xs:element name="size" type="xs:int" minOccurs="0"/>
+            <xs:element name="sort" type="xs:string" minOccurs="0"/>
+            <xs:element name="order" minOccurs="0">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="ASC"/>
+                        <xs:enumeration value="DESC"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="deleted" type="xs:boolean" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="AssertionType">
+        <xs:sequence>
+            <xs:element name="size" type="xs:int" minOccurs="0"/>
+            <xs:element name="sizeMin" type="xs:int" minOccurs="0"/>
+            <xs:element name="sizeMax" type="xs:int" minOccurs="0"/>
+            <xs:element name="name" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

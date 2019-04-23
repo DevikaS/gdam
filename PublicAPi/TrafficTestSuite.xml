@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="TrafficTests">
+    <test name="Traffic_GetOrder">
+          <classes>
+              <class name="com.publicApi.tests.Traffic_GetOrder" />
+          </classes>
+      </test>
+    <test name="Traffic_GetOrderItem">
+         <classes>
+             <class name="com.publicApi.tests.Traffic_GetOrderItem" />
+         </classes>
+     </test>
+     <test name="Traffic_GetOrderItemDestination">
+         <classes>
+             <class name="com.publicApi.tests.Traffic_GetOrderItemDestination" />
+         </classes>
+     </test>
+     <test name="Traffic_ListOrderItemDestinations">
+         <classes>
+             <class name="com.publicApi.tests.Traffic_ListOrderItemDestinations" />
+         </classes>
+     </test>
+     <test name="Traffic_ListOrderItems">
+         <classes>
+             <class name="com.publicApi.tests.Traffic_ListOrderItems" />
+         </classes>
+     </test>
+     <test name="Traffic_ListOrders">
+         <classes>
+             <class name="com.publicApi.tests.Traffic_ListOrders" />
+         </classes>
+     </test>
+    <test name="Traffic_SetHouseNumber">
+        <classes>
+            <class name="com.publicApi.tests.Traffic_SetHouseNumber"/>
+        </classes>
+    </test>
+      <test name="Traffic_InternalOrder">
+        <classes>
+            <class name="com.publicApi.tests.Traffic_InternalOrder"/>
+        </classes>
+    </test>
+     <test name="Traffic_SetApprovalsforItems">
+         <classes>
+             <class name="com.publicApi.tests.Traffic_SetApprovalsForOrderItems"/>
+         </classes>
+     </test>
+    <test name=" Traffic_UpdateAssetStatus">
+        <classes>
+            <class name="com.publicApi.tests.Traffic_UpdateAssetStatus"/>
+        </classes>
+    </test>
+
+</suite>

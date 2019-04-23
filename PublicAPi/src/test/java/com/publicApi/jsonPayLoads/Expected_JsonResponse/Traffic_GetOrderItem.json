@@ -1,0 +1,65 @@
+{
+	"id": "580e2012400a926fbe2c985e",
+	"qcAssetId": "580e2014400a926fbe2c9882",
+	"status": "New",
+	"destinations": [
+		{
+			"id": "954",
+			"broadcasterStatus": "File Not Supplied",
+			"onHold": false,
+			"orderId": "580e2011a611da6923e1da9c",
+			"orderItemId": "580e2012400a926fbe2c985e",
+			"qcAssetId": "580e2014400a926fbe2c9882",
+			"serviceLevel": {
+				"id": [
+					"2"
+				],
+				"name": "Standard",
+				"minutes": 300
+			},
+			"destinationId": "954",
+			"destinationStatus": "Online",
+			"houseNumberMandatory": false,
+			"deliveryItemStatus": "New",
+			"name": "AAJ TAK",
+			"a5ViewStatus": "Order Placed",
+			"modifiedTimestamp": "2016-10-24T14:52:18.484+0000",
+			"createdTimestamp": "2016-10-24T14:52:18.484+0000"
+		}
+	],
+	"clockNumber": "971076",
+	"modified": "2016-10-24T14:52:05.125+0000",
+	"orderItemDetails": {
+		"additionalInformation": "Public-API_Test_AdditionalInformation",
+		"duration": "30",
+		"uploadRequestAssignees": [],
+		"subtitlesRequired": false,
+		"serviceLevel": "Standard",
+		"subtitles": "None",
+		"agencyCountry": "GB",
+		"itemType": "delivery",
+		"serviceLevelMinutes": 300
+	},
+	"duration": "30",
+	"created": "2016-10-24T14:52:02.559+0000",
+	"orderId": "580e2011a611da6923e1da9c",
+	"onHold": false,
+	"metadata": {
+		"firstAirDate": "2024-07-01T00:00:00.000Z",
+		"format": "f1:video:master:HD:1920x1080i@25fps:PAL:16x9:MPEG2:TS:I-Frame",
+		"duration": "30",
+		"name": "Test Automation 07",
+		"subtitlesRequired": "None",
+		"market": "United Kingdom",
+		"additionalInformation": "Public-API_Test_AdditionalInformation",
+		"clockNumber": "971076",
+		"advertiser": "Adstream",
+		"status": "awaiting_media",
+		"title": "Public-API_Test_Title",
+		"item_type": "delivery"
+	},
+	"asset": {
+		"aspectRatio": "16x9",
+		"formatGeneral": "MPEG2 Program Stream broadcast 16x9 720x576 25fps 50i-Frame interlaced PAL SD master"
+	}
+}

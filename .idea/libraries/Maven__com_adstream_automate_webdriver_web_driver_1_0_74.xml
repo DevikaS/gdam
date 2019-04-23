@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.adstream.automate.webdriver:web-driver:1.0.74">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/adstream/automate/webdriver/web-driver/1.0.74/web-driver-1.0.74.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/adstream/automate/webdriver/web-driver/1.0.74/web-driver-1.0.74-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/adstream/automate/webdriver/web-driver/1.0.74/web-driver-1.0.74-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

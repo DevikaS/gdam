@@ -1,0 +1,1 @@
+java -cp "lib/*" com.adstream.automate.babylon.yadn.YADNMockService

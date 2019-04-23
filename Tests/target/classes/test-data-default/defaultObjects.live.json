@@ -1,0 +1,277 @@
+{
+  "DefaultAdstreamGlobalAdminBU": {
+    "agency": {
+      "_cm": {
+        "common": {
+          "name": "Global Admin Business Unit",
+          "agencyType": [
+            "Agency"
+          ]
+        }
+      }
+    },
+    "users": {
+      "DefaultGlobalAdmin": {
+        "customEmail": "admin",
+        "_cm": {
+          "common": {
+            "email": "admin"
+          }
+        },
+        "password": "pUfDe8T*tD8Y",
+        "passwordNeverExpires": true
+      },
+      "GlobalAdmin": {
+        "customEmail": "admin",
+        "_cm": {
+          "common": {
+            "email": "admin"
+          }
+        },
+        "password": "pUfDe8T*tD8Y",
+        "passwordNeverExpires": true
+      }
+    }
+  },
+  "DefaultAgency": {
+    "agency": {
+      "_cm": {
+        "common": {
+          "time_zone": ["Europe-Andorra"],
+          "pin": "1",
+          "name": "Z5testAdvertiser",
+          "agencyType": ["Advertiser"],
+          "address": {
+            "country": ["AF"]
+          },
+          "applications": {
+            "folders": true,
+            "adkits": true,
+            "library": true,
+            "ordering": true,
+            "adpath": true,
+            "presentations": true,
+            "approvals": true,
+            "annotations": true,
+            "streamlined_library": true,
+            "dashboard": true
+          }
+        }
+      }
+    },
+    "users": {
+      "AgencyAdmin": {
+        "_cm": {
+          "common": {
+            "firstName": "admin",
+            "lastName": "agency",
+            "email": "qatbabylonautotester+agencyadmin@gmail.com",
+            "language": ["en-us"]
+          },
+          "view": {
+            "access": {
+              "library": true,
+              "ordering": true,
+              "folders": true,
+              "adkits": true,
+              "approvals": true,
+              "presentations": true,
+              "streamlined_library": true,
+              "dashboard": true
+            }
+          }
+        },
+        "password": "abcdefghA1",
+        "roles": [{"name":"agency.admin"}]
+      },
+      "ClassicAgencyAdmin": {
+        "_cm": {
+          "common": {
+            "firstName": "admin",
+            "lastName": "agency",
+            "email": "qatagencyadmin@test.com",
+            "language": ["en-us"]
+          },
+          "view": {
+            "access": {
+              "library": true,
+              "ordering": true,
+              "folders": true,
+              "adkits": true,
+              "approvals": true,
+              "presentations": true,
+              "dashboard": true
+            }
+          }
+        },
+        "password": "abcdefghA1",
+        "roles": [{"name":"agency.admin"}]
+      },
+      "AnotherAdmin": {
+        "_cm": {
+          "common": {
+            "firstName": "anotheradmin",
+            "lastName": "agency",
+            "email": "qatbabylonautotester+anotheradmin@gmail.com",
+            "language": ["en-us"]
+          },
+          "view": {
+            "access": {
+              "library": true,
+              "ordering": true,
+              "folders": true,
+              "adkits": true,
+              "approvals": true,
+              "presentations": true,
+              "dashboard": true
+            }
+          }
+        },
+        "password": "abcdefghA1",
+        "roles": [{"name":"agency.admin"}]
+      },
+      "AgencyUser": {
+        "_cm": {
+          "common": {
+            "firstName": "user",
+            "lastName": "agency",
+            "email": "qatbabylonautotester+agencyuser@gmail.com",
+            "language": ["en-us"]
+          },
+          "view": {
+            "access": {
+              "library": true,
+              "ordering": true,
+              "folders": true,
+              "adkits": true,
+              "approvals": true,
+              "presentations": true,
+              "streamlined_library": true,
+              "dashboard": true
+            }
+          }
+        },
+        "password": "abcdefghA1",
+        "roles": [{"name":"agency.user"}]
+      }
+    }
+  },
+  "AnotherAgency": {
+    "agency": {
+      "_cm": {
+        "common": {
+          "time_zone": ["Europe-Andorra"],
+          "pin": "1",
+          "name": "ZAnotherA5testAdvertiser",
+          "agencyType": ["Advertiser"],
+          "address": {
+            "country": ["AF"]
+          },
+          "applications": {
+            "folders": true,
+            "adkits": true,
+            "library": true,
+            "ordering": true,
+            "adpath": true,
+            "presentations": true,
+            "approvals": true,
+            "annotations": true,
+            "streamlined_library": true,
+            "dashboard": true
+          }
+        }
+      }
+    },
+    "users": {
+      "AnotherAgencyAdmin": {
+        "_cm": {
+          "common": {
+            "firstName": "admin",
+            "lastName": "anotheragency",
+            "email": "qatbabylonautotester+anotheragencyadmin@gmail.com",
+            "language": ["en-us"]
+          },
+          "view": {
+            "access": {
+              "library": true,
+              "ordering": true,
+              "folders": true,
+              "adkits": true,
+              "approvals": true,
+              "presentations": true,
+              "streamlined_library": true,
+              "dashboard": true
+            }
+          }
+        },
+        "password": "abcdefghA1",
+        "roles": [{"name":"agency.admin"}]
+      }
+    }
+  },
+  "IngestAgency": {
+    "agency": {
+      "_cm": {
+        "a4" : {
+          "user" : "alejandra.medina@mccann.com.mx.ua"
+        },
+        "common": {
+          "time_zone": ["Europe-Andorra"],
+          "pin": "1",
+          "name": "AdstreamQaIngest",
+          "agencyType": ["Ingest"],
+          "address": {
+            "country": ["AF"]
+          },
+          "applications": {
+            "folders": true,
+            "adkits": true,
+            "library": true,
+            "ordering": true,
+            "adpath": true,
+            "presentations": true,
+            "approvals": true,
+            "annotations": true,
+            "dashboard": true
+          }
+        },
+        "passwordSettings": {
+          "passwordExpirationInDays": 30,
+          "passwordRegEx": {
+            "pattern" : "((?=(.*[A-Z]){1,})(?=(.*\\d){1,}).{8,})",
+            "description": {
+              "minTotalLengthOfPassword": 8,
+              "minimumIncludingNumbers": 1,
+              "minIncludingUppercase": 1
+            }
+          }
+        }
+      }
+    },
+    "users": {
+      "IngestAdmin": {
+        "_cm": {
+          "common": {
+            "firstName": "aldrin",
+            "lastName": "pinto@gmail.com",
+            "email": "qaaldrin.pinto@gmail.com",
+            "language": ["en-us"]
+          },
+          "view": {
+            "access": {
+              "library": true,
+              "ordering": true,
+              "folders": true,
+              "adkits": true,
+              "approvals": true,
+              "presentations": true,
+              "dashboard": true
+            }
+          }
+        },
+        "password": "abcdefghA1",
+        "roles": [{"name":"agency.admin"}]
+      }
+    }
+  }
+}

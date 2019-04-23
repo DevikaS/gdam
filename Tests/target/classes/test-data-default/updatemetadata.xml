@@ -1,0 +1,62 @@
+<s:Envelope xmlns:a="http://www.w3.org/2005/08/addressing" xmlns:s="http://www.w3.org/2003/05/soap-envelope">
+    <s:Header>
+        <a:Action s:mustUnderstand="1">urn:adstream:AMS/IMetadata/Update</a:Action>
+        <a:MessageID>urn:uuid:d4eaa62b-d7b8-403a-a06c-0c518aedecdd</a:MessageID>
+        <a:ReplyTo>
+            <a:Address>http://www.w3.org/2005/08/addressing/anonymous</a:Address>
+        </a:ReplyTo>
+        <a:To s:mustUnderstand="1">http://10.44.127.41/AMS/Metadata.svc</a:To>
+    </s:Header>
+    <s:Body>
+        <Update xmlns="urn:adstream:AMS">
+            <metadata xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+                <DSMetadata>
+                    <xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" id="dsMetadata" targetNamespace="http://tempuri.org/dsCustomField.xsd" xmlns="http://tempuri.org/dsCustomField.xsd" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:mstns="http://tempuri.org/dsCustomField.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+                        <xs:element msdata:IsDataSet="true" msdata:UseCurrentLocale="true" name="dsMetadata">
+                            <xs:complexType>
+                                <xs:choice maxOccurs="unbounded" minOccurs="0">
+                                    <xs:element name="Metadata">
+                                        <xs:complexType>
+                                            <xs:sequence>
+                                                <xs:element msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="ObjectInventoryID" type="xs:string"/>
+                                                <xs:element name="Name" type="xs:string"/>
+                                                <xs:element default="false" name="ReadOnly" type="xs:boolean"/>
+                                                <xs:element minOccurs="0" name="BooleanValue" type="xs:boolean"/>
+                                                <xs:element minOccurs="0" msdata:DateTimeMode="Utc" name="DateTimeValue" type="xs:dateTime"/>
+                                                <xs:element minOccurs="0" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="UniqueValue" type="xs:string"/>
+                                                <xs:element minOccurs="0" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="ObjectInventoryIDValue" type="xs:string"/>
+                                                <xs:element minOccurs="0" name="IntValue" type="xs:long"/>
+                                                <xs:element minOccurs="0" name="RealValue" type="xs:decimal"/>
+                                                <xs:element minOccurs="0" name="StringValue" type="xs:string"/>
+                                                <xs:element name="MetadataTypeID" type="xs:short"/>
+                                                <xs:element minOccurs="0" name="Priority" type="xs:short"/>
+                                            </xs:sequence>
+                                        </xs:complexType>
+                                    </xs:element>
+                                </xs:choice>
+                            </xs:complexType>
+                            <xs:unique msdata:PrimaryKey="true" name="Constraint1">
+                                <xs:selector xpath=".//mstns:Metadata"/>
+                                <xs:field xpath="mstns:ObjectInventoryID"/>
+                                <xs:field xpath="mstns:Name"/>
+                            </xs:unique>
+                        </xs:element>
+                    </xs:schema>
+                    <diffgr:diffgram xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                        <dsMetadata xmlns="http://tempuri.org/dsCustomField.xsd">
+                            <Metadata diffgr:hasChanges="inserted" diffgr:id="Metadata1" msdata:rowOrder="0">
+                                <ObjectInventoryID>AssetGUID</ObjectInventoryID>
+                                <Name>FileStorageID</Name>
+                                <ReadOnly>false</ReadOnly>
+                                <StringValue>storageID</StringValue>
+                                <MetadataTypeID>2</MetadataTypeID>
+                            </Metadata>
+                        </dsMetadata>
+                    </diffgr:diffgram>
+                </DSMetadata>
+                <ObjectInventoryID>AssetGUID</ObjectInventoryID>
+            </metadata>
+            <sessionID>sessionID</sessionID>
+        </Update>
+    </s:Body>
+</s:Envelope>

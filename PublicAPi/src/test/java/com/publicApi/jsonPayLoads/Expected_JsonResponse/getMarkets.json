@@ -1,0 +1,1567 @@
+{
+	"id": "3",
+	"name": "United Kingdom",
+	"country": "gb",
+	"priority": 43,
+	"marketType": "default",
+	"marketTypePriority": 3,
+	"destinations": [
+		{
+			"id": "182",
+			"name": "Vindico",
+			"group": "IPTV / VOD - not included in network cap delivery fee",
+			"priority": 34,
+			"visible": false,
+			"statusId": 51,
+			"allowChannelsDelivery": false,
+			"defaultSourceMediaFormat": "f1:video:master:SD:720x576i@25fps:PAL:16x9:50Mbps",
+			"targetSourceMediaFormat": "f1:video:delivery:test:pluginModel",
+			"allowMultiSourceMediaFormat": true,
+			"commentStorageID": 1,
+			"countryCode": "gb",
+			"proxyApprove": false,
+			"houseNumberMandatory": false,
+			"meta": {
+				"market": null,
+				"systemCode": null,
+				"deliveryType": null,
+				"destinationType": null,
+				"owner": null,
+				"hubInternalName": null,
+				"city": null,
+				"state": null
+			},
+			"items": [
+				{
+					"key": "2",
+					"name": "Standard"
+				},
+				{
+					"key": "3",
+					"name": "Express"
+				}
+			],
+			"bcData": {}
+		},
+		{
+			"id": "91",
+			"name": "Facebook VOD",
+			"group": "IPTV / VOD - not included in network cap delivery fee",
+			"priority": 34,
+			"visible": false,
+			"statusId": 51,
+			"allowChannelsDelivery": false,
+			"defaultSourceMediaFormat": "f1:video:master:SD:720x576i@25fps:PAL:16x9:50Mbps",
+			"targetSourceMediaFormat": "f1:video:delivery:test:pluginModel",
+			"allowMultiSourceMediaFormat": true,
+			"commentStorageID": 1,
+			"countryCode": "gb",
+			"proxyApprove": false,
+			"houseNumberMandatory": false,
+			"meta": {
+				"market": null,
+				"systemCode": null,
+				"deliveryType": null,
+				"destinationType": null,
+				"owner": null,
+				"hubInternalName": null,
+				"city": null,
+				"state": null
+			},
+			"items": [
+				{
+					"key": "2",
+					"name": "Standard"
+				},
+				{
+					"key": "3",
+					"name": "Express"
+				}
+			],
+			"bcData": {}
+		},
+		{
+			"id": "383",
+			"name": "Global Music TV",
+			"group": "Sky - third party stations MUST be selected as well",
+			"priority": 3,
+			"visible": false,
+			"statusId": 51,
+			"allowChannelsDelivery": false,
+			"defaultSourceMediaFormat": "f1:video:master:SD:720x576i@25fps:PAL:16x9:50Mbps",
+			"targetSourceMediaFormat": "f1:video:delivery:test:pluginModel",
+			"allowMultiSourceMediaFormat": true,
+			"commentStorageID": 1,
+			"countryCode": "gb",
+			"proxyApprove": false,
+			"houseNumberMandatory": false,
+			"meta": {
+				"market": null,
+				"systemCode": null,
+				"deliveryType": null,
+				"destinationType": null,
+				"owner": null,
+				"hubInternalName": null,
+				"city": null,
+				"state": null
+			},
+			"items": [
+				{
+					"key": "2",
+					"name": "Standard"
+				},
+				{
+					"key": "3",
+					"name": "Express"
+				}
+			],
+			"bcData": {
+				"isBc": true
+			}
+		},
+		{
+			"id": "184",
+			"name": "Hum TV",
+			"group": "Exodus",
+			"priority": 26,
+			"visible": false,
+			"statusId": 51,
+			"allowChannelsDelivery": false,
+			"defaultSourceMediaFormat": "f1:video:master:SD:720x576i@25fps:PAL:16x9:50Mbps",
+			"targetSourceMediaFormat": "f1:video:delivery:test:pluginModel",
+			"allowMultiSourceMediaFormat": true,
+			"commentStorageID": 1,
+			"countryCode": "gb",
+			"proxyApprove": false,
+			"houseNumberMandatory": false,
+			"meta": {
+				"market": null,
+				"systemCode": null,
+				"deliveryType": null,
+				"destinationType": null,
+				"owner": null,
+				"hubInternalName": null,
+				"city": null,
+				"state": null
+			},
+			"items": [
+				{
+					"key": "2",
+					"name": "Standard"
+				},
+				{
+					"key": "3",
+					"name": "Express"
+				}
+			],
+			"bcData": {}
+		},
+		{
+			"id": "98",
+			"name": "Disney Junior",
+			"group": "Other Broadcasters",
+			"priority": 38,
+			"visible": false,
+			"statusId": 50,
+			"allowChannelsDelivery": false,
+			"defaultSourceMediaFormat": "f1:video:master:SD:720x576i@25fps:PAL:16x9:50Mbps",
+			"targetSourceMediaFormat": "f1:video:delivery:SD:720x576i@25fps:PAL:16x9:both_AR:ABSTRACT",
+			"allowMultiSourceMediaFormat": true,
+			"commentStorageID": 1,
+			"countryCode": "gb",
+			"proxyApprove": false,
+			"houseNumberMandatory": false,
+			"meta": {
+				"market": null,
+				"systemCode": null,
+				"deliveryType": null,
+				"destinationType": null,
+				"owner": null,
+				"hubInternalName": null,
+				"city": null,
+				"state": null
+			},
+			"items": [
+				{
+					"key": "2",
+					"name": "Standard"
+				},
+				{
+					"key": "3",
+					"name": "Express"
+				}
+			],
+			"bcData": {
+				"bcId": "733",
+				"bcName": "Disney UK",
+				"gaBcId": "170549"
+			}
+		},
+		{
+			"id": "92",
+			"name": "Disney Channel",
+			"group": "Other Broadcasters",
+			"priority": 38,
+			"visible": false,
+			"statusId": 50,
+			"allowChannelsDelivery": false,
+			"defaultSourceMediaFormat": "f1:video:master:SD:720x576i@25fps:PAL:16x9:50Mbps",
+			"targetSourceMediaFormat": "f1:video:delivery:SD:720x576i@25fps:PAL:16x9:both_AR:ABSTRACT",
+			"allowMultiSourceMediaFormat": true,
+			"commentStorageID": 1,
+			"countryCode": "gb",
+			"proxyApprove": false,
+			"houseNumberMandatory": false,
+			"meta": {
+				"market": null,
+				"systemCode": null,
+				"deliveryType": null,
+				"destinationType": null,
+				"owner": null,
+				"hubInternalName": null,
+				"city": null,
+				"state": null
+			},
+			"items": [
+				{
+					"key": "2",
+					"name": "Standard"
+				},
+				{
+					"key": "3",
+					"name": "Express"
+				}
+			],
+			"bcData": {
+				"bcId": "733",
+				"bcName": "Disney UK",
+				"gaBcId": "170549"
+			}
+		},
+		{
+			"id": "99",
+			"name": "Travel UK",
+			"group": "Sky - third party stations MUST be selected as well",
+			"priority": 3,
+			"visible": false,
+			"statusId": 50,
+			"allowChannelsDelivery": false,
+			"defaultSourceMediaFormat": "f1:video:master:SD:720x576i@25fps:PAL:16x9:50Mbps",
+			"targetSourceMediaFormat": "f1:video:delivery:SD:720x576i@25fps:PAL:16x9:both_AR:ABSTRACT",
+			"allowMultiSourceMediaFormat": true,
+			"commentStorageID": 1,
+			"countryCode": "gb",
+			"proxyApprove": false,
+			"houseNumberMandatory": false,
+			"meta": {
+				"market": null,
+				"systemCode": null,
+				"deliveryType": null,
+				"destinationType": null,
+				"owner": null,
+				"hubInternalName": null,
+				"city": null,
+				"state": null
+			},
+			"items": [
+				{
+					"key": "2",
+					"name": "Standard"
+				},
+				{
+					"key": "3",
+					"name": "Express"
+				}
+			],
+			"bcData": {
+				"bcId": "746",
+				"bcName": "CBS",
+				"gaBcId": "175811"
+			}
+		},
+		{
+			"id": "384",
+			"name": "Heart TV",
+			"group": "Sky - third party stations MUST be selected as well",
+			"priority": 3,
+			"visible": false,
+			"statusId": 50,
+			"allowChannelsDelivery": false,
+			"defaultSourceMediaFormat": "f1:video:master:SD:720x576i@25fps:PAL:16x9:50Mbps",
+			"targetSourceMediaFormat": "f1:video:delivery:SD:720x576i@25fps:PAL:16x9:both_AR:ABSTRACT",
+			"allowMultiSourceMediaFormat": true,
+			"commentStorageID": 1,
+			"countryCode": "gb",
+			"proxyApprove": false,
+			"houseNumberMandatory": false,
+			"meta": {
+				"market": null,
+				"systemCode": null,
+				"deliveryType": null,
+				"destinationType": null,
+				"owner": null,
+				"hubInternalName": null,
+				"city": null,
+				"state": null
+			},
+			"items": [
+				{
+					"key": "2",
+					"name": "Standard"
+				}
+			],
+			"bcData": {
+				"bcId": "383",
+				"bcName": "Global Music TV",
+				"gaBcId": "175815"
+			}
+		},
+		{
+			"id": "502",
+			"name": "Star TV",
+			"group": "Sky - third party stations MUST be selected as well",
+			"priority": 3,
+			"visible": false,
+			"statusId": 51,
+			"allowChannelsDelivery": false,
+			"defaultSourceMediaFormat": "f1:video:master:SD:720x576i@25fps:PAL:16x9:50Mbps",
+			"targetSourceMediaFormat": "f1:video:delivery:test:pluginModel",
+			"allowMultiSourceMediaFormat": true,
+			"commentStorageID": 1,
+			"countryCode": "gb",
+			"proxyApprove": false,
+			"houseNumberMandatory": false,
+			"meta": {
+				"market": null,
+				"systemCode": null,
+				"deliveryType": null,
+				"destinationType": null,
+				"owner": null,
+				"hubInternalName": null,
+				"city": null,
+				"state": null
+			},
+			"items": [
+				{
+					"key": "2",
+					"name": "Standard"
+				},
+				{
+					"key": "3",
+					"name": "Express"
+				}
+			],
+			"bcData": {
+				"isBc": true
+			}
+		},
+		{
+			"id": "402",
+			"name": "LWT",
+			"group": "ITV - IF SD IS SELECTED DO NOT SELECT HD CHANNEL TOO",
+			"priority": 10,
+			"visible": false,
+			"statusId": 50,
+			"allowChannelsDelivery": false,
+			"defaultSourceMediaFormat": "f1:video:master:SD:720x576i@25fps:PAL:16x9:50Mbps",
+			"targetSourceMediaFormat": "f1:video:Delivery:GBR:790-ITV-Chiswick:SD:PAL",
+			"allowMultiSourceMediaFormat": true,
+			"commentStorageID": 1,
+			"countryCode": "gb",
+			"proxyApprove": false,
+			"houseNumberMandatory": false,
+			"meta": {
+				"market": null,
+				"systemCode": null,
+				"deliveryType": null,
+				"destinationType": null,
+				"owner": null,
+				"hubInternalName": null,
+				"city": null,
+				"state": null
+			},
+			"items": [
+				{
+					"key": "2",
+					"name": "Standard"
+				},
+				{
+					"key": "3",
+					"name": "Express"
+				}
+			],
+			"bcData": {
+				"bcId": "790",
+				"bcName": "ITV (Chiswick Park)",
+				"gaBcId": "170518"
+			}
+		},
+		{
+			"id": "103",
+			"name": "Extreme",
+			"group": "Sky - third party stations MUST be selected as well",
+			"priority": 3,
+			"visible": false,
+			"statusId": 50,
+			"allowChannelsDelivery": false,
+			"defaultSourceMediaFormat": "f1:video:master:SD:720x576i@25fps:PAL:16x9:50Mbps",
+			"targetSourceMediaFormat": "f1:video:delivery:SD:720x576i@25fps:PAL:16x9:both_AR:ABSTRACT",
+			"allowMultiSourceMediaFormat": true,
+			"commentStorageID": 1,
+			"countryCode": "gb",
+			"proxyApprove": false,
+			"houseNumberMandatory": false,
+			"meta": {
+				"market": null,
+				"systemCode": null,
+				"deliveryType": null,
+				"destinationType": null,
+				"owner": null,
+				"hubInternalName": null,
+				"city": null,
+				"state": null
+			},
+			"items": [
+				{
+					"key": "2",
+					"name": "Standard"
+				},
+				{
+					"key": "3",
+					"name": "Express"
+				}
+			],
+			"bcData": {
+				"bcId": "746",
+				"bcName": "CBS",
+				"gaBcId": "175811"
+			}
+		},
+		{
+			"id": "404",
+			"name": "Channel Island",
+			"group": "ITV - IF SD IS SELECTED DO NOT SELECT HD CHANNEL TOO",
+			"priority": 10,
+			"visible": false,
+			"statusId": 50,
+			"allowChannelsDelivery": false,
+			"defaultSourceMediaFormat": "f1:video:master:SD:720x576i@25fps:PAL:16x9:50Mbps",
+			"targetSourceMediaFormat": "f1:video:Delivery:GBR:790-ITV-Chiswick:SD:PAL",
+			"allowMultiSourceMediaFormat": true,
+			"commentStorageID": 1,
+			"countryCode": "gb",
+			"proxyApprove": false,
+			"houseNumberMandatory": false,
+			"meta": {
+				"market": null,
+				"systemCode": null,
+				"deliveryType": null,
+				"destinationType": null,
+				"owner": null,
+				"hubInternalName": null,
+				"city": null,
+				"state": null
+			},
+			"items": [
+				{
+					"key": "2",
+					"name": "Standard"
+				},
+				{
+					"key": "3",
+					"name": "Express"
+				}
+			],
+			"bcData": {
+				"bcId": "790",
+				"bcName": "ITV (Chiswick Park)",
+				"gaBcId": "170518"
+			}
+		},
+		{
+			"id": "405",
+			"name": "Carlton",
+			"group": "ITV - IF SD IS SELECTED DO NOT SELECT HD CHANNEL TOO",
+			"priority": 10,
+			"visible": false,
+			"statusId": 50,
+			"allowChannelsDelivery": false,
+			"defaultSourceMediaFormat": "f1:video:master:SD:720x576i@25fps:PAL:16x9:50Mbps",
+			"targetSourceMediaFormat": "f1:video:Delivery:GBR:790-ITV-Chiswick:SD:PAL",
+			"allowMultiSourceMediaFormat": true,
+			"commentStorageID": 1,
+			"countryCode": "gb",
+			"proxyApprove": false,
+			"houseNumberMandatory": false,
+			"meta": {
+				"market": null,
+				"systemCode": null,
+				"deliveryType": null,
+				"destinationType": null,
+				"owner": null,
+				"hubInternalName": null,
+				"city": null,
+				"state": null
+			},
+			"items": [
+				{
+					"key": "2",
+					"name": "Standard"
+				},
+				{
+					"key": "3",
+					"name": "Express"
+				}
+			],
+			"bcData": {
+				"bcId": "790",
+				"bcName": "ITV (Chiswick Park)",
+				"gaBcId": "170518"
+			}
+		},
+		{
+			"id": "1224",
+			"name": "Drama",
+			"group": "Sky - third party stations MUST be selected as well",
+			"priority": 3,
+			"visible": false,
+			"statusId": 50,
+			"allowChannelsDelivery": false,
+			"defaultSourceMediaFormat": "f1:video:master:SD:720x576i@25fps:PAL:16x9:50Mbps",
+			"targetSourceMediaFormat": "f1:video:delivery:SD:720x576i@25fps:PAL:16x9:both_AR:ABSTRACT",
+			"allowMultiSourceMediaFormat": true,
+			"commentStorageID": 1,
+			"countryCode": "gb",
+			"proxyApprove": false,
+			"houseNumberMandatory": false,
+			"meta": {
+				"market": null,
+				"systemCode": null,
+				"deliveryType": null,
+				"destinationType": null,
+				"owner": null,
+				"hubInternalName": null,
+				"city": null,
+				"state": null
+			},
+			"items": [
+				{
+					"key": "2",
+					"name": "Standard"
+				}
+			],
+			"bcData": {
+				"bcId": "746",
+				"bcName": "CBS",
+				"gaBcId": "175811"
+			}
+		},
+		{
+			"id": "1170",
+			"name": "Star Plus",
+			"group": "Sky - third party stations MUST be selected as well",
+			"priority": 3,
+			"visible": false,
+			"statusId": 50,
+			"allowChannelsDelivery": false,
+			"defaultSourceMediaFormat": "f1:video:master:SD:720x576i@25fps:PAL:16x9:50Mbps",
+			"targetSourceMediaFormat": "f1:video:delivery:SD:720x576i@25fps:PAL:16x9:both_AR:ABSTRACT",
+			"allowMultiSourceMediaFormat": true,
+			"commentStorageID": 1,
+			"countryCode": "gb",
+			"proxyApprove": false,
+			"houseNumberMandatory": false,
+			"meta": {
+				"market": null,
+				"systemCode": null,
+				"deliveryType": null,
+				"destinationType": null,
+				"owner": null,
+				"hubInternalName": null,
+				"city": null,
+				"state": null
+			},
+			"items": [
+				{
+					"key": "2",
+					"name": "Standard"
+				},
+				{
+					"key": "3",
+					"name": "Express"
+				}
+			],
+			"bcData": {
+				"bcId": "502",
+				"bcName": "Star TV",
+				"gaBcId": "175822"
+			}
+		},
+		{
+			"id": "746",
+			"name": "CBS",
+			"group": "Sky - third party stations MUST be selected as well",
+			"priority": 3,
+			"visible": false,
+			"statusId": 51,
+			"allowChannelsDelivery": false,
+			"defaultSourceMediaFormat": "f1:video:master:SD:720x576i@25fps:PAL:16x9:50Mbps",
+			"targetSourceMediaFormat": "f1:video:delivery:test:pluginModel",
+			"allowMultiSourceMediaFormat": true,
+			"commentStorageID": 1,
+			"countryCode": "gb",
+			"proxyApprove": false,
+			"houseNumberMandatory": false,
+			"meta": {
+				"market": null,
+				"systemCode": null,
+				"deliveryType": null,
+				"destinationType": null,
+				"owner": null,
+				"hubInternalName": null,
+				"city": null,
+				"state": null
+			},
+			"items": [
+				{
+					"key": "2",
+					"name": "Standard"
+				},
+				{
+					"key": "3",
+					"name": "Express"
+				}
+			],
+			"bcData": {
+				"isBc": true
+			}
+		},
+		{
+			"id": "407",
+			"name": "West Country",
+			"group": "ITV - IF SD IS SELECTED DO NOT SELECT HD CHANNEL TOO",
+			"priority": 10,
+			"visible": false,
+			"statusId": 50,
+			"allowChannelsDelivery": false,
+			"defaultSourceMediaFormat": "f1:video:master:SD:720x576i@25fps:PAL:16x9:50Mbps",
+			"targetSourceMediaFormat": "f1:video:Delivery:GBR:790-ITV-Chiswick:SD:PAL",
+			"allowMultiSourceMediaFormat": true,
+			"commentStorageID": 1,
+			"countryCode": "gb",
+			"proxyApprove": false,
+			"houseNumberMandatory": false,
+			"meta": {
+				"market": null,
+				"systemCode": null,
+				"deliveryType": null,
+				"destinationType": null,
+				"owner": null,
+				"hubInternalName": null,
+				"city": null,
+				"state": null
+			},
+			"items": [
+				{
+					"key": "2",
+					"name": "Standard"
+				},
+				{
+					"key": "3",
+					"name": "Express"
+				}
+			],
+			"bcData": {
+				"bcId": "790",
+				"bcName": "ITV (Chiswick Park)",
+				"gaBcId": "170518"
+			}
+		},
+		{
+			"id": "408",
+			"name": "ITV breakfast-London, South and Ulster",
+			"group": "ITV - IF SD IS SELECTED DO NOT SELECT HD CHANNEL TOO",
+			"priority": 10,
+			"visible": false,
+			"statusId": 50,
+			"allowChannelsDelivery": false,
+			"defaultSourceMediaFormat": "f1:video:master:SD:720x576i@25fps:PAL:16x9:50Mbps",
+			"targetSourceMediaFormat": "f1:video:Delivery:GBR:790-ITV-Chiswick:SD:PAL",
+			"allowMultiSourceMediaFormat": true,
+			"commentStorageID": 1,
+			"countryCode": "gb",
+			"proxyApprove": false,
+			"houseNumberMandatory": false,
+			"meta": {
+				"market": null,
+				"systemCode": null,
+				"deliveryType": null,
+				"destinationType": null,
+				"owner": null,
+				"hubInternalName": null,
+				"city": null,
+				"state": null
+			},
+			"items": [
+				{
+					"key": "2",
+					"name": "Standard"
+				},
+				{
+					"key": "3",
+					"name": "Express"
+				}
+			],
+			"bcData": {
+				"bcId": "790",
+				"bcName": "ITV (Chiswick Park)",
+				"gaBcId": "170518"
+			}
+		},
+		{
+			"id": "406",
+			"name": "HTV West",
+			"group": "ITV - IF SD IS SELECTED DO NOT SELECT HD CHANNEL TOO",
+			"priority": 10,
+			"visible": false,
+			"statusId": 50,
+			"allowChannelsDelivery": false,
+			"defaultSourceMediaFormat": "f1:video:master:SD:720x576i@25fps:PAL:16x9:50Mbps",
+			"targetSourceMediaFormat": "f1:video:Delivery:GBR:790-ITV-Chiswick:SD:PAL",
+			"allowMultiSourceMediaFormat": true,
+			"commentStorageID": 1,
+			"countryCode": "gb",
+			"proxyApprove": false,
+			"houseNumberMandatory": false,
+			"meta": {
+				"market": null,
+				"systemCode": null,
+				"deliveryType": null,
+				"destinationType": null,
+				"owner": null,
+				"hubInternalName": null,
+				"city": null,
+				"state": null
+			},
+			"items": [
+				{
+					"key": "2",
+					"name": "Standard"
+				},
+				{
+					"key": "3",
+					"name": "Express"
+				}
+			],
+			"bcData": {
+				"bcId": "790",
+				"bcName": "ITV (Chiswick Park)",
+				"gaBcId": "170518"
+			}
+		},
+		{
+			"id": "636",
+			"name": "Action",
+			"group": "Sky - third party stations MUST be selected as well",
+			"priority": 3,
+			"visible": false,
+			"statusId": 50,
+			"allowChannelsDelivery": false,
+			"defaultSourceMediaFormat": "f1:video:master:SD:720x576i@25fps:PAL:16x9:50Mbps",
+			"targetSourceMediaFormat": "f1:video:delivery:SD:720x576i@25fps:PAL:16x9:both_AR:ABSTRACT",
+			"allowMultiSourceMediaFormat": true,
+			"commentStorageID": 1,
+			"countryCode": "gb",
+			"proxyApprove": false,
+			"houseNumberMandatory": false,
+			"meta": {
+				"market": null,
+				"systemCode": null,
+				"deliveryType": null,
+				"destinationType": null,
+				"owner": null,
+				"hubInternalName": null,
+				"city": null,
+				"state": null
+			},
+			"items": [
+				{
+					"key": "2",
+					"name": "Standard"
+				},
+				{
+					"key": "3",
+					"name": "Express"
+				}
+			],
+			"bcData": {
+				"bcId": "746",
+				"bcName": "CBS",
+				"gaBcId": "175811"
+			}
+		},
+		{
+			"id": "385",
+			"name": "Capital TV",
+			"group": "Sky - third party stations MUST be selected as well",
+			"priority": 3,
+			"visible": false,
+			"statusId": 50,
+			"allowChannelsDelivery": false,
+			"defaultSourceMediaFormat": "f1:video:master:SD:720x576i@25fps:PAL:16x9:50Mbps",
+			"targetSourceMediaFormat": "f1:video:delivery:SD:720x576i@25fps:PAL:16x9:both_AR:ABSTRACT",
+			"allowMultiSourceMediaFormat": true,
+			"commentStorageID": 1,
+			"countryCode": "gb",
+			"proxyApprove": false,
+			"houseNumberMandatory": false,
+			"meta": {
+				"market": null,
+				"systemCode": null,
+				"deliveryType": null,
+				"destinationType": null,
+				"owner": null,
+				"hubInternalName": null,
+				"city": null,
+				"state": null
+			},
+			"items": [
+				{
+					"key": "2",
+					"name": "Standard"
+				}
+			],
+			"bcData": {
+				"bcId": "383",
+				"bcName": "Global Music TV",
+				"gaBcId": "175815"
+			}
+		},
+		{
+			"id": "97",
+			"name": "Reality",
+			"group": "Sky - third party stations MUST be selected as well",
+			"priority": 3,
+			"visible": false,
+			"statusId": 50,
+			"allowChannelsDelivery": false,
+			"defaultSourceMediaFormat": "f1:video:master:SD:720x576i@25fps:PAL:16x9:50Mbps",
+			"targetSourceMediaFormat": "f1:video:delivery:SD:720x576i@25fps:PAL:16x9:both_AR:ABSTRACT",
+			"allowMultiSourceMediaFormat": true,
+			"commentStorageID": 1,
+			"countryCode": "gb",
+			"proxyApprove": false,
+			"houseNumberMandatory": false,
+			"meta": {
+				"market": null,
+				"systemCode": null,
+				"deliveryType": null,
+				"destinationType": null,
+				"owner": null,
+				"hubInternalName": null,
+				"city": null,
+				"state": null
+			},
+			"items": [
+				{
+					"key": "2",
+					"name": "Standard"
+				},
+				{
+					"key": "3",
+					"name": "Express"
+				}
+			],
+			"bcData": {
+				"bcId": "746",
+				"bcName": "CBS",
+				"gaBcId": "175811"
+			}
+		},
+		{
+			"id": "1179",
+			"name": "ITV4",
+			"group": "ITV - IF SD IS SELECTED DO NOT SELECT HD CHANNEL TOO",
+			"priority": 10,
+			"visible": false,
+			"statusId": 50,
+			"allowChannelsDelivery": false,
+			"defaultSourceMediaFormat": "f1:video:master:SD:720x576i@25fps:PAL:16x9:50Mbps",
+			"targetSourceMediaFormat": "f1:video:Delivery:GBR:790-ITV-Chiswick:SD:PAL",
+			"allowMultiSourceMediaFormat": true,
+			"commentStorageID": 1,
+			"countryCode": "gb",
+			"proxyApprove": false,
+			"houseNumberMandatory": false,
+			"meta": {
+				"market": null,
+				"systemCode": null,
+				"deliveryType": null,
+				"destinationType": null,
+				"owner": null,
+				"hubInternalName": null,
+				"city": null,
+				"state": null
+			},
+			"items": [
+				{
+					"key": "2",
+					"name": "Standard"
+				},
+				{
+					"key": "3",
+					"name": "Express"
+				}
+			],
+			"bcData": {
+				"bcId": "790",
+				"bcName": "ITV (Chiswick Park)",
+				"gaBcId": "170518"
+			}
+		},
+		{
+			"id": "2533",
+			"name": "Sony Entertainment TV (SET)",
+			"group": "Sky - third party stations MUST be selected as well",
+			"priority": 3,
+			"visible": false,
+			"statusId": 50,
+			"allowChannelsDelivery": false,
+			"defaultSourceMediaFormat": "f1:video:master:SD:720x576i@25fps:PAL:16x9:50Mbps",
+			"targetSourceMediaFormat": "f1:video:delivery:SD:720x576i@25fps:PAL:16x9:both_AR:ABSTRACT",
+			"allowMultiSourceMediaFormat": true,
+			"commentStorageID": 1,
+			"countryCode": "gb",
+			"proxyApprove": false,
+			"houseNumberMandatory": false,
+			"meta": {
+				"market": null,
+				"systemCode": null,
+				"deliveryType": null,
+				"destinationType": null,
+				"owner": null,
+				"hubInternalName": null,
+				"city": null,
+				"state": null
+			},
+			"items": [
+				{
+					"key": "2",
+					"name": "Standard"
+				},
+				{
+					"key": "3",
+					"name": "Express"
+				}
+			],
+			"bcData": {
+				"bcId": "746",
+				"bcName": "CBS",
+				"gaBcId": "175811"
+			}
+		},
+		{
+			"id": "2167",
+			"name": "Star Life Ok",
+			"group": "Sky - third party stations MUST be selected as well",
+			"priority": 3,
+			"visible": false,
+			"statusId": 50,
+			"allowChannelsDelivery": false,
+			"defaultSourceMediaFormat": "f1:video:master:SD:720x576i@25fps:PAL:16x9:50Mbps",
+			"targetSourceMediaFormat": "f1:video:delivery:SD:720x576i@25fps:PAL:16x9:both_AR:ABSTRACT",
+			"allowMultiSourceMediaFormat": true,
+			"commentStorageID": 1,
+			"countryCode": "gb",
+			"proxyApprove": false,
+			"houseNumberMandatory": false,
+			"meta": {
+				"market": null,
+				"systemCode": null,
+				"deliveryType": null,
+				"destinationType": null,
+				"owner": null,
+				"hubInternalName": null,
+				"city": null,
+				"state": null
+			},
+			"items": [
+				{
+					"key": "2",
+					"name": "Standard"
+				}
+			],
+			"bcData": {
+				"bcId": "502",
+				"bcName": "Star TV",
+				"gaBcId": "175822"
+			}
+		},
+		{
+			"id": "7734",
+			"name": "ITVBe",
+			"group": "ITV - IF SD IS SELECTED DO NOT SELECT HD CHANNEL TOO",
+			"priority": 10,
+			"visible": false,
+			"statusId": 50,
+			"allowChannelsDelivery": false,
+			"defaultSourceMediaFormat": "f1:video:master:SD:720x576i@25fps:PAL:16x9:50Mbps",
+			"targetSourceMediaFormat": "f1:video:Delivery:GBR:790-ITV-Chiswick:SD:PAL",
+			"allowMultiSourceMediaFormat": true,
+			"commentStorageID": 1,
+			"countryCode": "gb",
+			"proxyApprove": false,
+			"houseNumberMandatory": false,
+			"meta": {
+				"market": null,
+				"systemCode": null,
+				"deliveryType": null,
+				"destinationType": null,
+				"owner": null,
+				"hubInternalName": null,
+				"city": null,
+				"state": null
+			},
+			"items": [
+				{
+					"key": "2",
+					"name": "Standard"
+				},
+				{
+					"key": "3",
+					"name": "Express"
+				}
+			],
+			"bcData": {
+				"bcId": "790",
+				"bcName": "ITV (Chiswick Park)",
+				"gaBcId": "170518"
+			}
+		},
+		{
+			"id": "63255",
+			"name": "Your TV",
+			"group": "Sky - third party stations MUST be selected as well",
+			"priority": 3,
+			"visible": false,
+			"statusId": 50,
+			"allowChannelsDelivery": false,
+			"defaultSourceMediaFormat": "f1:video:master:SD:720x576i@25fps:PAL:16x9:50Mbps",
+			"targetSourceMediaFormat": "f1:video:Delivery:GBR:746-CBS:SD:PAL",
+			"allowMultiSourceMediaFormat": true,
+			"commentStorageID": 1,
+			"countryCode": "gb",
+			"proxyApprove": false,
+			"houseNumberMandatory": false,
+			"meta": {
+				"market": null,
+				"systemCode": null,
+				"deliveryType": null,
+				"destinationType": null,
+				"owner": null,
+				"hubInternalName": null,
+				"city": null,
+				"state": null
+			},
+			"items": [
+				{
+					"key": "2",
+					"name": "Standard"
+				},
+				{
+					"key": "3",
+					"name": "Express"
+				}
+			],
+			"bcData": {
+				"bcId": "746",
+				"bcName": "CBS",
+				"gaBcId": "175811"
+			}
+		},
+		{
+			"id": "403",
+			"name": "Meridian",
+			"group": "ITV - IF SD IS SELECTED DO NOT SELECT HD CHANNEL TOO",
+			"priority": 10,
+			"visible": false,
+			"statusId": 50,
+			"allowChannelsDelivery": false,
+			"defaultSourceMediaFormat": "f1:video:master:SD:720x576i@25fps:PAL:16x9:50Mbps",
+			"targetSourceMediaFormat": "f1:video:Delivery:GBR:790-ITV-Chiswick:SD:PAL",
+			"allowMultiSourceMediaFormat": true,
+			"commentStorageID": 1,
+			"countryCode": "gb",
+			"proxyApprove": false,
+			"houseNumberMandatory": false,
+			"meta": {
+				"market": null,
+				"systemCode": null,
+				"deliveryType": null,
+				"destinationType": null,
+				"owner": null,
+				"hubInternalName": null,
+				"city": null,
+				"state": null
+			},
+			"items": [
+				{
+					"key": "2",
+					"name": "Standard"
+				},
+				{
+					"key": "3",
+					"name": "Express"
+				}
+			],
+			"bcData": {
+				"bcId": "790",
+				"bcName": "ITV (Chiswick Park)",
+				"gaBcId": "170518"
+			}
+		},
+		{
+			"id": "131",
+			"name": "Food Network",
+			"group": "Sky - third party stations MUST be selected as well",
+			"priority": 3,
+			"visible": false,
+			"statusId": 50,
+			"allowChannelsDelivery": false,
+			"defaultSourceMediaFormat": "f1:video:master:SD:720x576i@25fps:PAL:16x9:50Mbps",
+			"targetSourceMediaFormat": "f1:video:delivery:SD:720x576i@25fps:PAL:16x9:both_AR:ABSTRACT",
+			"allowMultiSourceMediaFormat": true,
+			"commentStorageID": 1,
+			"countryCode": "gb",
+			"proxyApprove": false,
+			"houseNumberMandatory": false,
+			"meta": {
+				"market": null,
+				"systemCode": null,
+				"deliveryType": null,
+				"destinationType": null,
+				"owner": null,
+				"hubInternalName": null,
+				"city": null,
+				"state": null
+			},
+			"items": [
+				{
+					"key": "2",
+					"name": "Standard"
+				},
+				{
+					"key": "3",
+					"name": "Express"
+				}
+			],
+			"bcData": {
+				"bcId": "746",
+				"bcName": "CBS",
+				"gaBcId": "175811"
+			}
+		},
+		{
+			"id": "535",
+			"name": "Community Channel",
+			"group": "Sky - third party stations MUST be selected as well",
+			"priority": 3,
+			"visible": false,
+			"statusId": 50,
+			"allowChannelsDelivery": false,
+			"defaultSourceMediaFormat": "f1:video:master:SD:720x576i@25fps:PAL:16x9:50Mbps",
+			"targetSourceMediaFormat": "f1:video:delivery:SD:720x576i@25fps:PAL:16x9:both_AR:ABSTRACT",
+			"allowMultiSourceMediaFormat": true,
+			"commentStorageID": 1,
+			"countryCode": "gb",
+			"proxyApprove": false,
+			"houseNumberMandatory": false,
+			"meta": {
+				"market": null,
+				"systemCode": null,
+				"deliveryType": null,
+				"destinationType": null,
+				"owner": null,
+				"hubInternalName": null,
+				"city": null,
+				"state": null
+			},
+			"items": [
+				{
+					"key": "2",
+					"name": "Standard"
+				},
+				{
+					"key": "3",
+					"name": "Express"
+				}
+			],
+			"bcData": {
+				"bcId": "746",
+				"bcName": "CBS",
+				"gaBcId": "175811"
+			}
+		},
+		{
+			"id": "437",
+			"name": "Horror",
+			"group": "Sky - third party stations MUST be selected as well",
+			"priority": 3,
+			"visible": false,
+			"statusId": 50,
+			"allowChannelsDelivery": false,
+			"defaultSourceMediaFormat": "f1:video:master:SD:720x576i@25fps:PAL:16x9:50Mbps",
+			"targetSourceMediaFormat": "f1:video:delivery:SD:720x576i@25fps:PAL:16x9:both_AR:ABSTRACT",
+			"allowMultiSourceMediaFormat": true,
+			"commentStorageID": 1,
+			"countryCode": "gb",
+			"proxyApprove": false,
+			"houseNumberMandatory": false,
+			"meta": {
+				"market": null,
+				"systemCode": null,
+				"deliveryType": null,
+				"destinationType": null,
+				"owner": null,
+				"hubInternalName": null,
+				"city": null,
+				"state": null
+			},
+			"items": [
+				{
+					"key": "2",
+					"name": "Standard"
+				},
+				{
+					"key": "3",
+					"name": "Express"
+				}
+			],
+			"bcData": {
+				"bcId": "746",
+				"bcName": "CBS",
+				"gaBcId": "175811"
+			}
+		},
+		{
+			"id": "100",
+			"name": "More>movies",
+			"group": "Sky - third party stations MUST be selected as well",
+			"priority": 3,
+			"visible": false,
+			"statusId": 50,
+			"allowChannelsDelivery": false,
+			"defaultSourceMediaFormat": "f1:video:master:SD:720x576i@25fps:PAL:16x9:50Mbps",
+			"targetSourceMediaFormat": "f1:video:delivery:SD:720x576i@25fps:PAL:16x9:both_AR:ABSTRACT",
+			"allowMultiSourceMediaFormat": true,
+			"commentStorageID": 1,
+			"countryCode": "gb",
+			"proxyApprove": false,
+			"houseNumberMandatory": false,
+			"meta": {
+				"market": null,
+				"systemCode": null,
+				"deliveryType": null,
+				"destinationType": null,
+				"owner": null,
+				"hubInternalName": null,
+				"city": null,
+				"state": null
+			},
+			"items": [
+				{
+					"key": "2",
+					"name": "Standard"
+				},
+				{
+					"key": "3",
+					"name": "Express"
+				}
+			],
+			"bcData": {
+				"bcId": "746",
+				"bcName": "CBS",
+				"gaBcId": "175811"
+			}
+		},
+		{
+			"id": "93",
+			"name": "Disney XD",
+			"group": "Other Broadcasters",
+			"priority": 38,
+			"visible": false,
+			"statusId": 50,
+			"allowChannelsDelivery": false,
+			"defaultSourceMediaFormat": "f1:video:master:SD:720x576i@25fps:PAL:16x9:50Mbps",
+			"targetSourceMediaFormat": "f1:video:delivery:SD:720x576i@25fps:PAL:16x9:both_AR:ABSTRACT",
+			"allowMultiSourceMediaFormat": true,
+			"commentStorageID": 1,
+			"countryCode": "gb",
+			"proxyApprove": false,
+			"houseNumberMandatory": false,
+			"meta": {
+				"market": null,
+				"systemCode": null,
+				"deliveryType": null,
+				"destinationType": null,
+				"owner": null,
+				"hubInternalName": null,
+				"city": null,
+				"state": null
+			},
+			"items": [
+				{
+					"key": "2",
+					"name": "Standard"
+				}
+			],
+			"bcData": {
+				"bcId": "733",
+				"bcName": "Disney UK",
+				"gaBcId": "170549"
+			}
+		},
+		{
+			"id": "401",
+			"name": "ITV2",
+			"group": "ITV - IF SD IS SELECTED DO NOT SELECT HD CHANNEL TOO",
+			"priority": 10,
+			"visible": false,
+			"statusId": 50,
+			"allowChannelsDelivery": false,
+			"defaultSourceMediaFormat": "f1:video:master:SD:720x576i@25fps:PAL:16x9:50Mbps",
+			"targetSourceMediaFormat": "f1:video:Delivery:GBR:790-ITV-Chiswick:SD:PAL",
+			"allowMultiSourceMediaFormat": true,
+			"commentStorageID": 1,
+			"countryCode": "gb",
+			"proxyApprove": false,
+			"houseNumberMandatory": false,
+			"meta": {
+				"market": null,
+				"systemCode": null,
+				"deliveryType": null,
+				"destinationType": null,
+				"owner": null,
+				"hubInternalName": null,
+				"city": null,
+				"state": null
+			},
+			"items": [
+				{
+					"key": "2",
+					"name": "Standard"
+				},
+				{
+					"key": "3",
+					"name": "Express"
+				}
+			],
+			"bcData": {
+				"bcId": "790",
+				"bcName": "ITV (Chiswick Park)",
+				"gaBcId": "170518"
+			}
+		},
+		{
+			"id": "400",
+			"name": "Anglia",
+			"group": "ITV - IF SD IS SELECTED DO NOT SELECT HD CHANNEL TOO",
+			"priority": 10,
+			"visible": false,
+			"statusId": 50,
+			"allowChannelsDelivery": false,
+			"defaultSourceMediaFormat": "f1:video:master:SD:720x576i@25fps:PAL:16x9:50Mbps",
+			"targetSourceMediaFormat": "f1:video:Delivery:GBR:790-ITV-Chiswick:SD:PAL",
+			"allowMultiSourceMediaFormat": true,
+			"commentStorageID": 1,
+			"countryCode": "gb",
+			"proxyApprove": false,
+			"houseNumberMandatory": false,
+			"meta": {
+				"market": null,
+				"systemCode": null,
+				"deliveryType": null,
+				"destinationType": null,
+				"owner": null,
+				"hubInternalName": null,
+				"city": null,
+				"state": null
+			},
+			"items": [
+				{
+					"key": "2",
+					"name": "Standard"
+				},
+				{
+					"key": "3",
+					"name": "Express"
+				}
+			],
+			"bcData": {
+				"bcId": "790",
+				"bcName": "ITV (Chiswick Park)",
+				"gaBcId": "170518"
+			}
+		},
+		{
+			"id": "733",
+			"name": "Disney UK",
+			"group": "Other Broadcasters",
+			"priority": 38,
+			"visible": false,
+			"statusId": 51,
+			"allowChannelsDelivery": false,
+			"defaultSourceMediaFormat": "f1:video:master:SD:720x576i@25fps:PAL:16x9:50Mbps",
+			"targetSourceMediaFormat": "f1:video:delivery:test:pluginModel",
+			"allowMultiSourceMediaFormat": true,
+			"commentStorageID": 1,
+			"countryCode": "gb",
+			"proxyApprove": false,
+			"houseNumberMandatory": false,
+			"meta": {
+				"market": null,
+				"systemCode": null,
+				"deliveryType": null,
+				"destinationType": null,
+				"owner": null,
+				"hubInternalName": null,
+				"city": null,
+				"state": null
+			},
+			"items": [
+				{
+					"key": "2",
+					"name": "Standard"
+				},
+				{
+					"key": "3",
+					"name": "Express"
+				}
+			],
+			"bcData": {
+				"isBc": true
+			}
+		},
+		{
+			"id": "790",
+			"name": "ITV (Chiswick Park)",
+			"group": "ITV - IF SD IS SELECTED DO NOT SELECT HD CHANNEL TOO",
+			"priority": 10,
+			"visible": false,
+			"statusId": 51,
+			"allowChannelsDelivery": false,
+			"defaultSourceMediaFormat": "f1:video:master:SD:720x576i@25fps:PAL:16x9:50Mbps",
+			"targetSourceMediaFormat": "f1:video:delivery:test:pluginModel",
+			"allowMultiSourceMediaFormat": true,
+			"commentStorageID": 1,
+			"countryCode": "gb",
+			"proxyApprove": false,
+			"houseNumberMandatory": false,
+			"meta": {
+				"market": null,
+				"systemCode": null,
+				"deliveryType": null,
+				"destinationType": null,
+				"owner": null,
+				"hubInternalName": null,
+				"city": null,
+				"state": null
+			},
+			"items": [
+				{
+					"key": "2",
+					"name": "Standard"
+				},
+				{
+					"key": "3",
+					"name": "Express"
+				}
+			],
+			"bcData": {
+				"isBc": true
+			}
+		},
+		{
+			"id": "1168",
+			"name": "Star Gold",
+			"group": "Sky - third party stations MUST be selected as well",
+			"priority": 3,
+			"visible": false,
+			"statusId": 50,
+			"allowChannelsDelivery": false,
+			"defaultSourceMediaFormat": "f1:video:master:SD:720x576i@25fps:PAL:16x9:50Mbps",
+			"targetSourceMediaFormat": "f1:video:delivery:SD:720x576i@25fps:PAL:16x9:both_AR:ABSTRACT",
+			"allowMultiSourceMediaFormat": true,
+			"commentStorageID": 1,
+			"countryCode": "gb",
+			"proxyApprove": false,
+			"houseNumberMandatory": false,
+			"meta": {
+				"market": null,
+				"systemCode": null,
+				"deliveryType": null,
+				"destinationType": null,
+				"owner": null,
+				"hubInternalName": null,
+				"city": null,
+				"state": null
+			},
+			"items": [
+				{
+					"key": "2",
+					"name": "Standard"
+				},
+				{
+					"key": "3",
+					"name": "Express"
+				}
+			],
+			"bcData": {
+				"bcId": "502",
+				"bcName": "Star TV",
+				"gaBcId": "175822"
+			}
+		},
+		{
+			"id": "66283",
+			"name": "Movie Mix",
+			"group": "Sky - third party stations MUST be selected as well",
+			"priority": 3,
+			"visible": false,
+			"statusId": 51,
+			"allowChannelsDelivery": false,
+			"defaultSourceMediaFormat": "f1:video:master:SD:720x576i@25fps:PAL:16x9:50Mbps",
+			"targetSourceMediaFormat": "f1:video:delivery:test:pluginModel",
+			"allowMultiSourceMediaFormat": true,
+			"commentStorageID": 1,
+			"countryCode": "gb",
+			"proxyApprove": false,
+			"houseNumberMandatory": false,
+			"meta": {
+				"market": null,
+				"systemCode": null,
+				"deliveryType": null,
+				"destinationType": null,
+				"owner": null,
+				"hubInternalName": null,
+				"city": null,
+				"state": null
+			},
+			"items": [
+				{
+					"key": "2",
+					"name": "Standard"
+				},
+				{
+					"key": "3",
+					"name": "Express"
+				}
+			],
+			"bcData": {
+				"bcId": "746",
+				"bcName": "CBS",
+				"gaBcId": "175811"
+			}
+		}
+	]
+}

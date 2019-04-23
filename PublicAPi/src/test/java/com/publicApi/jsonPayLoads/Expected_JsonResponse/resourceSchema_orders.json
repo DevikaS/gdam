@@ -1,0 +1,120 @@
+{
+	"properties": {
+		"billing": {
+			"properties": {
+				"bu": {
+					"properties": {
+						"id": {
+							"description": "Organization",
+							"maxItems": 1,
+							"type": "array",
+							"items": {
+								"type": "string",
+								"enum": ["_5571809ee4b0310b4fceae0f"]
+							}
+						},
+						"name": {
+							"type": "string"
+						}
+					},
+					"type": "object"
+				}
+			},
+			"type": "object"
+		},
+		"common": {
+			"properties": {
+				"handleStandardsConversions": {
+					"type": "boolean",
+					"description": "Manage my format conversions (SD to HD conversion / PAL to NTSC)"
+				},
+				"jobNumber": {
+					"description": "Job Number",
+					"pattern": "^.{0,30}$",
+					"type": "string"
+				},
+				"notificationEmails": {
+					"type": "object",
+					"description": "Additional Recipients",
+					"properties": {
+						"confirmed": {
+							"type": "array",
+							"description": "Recipients for Confirm notification",
+							"items": {
+								"type": "email"
+							}
+						},
+						"ingested": {
+							"type": "array",
+							"description": "Recipients for Ingested notification",
+							"items": {
+								"type": "email"
+							}
+						},
+						"completed": {
+							"type": "array",
+							"description": "Recipients for Completed notification",
+							"items": {
+								"type": "email"
+							}
+						}
+					}
+				},
+				"notifyAboutDelivery": {
+					"type": "boolean",
+					"description": "Notify me when my entire order has been delivered"
+				},
+				"notifyAboutQc": {
+					"type": "boolean",
+					"description": "Notify me when my entire order has passed QC"
+				},
+				"poNumber": {
+					"description": "PO Number",
+					"pattern": "^.{0,20}$",
+					"type": "string"
+				}
+			},
+			"type": "object"
+		},
+		"tv": {
+			"properties": {
+				"atDestination": {
+					"type": "number",
+					"default": 0,
+					"description": "calc by core"
+				},
+				"cancelled": {
+					"type": "number",
+					"default": 0,
+					"description": "calc by core"
+				},
+				"market": {
+					"type": "string"
+				},
+				"marketCountry": {
+					"type": "string"
+				},
+				"marketId": {
+					"description": "Market",
+					"maxItems": 1,
+					"type": "array",
+					"items": {
+						"type": "string",
+						"enum": ["4", "7", "8", "11", "14", "18", "21", "24", "25", "28", "31", "34", "38", "41", "42", "96", "146", "169", "182", "187", "196", "199", "202", "203", "206", "209", "212", "217", "221", "222", "226", "230", "233", "239", "242", "243", "248", "251", "352", "353", "359", "400", "432", "461", "465", "470", "473", "477", "486", "513", "528", "537", "538", "544", "547", "554", "561", "567", "573", "592", "622", "645", "14001", "14006", "14007", "2430-uber", "14004", "1", "5", "9", "12", "15", "19", "22", "26", "29", "35", "39", "43", "77", "125", "176", "183", "193", "197", "200", "204", "207", "210", "213", "218", "223", "228", "231", "234", "240", "244", "249", "322", "341", "349", "354", "378", "404", "433", "462", "468", "471", "481", "530", "542", "545", "552", "558", "563", "574", "593", "619", "17", "14002", "2370-uber", "2431-uber", "3", "6", "10", "13", "16", "20", "23", "27", "33", "37", "40", "57", "78", "160", "173", "184", "195", "198", "201", "205", "208", "211", "216", "219", "225", "229", "232", "235", "241", "245", "335", "351", "355", "399", "405", "435", "451", "464", "469", "482", "511", "534", "546", "553", "560", "564", "575", "616", "621", "634", "220", "14005", "2400-uber"]
+					}
+				},
+				"gaMarketId": {
+					"description": "Ga Market Id",
+					"type": "string"
+				},
+				"ingestLocation": {
+					"type": "string"
+				}
+			},
+			"type": "object"
+		}
+	},
+	"type": "object",
+	"required": ["common"],
+	"additionalProperties": false
+}

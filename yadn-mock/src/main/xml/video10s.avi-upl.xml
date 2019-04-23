@@ -1,0 +1,131 @@
+<UploadJobResponse xmlns:xs="http://adstream.com/xmlstream/" xs:id="3" ns0:type="UploadJobResponse" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:adstream:yadn">
+  <MessageID><![CDATA[1.1|akka://KV01V-A5DA502/user/head/fsobject|03c3b2372b8341f7916d5885#1]]></MessageID>
+  <Status>UploadedToStorage</Status>
+  <FileID>4cf2cc28-d429-4b5d-b565-a246010d9389</FileID>
+  <FileName>f6bc7e37-7013-4701-89e7-a8f5e0e96920.avi</FileName>
+  <FileDirectory><![CDATA[\00000000-0000-0000-0000-000000000000\2013-09-27\03c3b2372b8341f7916d5885\]]></FileDirectory>
+  <FileSize>1292986</FileSize>
+  <MD5>fbd0c4366209491c30cd6cfebb76b909</MD5>
+  <CRC>        </CRC>
+  <Node>adstream.yadn.nodes.outpost-a5-auto</Node>
+  <SpecDBDocID>f2:video:unspecified</SpecDBDocID>
+  <metadata>
+    <property name="isPlayout">
+      <Value>false</Value>
+    </property>
+    <property name="ElementID">
+      <Value>03c3b2372b8341f7916d5885</Value>
+    </property>
+    <property name="Path">
+      <Value>video10s.avi</Value>
+    </property>
+    <property name="Country">
+      <Value>AF</Value>
+    </property>
+    <property name="guise">
+      <Value>master</Value>
+    </property>
+    <property name="IsPlayout">
+      <Value>false</Value>
+    </property>
+    <property name="evaluation_exiftool">
+      <Value><![CDATA[<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+
+<rdf:Description xmlns:et="http://ns.exiftool.ca/1.0/" xmlns:ExifTool="http://ns.exiftool.ca/ExifTool/1.0/" xmlns:System="http://ns.exiftool.ca/File/System/1.0/" xmlns:File="http://ns.exiftool.ca/File/1.0/" rdf:about="/media/yadn/input/20130927/509dc6f9cc63477fac2722b6/1380288064005/f6a77097-ebbc-4d92-8fb0-ecdca6038e4d.avi" et:toolkit="Image::ExifTool 8.93">
+ <ExifTool:ExifToolVersion>8.93</ExifTool:ExifToolVersion>
+ <System:FileName>f6a77097-ebbc-4d92-8fb0-ecdca6038e4d.avi</System:FileName>
+ <System:Directory>/media/yadn/input/20130927/509dc6f9cc63477fac2722b6/1380288064005</System:Directory>
+ <System:FileSize>1263 kB</System:FileSize>
+ <System:FileModifyDate>2012:11:21 15:54:11+02:00</System:FileModifyDate>
+ <System:FilePermissions>rwxrwxrwx</System:FilePermissions>
+ <System:FileName>f6a77097-ebbc-4d92-8fb0-ecdca6038e4d.avi</System:FileName>
+ <System:Directory>/media/yadn/input/20130927/509dc6f9cc63477fac2722b6/1380288064005</System:Directory>
+ <System:FileSize>1263 kB</System:FileSize>
+ <System:FileModifyDate>2012:11:21 15:54:11+02:00</System:FileModifyDate>
+ <System:FilePermissions>rwxrwxrwx</System:FilePermissions>
+ <File:FileType>AVI</File:FileType>
+ <File:MIMEType>video/x-msvideo</File:MIMEType>
+ <File:ImageWidth>360</File:ImageWidth>
+ <File:ImageHeight>240</File:ImageHeight>
+ <File:Planes>1</File:Planes>
+ <File:BitDepth>24</File:BitDepth>
+ <File:Compression>XVID</File:Compression>
+ <File:ImageLength>259200</File:ImageLength>
+ <File:PixelsPerMeterX>0</File:PixelsPerMeterX>
+ <File:PixelsPerMeterY>0</File:PixelsPerMeterY>
+ <File:NumColors>Use BitDepth</File:NumColors>
+ <File:NumImportantColors>All</File:NumImportantColors>
+</rdf:Description>
+</rdf:RDF>]]></Value>
+    </property>
+    <property name="evaluation_MediaInfo">
+      <Value><![CDATA[<Mediainfo xmlns="" version="0.7.61">
+<File>
+<track type="General">
+<Complete_name>/media/yadn/input/20130927/509dc6f9cc63477fac2722b6/1380288064005/f6a77097-ebbc-4d92-8fb0-ecdca6038e4d.avi</Complete_name>
+<Format>AVI</Format>
+<Format_Info>Audio Video Interleave</Format_Info>
+<File_size>1.23 MiB</File_size>
+<Duration>10s 998ms</Duration>
+<Overall_bit_rate_mode>Variable</Overall_bit_rate_mode>
+<Overall_bit_rate>941 Kbps</Overall_bit_rate>
+<Writing_application>Lavf52.61.0</Writing_application>
+</track>
+
+<track type="Video">
+<ID>0</ID>
+<Format>MPEG-4 Visual</Format>
+<Format_profile>Simple@L3</Format_profile>
+<Format_settings__BVOP>No</Format_settings__BVOP>
+<Format_settings__QPel>No</Format_settings__QPel>
+<Format_settings__GMC>No warppoints</Format_settings__GMC>
+<Format_settings__Matrix>Default (H.263)</Format_settings__Matrix>
+<Codec_ID>XVID</Codec_ID>
+<Codec_ID_Hint>XviD</Codec_ID_Hint>
+<Duration>10s 0ms</Duration>
+<Bit_rate>899 Kbps</Bit_rate>
+<Width>360 pixels</Width>
+<Height>240 pixels</Height>
+<Display_aspect_ratio>3:2</Display_aspect_ratio>
+<Frame_rate>25.000 fps</Frame_rate>
+<Color_space>YUV</Color_space>
+<Chroma_subsampling>4:2:0</Chroma_subsampling>
+<Bit_depth>8 bits</Bit_depth>
+<Scan_type>Progressive</Scan_type>
+<Compression_mode>Lossy</Compression_mode>
+<Bits__Pixel_Frame_>0.416</Bits__Pixel_Frame_>
+<Stream_size>1.07 MiB (87%)</Stream_size>
+<Writing_library>XviD 64</Writing_library>
+</track>
+
+<track type="Audio">
+<ID>1</ID>
+<Format>MPEG Audio</Format>
+<Format_version>Version 1</Format_version>
+<Format_profile>Layer 3</Format_profile>
+<Mode>Joint stereo</Mode>
+<Mode_extension>MS Stereo</Mode_extension>
+<Codec_ID>55</Codec_ID>
+<Codec_ID_Hint>MP3</Codec_ID_Hint>
+<Duration>10s 998ms</Duration>
+<Bit_rate_mode>Variable</Bit_rate_mode>
+<Bit_rate>80.0 Kbps</Bit_rate>
+<Channel_s_>2 channels</Channel_s_>
+<Sampling_rate>44.1 KHz</Sampling_rate>
+<Compression_mode>Lossy</Compression_mode>
+<Stream_size>139 KiB (11%)</Stream_size>
+<Alignment>Aligned on interleaves</Alignment>
+<Interleave__duration>24 ms (0.59 video frame)</Interleave__duration>
+</track>
+
+</File>
+</Mediainfo>]]></Value>
+    </property>
+    <property name="evaluation_ffprobe">
+      <Value></Value>
+    </property>
+    <property name="evaluation_pdfdimensions">
+      <Value></Value>
+    </property>
+  </metadata>
+</UploadJobResponse>

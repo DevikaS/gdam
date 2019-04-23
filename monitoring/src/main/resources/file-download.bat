@@ -1,0 +1,1 @@
+java -Xmx256m -cp "lib/*" com.adstream.automate.babylon.monitoring.ScriptExecutor xml/file-download.xml

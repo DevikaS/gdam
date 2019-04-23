@@ -1,0 +1,175 @@
+{
+	"properties": {
+		"count": {
+			"properties": {
+				"atDestination": {
+					"type": "number",
+					"default": 0,
+					"description": "calc by core"
+				},
+				"cancelled": {
+					"type": "number",
+					"default": 0,
+					"description": "calc by core"
+				},
+				"total": {
+					"type": "number",
+					"default": 0,
+					"description": "calc by core"
+				}
+			},
+			"type": "object"
+		},
+		"items": {
+			"items": {
+				"properties": {
+					"a4Id": {
+						"type": "string"
+					},
+					"actuallyDelivered": {
+						"type": "string"
+					},
+					"approvalStatus": {
+						"type": "string",
+						"enum": [
+							"on_hold",
+							"approved"
+						]
+					},
+					"comment": {
+						"type": "string"
+					},
+					"commentStorageID": {
+						"type": "string"
+					},
+					"countryCode": {
+						"type": "string"
+					},
+					"delivered": {
+						"type": "string"
+					},
+					"destinationStatusId": {
+						"type": "string"
+					},
+					"houseNumber": {
+						"type": "string"
+					},
+					"id": {
+						"maxItems": 1,
+						"type": "array",
+						"items": {
+							"type": "string"
+						}
+					},
+					"isCommentMandatory": {
+						"type": "boolean"
+					},
+					"masterApproval": {
+						"type": "boolean"
+					},
+					"name": {
+						"type": "string"
+					},
+					"proxyApproval": {
+						"type": "boolean"
+					},
+					"qcAssetId": {
+						"type": "string",
+						"description": "qc spec calculator"
+					},
+					"serviceLevel": {
+						"properties": {
+							"id": {
+								"maxItems": 1,
+								"type": "array",
+								"items": {
+									"type": "string"
+								}
+							},
+							"name": {
+								"type": "string"
+							}
+						},
+						"type": "object",
+						"required": [
+							"id"
+						]
+					},
+					"status": {
+						"default": "New",
+						"type": "string"
+					},
+					"statusId": {
+						"default": [
+							"9"
+						],
+						"maxItems": 1,
+						"type": "array",
+						"items": {
+							"type": "string",
+							"enum": [
+								"9",
+								"10",
+								"11",
+								"12",
+								"13",
+								"14",
+								"15",
+								"16",
+								"17",
+								"18",
+								"43",
+								"45",
+								"48",
+								"49",
+								"56",
+								"67",
+								"138",
+								"139",
+								"198",
+								"199",
+								"206",
+								"207",
+								"411",
+								"412"
+							]
+						}
+					},
+					"utcOffset": {
+						"type": "string"
+					},
+					"viewStatus": {
+						"type": "array",
+						"maxItems": 1,
+						"default": [
+							"Order Placed"
+						],
+						"items": {
+							"type": "string",
+							"enum": [
+								"Order Placed",
+								"Received Media",
+								"Passed QC",
+								"Transferring",
+								"At Destination",
+								"Failed",
+								"Cancelled"
+							]
+						}
+					},
+					"targetFormat": {
+						"type": "string",
+						"description": "Target Media Format"
+					}
+				},
+				"type": "object",
+				"required": [
+					"statusId"
+				]
+			},
+			"minItems": 0,
+			"type": "array"
+		}
+	},
+	"type": "object"
+}

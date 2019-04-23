@@ -1,0 +1,17 @@
+{
+	"type": "object",
+	"properties": {
+		"common": {
+			"type": "object",
+			"properties": {
+				"name": {
+					"type": "string"
+				}
+			}
+		}
+	},
+	"required": [
+		"common"
+	],
+	"additionalProperties": false
+}

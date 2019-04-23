@@ -1,0 +1,45 @@
+<TranscodeJobResponse xmlns:xs="http://adstream.com/xmlstream/" xs:id="104" ns0:type="TranscodeJobResponse" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:adstream:yadn">
+  <MessageID><![CDATA[1.1|akka://KV01V-A5DA502/user/head/fsobject|0fa34f7590d0483fb86cd013#1]]></MessageID>
+  <Status>Completed</Status>
+  <FileID>789f99b9-a750-4e19-99f8-a246010d7641</FileID>
+  <FileStorage>701c9931-5044-4e91-af1d-3358da7eb7a7</FileStorage>
+  <IsDefault>true</IsDefault>
+  <TranscodeFiles xs:id="105">
+    <TranscodeFile xs:id="106">
+      <FileID>db92697f-eab7-47a4-9aa5-a246010e2a47</FileID>
+      <FileDirectory><![CDATA[/00000000-0000-0000-0000-000000000000/2013-09-27/0fa34f7590d0483fb86cd013/f3a10980-eeef-4f77-95c3-34d94d48de2c]]></FileDirectory>
+      <FileName>f3a10980-eeef-4f77-95c3-34d94d48de2c_pdf.pdf</FileName>
+      <FileSize>8593</FileSize>
+      <SpecDBDocID>f2:application:unspecified:pdf</SpecDBDocID>
+      <properties>
+        <property name="a5_type" value="" />
+        <property name="guise" value="" />
+        <property name="proxy_guise" value="true" />
+      </properties>
+    </TranscodeFile>
+    <TranscodeFile xs:id="107">
+      <FileID>9f4c48c3-f09e-4039-85d6-a246010e2a47</FileID>
+      <FileDirectory><![CDATA[/00000000-0000-0000-0000-000000000000/2013-09-27/0fa34f7590d0483fb86cd013/f3a10980-eeef-4f77-95c3-34d94d48de2c]]></FileDirectory>
+      <FileName>f3a10980-eeef-4f77-95c3-34d94d48de2c_preview.png</FileName>
+      <FileSize>5152</FileSize>
+      <SpecDBDocID>f1:image:Preview:PNG:variableSize:RGB</SpecDBDocID>
+      <properties>
+        <property name="a5_type" value="" />
+        <property name="guise" value="" />
+        <property name="proxy_guise" value="true" />
+      </properties>
+    </TranscodeFile>
+    <TranscodeFile xs:id="108">
+      <FileID>f2d50723-a800-453e-a211-a246010e2a47</FileID>
+      <FileDirectory><![CDATA[/00000000-0000-0000-0000-000000000000/2013-09-27/0fa34f7590d0483fb86cd013/f3a10980-eeef-4f77-95c3-34d94d48de2c]]></FileDirectory>
+      <FileName><![CDATA[f3a10980-eeef-4f77-95c3-34d94d48de2c_thumbnail.jpeg]]></FileName>
+      <FileSize>604</FileSize>
+      <SpecDBDocID>f1:image:Thumbnail:JPEG:variableSize:RGB</SpecDBDocID>
+      <properties>
+        <property name="a5_type" value="" />
+        <property name="guise" value="" />
+        <property name="proxy_guise" value="true" />
+      </properties>
+    </TranscodeFile>
+  </TranscodeFiles>
+</TranscodeJobResponse>

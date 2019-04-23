@@ -1,0 +1,52 @@
+{
+	"id": "57810cf085f53a048b38a7a1",
+	"status": ["awaiting_media"],
+	"meta": {
+		"tv": {
+			"market": "United Kingdom",
+			"marketId": ["3"],
+			"orderReference": 51002114,
+			"marketCountry": "gb"
+		},
+		"common": {
+			"firstAirDate": "2015-06-30T00:00:00.000Z",
+			"format": ["f1:video:master:HD:1920x1080i@25fps:PAL:16x9:MPEG2:TS:I-Frame"],
+			"duration": "30",
+			"additionalInformation": "Some Info",
+			"clockNumber": "test_edit-26-July-2015",
+			"title": "test4-17-June-2015",
+			"item_type": "delivery"
+		},
+		"metadata": {
+			"subtitlesRequired": ["None"]
+		},
+		"asset": {
+			"video": {},
+			"common": {
+				"brand": ["Adstream"],
+				"advertiser": ["Adstream"]
+			}
+		},
+		"destinations": {
+			"count": {
+				"atDestination": 0,
+				"cancelled": 0,
+				"total": 0
+			},
+			"items": []
+		}
+	},
+	"created": "2016-07-09T14:40:48.174Z",
+	"documentType": "order",
+	"createdBy": {
+		"email": "admin@TestAPI.com",
+		"_id": "576a7de8f68d49033233ae28",
+		"fullName": "admin@TestAPI.com ",
+		"lastName": "",
+		"firstName": "admin@TestAPI.com"
+	},
+	"modified": "2016-07-09T14:40:48.816Z",
+	"owner": "576a7de8f68d49033233ae28",
+	"parents": ["57810cef85f53a048b38a7a0"],
+	"type": "tv_order_item"
+}

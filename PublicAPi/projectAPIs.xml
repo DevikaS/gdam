@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="PROJECTAPITESTING">
+    <test name="Projects_CreateProject">
+        <classes>
+            <class name="com.publicApi.tests.Projects_CreateProject"/>
+        </classes>
+    </test>
+    <test name="Projects_CreateFile">
+        <classes>
+            <class name="com.publicApi.tests.Projects_CreateFile"/>
+        </classes>
+    </test>
+    <test name="Projects_UpdateProject">
+        <classes>
+            <class name="com.publicApi.tests.Projects_UpdateProject"/>
+        </classes>
+    </test>
+    <test name="Projects_AssignTeam">
+        <classes>
+            <class name="com.publicApi.tests.Projects_AssignTeam"/>
+        </classes>
+    </test>
+    <test name="Projects_RoleCreate">
+        <classes>
+            <class name="com.publicApi.tests.Projects_RoleCreate"/>
+        </classes>
+    </test>
+    <test name="Projects_RoleUpdate">
+        <classes>
+            <class name="com.publicApi.tests.Projects_RoleUpdate"/>
+        </classes>
+    </test>
+    <test name="Projects_MediaRegister">
+        <classes>
+            <class name="com.publicApi.tests.Projects_MediaRegister"/>
+        </classes>
+    </test>
+    <test name="Projects_MediaComplete">
+        <classes>
+            <class name="com.publicApi.tests.Projects_MediaComplete"/>
+        </classes>
+    </test>
+    <test name="Projects_Publish">
+        <classes>
+            <class name="com.publicApi.tests.Projects_Publish"/>
+        </classes>
+    </test>
+    <test name="Projects_Unpublish">
+        <classes>
+            <class name="com.publicApi.tests.Projects_Unpublish"/>
+        </classes>
+    </test>
+    <test name="Projects_SearchProjects">
+        <classes>
+            <class name="com.publicApi.tests.Projects_SearchProjects"/>
+        </classes>
+    </test>
+    <test name="Projects_GetProject">
+        <classes>
+            <class name="com.publicApi.tests.Projects_GetProject"/>
+        </classes>
+    </test>
+    <test name="Projects_DeleteProject">
+        <classes>
+            <class name="com.publicApi.tests.Projects_DeleteProject"/>
+        </classes>
+    </test>
+    <test name="Files_CreateAttachments">
+        <classes>
+            <class name="com.publicApi.tests.ProjectsFiles_CreateAttachments"/>
+        </classes>
+    </test>
+    <test name="Files_EditAttachment">
+        <classes>
+            <class name="com.publicApi.tests.ProjectsFiles_EditAttachment"/>
+        </classes>
+    </test>
+    <test name="Files_Deletefile">
+        <classes>
+            <class name="com.publicApi.tests.ProjectsFiles_DeleteFile"/>
+        </classes>
+    </test>
+    <test name="Files_FilesRevision">
+        <classes>
+            <class name="com.publicApi.tests.ProjectFiles_FilesRevision"/>
+        </classes>
+    </test>
+    <test name="Files_GetFile">
+        <classes>
+            <class name="com.publicApi.tests.ProjectsFiles_GetFile"/>
+        </classes>
+    </test>
+    <test name="Files_ListAttachments">
+        <classes>
+            <class name="com.publicApi.tests.ProjectsFiles_ListAttachments"/>
+        </classes>
+    </test>
+    <test name="Files_SearchFiles">
+        <classes>
+            <class name="com.publicApi.tests.ProjectsFiles_SearchFiles"/>
+        </classes>
+    </test>
+    <test name="Files_UpdateFile">
+        <classes>
+            <class name="com.publicApi.tests.ProjectsFiles_UpdateFile"/>
+        </classes>
+    </test>
+    <test name="Files_EditFile">
+        <classes>
+            <class name="com.publicApi.tests.ProjectsFiles_EditFile"/>
+        </classes>
+    </test>
+    <test name="Folders_CreateFolder">
+        <classes>
+            <class name="com.publicApi.tests.ProjectsFolders_CreateFolder"/>
+        </classes>
+    </test>
+    <test name="Folders_CreateFile">
+        <classes>
+            <class name="com.publicApi.tests.ProjectsFolders_CreateFile"/>
+        </classes>
+    </test>
+    <test name="Folders_RoleCreate">
+        <classes>
+            <class name="com.publicApi.tests.ProjectsFolders_FolderRoleCreate"/>
+        </classes>
+    </test>
+    <test name="Folders_RoleGet">
+        <classes>
+            <class name="com.publicApi.tests.ProjectsFolders_FolderRoleGet"/>
+        </classes>
+    </test>
+    <test name="Folders_GetFolder">
+        <classes>
+            <class name="com.publicApi.tests.ProjectsFolders_GetFolder"/>
+        </classes>
+    </test>
+    <test name="Folders_MoveCopyFile">
+        <classes>
+            <class name="com.publicApi.tests.ProjectsFolders_MoveCopyFile"/>
+        </classes>
+    </test>
+    <test name="Folders_MediaRegister">
+        <classes>
+            <class name="com.publicApi.tests.ProjectsFolders_MediaRegister"/>
+        </classes>
+    </test>
+    <test name="Folders_MediaComplete">
+        <classes>
+            <class name="com.publicApi.tests.ProjectsFolders_MediaComplete"/>
+        </classes>
+    </test>
+    <test name="Folders_Updatefolder">
+        <classes>
+            <class name="com.publicApi.tests.ProjectsFolders_UpdateFolder"/>
+        </classes>
+    </test>
+    <test name="Folders_SearchFolder">
+        <classes>
+            <class name="com.publicApi.tests.ProjectsFolders_SearchFolder"/>
+        </classes>
+    </test>
+    <test name="Folders_SearchFolderContent">
+        <classes>
+            <class name="com.publicApi.tests.ProjectsFolders_SearchFolderContent"/>
+        </classes>
+    </test>
+    <test name="Folders_SearchFiles">
+        <classes>
+            <class name="com.publicApi.tests.ProjectsFolders_SearchFiles"/>
+        </classes>
+    </test>
+    <test name="Folders_DeleteFolder">
+        <classes>
+            <class name="com.publicApi.tests.ProjectsFolders_DeleteFolder"/>
+        </classes>
+    </test>
+    <test name="Folders_AssignTeamToFolder">
+        <classes>
+            <class name="com.publicApi.tests.ProjectsFolders_AssignTeamToFolder"/>
+        </classes>
+    </test>
+    <test name="ProjectApprovals_ListApprovals">
+        <classes>
+            <class name="com.publicApi.tests.ProjectApprovals_ListApprovals"/>
+        </classes>
+    </test>
+    <test name="UsageRights_UpdateUsageRights">
+        <classes>
+            <class name="com.publicApi.tests.UsageRights_UpdateUsageRights"/>
+        </classes>
+    </test>
+    <test name="UsageRights_getUsageRights">
+        <classes>
+            <class name="com.publicApi.tests.UsageRights_GetUsageRights"/>
+        </classes>
+    </test>
+    <test name="UsageRights_deleteUsageRights">
+        <classes>
+            <class name="com.publicApi.tests.UsageRights_DeleteUsageRights"/>
+        </classes>
+    </test>
+    <test name="Projects_SearchProjectsTemplates">
+        <classes>
+            <class name="com.publicApi.tests.Projects_SearchProjectsTemplates"/>
+        </classes>
+    </test>
+    <test name="ProjectFiles_CreateACommentForAFile">
+        <classes>
+            <class name="com.publicApi.tests.ProjectFiles_CreateACommentForAFile"/>
+        </classes>
+    </test>
+    <test name="ProjectsFiles_CreateAPublicShare">
+        <classes>
+            <class name="com.publicApi.tests.ProjectsFiles_CreateAPublicShare"/>
+        </classes>
+    </test>
+    <test name="ProjectsFiles_UpdateAPublicShare">
+        <classes>
+            <class name="com.publicApi.tests.ProjectsFiles_UpdateAPublicShare"/>
+        </classes>
+    </test>
+    <test name="Projects_GetProjectOwners">
+        <classes>
+            <class name="com.publicApi.tests.Projects_GetProjectOwners"/>
+        </classes>
+    </test>
+    <test name="ProjectFiles_GetFileShares">
+        <classes>
+            <class name="com.publicApi.tests.ProjectFiles_GetFileShares"/>
+        </classes>
+    </test>
+    <test name="Projects_GetAllowedRolesForSharing">
+        <classes>
+            <class name="com.publicApi.tests.Projects_GetAllowedRolesForSharing"/>
+        </classes>
+    </test>
+    <test name="ProjectsFolders_GetAllowedRolesForSharing">
+        <classes>
+            <class name="com.publicApi.tests.ProjectsFolders_GetAllowedRolesForSharing"/>
+        </classes>
+    </test>
+    <test name="ProjectApprovals_CreateApproval">
+        <classes>
+            <class name="com.publicApi.tests.ProjectApprovals_CreateApproval"/>
+        </classes>
+    </test>
+    <test name="ProjectApprovals_SubmitApproval">
+        <classes>
+            <class name="com.publicApi.tests.ProjectApprovals_SubmitApproval"/>
+        </classes>
+    </test>
+    <test name="ProjectApprovals_StartApproval">
+        <classes>
+            <class name="com.publicApi.tests.ProjectApprovals_StartApproval"/>
+        </classes>
+    </test>
+    <test name="ProjectApprovals_DeleteApprovals">
+        <classes>
+            <class name="com.publicApi.tests.ProjectApprovals_DeleteApprovals"/>
+        </classes>
+    </test>
+    <test name="ProjectApprovals_GetApprovals">
+        <classes>
+            <class name="com.publicApi.tests.ProjectApprovals_GetApprovals"/>
+        </classes>
+    </test>
+    <test name="ProjectApprovalStages_CreateApprovalStage">
+        <classes>
+            <class name="com.publicApi.tests.ProjectApprovalStages_CreateApprovalStage"/>
+        </classes>
+    </test>
+    <test name="ProjectApprovalStages_GetApprovalStage">
+        <classes>
+            <class name="com.publicApi.tests.ProjectApprovalStages_GetApprovalStage"/>
+        </classes>
+    </test>
+    <test name="ProjectApprovalStages_UpdateApprovalStage">
+        <classes>
+            <class name="com.publicApi.tests.ProjectApprovalStages_UpdateApprovalStage"/>
+        </classes>
+    </test>
+    <test name="ProjectApprovalStages_DeleteApprovalStage">
+        <classes>
+            <class name="com.publicApi.tests.ProjectApprovalStages_DeleteApprovalStage"/>
+        </classes>
+    </test>
+</suite>

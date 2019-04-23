@@ -1,0 +1,63 @@
+<UploadJobResponse xmlns:xs="http://adstream.com/xmlstream/" xs:id="65" ns0:type="UploadJobResponse" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:adstream:yadn">
+  <MessageID><![CDATA[1.1|akka://KV01V-A5DA502/user/head/fsobject|b4fd51f780c2421fb7dd0fef#1]]></MessageID>
+  <Status>UploadedToStorage</Status>
+  <FileID>360ce31f-b207-4ffe-805c-a246010d7f02</FileID>
+  <FileName>58216329-5704-422d-ad19-cc3d76782ade.eps</FileName>
+  <FileDirectory><![CDATA[\00000000-0000-0000-0000-000000000000\2013-09-27\b4fd51f780c2421fb7dd0fef\]]></FileDirectory>
+  <FileSize>1088843</FileSize>
+  <MD5>98a49aa233f236909be0afc27a2de91f</MD5>
+  <CRC>        </CRC>
+  <Node>adstream.yadn.nodes.outpost-a5-auto</Node>
+  <SpecDBDocID>f2:application:unspecified:postscript</SpecDBDocID>
+  <metadata>
+    <property name="isPlayout">
+      <Value>false</Value>
+    </property>
+    <property name="ElementID">
+      <Value>b4fd51f780c2421fb7dd0fef</Value>
+    </property>
+    <property name="Path">
+      <Value>EnvIc.eps</Value>
+    </property>
+    <property name="Country">
+      <Value>AF</Value>
+    </property>
+    <property name="guise">
+      <Value>master</Value>
+    </property>
+    <property name="IsPlayout">
+      <Value>false</Value>
+    </property>
+    <property name="evaluation_exiftool">
+      <Value><![CDATA[<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+
+<rdf:Description xmlns:et="http://ns.exiftool.ca/1.0/" xmlns:ExifTool="http://ns.exiftool.ca/ExifTool/1.0/" xmlns:System="http://ns.exiftool.ca/File/System/1.0/" xmlns:File="http://ns.exiftool.ca/File/1.0/" xmlns:Composite="http://ns.exiftool.ca/Composite/1.0/" rdf:about="/media/yadn/input/20130927/509dc6f9cc63477fac2722b6/1380288059529/a6e49eca-7585-43de-b1d0-75e371378e04.eps" et:toolkit="Image::ExifTool 8.93">
+ <ExifTool:ExifToolVersion>8.93</ExifTool:ExifToolVersion>
+ <System:FileName>a6e49eca-7585-43de-b1d0-75e371378e04.eps</System:FileName>
+ <System:Directory>/media/yadn/input/20130927/509dc6f9cc63477fac2722b6/1380288059529</System:Directory>
+ <System:FileSize>1063 kB</System:FileSize>
+ <System:FileModifyDate>2013:02:14 11:14:35+02:00</System:FileModifyDate>
+ <System:FilePermissions>rwxrwxrwx</System:FilePermissions>
+ <System:FileName>a6e49eca-7585-43de-b1d0-75e371378e04.eps</System:FileName>
+ <System:Directory>/media/yadn/input/20130927/509dc6f9cc63477fac2722b6/1380288059529</System:Directory>
+ <System:FileSize>1063 kB</System:FileSize>
+ <System:FileModifyDate>2013:02:14 11:14:35+02:00</System:FileModifyDate>
+ <System:FilePermissions>rwxrwxrwx</System:FilePermissions>
+ <File:FileType>EPS</File:FileType>
+ <File:MIMEType>application/postscript</File:MIMEType>
+ <Composite:ImageWidth>470</Composite:ImageWidth>
+ <Composite:ImageHeight>332</Composite:ImageHeight>
+</rdf:Description>
+</rdf:RDF>]]></Value>
+    </property>
+    <property name="evaluation_MediaInfo">
+      <Value></Value>
+    </property>
+    <property name="evaluation_ffprobe">
+      <Value></Value>
+    </property>
+    <property name="evaluation_pdfdimensions">
+      <Value></Value>
+    </property>
+  </metadata>
+</UploadJobResponse>

@@ -1,0 +1,110 @@
+<UploadJobResponse xmlns:xs="http://adstream.com/xmlstream/" xs:id="5" ns0:type="UploadJobResponse" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:adstream:yadn">
+  <MessageID><![CDATA[1.1|akka://KV01V-A5DA502/user/head/fsobject|2e88f3350ff64b94b8e9fb8c#1]]></MessageID>
+  <Status>UploadedToStorage</Status>
+  <FileID>6044a1c8-1fc8-468e-b9a9-a246010d6f06</FileID>
+  <FileName>747f8c85-297f-4e93-b18f-95e2289cbab2.mpg</FileName>
+  <FileDirectory><![CDATA[\00000000-0000-0000-0000-000000000000\2013-09-27\2e88f3350ff64b94b8e9fb8c\]]></FileDirectory>
+  <FileSize>417796</FileSize>
+  <MD5>01c9b57a45e9a9ce8d5473ab467c87de</MD5>
+  <CRC>        </CRC>
+  <Node>adstream.yadn.nodes.outpost-a5-auto</Node>
+  <SpecDBDocID>f2:video:unspecified</SpecDBDocID>
+  <metadata>
+    <property name="isPlayout">
+      <Value>false</Value>
+    </property>
+    <property name="ElementID">
+      <Value>2e88f3350ff64b94b8e9fb8c</Value>
+    </property>
+    <property name="Path">
+      <Value>13DV-CAPITAL-10.mpg</Value>
+    </property>
+    <property name="Country">
+      <Value>AF</Value>
+    </property>
+    <property name="guise">
+      <Value>master</Value>
+    </property>
+    <property name="IsPlayout">
+      <Value>false</Value>
+    </property>
+    <property name="evaluation_exiftool">
+      <Value><![CDATA[<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+
+<rdf:Description xmlns:et="http://ns.exiftool.ca/1.0/" xmlns:ExifTool="http://ns.exiftool.ca/ExifTool/1.0/" xmlns:System="http://ns.exiftool.ca/File/System/1.0/" xmlns:File="http://ns.exiftool.ca/File/1.0/" xmlns:MPEG="http://ns.exiftool.ca/MPEG/MPEG/1.0/" rdf:about="/media/yadn/input/20130927/509dc6f9cc63477fac2722b6/1380288056833/d2304408-b62f-40ff-91b1-7f9d7b6957c3.mpg" et:toolkit="Image::ExifTool 8.93">
+ <ExifTool:ExifToolVersion>8.93</ExifTool:ExifToolVersion>
+ <System:FileName>d2304408-b62f-40ff-91b1-7f9d7b6957c3.mpg</System:FileName>
+ <System:Directory>/media/yadn/input/20130927/509dc6f9cc63477fac2722b6/1380288056833</System:Directory>
+ <System:FileSize>408 kB</System:FileSize>
+ <System:FileModifyDate>2012:11:21 15:54:02+02:00</System:FileModifyDate>
+ <System:FilePermissions>rwxrwxrwx</System:FilePermissions>
+ <System:FileName>d2304408-b62f-40ff-91b1-7f9d7b6957c3.mpg</System:FileName>
+ <System:Directory>/media/yadn/input/20130927/509dc6f9cc63477fac2722b6/1380288056833</System:Directory>
+ <System:FileSize>408 kB</System:FileSize>
+ <System:FileModifyDate>2012:11:21 15:54:02+02:00</System:FileModifyDate>
+ <System:FilePermissions>rwxrwxrwx</System:FilePermissions>
+ <File:FileType>MPEG</File:FileType>
+ <File:MIMEType>video/mpeg</File:MIMEType>
+ <MPEG:MPEGAudioVersion>1</MPEG:MPEGAudioVersion>
+ <MPEG:AudioLayer>2</MPEG:AudioLayer>
+</rdf:Description>
+</rdf:RDF>]]></Value>
+    </property>
+    <property name="evaluation_MediaInfo">
+      <Value><![CDATA[<Mediainfo xmlns="" version="0.7.61">
+<File>
+<track type="General">
+<Complete_name>/media/yadn/input/20130927/509dc6f9cc63477fac2722b6/1380288056833/d2304408-b62f-40ff-91b1-7f9d7b6957c3.mpg</Complete_name>
+<Format>MPEG-PS</Format>
+<File_size>408 KiB</File_size>
+<Duration>3s 120ms</Duration>
+<Overall_bit_rate>1 071 Kbps</Overall_bit_rate>
+</track>
+
+<track type="Video">
+<ID>224 (0xE0)</ID>
+<Format>MPEG Video</Format>
+<Format_version>Version 1</Format_version>
+<Format_settings__BVOP>Yes</Format_settings__BVOP>
+<Format_settings__Matrix>Custom</Format_settings__Matrix>
+<Format_settings__GOP>Variable</Format_settings__GOP>
+<Duration>3s 120ms</Duration>
+<Bit_rate>826 Kbps</Bit_rate>
+<Maximum_bit_rate>800 Kbps</Maximum_bit_rate>
+<Width>768 pixels</Width>
+<Height>432 pixels</Height>
+<Display_aspect_ratio>16:9</Display_aspect_ratio>
+<Frame_rate>25.000 fps</Frame_rate>
+<Color_space>YUV</Color_space>
+<Bit_depth>8 bits</Bit_depth>
+<Scan_type>Progressive</Scan_type>
+<Compression_mode>Lossy</Compression_mode>
+<Bits__Pixel_Frame_>0.100</Bits__Pixel_Frame_>
+<Stream_size>315 KiB (77%)</Stream_size>
+</track>
+
+<track type="Audio">
+<ID>192 (0xC0)</ID>
+<Format>MPEG Audio</Format>
+<Format_version>Version 1</Format_version>
+<Format_profile>Layer 2</Format_profile>
+<Duration>3s 120ms</Duration>
+<Bit_rate_mode>Constant</Bit_rate_mode>
+<Bit_rate>224 Kbps</Bit_rate>
+<Channel_s_>2 channels</Channel_s_>
+<Sampling_rate>48.0 KHz</Sampling_rate>
+<Compression_mode>Lossy</Compression_mode>
+<Stream_size>85.3 KiB (21%)</Stream_size>
+</track>
+
+</File>
+</Mediainfo>]]></Value>
+    </property>
+    <property name="evaluation_ffprobe">
+      <Value></Value>
+    </property>
+    <property name="evaluation_pdfdimensions">
+      <Value></Value>
+    </property>
+  </metadata>
+</UploadJobResponse>

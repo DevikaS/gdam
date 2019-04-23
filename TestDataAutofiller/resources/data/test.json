@@ -1,0 +1,256 @@
+{
+  "DefaultAgency": {
+    "agency": {
+      "_cm": {
+        "common": {
+          "time_zone": ["Europe-Andorra" ],
+          "pin": "1",
+          "name": "A5testAdvertiser",
+          "agencyType": ["Advertiser"],
+          "address": {
+            "country": ["AF" ]
+          },
+          "applications": {
+            "folders": true,
+            "adkits": true,
+            "library": true,
+            "ordering": true,
+            "adpath": true,
+            "presentations": true,
+            "approvals": true,
+            "annotations": true,
+            "dashboard": true
+          }
+        }
+      }
+    },
+    "users": {
+      "GlobalAdmin": {
+        "_cm": {
+          "common": {
+            "email": "admin"
+          }
+        },
+        "password": "abcdefghA1"
+      },
+      "AgencyAdmin": {
+        "_cm": {
+          "common": {
+            "firstName": "admin",
+            "lastName": "agency",
+            "email": "agencyadmin@test.com"
+          },
+          "view": {
+            "access": {
+              "library": true,
+              "ordering": true,
+              "folders": true
+            }
+          }
+        },
+        "password": "abcdefghA1",
+        "roles": [{"name":"agency.admin"}]
+      },
+      "AnotherAdmin": {
+        "_cm": {
+          "common": {
+            "firstName": "admin",
+            "lastName": "another",
+            "email": "anotheradmin@test.com"
+          },
+          "view": {
+            "access": {
+              "library": true,
+              "ordering": true,
+              "folders": true
+            }
+          }
+        },
+        "password": "abcdefghA1",
+        "roles": [{"name":"agency.admin"}]
+      },
+      "AgencyUser": {
+        "_cm": {
+          "common": {
+            "firstName": "user",
+            "lastName": "agency",
+            "email": "agencyuser@test.com"
+          },
+          "view": {
+            "access": {
+              "library": true,
+              "ordering": true,
+              "folders": true
+            }
+          }
+        },
+        "password": "abcdefghA1"
+      }
+    }
+  },
+      "TestDeliveryBU": {
+        "agency": {
+          "_cm": {
+            "a4": {
+              "user": "alejandra.medina@mccann.com.mx.ua",
+              "password": "b3tat3st3r",
+              "createAssetInA4": true,
+              "agencyId": "C1DCD2C9-02B9-498F-9653-9B23C6F982FD"
+            },
+            "common": {
+              "time_zone": [
+                "Europe-Berlin"
+              ],
+              "pin": "89",
+              "name": "Delivery Test BU",
+              "agencyType": [
+                "Agency"
+              ],
+              "address": {
+                "country": [
+                  "DE"
+                ]
+              },
+              "applications": {
+                "folders": true,
+                "adkits": true,
+                "library": true,
+                "ordering": true,
+                "adpath": true,
+                "presentations": true,
+                "approvals": true,
+                "annotations": true,
+                "dashboard": true
+              }
+            }
+          }
+        },
+        "users": {
+          "DeliveryUser": {
+            "_cm": {
+              "common": {
+                "firstName": "Delivery",
+                "lastName": "raper",
+                "email": "DeliveryUser@raper.net"
+              },
+              "view": {
+                "access": {
+                  "library": true,
+                  "ordering": true,
+                  "folders": true,
+                  "adpath": true
+                }
+              }
+            },
+            "password": "abcdefghA1",
+            "roles": [
+              {
+                "name": "agency.admin"
+              }
+            ]
+        }
+      }
+  },"IngestTrafficGE": {
+  "agency": {
+    "_cm": {
+      "a4" : {
+        "user" : "alejandra.medina@mccann.com.mx.ua",
+        "password": "b3tat3st3r",
+        "createAssetInA4": true,
+        "agencyId": "C1DCD2C9-02B9-498F-9653-9B23C6F982FD"
+      },
+      "common": {
+        "time_zone": ["Europe-Berlin"],
+        "pin": "89",
+        "name": "Ingest Traffic Germany",
+        "saveInLibrary" : true,
+        "allowUserChangeSaveInLibrary" : true,
+        "agencyType": ["Ingest"],
+        "address": {
+          "country": ["DE"]
+        },
+        "applications": {
+          "folders": true,
+          "library": true,
+          "ordering": true,
+          "adpath" : true,
+          "presentations": true,
+          "dashboard": true
+        }
+      }
+    }
+  },
+  "users": {
+    "NewAdmin": {
+      "_cm": {
+        "common": {
+          "firstName": "Darth",
+          "lastName": "Vader",
+          "email": "vd@darkside.net"
+        },
+        "view": {
+          "access": {
+            "ordering": true,
+            "adpath" : true
+          }
+        }
+      },
+      "password": "abcdefghA1",
+      "roles": [{"name": "traffic.traffic.manager"}]
+    }
+  }
+},"BroadcastBU": {
+  "agency": {
+    "_cm": {
+      "a4" : {
+        "user" : "alejandra.medina@mccann.com.mx.ua",
+        "password": "b3tat3st3r",
+        "createAssetInA4": true,
+        "agencyId": "C1DCD2C9-02B9-498F-9653-9B23C6F982FD"
+      },
+      "common": {
+        "time_zone": ["Europe-Berlin"],
+        "pin": "89",
+        "name": "Broadcast Traffic BU",
+        "saveInLibrary" : true,
+        "allowUserChangeSaveInLibrary" : true,
+        "agencyType": ["TV Broadcaster"],
+        "market":["13"],
+        "destinationID": 8111,
+        "address": {
+          "country": ["DE"]
+        },
+        "applications": {
+          "folders": true,
+          "library": true,
+          "ordering": true,
+          "adpath" : true,
+          "presentations": true,
+          "dashboard": true
+        }
+      }
+    }
+  },
+  "users": {
+    "NewAdmin": {
+      "_cm": {
+        "common": {
+          "firstName": "Broadcast",
+          "lastName": "User",
+          "email": "broadcast@user.net"
+        },
+        "view": {
+          "access": {
+            "ordering": true,
+            "adpath": true
+          }
+        }
+      },
+      "password": "abcdefghA1",
+      "roles": [{"name": "traffic.traffic.manager"}]
+    }
+  }
+}
+}
+
+

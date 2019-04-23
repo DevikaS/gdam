@@ -1,0 +1,20 @@
+{
+  "AgencyAdmin": {
+    "users": 20,
+    "projects": 20,
+    "templates": 20,
+    "folders": 1
+  },
+  "AnotherAdmin": {
+    "users": 20,
+    "projects": 20,
+    "templates": 20,
+    "folders": 1
+  },
+  "QAAgencyAdmin": {
+    "users": 20,
+    "projects": 20,
+    "templates": 20,
+    "folders": 1
+  }
+}

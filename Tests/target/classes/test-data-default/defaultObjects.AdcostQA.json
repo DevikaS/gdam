@@ -1,0 +1,610 @@
+{
+  "DefaultAdstreamGlobalAdminBU": {
+    "agency": {
+      "_cm": {
+        "common": {
+          "name": "Global Admin Business Unit",
+          "agencyType": [
+            "Agency"
+          ]
+        }
+      }
+    },
+    "users": {
+      "DefaultGlobalAdmin": {
+        "customEmail": "admin",
+        "_cm": {
+          "common": {
+            "email": "admin"
+          }
+        },
+        "password": "abcdefghA1",
+        "passwordNeverExpires": true
+      },
+      "GlobalAdmin": {
+        "customEmail": "customGlobalAdmin",
+        "_cm": {
+          "common": {
+            "firstName": "GA",
+            "lastName": "ForQaAutomation",
+            "email": "GA.ForQaAutomation",
+            "jobTitle": "CustomGlobalAdmin"
+          }
+        },
+        "password": "abcdefghA1",
+        "passwordNeverExpires": true
+      }
+    }
+  },
+    "DefaultAgency": {
+      "agency": {
+        "_cm": {
+          "a4": {
+            "user": "alejandra.medina@mccann.com.mx.ua"
+          },
+          "common": {
+            "time_zone": [
+              "Europe-Andorra"
+            ],
+            "pin": "1",
+            "name": "A5testAdvertiser",
+            "agencyType": [
+              "Advertiser"
+            ],
+            "address": {
+              "country": [
+                "AF"
+              ]
+            },
+            "applications": {
+              "folders": true,
+              "adkits": true,
+              "dashboard": true,
+              "adcost": true
+            },
+            "labels": [
+              "CM_Prime_P&G",
+              "costPG"
+            ]
+          },
+          "passwordSettings": {
+            "passwordExpirationInDays": 30,
+            "passwordRegEx": {
+              "pattern": "((?=(.*[A-Z]){1,})(?=(.*\\d){1,}).{8,})",
+              "description": {
+                "minTotalLengthOfPassword": 8,
+                "minimumIncludingNumbers": 1,
+                "minIncludingUppercase": 1
+              }
+            }
+          }
+        }
+      },
+      "users": {
+        "AgencyAdmin": {
+          "_cm": {
+            "common": {
+              "firstName": "admin",
+              "lastName": "agency",
+              "email": "qatbabylonautotester+agencyadmin@gmail.com",
+              "language": [
+                "en-us"
+              ]
+            },
+            "view": {
+              "access": {
+                "folders": true,
+                "adkits": true,
+                "dashboard": true,
+                "adcost": true
+              }
+            }
+          },
+          "password": "abcdefghA1",
+          "passwordNeverExpires": true,
+          "roles": [
+            {
+              "name": "agency.admin"
+            }
+          ]
+        },
+        "AnotherAdmin": {
+          "_cm": {
+            "common": {
+              "firstName": "anotheradmin",
+              "lastName": "agency",
+              "email": "qatbabylonautotester+anotheradmin@gmail.com",
+              "language": [
+                "en-us"
+              ]
+            },
+            "view": {
+              "access": {
+                "folders": true,
+                "adkits": true,
+                "dashboard": true,
+                "adcost": true
+              }
+            }
+          },
+          "password": "abcdefghA1",
+          "passwordNeverExpires": true,
+          "roles": [
+            {
+              "name": "agency.admin"
+            }
+          ]
+        },
+        "IPMuser": {
+          "_cm": {
+            "common": {
+              "firstName": "IPM",
+              "lastName": "User",
+              "email": "qatbabylonautotester+ipmUser@gmail.com",
+              "language": [
+                "en-us"
+              ]
+            },
+            "view": {
+              "access": {
+                "folders": true,
+                "adkits": true,
+                "dashboard": true,
+                "adcost": true
+              }
+            }
+          },
+          "password": "abcdefghA1",
+          "passwordNeverExpires": true,
+          "roles": [
+            {
+              "name": "agency.user"
+            }
+          ]
+        },
+        "AnotherIPMuser": {
+          "_cm": {
+            "common": {
+              "firstName": "AnotherIPM",
+              "lastName": "User",
+              "email": "qatbabylonautotester+anotheripmUser@gmail.com",
+              "language": [
+                "en-us"
+              ]
+            },
+            "view": {
+              "access": {
+                "folders": true,
+                "adkits": true,
+                "dashboard": true,
+                "adcost": true
+              }
+            }
+          },
+          "password": "abcdefghA1",
+          "passwordNeverExpires": true,
+          "roles": [
+            {
+              "name": "agency.user"
+            }
+          ]
+        },
+        "FinanceManager": {
+          "_cm": {
+            "common": {
+              "firstName": "Finance",
+              "lastName": "Manager",
+              "email": "qatbabylonautotester+FinanceManager@gmail.com",
+              "language": [
+                "en-us"
+              ]
+            },
+            "view": {
+              "access": {
+                "folders": true,
+                "adkits": true,
+                "dashboard": true,
+                "adcost": true
+              }
+            }
+          },
+          "password": "abcdefghA1",
+          "passwordNeverExpires": true,
+          "roles": [
+            {
+              "name": "agency.user"
+            }
+          ]
+        },
+        "PurchasingSupport": {
+          "_cm": {
+            "common": {
+              "firstName": "Purchasing",
+              "lastName": "Support",
+              "email": "qatbabylonautotester+PurchasingSupport@gmail.com",
+              "language": [
+                "en-us"
+              ]
+            },
+            "view": {
+              "access": {
+                "folders": true,
+                "adkits": true,
+                "dashboard": true,
+                "adcost": true
+              }
+            }
+          },
+          "password": "abcdefghA1",
+          "passwordNeverExpires": true,
+          "roles": [
+            {
+              "name": "agency.user"
+            }
+          ]
+        },
+        "InsuranceUser": {
+          "_cm": {
+            "common": {
+              "firstName": "Insurance",
+              "lastName": "User",
+              "email": "qatbabylonautotester+InsuranceUser@gmail.com",
+              "language": [
+                "en-us"
+              ]
+            },
+            "view": {
+              "access": {
+                "library": true,
+                "ordering": true,
+                "folders": true,
+                "adkits": true,
+                "approvals": true,
+                "presentations": true,
+                "dashboard": true,
+                "adcost": true
+              }
+            }
+          },
+          "password": "abcdefghA1",
+          "passwordNeverExpires": true,
+          "roles": [
+            {
+              "name": "agency.user"
+            }
+          ]
+        },
+        "BrandManagementApprover": {
+          "_cm": {
+            "common": {
+              "firstName": "Brand Management",
+              "lastName": "Approver",
+              "email": "qatbabylonautotester+BrandManagementApprover@gmail.com",
+              "language": [
+                "en-us"
+              ]
+            },
+            "view": {
+              "access": {
+                "folders": true,
+                "adkits": true,
+                "dashboard": true,
+                "adcost": true
+              }
+            }
+          },
+          "password": "abcdefghA1",
+          "passwordNeverExpires": true,
+          "roles": [
+            {
+              "name": "agency.user"
+            }
+          ]
+        },
+        "GovernanceManager": {
+          "_cm": {
+            "common": {
+              "firstName": "Governance",
+              "lastName": "Manager",
+              "email": "qatbabylonautotester+GovernanceManager@gmail.com",
+              "language": [
+                "en-us"
+              ]
+            },
+            "view": {
+              "access": {
+                "folders": true,
+                "adkits": true,
+                "dashboard": true,
+                "adcost": true
+              }
+            }
+          },
+          "password": "abcdefghA1",
+          "passwordNeverExpires": true,
+          "roles": [
+            {
+              "name": "agency.user"
+            }
+          ]
+        }
+      }
+    },
+    "AnotherAgency": {
+      "agency": {
+        "_cm": {
+          "a4": {
+            "user": "alejandra.medina@mccann.com.mx.ua"
+          },
+          "common": {
+            "time_zone": [
+              "Europe-Andorra"
+            ],
+            "pin": "1",
+            "name": "another qa agency",
+            "agencyType": [
+              "Advertiser"
+            ],
+            "address": {
+              "country": [
+                "AF"
+              ]
+            },
+            "applications": {
+              "folders": true,
+              "adkits": true,
+              "dashboard": true,
+              "adcost": true
+            },
+            "labels": [
+              "GID_100000",
+              "PGSAPVENDORID_VH8888",
+              "PC_GBP",
+              "costPG"
+            ]
+          },
+          "passwordSettings": {
+            "passwordExpirationInDays": 30,
+            "passwordRegEx": {
+              "pattern": "((?=(.*[A-Z]){1,})(?=(.*\\d){1,}).{8,})",
+              "description": {
+                "minTotalLengthOfPassword": 8,
+                "minimumIncludingNumbers": 1,
+                "minIncludingUppercase": 1
+              }
+            }
+          }
+        }
+      },
+      "users": {
+        "AnotherAgencyAdmin": {
+          "_cm": {
+            "common": {
+              "firstName": "admin",
+              "lastName": "anotheragency",
+              "email": "qatbabylonautotester+anotheragencyadmin@gmail.com",
+              "language": [
+                "en-us"
+              ]
+            },
+            "view": {
+              "access": {
+                "folders": true,
+                "adkits": true,
+                "dashboard": true,
+                "adcost": true
+              }
+            }
+          },
+          "password": "abcdefghA1",
+          "passwordNeverExpires": true,
+          "roles": [
+            {
+              "name": "agency.admin"
+            }
+          ]
+        },
+        "CostConsultant": {
+          "_cm": {
+            "common": {
+              "firstName": "Cost",
+              "lastName": "Consultant",
+              "email": "qatbabylonautotester+CostConsultant@gmail.com",
+              "language": [
+                "en-us"
+              ]
+            },
+            "view": {
+              "access": {
+                "folders": true,
+                "adkits": true,
+                "dashboard": true,
+                "adcost": true
+              }
+            }
+          },
+          "password": "abcdefghA1",
+          "passwordNeverExpires": true,
+          "roles": [
+            {
+              "name": "agency.user"
+            }
+          ]
+        },
+        "CostOwner": {
+          "_cm": {
+            "common": {
+              "firstName": "Cost",
+              "lastName": "Owner",
+              "email": "qatbabylonautotester+CostOwner@gmail.com",
+              "language": [
+                "en-us"
+              ]
+            },
+            "view": {
+              "access": {
+                "folders": true,
+                "adkits": true,
+                "dashboard": true,
+                "adcost": true
+              }
+            }
+          },
+          "password": "abcdefghA1",
+          "passwordNeverExpires": true,
+          "roles": [
+            {
+              "name": "agency.user"
+            }
+          ]
+        },
+        "AgencyOwner": {
+          "_cm": {
+            "common": {
+              "firstName": "Agency",
+              "lastName": "Owner",
+              "email": "qatbabylonautotester+AgencyOwner@gmail.com",
+              "language": [
+                "en-us"
+              ]
+            },
+            "view": {
+              "access": {
+                "folders": true,
+                "adkits": true,
+                "dashboard": true,
+                "adcost": true
+              }
+            }
+          },
+          "password": "abcdefghA1",
+          "passwordNeverExpires": true,
+          "roles": [
+            {
+              "name": "agency.user"
+            }
+          ]
+        }
+      }
+    },
+    "CycloneAgency": {
+      "agency": {
+        "_cm": {
+          "a4": {
+            "user": "alejandra.medina@mccann.com.mx.ua"
+          },
+          "common": {
+            "time_zone": [
+              "Europe-Andorra"
+            ],
+            "pin": "1",
+            "name": "CycloneAgencyQA",
+            "agencyType": [
+              "Advertiser"
+            ],
+            "address": {
+              "country": [
+                "AF"
+              ]
+            },
+            "applications": {
+              "folders": true,
+              "adkits": true,
+              "dashboard": true,
+              "adcost": true
+            },
+            "labels": [
+              "GID_100000",
+              "PGSAPVENDORID_VH8888",
+              "PC_GBP",
+              "SMO_ASEAN GROUP",
+              "adcost",
+              "costPG",
+              "Cyclone"
+            ]
+          },
+          "passwordSettings": {
+            "passwordExpirationInDays": 30,
+            "passwordRegEx": {
+              "pattern": "((?=(.*[A-Z]){1,})(?=(.*\\d){1,}).{8,})",
+              "description": {
+                "minTotalLengthOfPassword": 8,
+                "minimumIncludingNumbers": 1,
+                "minIncludingUppercase": 1
+              }
+            }
+          }
+        }
+      },
+      "users": {
+        "CycloneCostOwner": {
+          "_cm": {
+            "common": {
+              "firstName": "CycloneCost",
+              "lastName": "Owner",
+              "email": "qatbabylonautotester+CycloneCostOwner@gmail.com",
+              "language": [
+                "en-us"
+              ]
+            },
+            "view": {
+              "access": {
+                "folders": true,
+                "adkits": true,
+                "dashboard": true,
+                "adcost": true
+              }
+            }
+          },
+          "password": "abcdefghA1",
+          "passwordNeverExpires": true,
+          "roles": [
+            {
+              "name": "agency.user"
+            }
+          ]
+        }
+      }
+    },
+    "IngestAgency": {
+      "agency": {
+        "_cm": {
+          "a4": {
+            "user": "alejandra.medina@mccann.com.mx.ua"
+          },
+          "common": {
+            "time_zone": [
+              "Europe-Andorra"
+            ],
+            "pin": "1",
+            "name": "AdstreamQaIngest",
+            "agencyType": [
+              "Ingest"
+            ],
+            "address": {
+              "country": [
+                "AF"
+              ]
+            },
+            "applications": {
+              "adpath": true
+            },
+            "labels": [
+              "costPG"
+            ]
+          },
+          "passwordSettings": {
+            "passwordExpirationInDays": 30,
+            "passwordRegEx": {
+              "pattern": "((?=(.*[A-Z]){1,})(?=(.*\\d){1,}).{8,})",
+              "description": {
+                "minTotalLengthOfPassword": 8,
+                "minimumIncludingNumbers": 1,
+                "minIncludingUppercase": 1
+              }
+            }
+          }
+        }
+      }
+    }
+  }

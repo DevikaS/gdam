@@ -1,0 +1,67 @@
+<UploadJobResponse xmlns:xs="http://adstream.com/xmlstream/" xs:id="16" ns0:type="UploadJobResponse" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:adstream:yadn">
+  <MessageID><![CDATA[1.1|akka://KV01V-A5DA502/user/head/fsobject|170dda1f01384bedac2b3228#1]]></MessageID>
+  <Status>UploadedToStorage</Status>
+  <FileID>a1d923ac-0bc2-4b34-b63b-a246010d917c</FileID>
+  <FileName>01896afb-60fb-4581-8b8c-b428c114bef5.wav</FileName>
+  <FileDirectory><![CDATA[\00000000-0000-0000-0000-000000000000\2013-09-27\170dda1f01384bedac2b3228\]]></FileDirectory>
+  <FileSize>37534</FileSize>
+  <MD5>a9ecebfc7077312db5b483c0cae6dd73</MD5>
+  <CRC>        </CRC>
+  <Node>adstream.yadn.nodes.outpost-a5-auto</Node>
+  <SpecDBDocID>f2:audio:unspecified</SpecDBDocID>
+  <metadata>
+    <property name="isPlayout">
+      <Value>false</Value>
+    </property>
+    <property name="ElementID">
+      <Value>170dda1f01384bedac2b3228</Value>
+    </property>
+    <property name="Path">
+      <Value>shortname.wav</Value>
+    </property>
+    <property name="Country">
+      <Value>AF</Value>
+    </property>
+    <property name="guise">
+      <Value>master</Value>
+    </property>
+    <property name="IsPlayout">
+      <Value>false</Value>
+    </property>
+    <property name="evaluation_exiftool">
+      <Value><![CDATA[<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+
+<rdf:Description xmlns:et="http://ns.exiftool.ca/1.0/" xmlns:ExifTool="http://ns.exiftool.ca/ExifTool/1.0/" xmlns:System="http://ns.exiftool.ca/File/System/1.0/" xmlns:File="http://ns.exiftool.ca/File/1.0/" rdf:about="/media/yadn/input/20130927/509dc6f9cc63477fac2722b6/1380288063501/8526f32c-f75b-49bc-ba90-86846f745128.wav" et:toolkit="Image::ExifTool 8.93">
+ <ExifTool:ExifToolVersion>8.93</ExifTool:ExifToolVersion>
+ <System:FileName>8526f32c-f75b-49bc-ba90-86846f745128.wav</System:FileName>
+ <System:Directory>/media/yadn/input/20130927/509dc6f9cc63477fac2722b6/1380288063501</System:Directory>
+ <System:FileSize>37 kB</System:FileSize>
+ <System:FileModifyDate>2013:02:25 18:01:55+02:00</System:FileModifyDate>
+ <System:FilePermissions>rwxrwxrwx</System:FilePermissions>
+ <System:FileName>8526f32c-f75b-49bc-ba90-86846f745128.wav</System:FileName>
+ <System:Directory>/media/yadn/input/20130927/509dc6f9cc63477fac2722b6/1380288063501</System:Directory>
+ <System:FileSize>37 kB</System:FileSize>
+ <System:FileModifyDate>2013:02:25 18:01:55+02:00</System:FileModifyDate>
+ <System:FilePermissions>rwxrwxrwx</System:FilePermissions>
+ <File:FileType>WAV</File:FileType>
+ <File:MIMEType>audio/x-wav</File:MIMEType>
+</rdf:Description>
+</rdf:RDF>]]></Value>
+    </property>
+    <property name="evaluation_MediaInfo">
+      <Value></Value>
+    </property>
+    <property name="evaluation_ffprobe">
+      <Value><![CDATA[<ffprobe xmlns="">
+    <streams>
+        <stream index="0" codec_name="pcm_u8" codec_long_name="PCM unsigned 8-bit" codec_type="audio" codec_time_base="1/11025" codec_tag_string="[1][0][0][0]" codec_tag="0x0001" sample_fmt="u8" sample_rate="11025" channels="1" bits_per_sample="8" r_frame_rate="0/0" avg_frame_rate="0/0" time_base="1/11025" duration_ts="133822969" duration="12138.137778" bit_rate="88200"/>
+    </streams>
+
+    <format filename="/media/yadn/input/20130927/509dc6f9cc63477fac2722b6/1380288063501/8526f32c-f75b-49bc-ba90-86846f745128.wav" nb_streams="1" format_name="wav" format_long_name="WAV / WAVE (Waveform Audio)" duration="12138.137778" size="37534" bit_rate="24"/>
+</ffprobe>]]></Value>
+    </property>
+    <property name="evaluation_pdfdimensions">
+      <Value></Value>
+    </property>
+  </metadata>
+</UploadJobResponse>

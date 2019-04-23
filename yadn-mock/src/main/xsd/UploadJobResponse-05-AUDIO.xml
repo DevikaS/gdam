@@ -1,0 +1,82 @@
+<UploadJobResponse xmlns:xs="http://adstream.com/xmlstream/" xs:id="1" ns0:type="UploadJobResponse" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:adstream:yadn">
+  <MessageID><![CDATA[1.0|akka://gdam/user/fsobject|5007d6e2e4b009d3f111dd3d]]></MessageID>
+  <Status>CopiedToStorage</Status>
+  <FileID>63731a3b-60c4-454e-9558-a09300d1dfd1</FileID>
+  <FileName>bbae7dfd-7523-4286-915b-c59bd1d34d8f</FileName>
+  <FileDirectory><![CDATA[\5007b5eee4b009d3f110f377\2012-07-19\5007d6e2e4b009d3f111dd3d\]]></FileDirectory>
+  <FileSize>6534920</FileSize>
+  <MD5>77549ec7307b3c6505ea9bdb6419bdaa</MD5>
+  <CRC>5075fbf4</CRC>
+  <Node>adstream.yadn.nodes.adgate_cs@adstream.tv</Node>
+  <SpecDBDocID>f2:audio:unspecified</SpecDBDocID>
+  <metadata>
+    <property name="ElementID">
+      <Value>5007d6e2e4b009d3f111dd3d</Value>
+    </property>
+    <property name="AgencyID">
+      <Value>5007b5eee4b009d3f110f377</Value>
+    </property>
+    <property name="Path">
+      <Value>01-The days of the dancing.mp3</Value>
+    </property>
+    <property name="Country">
+      <Value>Afghanistan</Value>
+    </property>
+    <property name="IsPlayout">
+      <Value>true</Value>
+    </property>
+    <property name="evaluation_exiftool">
+      <Value><![CDATA[<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+
+<rdf:Description xmlns:et="http://ns.exiftool.ca/1.0/" xmlns:ExifTool="http://ns.exiftool.ca/ExifTool/1.0/" xmlns:System="http://ns.exiftool.ca/File/System/1.0/" xmlns:File="http://ns.exiftool.ca/File/1.0/" xmlns:MPEG="http://ns.exiftool.ca/MPEG/MPEG/1.0/" xmlns:ID3v1="http://ns.exiftool.ca/ID3/ID3v1/1.0/" xmlns:Composite="http://ns.exiftool.ca/Composite/1.0/" rdf:about="/media/yadn/input/20120719/5007b5eee4b009d3f110f37a/1342690888439/301c9394-1d81-1520-dbfb-1e8ad20f4260.mp3" et:toolkit="Image::ExifTool 8.93">
+ <ExifTool:ExifToolVersion>8.93</ExifTool:ExifToolVersion>
+ <System:FileName>301c9394-1d81-1520-dbfb-1e8ad20f4260.mp3</System:FileName>
+ <System:Directory>/media/yadn/input/20120719/5007b5eee4b009d3f110f37a/1342690888439</System:Directory>
+ <System:FileSize>6.2 MB</System:FileSize>
+ <System:FileModifyDate>2000:08:25 10:30:56+03:00</System:FileModifyDate>
+ <System:FilePermissions>rwxrwxrwx</System:FilePermissions>
+ <File:FileType>MP3</File:FileType>
+ <File:MIMEType>audio/mpeg</File:MIMEType>
+ <File:ID3Size>128</File:ID3Size>
+ <MPEG:MPEGAudioVersion>1</MPEG:MPEGAudioVersion>
+ <MPEG:AudioLayer>3</MPEG:AudioLayer>
+ <MPEG:AudioBitrate>160 kbps</MPEG:AudioBitrate>
+ <MPEG:SampleRate>44100</MPEG:SampleRate>
+ <MPEG:ChannelMode>Stereo</MPEG:ChannelMode>
+ <MPEG:MSStereo>Off</MPEG:MSStereo>
+ <MPEG:IntensityStereo>Off</MPEG:IntensityStereo>
+ <MPEG:CopyrightFlag>False</MPEG:CopyrightFlag>
+ <MPEG:OriginalMedia>True</MPEG:OriginalMedia>
+ <MPEG:Emphasis>None</MPEG:Emphasis>
+ <ID3v1:Title>The days of the dancing       </ID3v1:Title>
+ <ID3v1:Artist>Maire Brennan                 </ID3v1:Artist>
+ <ID3v1:Album>Misty Eyed Adventures         </ID3v1:Album>
+ <ID3v1:Year>1995</ID3v1:Year>
+ <ID3v1:Comment>                              </ID3v1:Comment>
+ <ID3v1:Genre>Folk</ID3v1:Genre>
+ <Composite:DateTimeOriginal>1995</Composite:DateTimeOriginal>
+ <Composite:Duration>0:05:26 (approx)</Composite:Duration>
+</rdf:Description>
+</rdf:RDF>]]></Value>
+    </property>
+    <property name="evaluation_MediaInfo">
+      <Value></Value>
+    </property>
+    <property name="evaluation_ffprobe">
+      <Value><![CDATA[<ffprobe xmlns="">
+    <streams>
+        <stream index="0" codec_name="mp3" codec_long_name="MP3 (MPEG audio layer 3)" codec_type="audio" codec_time_base="1/44100" codec_tag_string="[0][0][0][0]" codec_tag="0x0000" sample_fmt="s16" sample_rate="44100" channels="2" bits_per_sample="0" r_frame_rate="0/0" avg_frame_rate="0/0" time_base="1/14112000" start_time="0.000000" duration="326.746000" bit_rate="160000"/>
+    </streams>
+
+    <format filename="/media/yadn/input/20120719/5007b5eee4b009d3f110f37a/1342690888439/301c9394-1d81-1520-dbfb-1e8ad20f4260.mp3" nb_streams="1" format_name="mp3" format_long_name="MPEG audio layer 2/3" start_time="0.000000" duration="326.746000" size="6534920" bit_rate="160000">
+        <tag key="title" value="The days of the dancing       "/>
+        <tag key="artist" value="Maire Brennan                 "/>
+        <tag key="album" value="Misty Eyed Adventures         "/>
+        <tag key="date" value="1995"/>
+        <tag key="comment" value="                              "/>
+        <tag key="genre" value="Folk"/>
+    </format>
+</ffprobe>]]></Value>
+    </property>
+  </metadata>
+</UploadJobResponse>

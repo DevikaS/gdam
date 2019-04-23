@@ -1,0 +1,73 @@
+<UploadJobResponse xmlns:xs="http://adstream.com/xmlstream/" xs:id="12" ns0:type="UploadJobResponse" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:adstream:yadn">
+  <MessageID><![CDATA[1.1|akka://KV01V-A5DA502/user/head/fsobject|2ef6bb6ce107444babba4d84#1]]></MessageID>
+  <Status>UploadedToStorage</Status>
+  <FileID>45e5219f-1139-4af0-93c2-a246010d907a</FileID>
+  <FileName>3718dc06-095a-4f36-9cd2-0fd6b90ce818.wma</FileName>
+  <FileDirectory><![CDATA[\00000000-0000-0000-0000-000000000000\2013-09-27\2ef6bb6ce107444babba4d84\]]></FileDirectory>
+  <FileSize>94457</FileSize>
+  <MD5>b2f542b99d0e8d6b651787a80293c882</MD5>
+  <CRC>        </CRC>
+  <Node>adstream.yadn.nodes.outpost-a5-auto</Node>
+  <SpecDBDocID>f2:audio:unspecified</SpecDBDocID>
+  <metadata>
+    <property name="isPlayout">
+      <Value>false</Value>
+    </property>
+    <property name="ElementID">
+      <Value>2ef6bb6ce107444babba4d84</Value>
+    </property>
+    <property name="Path">
+      <Value>Ringtone 03.wma</Value>
+    </property>
+    <property name="Country">
+      <Value>AF</Value>
+    </property>
+    <property name="guise">
+      <Value>master</Value>
+    </property>
+    <property name="IsPlayout">
+      <Value>false</Value>
+    </property>
+    <property name="evaluation_exiftool">
+      <Value><![CDATA[<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+
+<rdf:Description xmlns:et="http://ns.exiftool.ca/1.0/" xmlns:ExifTool="http://ns.exiftool.ca/ExifTool/1.0/" xmlns:System="http://ns.exiftool.ca/File/System/1.0/" xmlns:File="http://ns.exiftool.ca/File/1.0/" rdf:about="/media/yadn/input/20130927/509dc6f9cc63477fac2722b6/1380288063285/fb2f82e1-aee8-417d-a83f-5ca93a92ad21.wma" et:toolkit="Image::ExifTool 8.93">
+ <ExifTool:ExifToolVersion>8.93</ExifTool:ExifToolVersion>
+ <System:FileName>fb2f82e1-aee8-417d-a83f-5ca93a92ad21.wma</System:FileName>
+ <System:Directory>/media/yadn/input/20130927/509dc6f9cc63477fac2722b6/1380288063285</System:Directory>
+ <System:FileSize>92 kB</System:FileSize>
+ <System:FileModifyDate>2012:12:28 13:04:30+02:00</System:FileModifyDate>
+ <System:FilePermissions>rwxrwxrwx</System:FilePermissions>
+ <System:FileName>fb2f82e1-aee8-417d-a83f-5ca93a92ad21.wma</System:FileName>
+ <System:Directory>/media/yadn/input/20130927/509dc6f9cc63477fac2722b6/1380288063285</System:Directory>
+ <System:FileSize>92 kB</System:FileSize>
+ <System:FileModifyDate>2012:12:28 13:04:30+02:00</System:FileModifyDate>
+ <System:FilePermissions>rwxrwxrwx</System:FilePermissions>
+ <File:FileType>WMA</File:FileType>
+ <File:MIMEType>audio/x-ms-wma</File:MIMEType>
+</rdf:Description>
+</rdf:RDF>]]></Value>
+    </property>
+    <property name="evaluation_MediaInfo">
+      <Value></Value>
+    </property>
+    <property name="evaluation_ffprobe">
+      <Value><![CDATA[<ffprobe xmlns="">
+    <streams>
+        <stream index="0" codec_name="wmav2" codec_long_name="Windows Media Audio 2" codec_type="audio" codec_time_base="1/44100" codec_tag_string="a[1][0][0]" codec_tag="0x0161" sample_fmt="s16" sample_rate="44100" channels="2" bits_per_sample="0" r_frame_rate="0/0" avg_frame_rate="0/0" time_base="1/1000" start_pts="0" start_time="0.000000" duration_ts="3343" duration="3.343000" bit_rate="192016"/>
+    </streams>
+
+    <format filename="/media/yadn/input/20130927/509dc6f9cc63477fac2722b6/1380288063285/fb2f82e1-aee8-417d-a83f-5ca93a92ad21.wma" nb_streams="1" format_name="asf" format_long_name="ASF (Advanced / Active Streaming Format)" start_time="0.000000" duration="3.343000" size="94457" bit_rate="226041">
+        <tag key="WMFSDKVersion" value="11.0.6001.7001"/>
+        <tag key="WMFSDKNeeded" value="0.0.0.0000"/>
+        <tag key="IsVBR" value="0"/>
+        <tag key="PeakValue" value="119"/>
+        <tag key="AverageLevel" value="140"/>
+    </format>
+</ffprobe>]]></Value>
+    </property>
+    <property name="evaluation_pdfdimensions">
+      <Value></Value>
+    </property>
+  </metadata>
+</UploadJobResponse>

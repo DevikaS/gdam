@@ -1,0 +1,58 @@
+<UploadJobResponse xmlns:xs="http://adstream.com/xmlstream/" xs:id="28" ns0:type="UploadJobResponse" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:adstream:yadn">
+  <MessageID><![CDATA[1.0|akka://gdam/user/fsobject|500eac9de4b02dec99de56ca]]></MessageID>
+  <Status>UploadedToStorage</Status>
+  <FileID>1effe84c-ed70-4891-a68a-a098011aea0c</FileID>
+  <FileName>9bcbc152-d21d-4186-a54a-1ed649c22a40</FileName>
+  <FileDirectory><![CDATA[\500e6936e4b00e34ff5b6ebc\2012-07-24\500eac9de4b02dec99de56ca\]]></FileDirectory>
+  <FileSize>27777</FileSize>
+  <MD5>3877e1ee19735c63bb921d61a8052ebc</MD5>
+  <CRC>d7cd6d86</CRC>
+  <Node>adstream.yadn.nodes.adgate_lin_1@adstream.tv.ua</Node>
+  <SpecDBDocID>f2:unknown-file-type</SpecDBDocID>
+  <metadata>
+    <property name="uploader">
+      <Value>500e6936e4b00e34ff5b6ebf</Value>
+    </property>
+    <property name="ElementID">
+      <Value>500eac9de4b02dec99de56ca</Value>
+    </property>
+    <property name="AgencyID">
+      <Value>500e6936e4b00e34ff5b6ebc</Value>
+    </property>
+    <property name="Path">
+      <Value>ASJ.xls</Value>
+    </property>
+    <property name="Country">
+      <Value>Afghanistan</Value>
+    </property>
+    <property name="guise">
+      <Value>master</Value>
+    </property>
+    <property name="IsPlayout">
+      <Value>false</Value>
+    </property>
+    <property name="evaluation_exiftool">
+      <Value><![CDATA[<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+
+<rdf:Description xmlns:et="http://ns.exiftool.ca/1.0/" xmlns:ExifTool="http://ns.exiftool.ca/ExifTool/1.0/" xmlns:System="http://ns.exiftool.ca/File/System/1.0/" xmlns:File="http://ns.exiftool.ca/File/1.0/" xmlns:HTML="http://ns.exiftool.ca/HTML/HTML/1.0/" xmlns:HTTP-equiv="http://ns.exiftool.ca/HTML/HTTP-equiv/1.0/" rdf:about="/media/yadn/input/20120724/500e6936e4b00e34ff5b6ebf/1343138974152/29605e73-954d-e787-0442-1fd9c54690d1.xls" et:toolkit="Image::ExifTool 8.93">
+ <ExifTool:ExifToolVersion>8.93</ExifTool:ExifToolVersion>
+ <System:FileName>29605e73-954d-e787-0442-1fd9c54690d1.xls</System:FileName>
+ <System:Directory>/media/yadn/input/20120724/500e6936e4b00e34ff5b6ebf/1343138974152</System:Directory>
+ <System:FileSize>27 kB</System:FileSize>
+ <System:FileModifyDate>2012:07:06 16:36:43+03:00</System:FileModifyDate>
+ <System:FilePermissions>rwxrwxrwx</System:FilePermissions>
+ <File:FileType>HTML</File:FileType>
+ <File:MIMEType>text/html</File:MIMEType>
+ <HTML:Title>ASJ</HTML:Title>
+ <HTTP-equiv:ContentType>application/vnd.ms-excel; charset=UTF-8</HTTP-equiv:ContentType>
+</rdf:Description>
+</rdf:RDF>]]></Value>
+    </property>
+    <property name="evaluation_MediaInfo">
+      <Value></Value>
+    </property>
+    <property name="evaluation_ffprobe">
+      <Value></Value>
+    </property>
+  </metadata>
+</UploadJobResponse>

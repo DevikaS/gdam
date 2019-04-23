@@ -1,0 +1,63 @@
+<TranscodeJobResponse xmlns:xs="http://adstream.com/xmlstream/" xs:id="58" ns0:type="TranscodeJobResponse" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:adstream:yadn">
+  <MessageID><![CDATA[1.1|akka://KV01V-A5DA502/user/head/fsobject|c822c444b2d4491b8f6d8e46#1]]></MessageID>
+  <Status>Completed</Status>
+  <FileID>0e6b4e0e-ccae-45f9-9cb4-a246010d895b</FileID>
+  <FileStorage>701c9931-5044-4e91-af1d-3358da7eb7a7</FileStorage>
+  <IsDefault>true</IsDefault>
+  <TranscodeFiles xs:id="59">
+    <TranscodeFile xs:id="60">
+      <FileID>c4416dc0-b4bf-4797-8a0f-a246010e7b9e</FileID>
+      <FileDirectory><![CDATA[/00000000-0000-0000-0000-000000000000/2013-09-27/c822c444b2d4491b8f6d8e46/7c897d47-f990-41b7-b3da-eb1d7bae9433]]></FileDirectory>
+      <FileName>7c897d47-f990-41b7-b3da-eb1d7bae9433_clapper.png</FileName>
+      <FileSize>17335</FileSize>
+      <SpecDBDocID>f1:image:Clapper:PNG:sourceSize:RGB</SpecDBDocID>
+      <properties>
+        <property name="a5_type" value="clapper" />
+        <property name="guise" value="preview" />
+        <property name="proxy_guise" value="true" />
+      </properties>
+    </TranscodeFile>
+    <TranscodeFile xs:id="61">
+      <FileID>265981ed-c4c9-4029-8fcf-a246010e7b9e</FileID>
+      <FileDirectory><![CDATA[/00000000-0000-0000-0000-000000000000/2013-09-27/c822c444b2d4491b8f6d8e46/7c897d47-f990-41b7-b3da-eb1d7bae9433]]></FileDirectory>
+      <FileName>7c897d47-f990-41b7-b3da-eb1d7bae9433_H264.mp4</FileName>
+      <FileSize>133316</FileSize>
+      <SpecDBDocID>f1:video:proxy:custom:fromUnspecifiedVideo:H264</SpecDBDocID>
+      <properties>
+        <property name="a5_type" value="video_proxy" />
+        <property name="guise" value="preview" />
+        <property name="proxy_guise" value="true" />
+        <property name="proxy_source_fps" value="10.0" />
+        <property name="proxy_source_width" value="134" />
+        <property name="proxy_source_height" value="100" />
+        <property name="proxy_fps" value="10.0" />
+        <property name="proxy_width" value="128" />
+        <property name="proxy_height" value="96" />
+      </properties>
+    </TranscodeFile>
+    <TranscodeFile xs:id="62">
+      <FileID>1d026ff6-2bcb-4a9d-87e6-a246010e7b9e</FileID>
+      <FileDirectory><![CDATA[/00000000-0000-0000-0000-000000000000/2013-09-27/c822c444b2d4491b8f6d8e46/7c897d47-f990-41b7-b3da-eb1d7bae9433]]></FileDirectory>
+      <FileName><![CDATA[7c897d47-f990-41b7-b3da-eb1d7bae9433_storyboard.png]]></FileName>
+      <FileSize>555025</FileSize>
+      <SpecDBDocID>f1:image:Storyboard:PNG:variableSize:RGB</SpecDBDocID>
+      <properties>
+        <property name="a5_type" value="storyboard" />
+        <property name="guise" value="preview" />
+        <property name="proxy_guise" value="true" />
+      </properties>
+    </TranscodeFile>
+    <TranscodeFile xs:id="63">
+      <FileID>d6571358-423c-4953-b5a5-a246010e7b9e</FileID>
+      <FileDirectory><![CDATA[/00000000-0000-0000-0000-000000000000/2013-09-27/c822c444b2d4491b8f6d8e46/7c897d47-f990-41b7-b3da-eb1d7bae9433]]></FileDirectory>
+      <FileName><![CDATA[7c897d47-f990-41b7-b3da-eb1d7bae9433_thumbnail.jpeg]]></FileName>
+      <FileSize>4823</FileSize>
+      <SpecDBDocID>f1:image:Thumbnail:JPEG:variableSize:RGB</SpecDBDocID>
+      <properties>
+        <property name="a5_type" value="thumbnail" />
+        <property name="guise" value="preview" />
+        <property name="proxy_guise" value="true" />
+      </properties>
+    </TranscodeFile>
+  </TranscodeFiles>
+</TranscodeJobResponse>

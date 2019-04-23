@@ -1,0 +1,911 @@
+{
+    "threadingTestTimeSeconds": 60,
+    "degradationTestTimeMinutes": 30,
+    "complexIterationTimeSeconds": 60,
+    "responseTimeLimitSeconds": 7,
+    "maxThread": 64,
+    "startWithIteration": 0,
+    "mongoDbHost": "10.64.128.10",
+    "mongoDbPort": 27017,
+    "elasticSearchHost": "10.64.129.10",
+    "elasticSearchPort": 9200,
+    "snapshotPath": "C:\\Work\\Downloads\\gdam",
+    "globalParams": {
+        "globalAdminLogin": "admin",
+        "globalAdminPassword": "abcdefghA1", //K33pKa1m09
+        "login": "admin1@perf.bu",  //test
+        "password": "abcdefghA1",
+        "useSSO": "true",
+        "filePath": "resources/logo.jpg",
+        "storageId": "52d3ec51e4b011bdb451d253"
+    },
+    "destinations": {
+        "core": {
+            "type": "CORE",
+            "url": "http://perfa5-elb-internal.adstream.com:8080/",
+            "paperPusherUrl": "http://perfa5-elb-internal-paper-pusher.adstream.com:7272"
+        },
+        "front": {
+            "type": "FRONT",
+            "url": "https://perfa5.adstream.com/",
+            "paperPusherUrl": "http://perfa5-elb-internal-paper-pusher.adstream.com:7272"
+        },
+        "nverge": {
+            "type": "NVERGE",
+            "url": "https://perfa5.adstream.com/",
+            "paperPusherUrl": "http://perfa5-elb-internal-paper-pusher.adstream.com:7272"
+        }
+    },
+    "tests": {
+        "DownloadFilePublicURL": {
+            "enabled": false,
+            "clearDatabase": false,
+            "threadGroups": {
+                "DownloadFilePublicURL": {
+                    "destination": "front",
+                    "testClass": "com.adstream.automate.babylon.performance.tests.DownloadFileByPublicURL",
+                    "params": {
+                        "waitDownload" : "false"
+                    }
+                }
+            }
+        },
+        "UpdateManyAssets" : {
+            "enabled": false,
+            "threadGroups": {
+                "UpdateManyAssets": {
+                    "destination": "front",
+                    "testClass": "com.adstream.automate.babylon.performance.tests.UpdateManyAssetsTest"
+                }
+            }
+        },
+        "UpdateManyAssetsBatchTest" : {
+            "enabled": false,
+            "threadGroups": {
+                "UpdateManyAssets": {
+                    "destination": "core",
+                    "useSSO": "false",
+                    "testClass": "com.adstream.automate.babylon.performance.tests.UpdateManyAssetsBatchTest"
+                }
+            }
+        },
+        "Login/Logout SSO": {
+            "enabled": false,
+            "clearDatabase": false,
+            "threadGroups": {
+                "Login/Logout SSO": {
+                    "destination": "front",
+                    "testClass": "com.adstream.automate.babylon.performance.tests.LoginLogoutSSOTest",
+                    "params": {
+                        "logout": "false"
+                    }
+                }
+            }
+        },
+        "Authentication": {
+            "enabled": true,
+            "clearDatabase": false,
+            "threadGroups": {
+                "Authentication": {
+                    "destination": "front",
+                    "testClass": "com.adstream.automate.babylon.performance.tests.AuthenticationTest"
+                }
+            }
+        },
+        "Get dictionaries": {
+            "enabled": false,
+            "threadGroups": {
+                "Get dictionaries": {
+                    "destination": "front",
+                    "testClass": "com.adstream.automate.babylon.performance.tests.GetDictionariesTest",
+                    "params": {
+                        "login": "admin",
+                        "password": "K33pKa1m09"
+                    }
+                }
+            }
+        },
+        "Create project": {
+            "enabled": false,
+            "clearDatabase": false,
+            "degradation": false,
+            "threadGroups": {
+                "Create project": {
+                    "destination": "front",
+                    "testClass": "com.adstream.automate.babylon.performance.tests.CreateProjectTest"
+                }
+            }
+        },
+        "Search projects": {
+            "enabled": false,
+            "threadGroups": {
+                "Search projects": {
+                    "destination": "front",
+                    "testClass": "com.adstream.automate.babylon.performance.tests.SearchProjectsTest",
+                    "params": {
+                        "projectsCount": "4000",
+                        "projectsOnPage": "10"
+                    }
+                }
+            }
+        },
+        "Update projects": {
+            "enabled": false,
+            "threadGroups": {
+                "Update projects": {
+                    "destination": "front",
+                    "testClass": "com.adstream.automate.babylon.performance.tests.UpdateProjectTest",
+                    "params": {
+                        "projectsCount": "4000"
+                    }
+                }
+            }
+        },
+        "Add user to project team": {
+            "enabled": false,
+            "threadGroups": {
+                "Add user to project team": {
+                    "destination": "front",
+                    "testClass": "com.adstream.automate.babylon.performance.tests.AddUserToProjectTeamTest",
+                    "params": {
+                        "usersCount": "1000",
+                        "projectsCount": "1000"
+                    }
+                }
+            }
+        },
+        "Get project team users": {
+            "enabled": false,
+            "threadGroups": {
+                "Get project team users": {
+                    "destination": "front",
+                    "testClass": "com.adstream.automate.babylon.performance.tests.GetProjectTeamTest",
+                    "params": {
+                        "usersCount": "1000",
+                        "projectsCount": "1000"
+                    }
+                }
+            }
+        },
+        "Remove user from project team": {
+            "enabled": false,
+            "threadGroups": {
+                "Remove user from project team": {
+                    "destination": "front",
+                    "testClass": "com.adstream.automate.babylon.performance.tests.RemoveUserFromProjectTeamTest",
+                    "params": {
+                        "usersCount": "1000",
+                        "projectsCount": "1000"
+                    }
+                }
+            }
+        },
+        "Clone and publish project": {
+            "enabled": false,
+            "volume": true,
+            "desiredNumOfIterations": 1,
+            "threadGroups": {
+                "Clone and publish project": {
+                    "destination": "core",
+                    "testClass": "com.adstream.automate.babylon.performance.tests.ProjectCloneAndPublishTest"
+                }
+            }
+        },
+        "Create folder": {
+            "enabled": false,
+            "degradation": false,
+            "threadGroups": {
+                "Create folder": {
+                    "destination": "front",
+                    "testClass": "com.adstream.automate.babylon.performance.tests.CreateFolderTest",
+                    "params": {
+                        "projectsCount": "4000"
+                    }
+                }
+            }
+        },
+        "Create file": {
+            "enabled": false,
+            "degradation": false,
+            "threadGroups": {
+                "Create file": {
+                    "destination": "front",
+                    "testClass": "com.adstream.automate.babylon.performance.tests.CreateFileTest",
+                    "params": {
+                        "projectsCount": "4000"
+                    }
+                }
+            }
+        },
+        "Update file": {
+            "enabled": false,
+            "threadGroups": {
+                "Create file": {
+                    "destination": "front",
+                    "testClass": "com.adstream.automate.babylon.performance.tests.UpdateFileTest",
+                    "params": {
+                        "projectsCount": "4000"
+                    }
+                }
+            }
+        },
+        "Open dashboard": {
+            "enabled": false,
+            "threadGroups": {
+                "Open dashboard": {
+                    "destination": "front",
+                    "testClass": "com.adstream.automate.babylon.performance.tests.OpenDashboardTest",
+                    "params": {
+                        "projectsCount": "1000",
+                        "assetsCount": "100",
+                        "collectionsCount": "20",
+                        "reelsCount": "100"
+                    }
+                }
+            }
+        },
+        "Create user": {
+            "enabled": false,
+            "clearDatabase": false,
+            "degradation": false,
+            "threadGroups": {
+                "Create user": {
+                    "destination": "front",
+                    "testClass": "com.adstream.automate.babylon.performance.tests.CreateUserTest"
+                }
+            }
+        },
+        "Search users": {
+            "enabled": false,
+            "threadGroups": {
+                "Search users": {
+                    "destination": "front",
+                    "testClass": "com.adstream.automate.babylon.performance.tests.SearchUsersTest",
+                    "params": {
+                        "usersCount": "10"
+                    }
+                }
+            }
+        },
+        "Update user": {
+            "enabled": false,
+            "threadGroups": {
+                "Update user": {
+                    "destination": "front",
+                    "testClass": "com.adstream.automate.babylon.performance.tests.UpdateUserTest",
+                    "params": {
+                        "usersCount": "10"
+                    }
+                }
+            }
+        },
+        "Global search": {
+            "enabled": false,
+            "clearDatabase": false,
+            "threadGroups": {
+                "Global search": {
+                    "destination": "front",
+                    "testClass": "com.adstream.automate.babylon.performance.tests.GlobalSearchTest",
+                    "params": {
+                        "usersCount": "1000",
+                        "projectsCount": "1000",
+                        "foldersInProject": "1",
+                        "filesInFolder": "1"
+                    }
+                }
+            }
+        },
+        "Create asset": {
+            "enabled": false,
+            "threadGroups": {
+                "Create asset": {
+                    "destination": "front",
+                    "testClass": "com.adstream.automate.babylon.performance.tests.CreateAssetTest"
+                }
+            }
+        },
+        "Update asset": {
+            "enabled": false,
+            "threadGroups": {
+                "Update asset": {
+                    "destination": "front",
+                    "testClass": "com.adstream.automate.babylon.performance.tests.UpdateAssetTest"
+                }
+            }
+        },
+        "Search asset": {
+            "enabled": false,
+            "threadGroups": {
+                "Search asset": {
+                    "destination": "front",
+                    "testClass": "com.adstream.automate.babylon.performance.tests.SearchAssetsTest",
+                    "params": {
+                        "assetsCount": "1000",
+                        "assetsOnPage": "10"
+                    }
+                }
+            }
+        },
+        "Create reel": {
+            "enabled": false,
+            "threadGroups": {
+                "Create reel": {
+                    "destination": "front",
+                    "testClass": "com.adstream.automate.babylon.performance.tests.CreatePresentationTest"
+                }
+            }
+        },
+        "Create reel with assets - 25": {
+            "enabled": false,
+            "threadGroups": {
+                "Create reel": {
+                    "destination": "front",
+                    "testClass": "com.adstream.automate.babylon.performance.tests.CreateReelWithAssetsTest",
+                    "params": {
+                        "assetsCount": "25"
+                    }
+                }
+            }
+        },
+        "Create reel with assets - 300": {
+            "enabled": false,
+            "threadGroups": {
+                "Create reel": {
+                    "destination": "front",
+                    "testClass": "com.adstream.automate.babylon.performance.tests.CreateReelWithAssetsTest",
+                    "params": {
+                        "assetsCount": "300"
+                    }
+                }
+            }
+        },
+        "Search reel": {
+            "enabled": false,
+            "threadGroups": {
+                "Search reel": {
+                    "destination": "front",
+                    "testClass": "com.adstream.automate.babylon.performance.tests.SearchPresentationTest",
+                    "params": {
+                        "reelsCount": "100"
+                    }
+                }
+            }
+        },
+        "Update reel": {
+            "enabled": false,
+            "threadGroups": {
+                "Update reel": {
+                    "destination": "front",
+                    "testClass": "com.adstream.automate.babylon.performance.tests.UpdatePresentationTest"
+                }
+            }
+        },
+        "Add one asset to new collection": {
+            "enabled": false,
+            "clearDatabase": false,
+            "threadGroups": {
+                "Add one asset to new collection": {
+                    "destination": "front",
+                    "testClass": "com.adstream.automate.babylon.performance.tests.AddAssetsToNewCollectionTest",
+                    "params": {
+                        "assetsToAdd": "1"
+                    }
+                }
+            }
+        },
+        "Add few assets to new collection": {
+            "enabled": false,
+            "clearDatabase": false,
+            "threadGroups": {
+                "Add few assets to new collection": {
+                    "destination": "front",
+                    "testClass": "com.adstream.automate.babylon.performance.tests.AddAssetsToNewCollectionTest",
+                    "params": {
+                        "assetsToAdd": "5"
+                    }
+                }
+            }
+        },
+        "Add one asset to existing collections": {
+            "enabled": false,
+            "clearDatabase": false,
+            "threadGroups": {
+                "Add one asset to existing collections": {
+                    "destination": "front",
+                    "testClass": "com.adstream.automate.babylon.performance.tests.AddAssetsToExistingCollectionTest",
+                    "params": {
+                        "rootCollectionsCount": "50",
+                        "childCollectionLevels": "0",
+                        "assetsToAdd": "1"
+                    }
+                }
+            }
+        },
+        "Add few assets to existing collections": {
+            "enabled": false,
+            "clearDatabase": false,
+            "threadGroups": {
+                "Add few assets to existing collections": {
+                    "destination": "front",
+                    "testClass": "com.adstream.automate.babylon.performance.tests.AddAssetsToExistingCollectionTest",
+                    "params": {
+                        "rootCollectionsCount": "50",
+                        "childCollectionLevels": "0",
+                        "assetsToAdd": "5"
+                    }
+                }
+            }
+        },
+        "Add one asset to existing child collections": {
+            "enabled": false,
+            "clearDatabase": false,
+            "threadGroups": {
+                "Add one asset to existing child collections": {
+                    "destination": "front",
+                    "testClass": "com.adstream.automate.babylon.performance.tests.AddAssetsToExistingCollectionTest",
+                    "params": {
+                        "rootCollectionsCount": "50",
+                        "childCollectionLevels": "3",
+                        "assetsToAdd": "1"
+                    }
+                }
+            }
+        },
+        "Add few assets to existing child collections": {
+            "enabled": false,
+            "clearDatabase": false,
+            "threadGroups": {
+                "Add few assets to existing child collections": {
+                    "destination": "front",
+                    "testClass": "com.adstream.automate.babylon.performance.tests.AddAssetsToExistingCollectionTest",
+                    "params": {
+                        "rootCollectionsCount": "50",
+                        "childCollectionLevels": "3",
+                        "assetsToAdd": "5"
+                    }
+                }
+            }
+        },
+        "Add project owner": {
+            "enabled": false,
+            "clearDatabase": false,
+            "threadGroups": {
+                "Add project owner": {
+                    "destination": "front",
+                    "testClass": "com.adstream.automate.babylon.performance.tests.AddProjectOwnerTest",
+                    "params": {
+                        "usersCount": "1000",
+                        "projectsCount": "1000",
+                        "foldersInProject": "1",
+                        "filesInFolder": "0"
+                    }
+                }
+            }
+        },
+        "Remove project owner": {
+            "enabled": false,
+            "clearDatabase": false,
+            "threadGroups": {
+                "Remove project owner": {
+                    "destination": "front",
+                    "testClass": "com.adstream.automate.babylon.performance.tests.RemoveProjectOwnerTest",
+                    "params": {
+                        "usersCount": "1000",
+                        "projectsCount": "1000",
+                        "foldersInProject": "1",
+                        "filesInFolder": "0"
+                    }
+                }
+            }
+        },
+        "Share project to public team": {
+            "enabled": false,
+            "clearDatabase": false,
+            "threadGroups": {
+                "Share project to public team": {
+                    "destination": "front",
+                    "testClass": "com.adstream.automate.babylon.performance.tests.AddAgencyTeamToProjectTeamTest",
+                    "params": {
+                        "usersCount": "1000",
+                        "usersPerTeam": "10",
+                        "projectsCount": "1000",
+                        "foldersInProject": "1",
+                        "filesInFolder": "0"
+                    }
+                }
+            }
+        },
+        "Share category to user": {
+            "enabled": false,
+            "clearDatabase": false,
+            "threadGroups": {
+                "Share category to user": {
+                    "destination": "front",
+                    "testClass": "com.adstream.automate.babylon.performance.tests.AddUserToCategoryTest",
+                    "params": {
+                        "usersCount": "1000",
+                        "categoriesCount": "100"
+                    }
+                }
+            }
+        },
+        "Remove user from category": {
+            "enabled": false,
+            "clearDatabase": false,
+            "threadGroups": {
+                "Remove user from category": {
+                    "destination": "front",
+                    "testClass": "com.adstream.automate.babylon.performance.tests.RemoveUserFromCategoryTest",
+                    "params": {
+                        "usersCount": "1000",
+                        "categoriesCount": "100"
+                    }
+                }
+            }
+        },
+        "Share category to library team": {
+            "enabled": false,
+            "clearDatabase": false,
+            "threadGroups": {
+                "Share category to library team": {
+                    "destination": "front",
+                    "testClass": "com.adstream.automate.babylon.performance.tests.AddLibraryTeamToCategoryTest",
+                    "params": {
+                        "usersCount": "1000",
+                        "usersPerTeam": "10",
+                        "categoriesCount": "100"
+                    }
+                }
+            }
+        },
+        "Remove library team from category": {
+            "enabled": false,
+            "clearDatabase": false,
+            "threadGroups": {
+                "Remove library team from category": {
+                    "destination": "front",
+                    "testClass": "com.adstream.automate.babylon.performance.tests.RemoveLibraryTeamFromCategoryTest",
+                    "params": {
+                        "usersCount": "1000",
+                        "usersPerTeam": "10",
+                        "categoriesCount": "100"
+                    }
+                }
+            }
+        },
+        "Update user role in huge agency": {
+            "enabled": false,
+            "clearDatabase": false,
+            "threadGroups": {
+                "Update user role": {
+                    "destination": "core",
+                    "testClass": "com.adstream.automate.babylon.performance.tests.UpdateUserRoleTest",
+                    "params": {
+                        "useSSO": "false",
+                        "agencyAdminLogin": "a5wbadmin@adstream.com"
+                    }
+                }
+            }
+        },
+        "Create, update, search users": {
+            "enabled": false,
+            "complex": true,
+            "clearDatabase": false,
+            "threadGroups": {
+                "Create user": {
+                    "destination": "front",
+                    "testClass": "com.adstream.automate.babylon.performance.tests.CreateUserTest",
+                    "weight": 1
+                },
+                "Update user": {
+                    "destination": "front",
+                    "testClass": "com.adstream.automate.babylon.performance.tests.UpdateUserTest",
+                    "weight": 10,
+                    "params": {
+                        "usersCount": "10"
+                    }
+                },
+                "Search users": {
+                    "destination": "front",
+                    "testClass": "com.adstream.automate.babylon.performance.tests.SearchUsersTest",
+                    "weight": 100,
+                    "params": {
+                        "usersCount": "10"
+                    }
+                }
+            }
+        },
+        "Create, update, search projects": {
+            "enabled": false,
+            "complex": true,
+            "clearDatabase": false,
+            "threadGroups": {
+                "Create project": {
+                    "destination": "front",
+                    "testClass": "com.adstream.automate.babylon.performance.tests.CreateProjectTest",
+                    "weight": 1
+                },
+                "Update project": {
+                    "destination": "front",
+                    "testClass": "com.adstream.automate.babylon.performance.tests.UpdateProjectTest",
+                    "weight": 10,
+                    "params": {
+                        "projectsCount": "1000"
+                    }
+                },
+                "Search projects": {
+                    "destination": "front",
+                    "testClass": "com.adstream.automate.babylon.performance.tests.SearchProjectsTest",
+                    "weight": 100,
+                    "params": {
+                        "projectsCount": "1000"
+                    }
+                }
+            }
+        },
+        "Add approval": {
+            "enabled": false,
+            "threadGroups": {
+                "Add approval": {
+                    "destination": "front",
+                    "testClass": "com.adstream.automate.babylon.performance.tests.CreateApprovalTest"
+                }
+            }
+        },
+        "Find approvals": {
+            "enabled": false,
+            "threadGroups": {
+                "Find approvals": {
+                    "destination": "front",
+                    "testClass": "com.adstream.automate.babylon.performance.tests.FindApprovalsTest"
+                }
+            }
+        },
+        "Get approval": {
+            "enabled": false,
+            "threadGroups": {
+                "Get approval": {
+                    "destination": "front",
+                    "testClass": "com.adstream.automate.babylon.performance.tests.GetApprovalTest"
+                }
+            }
+        },
+        "Submit status approval": {
+            "enabled": false,
+            "threadGroups": {
+                "Submit status approval": {
+                    "destination": "front",
+                    "testClass": "com.adstream.automate.babylon.performance.tests.SubmitApprovalTest"
+                }
+            }
+        },
+        "Agency count": {
+            "enabled": false,
+            "volume": true,
+            "desiredNumOfIterations": 200,
+            "threadGroups": {
+                "Agency count": {
+                    "destination": "core",
+                    "testClass": "com.adstream.automate.babylon.performance.tests.AgencyCountTest",
+                    "params": {
+                        "ImageAssetFilePath": "C:/Work/Downloads/find.jpg",
+                        "login": "admin",
+                        "password": "1",
+                        "useSSO": "false",
+                        "storageId": "5b1ad2af-3f8f-4557-9841-d6440df3648c"
+                    }
+                }
+            }
+        },
+        "Typical Agency setup": {
+            "enabled": false,
+            "volume": true,
+            "desiredNumOfIterations": 200,
+            "threadGroups": {
+                "Agency count": {
+                    "destination": "core",
+                    "testClass": "com.adstream.automate.babylon.performance.tests.VolumeTestForStandartAgencyLibraryScenario",
+                    "params": {
+                        "login": "admin",
+                        "password": "1",
+                        "useSSO": "false",
+                        "storageId": "5b1ad2af-3f8f-4557-9841-d6440df3648c"
+                    }
+                }
+            }
+        },
+        "Find assets with permissions": {
+            "enabled": false,
+            "volume": true,
+            "desiredNumOfIterations": 5,
+            "threadGroups": {
+                "Find categories deep": {
+                    "destination": "core",
+                    "testClass": "com.adstream.automate.babylon.performance.tests.AssetSearchWithPermissionsVolumeTest",
+                    "params": {
+                        "login": "admin",
+                        "password": "abcdefghA1",
+                        "useSSO": "false",
+                        "ImageAssetFilePath": "resources/logo.jpg",
+                        "assetCount": 100
+                    }
+                }
+            }
+        },
+        "Create projects access rule": {
+            "enabled": false,
+            "clearDatabase": false,
+            "degradation": false,
+            "threadGroups": {
+                "Create projects access rule": {
+                    "destination": "front",
+                    "testClass": "com.adstream.automate.babylon.performance.tests.CreateProjectsAccessRulesTest",
+                    "params": {
+                        "login": "admin",
+                        "password": "abcdefghA1",
+                        "usersCount": "1000",
+                        "projectsCount": "100",
+                        "advertisersCount": "10",
+                        "brandsCount": "7",
+                        "subBrandsCount": "5",
+                        "productsCount": "3"
+                    }
+                }
+            }
+        },
+        "Update projects access rule": {
+            "enabled": false,
+            "clearDatabase": false,
+            "degradation": false,
+            "threadGroups": {
+                "Update projects access rule": {
+                    "destination": "front",
+                    "testClass": "com.adstream.automate.babylon.performance.tests.UpdateProjectsAccessRulesTest",
+                    "params": {
+                        "login": "admin",
+                        "password": "abcdefghA1",
+                        "usersCount": "5",
+                        "projectsCount": "5",
+                        "advertisersCount": "10",
+                        "brandsCount": "7",
+                        "subBrandsCount": "5",
+                        "productsCount": "3"
+                    }
+                }
+            }
+        },
+        "Batch update project elements": {
+            "enabled": false,
+            "volume": true,
+            "desiredNumOfIterations": 10,
+            "threadGroups": {
+                "Batch update project elements": {
+                    "destination": "core",
+                    "testClass": "com.adstream.automate.babylon.performance.tests.BatchUpdateElementsTest",
+                    "params": {
+                        "login": "a5-agencyadmin-2@test.com",
+                        "password": "abcdefghA1",
+                        "useSSO": "false",
+                        "ImageAssetFilePath": "resources/logo.jpg"
+                    }
+                }
+            }
+        },
+        "Save as draft Order": {
+            "enabled": false,
+            "threadingDelay": 60000,
+            "threadingTestTimeSeconds" : 180,
+            "responseTimeLimitSeconds": 30,
+            "threadGroups": {
+                "Save as draft Order": {
+                    "destination": "front",
+                    "testClass": "com.adstream.automate.babylon.performance.tests.ordering.SaveAsDraftOrderTest",
+                    "params": {
+                        "login": "admin",
+                        "password": "abcdefghA1",
+                        "orderType": "tv_order",
+                        "orderItemType": "tv_order_item",
+                        "orderItemsCount": 10,
+                        "broadcastDestinationsCount": 10,
+                        "market": "Brazil"
+                    }
+                }
+            }
+        },
+        "Search Orders": {
+            "enabled": false,
+            "threadingDelay": 10000,
+            "threadGroups": {
+                "Search Orders": {
+                    "destination": "front",
+                    "testClass": "com.adstream.automate.babylon.performance.tests.ordering.SearchOrdersTest",
+                    "params": {
+                        "login": "admin",
+                        "password": "abcdefghA1",
+                        "ordersStatus": "draft",
+                        "orderType": "tv_order",
+                        "orderItemType": "tv_order_item",
+                        "filterCriteria": "clock number",
+                        "ordersCount": 100,
+                        "orderItemsCount": 10,
+                        "broadcastDestinationsCount": 1,
+                        "market": "Brazil"
+                    }
+                }
+            }
+        },
+        "Complete Order": {
+            "enabled": false,
+            "threadingDelay": 60000,
+            "threadingTestTimeSeconds" : 60,
+            "responseTimeLimitSeconds": 30,
+            "threadGroups": {
+                "Complete Order": {
+                    "destination": "front",
+                    "testClass": "com.adstream.automate.babylon.performance.tests.ordering.CompleteOrderTest",
+                    "params": {
+                        "login": "admin",
+                        "password": "abcdefghA1",
+                        "orderType": "tv_order",
+                        "orderItemType": "tv_order_item",
+                        "orderItemsCount": 2,
+                        "broadcastDestinationsCount": 10,
+                        "market": "Brazil"
+                    }
+                }
+            }
+        },
+        "Volume Destinations While Completing Order": {
+            "enabled": false,
+            "threadingDelay": 10000,
+            "threadGroups": {
+                "Volume Destinations While Completing Order": {
+                    "destination": "front",
+                    "testClass": "com.adstream.automate.babylon.performance.tests.ordering.VolumeDestinationsWhileCompletingOrderTest",
+                    "params": {
+                        "login": "admin",
+                        "password": "abcdefghA1",
+                        "orderType": "tv_order",
+                        "orderItemType": "tv_order_item",
+                        "orderItemsCount": 1,
+                        "broadcastDestinationsCount": 500,
+                        "market": "USA Comcast"
+                    }
+                }
+            }
+        },
+        "Get Price Order Test": {
+            "enabled": false,
+            "threadingDelay": 10000,
+            "threadGroups": {
+                "Get Price Order Test": {
+                    "destination": "core",
+                    "testClass": "com.adstream.automate.babylon.performance.tests.ordering.GetPriceOrderTest",
+                    "params": {
+                        "clocksCount": 1,
+                        "clockDestinationsCount": 1,
+                        "isMultiCountry": false,
+                        "sapServiceId": "SSUB00001"
+                    }
+                }
+            }
+        },
+        "Bill Order Test": {
+            "enabled": false,
+            "threadingDelay": 10000,
+            "threadGroups": {
+                "Bill Order Test": {
+                    "destination": "core",
+                    "testClass": "com.adstream.automate.babylon.performance.tests.ordering.BillOrderTest",
+                    "params": {
+                        "clocksCount": 1,
+                        "clockDestinationsCount": 1,
+                        "catalogueItemsCount": 4,
+                        "isMultiCountry": false,
+                        "sapServiceId": "SSUB00001"
+                    }
+                }
+            }
+        }
+    }
+}

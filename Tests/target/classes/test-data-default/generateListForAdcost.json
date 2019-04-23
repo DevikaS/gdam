@@ -1,0 +1,165 @@
+{
+  "AddUsersToPrimeAgency": [
+    {
+      "User": "CostOwner",
+      "Role": "agency.user"
+    },
+    {
+      "User": "CycloneCostOwner",
+      "Role": "agency.user"
+    }
+  ],
+  "AssignUserRolesInCostModule": [
+    {
+      "User": "CostOwner",
+      "Role": "Agency Admin"
+    },
+    {
+      "User": "AgencyOwner",
+      "Role": "Agency Owner"
+    },
+    {
+      "User": "IPMuser",
+      "Role": "Integrated Production Manager"
+    },
+    {
+      "User": "AnotherIPMuser",
+      "Role": "Integrated Production Manager"
+    },
+    {
+      "User": "FinanceManager",
+      "Role": "Finance Manager"
+    },
+    {
+      "User": "PurchasingSupport",
+      "Role": "Purchasing Support"
+    },
+    {
+      "User": "InsuranceUser",
+      "Role": "Insurance User"
+    },
+    {
+      "User": "BrandManagementApprover",
+      "Role": "Brand Manager"
+    },
+    {
+      "User": "CostConsultant",
+      "Role": "Cost Consultant"
+    },
+    {
+      "User": "GovernanceManager",
+      "Role": "Governance Manager"
+    },
+    {
+      "User": "CycloneCostOwner",
+      "Role": "Agency Admin"
+    }
+  ],
+  "DeleteExistingCatalogueStructure": [
+    {
+      "FieldType": "catalogueStructure",
+      "Description": "Brand",
+      "Parent": "",
+      "Deleted": true,
+      "Validate": false
+    },
+    {
+      "FieldType": "catalogueStructure",
+      "Description": "Sub Brand",
+      "Parent": "",
+      "Deleted": true,
+      "Validate": false
+    },
+    {
+      "FieldType": "catalogueStructure",
+      "Description": "Product",
+      "Parent": "",
+      "Deleted": true,
+      "Validate": false
+    }
+  ],
+  "CreateNewCatalogueStructure": [
+    {
+      "FieldType": "catalogueStructure",
+      "Description": "Sector",
+      "Parent": "Advertiser"
+    },
+    {
+      "FieldType": "catalogueStructure",
+      "Description": "Brand",
+      "Parent": "Sector"
+    }
+  ],
+  "MarkAsFields": {
+    "MarkasAdvertiser": "Advertiser",
+    "MarkAsSector": "Sector",
+    "Brand_CostModule": "Mark as Brand"
+  },
+  "CatalogueStructureValues": [
+    {
+      "FieldName": "Advertiser",
+      "FieldChoice": "DefaultAdv",
+      "CustomCharacters": "NEWADV1"
+    },
+    {
+      "FieldName": "Sector",
+      "FieldChoice": "DefaultSector",
+      "CustomCharacters": "1Sec"
+    },
+    {
+      "FieldName": "Brand",
+      "FieldChoice": "DefaultBrand",
+      "CustomCharacters": "1ADC"
+    }
+  ],
+  "DefaultProjectForCostModule": [
+    {
+      "AgencyName": "DefaultAgency",
+      "User": "CostOwner",
+      "ProjectName": "DefaultCostProject",
+      "Advertiser": "DefaultAdv",
+      "Sector": "DefaultSector",
+      "Brand": "DefaultBrand"
+    },
+    {
+      "AgencyName": "DefaultAgency",
+      "User": "CycloneCostOwner",
+      "ProjectName": "DefaultCycloneCostProject",
+      "Advertiser": "DefaultAdv",
+      "Sector": "DefaultSector",
+      "Brand": "DefaultBrand"
+    }
+  ],
+  "DictionaryValuesInCostModule": [
+    {
+      "User": "GovernanceManager",
+      "DictionaryName": "Campaign",
+      "DictionaryKey": "DefaultCampaign",
+      "dictionaryValue": "DefaultCampaign"
+    }
+  ],
+  "CreateDefaultVendor": [
+    {
+      "User": "GovernanceManager",
+      "DefaultName": "GlobalDefaultVendor",
+      "CategoryCompanyList": [
+        "AudioMusicCompany",
+        "CGICompany",
+        "DigitalDevelopmentCompany",
+        "PostProductionCompany",
+        "ProductionCompany",
+        "RetouchingCompany",
+        "TalentCompany",
+        "MusicCompany",
+        "PhotographyCompany",
+        "CastingCompany"
+      ]
+    }
+  ],
+  "CreateCustomCodeForCostModule": {
+    "CustomCodeName": "ProjectId",
+    "SequentialNumber": "4",
+    "FreeText": "PGU",
+    "Enabled": "should"
+  }
+}

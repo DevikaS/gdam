@@ -1,0 +1,63 @@
+<UploadJobResponse xmlns:xs="http://adstream.com/xmlstream/" xs:id="46" ns0:type="UploadJobResponse" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:adstream:yadn">
+  <MessageID><![CDATA[1.1|akka://KV01V-A5DA502/user/head/fsobject|edbe6f6dd84a420c842250e5#1]]></MessageID>
+  <Status>UploadedToStorage</Status>
+  <FileID>afde79a1-5ffb-4425-9465-a246010d8261</FileID>
+  <FileName>2fafd1b5-03d1-4400-bdad-a6a4307f19ef.gif</FileName>
+  <FileDirectory><![CDATA[\00000000-0000-0000-0000-000000000000\2013-09-27\edbe6f6dd84a420c842250e5\]]></FileDirectory>
+  <FileSize>4494</FileSize>
+  <MD5>e1b0f20ae753036c26a3fa522ab3295a</MD5>
+  <CRC>        </CRC>
+  <Node>adstream.yadn.nodes.outpost-a5-auto</Node>
+  <SpecDBDocID>f2:image:unspecified:gif</SpecDBDocID>
+  <metadata>
+    <property name="isPlayout">
+      <Value>false</Value>
+    </property>
+    <property name="ElementID">
+      <Value>edbe6f6dd84a420c842250e5</Value>
+    </property>
+    <property name="Path">
+      <Value>file2_.gif</Value>
+    </property>
+    <property name="Country">
+      <Value>AF</Value>
+    </property>
+    <property name="guise">
+      <Value>master</Value>
+    </property>
+    <property name="IsPlayout">
+      <Value>false</Value>
+    </property>
+    <property name="evaluation_exiftool">
+      <Value><![CDATA[<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+
+<rdf:Description xmlns:et="http://ns.exiftool.ca/1.0/" xmlns:ExifTool="http://ns.exiftool.ca/ExifTool/1.0/" xmlns:System="http://ns.exiftool.ca/File/System/1.0/" xmlns:File="http://ns.exiftool.ca/File/1.0/" xmlns:GIF="http://ns.exiftool.ca/GIF/GIF/1.0/" rdf:about="/media/yadn/input/20130927/509dc6f9cc63477fac2722b6/1380288060252/ca3e9143-dd2e-42fd-9de9-5844a70f2da7.gif" et:toolkit="Image::ExifTool 8.93">
+ <ExifTool:ExifToolVersion>8.93</ExifTool:ExifToolVersion>
+ <System:FileName>ca3e9143-dd2e-42fd-9de9-5844a70f2da7.gif</System:FileName>
+ <System:Directory>/media/yadn/input/20130927/509dc6f9cc63477fac2722b6/1380288060252</System:Directory>
+ <System:FileSize>4.4 kB</System:FileSize>
+ <System:FileModifyDate>2012:11:21 15:54:02+02:00</System:FileModifyDate>
+ <System:FilePermissions>rwxrwxrwx</System:FilePermissions>
+ <System:FileName>ca3e9143-dd2e-42fd-9de9-5844a70f2da7.gif</System:FileName>
+ <System:Directory>/media/yadn/input/20130927/509dc6f9cc63477fac2722b6/1380288060252</System:Directory>
+ <System:FileSize>4.4 kB</System:FileSize>
+ <System:FileModifyDate>2012:11:21 15:54:02+02:00</System:FileModifyDate>
+ <System:FilePermissions>rwxrwxrwx</System:FilePermissions>
+ <File:FileType>GIF</File:FileType>
+ <File:MIMEType>image/gif</File:MIMEType>
+ <GIF:ImageWidth>64</GIF:ImageWidth>
+ <GIF:ImageHeight>64</GIF:ImageHeight>
+</rdf:Description>
+</rdf:RDF>]]></Value>
+    </property>
+    <property name="evaluation_MediaInfo">
+      <Value></Value>
+    </property>
+    <property name="evaluation_ffprobe">
+      <Value></Value>
+    </property>
+    <property name="evaluation_pdfdimensions">
+      <Value></Value>
+    </property>
+  </metadata>
+</UploadJobResponse>

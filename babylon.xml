@@ -1,0 +1,587 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="babylon_trunk" default="init">
+
+    <!-- Uncomment the following property if no tests compilation is needed -->
+    <!--
+   <property name="skip.tests" value="true"/>
+    -->
+
+    <!-- Compiler options -->
+
+    <property name="compiler.debug" value="on"/>
+    <property name="compiler.generate.no.warnings" value="off"/>
+    <property name="compiler.args" value=""/>
+    <property name="compiler.max.memory" value="128m"/>
+    <patternset id="ignored.files">
+        <exclude name="**/CVS/**"/>
+        <exclude name="**/SCCS/**"/>
+        <exclude name="**/RCS/**"/>
+        <exclude name="**/.DS_Store/**"/>
+        <exclude name="**/.svn/**"/>
+        <exclude name="**/.pyc/**"/>
+        <exclude name="**/.pyo/**"/>
+        <exclude name="**/*.pyc/**"/>
+        <exclude name="**/*.pyo/**"/>
+        <exclude name="**/.git/**"/>
+        <exclude name="**/*.hprof/**"/>
+        <exclude name="**/_svn/**"/>
+        <exclude name="**/.hg/**"/>
+        <exclude name="**/*.lib/**"/>
+        <exclude name="**/*~/**"/>
+        <exclude name="**/__pycache__/**"/>
+        <exclude name="**/.bundle/**"/>
+        <exclude name="**/*.rbc/**"/>
+    </patternset>
+    <patternset id="library.patterns">
+        <include name="*.zip"/>
+        <include name="*.apk"/>
+        <include name="*.war"/>
+        <include name="*.egg"/>
+        <include name="*.ear"/>
+        <include name="*.swc"/>
+        <include name="*.jar"/>
+    </patternset>
+    <patternset id="compiler.resources">
+        <include name="**/?*.properties"/>
+        <include name="**/?*.xml"/>
+        <include name="**/?*.gif"/>
+        <include name="**/?*.png"/>
+        <include name="**/?*.jpeg"/>
+        <include name="**/?*.jpg"/>
+        <include name="**/?*.html"/>
+        <include name="**/?*.dtd"/>
+        <include name="**/?*.tld"/>
+        <include name="**/?*.ftl"/>
+    </patternset>
+
+
+    <!-- Project Libraries -->
+
+    <path id="library.compile.classpath">
+        <fileset dir="${basedir}/Tests/lib">
+            <patternset refid="library.patterns"/>
+        </fileset>
+        <pathelement location="${basedir}/Tests/resources"/>
+        <fileset dir="${basedir}/ExtendedWebDriver/lib">
+            <patternset refid="library.patterns"/>
+        </fileset>
+        <fileset dir="${basedir}/Utils/lib">
+            <patternset refid="library.patterns"/>
+        </fileset>
+        <fileset dir="${basedir}/Core/lib">
+            <patternset refid="library.patterns"/>
+        </fileset>
+    </path>
+
+    <!-- Modules -->
+    <!-- Module Utils -->
+
+    <dirname property="module.utils.basedir" file="${ant.file}"/>
+
+
+    <property name="compiler.args.utils" value="${compiler.args}"/>
+
+    <property name="utils.output.dir" value="${module.utils.basedir}/out/Utils"/>
+
+    <path id="utils.module.bootclasspath">
+        <!-- Paths to be included in compilation bootclasspath -->
+    </path>
+
+    <path id="utils.module.classpath">
+        <path refid="library.compile.classpath"/>
+    </path>
+
+    <path id="utils.runtime.module.classpath">
+        <pathelement location="${utils.output.dir}"/>
+        <path refid="library.compile.classpath"/>
+    </path>
+
+    <path id="utils.module.classpath">
+        <pathelement location="${utils.output.dir}"/>
+        <path refid="library.compile.classpath"/>
+    </path>
+
+    <path id="utils.runtime.module.classpath">
+        <pathelement location="${utils.output.dir}"/>
+        <path refid="library.compile.classpath"/>
+    </path>
+
+
+    <patternset id="excluded.from.module.utils">
+        <patternset refid="ignored.files"/>
+    </patternset>
+
+    <patternset id="excluded.from.compilation.utils">
+        <patternset refid="excluded.from.module.utils"/>
+    </patternset>
+
+    <path id="utils.module.sourcepath">
+        <dirset dir="${module.utils.basedir}/Utils">
+            <include name="src"/>
+        </dirset>
+    </path>
+
+
+    <target name="compile.module.utils" description="Compile module Utils;  classes">
+        <mkdir dir="${utils.output.dir}"/>
+        <javac destdir="${utils.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}"
+               memorymaximumsize="${compiler.max.memory}" fork="true" encoding="UTF-8">
+            <compilerarg line="${compiler.args.utils}"/>
+            <bootclasspath refid="utils.module.bootclasspath"/>
+            <classpath refid="utils.module.classpath"/>
+            <src refid="utils.module.sourcepath"/>
+            <patternset refid="excluded.from.compilation.utils"/>
+        </javac>
+
+        <copy todir="${utils.output.dir}">
+            <fileset dir="${module.utils.basedir}/Utils/src">
+                <patternset refid="compiler.resources"/>
+                <type type="file"/>
+            </fileset>
+        </copy>
+    </target>
+
+    <target name="clean.module.utils" description="cleanup module">
+        <delete dir="${utils.output.dir}"/>
+    </target>
+
+
+    <!-- Module A4WSDomainApi -->
+
+    <dirname property="module.a4wsdomainapi.basedir" file="${ant.file}"/>
+
+
+
+    <property name="compiler.args.a4wsdomainapi" value="${compiler.args}"/>
+
+    <property name="a4wsdomainapi.output.dir" value="${module.a4wsdomainapi.basedir}/out/A4WSDomainApi"/>
+
+    <path id="a4wsdomainapi.module.bootclasspath">
+        <!-- Paths to be included in compilation bootclasspath -->
+    </path>
+
+    <path id="a4wsdomainapi.module.production.classpath">
+        <pathelement location="${utils.output.dir}"/>
+    </path>
+
+    <path id="a4wsdomainapi.runtime.production.module.classpath">
+        <pathelement location="${a4wsdomainapi.output.dir}"/>
+    </path>
+
+    <path id="a4wsdomainapi.module.classpath">
+        <pathelement location="${a4wsdomainapi.output.dir}"/>
+        <pathelement location="${utils.output.dir}"/>
+    </path>
+
+    <path id="a4wsdomainapi.runtime.module.classpath">
+        <pathelement location="${a4wsdomainapi.output.dir}"/>
+        <path refid="utils.runtime.module.classpath"/>
+    </path>
+
+
+    <patternset id="excluded.from.module.a4wsdomainapi">
+        <patternset refid="ignored.files"/>
+    </patternset>
+
+    <patternset id="excluded.from.compilation.a4wsdomainapi">
+        <patternset refid="excluded.from.module.a4wsdomainapi"/>
+    </patternset>
+
+    <path id="a4wsdomainapi.module.sourcepath">
+        <dirset dir="${module.a4wsdomainapi.basedir}/A4WSDomainApi">
+            <include name="src"/>
+        </dirset>
+    </path>
+
+
+    <target name="compile.module.a4wsdomainapi" depends="compile.module.utils" description="Compile module A4WSDomainApi; production classes">
+        <mkdir dir="${a4wsdomainapi.output.dir}"/>
+        <javac destdir="${a4wsdomainapi.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true">
+            <compilerarg line="${compiler.args.a4wsdomainapi}"/>
+            <bootclasspath refid="a4wsdomainapi.module.bootclasspath"/>
+            <classpath refid="a4wsdomainapi.module.production.classpath"/>
+            <src refid="a4wsdomainapi.module.sourcepath"/>
+            <patternset refid="excluded.from.compilation.a4wsdomainapi"/>
+        </javac>
+
+        <copy todir="${a4wsdomainapi.output.dir}">
+            <fileset dir="${module.a4wsdomainapi.basedir}/A4WSDomainApi/src">
+                <patternset refid="compiler.resources"/>
+                <type type="file"/>
+            </fileset>
+        </copy>
+    </target>
+
+    <target name="clean.module.a4wsdomainapi" description="cleanup module">
+        <delete dir="${a4wsdomainapi.output.dir}"/>
+    </target>
+
+
+    <!-- Module Core -->
+
+    <dirname property="module.core.basedir" file="${ant.file}"/>
+
+    <property name="compiler.args.core" value="${compiler.args}"/>
+
+    <property name="core.output.dir" value="${module.core.basedir}/out/Core"/>
+
+    <path id="core.module.bootclasspath">
+        <!-- Paths to be included in compilation bootclasspath -->
+    </path>
+
+    <path id="core.module.classpath">
+        <pathelement location="${core.output.dir}"/>
+        <pathelement location="${utils.output.dir}"/>
+        <path refid="library.compile.classpath"/>
+    </path>
+
+    <path id="core.runtime.module.classpath">
+        <pathelement location="${core.output.dir}"/>
+        <path refid="library.compile.classpath"/>
+    </path>
+
+
+    <patternset id="excluded.from.module.core">
+        <patternset refid="ignored.files"/>
+    </patternset>
+
+    <patternset id="excluded.from.compilation.core">
+        <patternset refid="excluded.from.module.core"/>
+    </patternset>
+
+    <path id="core.module.sourcepath">
+        <dirset dir="${module.core.basedir}/Core">
+            <include name="src"/>
+        </dirset>
+    </path>
+
+    <target name="compile.module.core" description="Compile module Core; production classes"
+            depends="compile.module.utils">
+        <mkdir dir="${core.output.dir}"/>
+        <javac destdir="${core.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}"
+               memorymaximumsize="${compiler.max.memory}" fork="true" encoding="UTF-8">
+            <compilerarg line="${compiler.args.core}"/>
+            <bootclasspath refid="core.module.bootclasspath"/>
+            <classpath refid="core.module.classpath"/>
+            <src refid="core.module.sourcepath"/>
+            <patternset refid="excluded.from.compilation.core"/>
+        </javac>
+
+        <copy todir="${core.output.dir}">
+            <fileset dir="${module.core.basedir}/Core/src">
+                <patternset refid="compiler.resources"/>
+                <type type="file"/>
+            </fileset>
+        </copy>
+    </target>
+
+    <target name="clean.module.core" description="cleanup module">
+        <delete dir="${core.output.dir}"/>
+    </target>
+
+    <!-- Module Performance -->
+
+    <dirname property="module.performance.basedir" file="${ant.file}"/>
+
+    <property name="compiler.args.performance" value="${compiler.args}"/>
+
+    <property name="performance.output.dir" value="${module.performance.basedir}/out/Performance"/>
+
+    <path id="performance.module.bootclasspath">
+        <!-- Paths to be included in compilation bootclasspath -->
+    </path>
+
+    <path id="performance.module.classpath">
+        <path refid="library.compile.classpath"/>
+        <pathelement location="${performance.output.dir}"/>
+        <pathelement location="${utils.output.dir}"/>
+        <pathelement location="${core.output.dir}"/>
+    </path>
+
+    <patternset id="excluded.from.module.performance">
+        <patternset refid="ignored.files"/>
+    </patternset>
+
+    <patternset id="excluded.from.compilation.performance">
+        <patternset refid="excluded.from.module.performance"/>
+    </patternset>
+
+    <path id="performance.module.sourcepath">
+        <dirset dir="${module.performance.basedir}/Performance">
+            <include name="src"/>
+        </dirset>
+    </path>
+
+    <target name="compile.module.performance" depends="compile.module.utils,compile.module.core" description="Compile module Performance; production classes">
+        <mkdir dir="${performance.output.dir}"/>
+        <javac destdir="${performance.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" encoding="UTF-8">
+            <compilerarg line="${compiler.args.performance}"/>
+            <bootclasspath refid="performance.module.bootclasspath"/>
+            <classpath refid="performance.module.classpath"/>
+            <src refid="performance.module.sourcepath"/>
+            <patternset refid="excluded.from.compilation.performance"/>
+        </javac>
+
+        <copy todir="${performance.output.dir}">
+            <fileset dir="${module.performance.basedir}/Performance/src">
+                <patternset refid="compiler.resources"/>
+                <type type="file"/>
+            </fileset>
+        </copy>
+    </target>
+
+    <target name="clean.module.performance" description="cleanup module">
+        <delete dir="${performance.output.dir}"/>
+    </target>
+
+
+    <!-- Module ExtendedWebDriver -->
+
+    <dirname property="module.extendedwebdriver.basedir" file="${ant.file}"/>
+
+
+    <property name="compiler.args.extendedwebdriver" value="${compiler.args}"/>
+
+    <property name="extendedwebdriver.output.dir" value="${module.extendedwebdriver.basedir}/out/ExtendedWebDriver"/>
+
+    <path id="extendedwebdriver.module.bootclasspath">
+        <!-- Paths to be included in compilation bootclasspath -->
+    </path>
+
+    <path id="extendedwebdriver.module.classpath">
+        <path refid="library.compile.classpath"/>
+    </path>
+
+    <path id="extendedwebdriver.runtime.module.classpath">
+        <pathelement location="${extendedwebdriver.output.dir}"/>
+        <path refid="library.compile.classpath"/>
+    </path>
+
+    <path id="extendedwebdriver.module.classpath">
+        <pathelement location="${extendedwebdriver.output.dir}"/>
+        <path refid="library.compile.classpath"/>
+    </path>
+
+    <path id="extendedwebdriver.runtime.module.classpath">
+        <pathelement location="${extendedwebdriver.output.dir}"/>
+        <path refid="library.compile.classpath"/>
+    </path>
+
+
+    <patternset id="excluded.from.module.extendedwebdriver">
+        <patternset refid="ignored.files"/>
+    </patternset>
+
+    <patternset id="excluded.from.compilation.extendedwebdriver">
+        <patternset refid="excluded.from.module.extendedwebdriver"/>
+    </patternset>
+
+    <path id="extendedwebdriver.module.sourcepath">
+        <dirset dir="${module.extendedwebdriver.basedir}/ExtendedWebDriver">
+            <include name="src"/>
+        </dirset>
+    </path>
+
+
+    <target name="compile.module.extendedwebdriver" description="Compile module ExtendedWebDriver;  classes">
+        <mkdir dir="${extendedwebdriver.output.dir}"/>
+        <javac destdir="${extendedwebdriver.output.dir}" debug="${compiler.debug}"
+               nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" encoding="UTF-8">
+            <compilerarg line="${compiler.args.extendedwebdriver}"/>
+            <bootclasspath refid="extendedwebdriver.module.bootclasspath"/>
+            <classpath refid="extendedwebdriver.module.classpath"/>
+            <src refid="extendedwebdriver.module.sourcepath"/>
+            <patternset refid="excluded.from.compilation.extendedwebdriver"/>
+        </javac>
+
+        <copy todir="${extendedwebdriver.output.dir}">
+            <fileset dir="${module.extendedwebdriver.basedir}/ExtendedWebDriver/src">
+                <patternset refid="compiler.resources"/>
+                <type type="file"/>
+            </fileset>
+        </copy>
+    </target>
+
+
+    <target name="clean.module.extendedwebdriver" description="cleanup module">
+        <delete dir="${extendedwebdriver.output.dir}"/>
+    </target>
+
+
+    <!-- Module SUT -->
+
+    <dirname property="module.sut.basedir" file="${ant.file}"/>
+
+
+    <property name="compiler.args.sut" value="${compiler.args}"/>
+
+    <property name="sut.output.dir" value="${module.sut.basedir}/out/SUT"/>
+
+
+    <path id="sut.module.bootclasspath">
+
+    </path>
+
+    <path id="sut.module.classpath">
+        <pathelement location="${sut.output.dir}"/>
+        <pathelement location="${extendedwebdriver.output.dir}"/>
+        <pathelement location="${core.output.dir}"/>
+        <pathelement location="${utils.output.dir}"/>
+        <path refid="library.compile.classpath"/>
+    </path>
+
+    <path id="sut.runtime.module.classpath">
+        <pathelement location="${sut.output.dir}"/>
+        <path refid="extendedwebdriver.runtime.module.classpath"/>
+        <path refid="library.compile.classpath"/>
+    </path>
+
+    <patternset id="excluded.from.module.sut">
+        <patternset refid="ignored.files"/>
+    </patternset>
+
+    <patternset id="excluded.from.compilation.sut">
+        <patternset refid="excluded.from.module.sut"/>
+    </patternset>
+
+    <path id="sut.module.sourcepath">
+        <dirset dir="${module.sut.basedir}/SUT">
+            <include name="src"/>
+        </dirset>
+    </path>
+
+
+    <target name="compile.module.sut"
+            depends="compile.module.extendedwebdriver, compile.module.core, compile.module.utils"
+            description="Compile module SUT;  classes">
+        <mkdir dir="${sut.output.dir}"/>
+        <javac destdir="${sut.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}"
+               memorymaximumsize="${compiler.max.memory}" fork="true" encoding="UTF-8">
+            <compilerarg line="${compiler.args.sut}"/>
+            <bootclasspath refid="sut.module.bootclasspath"/>
+            <classpath refid="sut.module.classpath"/>
+            <src refid="sut.module.sourcepath"/>
+            <patternset refid="excluded.from.compilation.sut"/>
+        </javac>
+
+        <copy todir="${sut.output.dir}">
+            <fileset dir="${module.sut.basedir}/SUT/src">
+                <patternset refid="compiler.resources"/>
+                <type type="file"/>
+            </fileset>
+        </copy>
+    </target>
+
+    <target name="clean.module.sut" description="cleanup module">
+        <delete dir="${sut.output.dir}"/>
+    </target>
+
+
+    <!-- Module Tests -->
+
+    <dirname property="module.tests.basedir" file="${ant.file}"/>
+
+
+    <property name="compiler.args.tests" value="${compiler.args}"/>
+
+    <property name="tests.output.dir" value="${module.tests.basedir}/out/Tests"/>
+
+    <path id="tests.module.bootclasspath">
+        <!-- Paths to be included in compilation bootclasspath -->
+    </path>
+
+    <path id="tests.module.classpath">
+        <pathelement location="${tests.output.dir}"/>
+        <path refid="library.compile.classpath"/>
+        <pathelement location="${utils.output.dir}"/>
+        <pathelement location="${sut.output.dir}"/>
+        <pathelement location="${core.output.dir}"/>
+        <pathelement location="${a4wsdomainapi.output.dir}"/>
+        <pathelement location="${extendedwebdriver.output.dir}"/>
+    </path>
+
+    <patternset id="excluded.from.module.tests">
+        <patternset refid="ignored.files"/>
+    </patternset>
+
+    <patternset id="excluded.from.compilation.tests">
+        <patternset refid="excluded.from.module.tests"/>
+    </patternset>
+
+    <path id="tests.module.sourcepath">
+        <dirset dir="${module.tests.basedir}/Tests">
+            <include name="src"/>
+        </dirset>
+    </path>
+
+
+    <target name="compile.module.tests" depends="compile.module.sut"
+            description="Compile module Tests; classes">
+        <mkdir dir="${tests.output.dir}"/>
+        <javac destdir="${tests.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}"
+               memorymaximumsize="${compiler.max.memory}" fork="true" encoding="UTF-8">
+            <compilerarg line="${compiler.args.tests}"/>
+            <bootclasspath refid="tests.module.bootclasspath"/>
+            <classpath refid="tests.module.classpath"/>
+            <src refid="tests.module.sourcepath"/>
+            <patternset refid="excluded.from.compilation.tests"/>
+        </javac>
+
+        <copy todir="${tests.output.dir}">
+            <fileset dir="${module.tests.basedir}/Tests/src">
+                <patternset refid="compiler.resources"/>
+                <type type="file"/>
+            </fileset>
+        </copy>
+    </target>
+
+    <target name="clean.module.tests" description="cleanup module">
+        <delete dir="${tests.output.dir}"/>
+    </target>
+
+    <target name="clean.testsOutput" description="cleanup old test data">
+        <delete dir="${basedir}/out/jbehave"/>
+    </target>
+
+    <target name="init" description="Build initialization">
+        <!-- Perform any build initialization in this target -->
+    </target>
+
+    <target name="clean"
+            depends="clean.module.core, clean.module.a4wsdomainapi, clean.module.extendedwebdriver, clean.module.performance, clean.module.utils, clean.module.sut, clean.module.tests,clean.testsOutput"
+            description="cleanup all"/>
+
+    <target name="build.modules"
+            depends="init, clean, compile.module.extendedwebdriver, compile.module.utils, compile.module.a4wsdomainapi, compile.module.core, compile.module.performance, compile.module.sut, compile.module.tests"
+            description="build all modules"/>
+
+    <!--taskdef resource="testngtasks" classpathref="library.compile.classpath"/-->
+
+    <!--target name="tests.run.testng" depends="build.modules" description="run tests from ${test}">
+        <testng classpathref="tests.runtime.module.classpath" verbose="0" dumpCommand="true">
+            <xmlfileset dir="${basedir}/Tests" includes="${test}"/>
+        </testng>
+    </target-->
+
+    <target name="tests.run.yadn" depends="build.modules" description="run tests from ">
+        <echo message="start tests using ${config}"/>
+        <java classname="com.adstream.automate.babylon.performance.yadn.YadnPhasesTimeTest"
+              classpathref="performance.module.classpath" fork="true" >
+            <jvmarg value="-Xmx1024m"/>
+            <arg value="Performance/${config}"/>
+        </java>
+    </target>
+
+    <target name="tests.run.cli" depends="build.modules" description="run tests from ">
+        <echo message="start tests using ${config}"/>
+        <java classname="com.adstream.automate.babylon.tests.CLIStoriesRunner"
+              classpathref="tests.module.classpath"
+              fork="true"
+              >
+            <jvmarg value="-Xmx1024m"/>
+            <jvmarg value="-DwebDriverGridRemoteUrl=${webDriverGridRemoteUrl}"/>
+            <jvmarg value="-Dfile.encoding=utf-8"/>
+            <arg value="${config}"/>
+        </java>
+    </target>
+</project>

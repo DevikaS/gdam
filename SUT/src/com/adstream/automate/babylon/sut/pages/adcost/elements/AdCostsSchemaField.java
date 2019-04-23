@@ -1,0 +1,172 @@
+package com.adstream.automate.babylon.sut.pages.adcost.elements;
+
+/**
+ * Created by Raja.Gone on 23/05/2017.
+ */
+public enum AdCostsSchemaField {
+    COSTTITLE("Cost Title"),
+    AGENCYTRACKINGNUMBER("Agency Tracking Number"),
+    AGENCYNAME("Agency Name"),
+    COSTCREATOR("Cost Creator"),
+    CREATOR("Agency Cost Creator"),
+    AGENCYLOCATION("Agency Location"),
+    DESCRIPTION("Description"),
+    NAMEOFTRAVELLER("Name of Traveller"),
+    TARGETBUDGETAMOUNT("Target Budget Amount"),
+    ORGANISATION("Organisation"),
+    SMO("SMO"),
+    BUGDETREGION("Budget Region"),
+    AGENCYPRODUCER("Agency Producer/Art"),
+    CAMPAIGN("Campaign"),
+    PROJECTNAME("Project Name"),
+    PROJECTNUMBER("Project Number"),
+    AIRINSERTIONDATE("Air/Insertion Date"),
+    AIPE("AIPE"),
+    CONTENTTYPE("Content Type"),
+    PRODUCTIONTYPE("Production Type"),
+    AGENCYCURRNECY("Agency Payment Currency"),
+    ROLEOFTRAVELLER("Role of Traveller"),
+    SHOOTDAYS("Days"),
+    SHOOTCITY("Shoot City"),
+    MODEOFTRAVEL("Mode of Travel (e.g., Air/Train Tickets)"),
+    TRANSPORTATIONCOSTFEE("Transportation Cost/Fee"),
+    TRAVELDETAILSCOMMENTS("Comments"),
+    DOESTRAVELCOVEROTHERCONTENTTYPES("Does travel cover other content Types"),
+    IFYESWHICH("If Yes, Which?"),
+    DESTINATIONREGION("Destination Region"),
+    COUNTRYOFTRAVEL("Country of travel"),
+    PRODUCTIONCOMPANY("Production Company"),
+    PRODUCTIONCOMPANYACTIVATEDIRECTBILLING("Production Company Activate Direct Billing"),
+    FIRSTSHOOTDATE("First Shoot Date"),
+    NUMBEROFSHOOTDAYS("# of Shoot Days"),
+    STILLIMAGENUMBEROFSHOOTDAYS("Number of Shoot Days"),
+    DIRECTOR("Director"),
+    SHOOTCOUNTRY("Shoot Country"),
+    TALENTCOMPANY("Talent Company"),
+    TALENTCOMPANYACTIVATEDIRECTBILLING("Talent Company Activate Direct Billing"),
+    RECORDINGDATE("Recording Date"),
+    RECORDINGDAYS("Recording Days"),
+    RECORDINGCOUNTRY("Recording Country"),
+    RECORDINGCITY("Recording City"),
+    DIGITALDEVELOPMENTCOMPANY("Digital Development Company"),
+    DIGITALDEVELOPMENTCOMPANYACTIVATEDIRECTBILLING("Digital Development Company Activate Direct Billing"),
+    POSTPRODUCTIONCOMPANY("Post Production Company"),
+    POSTPRODUCTIONCOMPANYACTIVATEDIRECTBILLING("Post Production Company Activate Direct Billing"),
+    MUSICCOMPANY("Audio/Music Company"),
+    MUSICCOMPANYCGI("Music Company"),
+    MUSICCOMPANYACTIVATEDIRECTBILLING("Music Company Activate Direct Billing"),
+    CGIANIMAIONCOMPANY("CGI/Animation Company"),
+    CGIANIMAIONCOMPANYCOMPANYACTIVATEDIRECTBILLING("CGI/Animation Company Activate Direct Billing"),
+    PHOTOGRAPHERCOMPANY("Photographer Company"),
+    PHOTOGRAPHERCOMPANYACTIVATEDIRECTBILLING("Photographer Company Activate Direct Billing"),
+    PHOTOGRAPHERNAME("Photographer Name"),
+    RETOUCHINGCOMPANY("Retouching Company"),
+    RETOUCHINGCOMPANYACTIVATEDIRECTBILLING("Retouching Company Activate Direct Billing"),
+    INITIATIVE("Initiative"),
+    DEFINATION("Definition"),
+    SCRAPPED("Scrapped"),
+    ASSETTITLE("Asset Title"),
+    DURATION("Length (hh:mm:ss)"),
+    OVAL("OVAL"),
+    MEDIATOUCHPOINT("Media/Touchpoint"),
+    MEDIATOUCHPOINTS("Media/Touchpoints"),
+    FIRSTAIRINSERTIONDATE("First Air/Insertion Date"),
+    COUNTRY("Country"),
+    ADID("Get AD-Id"),
+    IONUMBER("Please enter a 10-digit IO number","IO#"),
+    FINALASSETAPPROVALDATE("Final Asset Approval Date"),
+    PONUMBER("PO#"),
+    GRNUMBER("GR #"),
+    SHOPPINGCARTNUMBER("Shopping Cart #"),
+    TECHNICALAPPROVER("Technical Approver"),
+    COUPAREQISITIONER("Coupa Requisitioner"),
+    BRANDMANAGEMENTAPPROVER("Brand Management Approver"),
+    ADDWATCHER("Add Watcher"),
+    COSTCONSULTANT("Cost Consultant"),
+    NEW("New"),
+    EXTENSION("Extension"),
+    APPROVALSTAGEFORSUBMISSION("Approval stage for submission"),
+    TYPE("Type"),
+    USAGEBUYOUTCONTRACT("Usage/Buyout/Contract"),
+    NAME("Name"),
+    NAMEOFLICENSOR("Name of Licensor(Person or Company)"),
+    AIRINGCOUNTRIES("Airing Countries"),
+    TOUCHPOINTS("Touchpoints"),
+    EXCLUSIVITY("Exclusivity"),
+    EXCLUSIVITYCATEGORY("Exclusivity Category"),
+    STARTDATE("Start Date"),
+    ENDDATE("End Date"),
+    NOENDDATEPERPETUITY("No End date/Perpetuity"),
+    CONTRACTPERIODINMONTHS("Contract Period (In Months)"),
+    MUSICTYPE("Music Type"),
+    RIGHTS("Rights"),
+    CONTRACTTOTAL("Contract Total"),
+    PRODUCEDASSET("Produced Asset"),
+    MAKEUPARTIST("Makeup Artist"),
+    HAIRSTYLIST("Hair Stylist"),
+    NAILARTIST("Nail Artist"),
+    WARDROBEARTIST("Wardrobe Artist"),
+    CELEBRITY("Celebrity"),
+    MANAGER("Manager"),
+    GLAMSQUAD("Glam Squad"),
+    SECURITY("Security"),
+    VENDORNAME("Name"),
+    SAPVENDORCODE("SAP Vendor Code"),
+    PREFERREDSUPPLIER("Preferred Supplier"),
+    PRODUCTION("Production Type"),
+    RADIOPRODUCTION("Production"),
+    CATEGORY("Category"),
+    DIRECTPAYMENT("Direct Payment"),
+    DEFAULTCURRENCY("Default Currency"),
+    PAYMENTRULES("Payment Rules"),
+    USERROLE("User Role"),
+    AIPEVENDOR("AIPE"),
+    ORIGINALESTIMATE("Original Estimate"),
+    FIRSTPRESENTATION("First Presentation"),
+    FINALACTUAL("Final Actual"),
+    COSTTOTALTYPE("Cost Total Type"),
+    COSTTYPE("CostType"),
+    BUDGETREGION("BudgetRegion"),
+    ISAIPE("IsAIPE"),
+    SKIPFIRSTPRESENTATION("Skip First Presentation"),
+    RULENAME("Rule name"),
+    CONTENTTYPE1("ContentType"),
+    PRODUCTIONTYPE1("ProductionType"),
+    TOTALCOSTAMOUNT("TotalCostAmount"),
+    LABELNAME("LabelName"),
+    ACCESSTYPE("Access Type"),
+    TRAVELLERNAME("Traveller name"),
+    TRAVELLERROLE("Traveller role"),
+    TRAVELLERSHOOTCITY("Shoot city"),
+    TRAVELLERNOOFDAYS("No. of days"),
+    TRAVELTYPE("Travel type"),
+    TOTALAGENCYTRAVELCOSTS("Total Agency Travel Costs"),
+    BRAND("Brand"),
+    USAGEBUYOUTTRAFFICVENDOR("Vendor to which payment will go"),
+    SECTOR("Sector");
+
+
+
+    private String[] names;
+
+    private AdCostsSchemaField(String... names) {
+        this.names = names;
+    }
+
+    public String[] getNames() {
+        return names;
+    }
+
+    public static AdCostsSchemaField findByName(String name) {
+        for (AdCostsSchemaField field : values())
+            for (String fieldName : field.getNames())
+                if (fieldName.equals(name))
+                    return field;
+        throw new IllegalArgumentException("Unknown field name: " + name);
+    }
+
+    @Override
+    public String toString() {
+        return names[0];
+    }
+}

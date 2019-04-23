@@ -1,0 +1,83 @@
+<UploadJobResponse xmlns:xs="http://adstream.com/xmlstream/" xs:id="8" ns0:type="UploadJobResponse" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:adstream:yadn">
+  <MessageID><![CDATA[1.1|akka://KV01V-A5DA502/user/head/fsobject|1b4a6cc5e3eb420eb62235a3#1]]></MessageID>
+  <Status>UploadedToStorage</Status>
+  <FileID>6a1fba30-09ea-4054-84d5-a246010d8ba0</FileID>
+  <FileName>1bd3a812-062c-401b-928d-ee569a798d38.pdf</FileName>
+  <FileDirectory><![CDATA[\00000000-0000-0000-0000-000000000000\2013-09-27\1b4a6cc5e3eb420eb62235a3\]]></FileDirectory>
+  <FileSize>659823</FileSize>
+  <MD5>0fc2b2c2ffc2398b9d285040a21a377a</MD5>
+  <CRC>        </CRC>
+  <Node>adstream.yadn.nodes.outpost-a5-auto</Node>
+  <SpecDBDocID>f2:application:unspecified:pdf</SpecDBDocID>
+  <metadata>
+    <property name="isPlayout">
+      <Value>false</Value>
+    </property>
+    <property name="ElementID">
+      <Value>1b4a6cc5e3eb420eb62235a3</Value>
+    </property>
+    <property name="Path">
+      <Value>GWGTestfile064v3.pdf</Value>
+    </property>
+    <property name="Country">
+      <Value>AF</Value>
+    </property>
+    <property name="guise">
+      <Value>master</Value>
+    </property>
+    <property name="IsPlayout">
+      <Value>false</Value>
+    </property>
+    <property name="evaluation_exiftool">
+      <Value><![CDATA[<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+
+<rdf:Description xmlns:et="http://ns.exiftool.ca/1.0/" xmlns:ExifTool="http://ns.exiftool.ca/ExifTool/1.0/" xmlns:System="http://ns.exiftool.ca/File/System/1.0/" xmlns:File="http://ns.exiftool.ca/File/1.0/" xmlns:PDF="http://ns.exiftool.ca/PDF/PDF/1.0/" xmlns:XMP-xmp="http://ns.exiftool.ca/XMP/XMP-xmp/1.0/" rdf:about="/media/yadn/input/20130927/509dc6f9cc63477fac2722b6/1380288062053/9420fcbe-c15f-499f-95be-7af4c22549c6.pdf" et:toolkit="Image::ExifTool 8.93">
+ <ExifTool:ExifToolVersion>8.93</ExifTool:ExifToolVersion>
+ <System:FileName>9420fcbe-c15f-499f-95be-7af4c22549c6.pdf</System:FileName>
+ <System:Directory>/media/yadn/input/20130927/509dc6f9cc63477fac2722b6/1380288062053</System:Directory>
+ <System:FileSize>644 kB</System:FileSize>
+ <System:FileModifyDate>2012:11:21 15:54:09+02:00</System:FileModifyDate>
+ <System:FilePermissions>rwxrwxrwx</System:FilePermissions>
+ <System:FileName>9420fcbe-c15f-499f-95be-7af4c22549c6.pdf</System:FileName>
+ <System:Directory>/media/yadn/input/20130927/509dc6f9cc63477fac2722b6/1380288062053</System:Directory>
+ <System:FileSize>644 kB</System:FileSize>
+ <System:FileModifyDate>2012:11:21 15:54:09+02:00</System:FileModifyDate>
+ <System:FilePermissions>rwxrwxrwx</System:FilePermissions>
+ <File:FileType>PDF</File:FileType>
+ <File:MIMEType>application/pdf</File:MIMEType>
+ <PDF:PDFVersion>1.3</PDF:PDFVersion>
+ <PDF:Linearized>No</PDF:Linearized>
+ <PDF:PageCount>1</PDF:PageCount>
+ <PDF:CreateDate>2006:06:29 10:54:07+02:00</PDF:CreateDate>
+ <PDF:Creator>PScript5.dll Version 5.2</PDF:Creator>
+ <PDF:Producer>Acrobat Distiller 7.0.5 (Windows)</PDF:Producer>
+ <PDF:ModifyDate>2010:03:24 14:24:34+02:00</PDF:ModifyDate>
+ <PDF:Title>GWG_Testfile_064_v3.pdf</PDF:Title>
+ <PDF:Trapped>False</PDF:Trapped>
+ <XMP-xmp:CreateDate>2006:06:29 10:54:07+02:00</XMP-xmp:CreateDate>
+ <XMP-xmp:ModifyDate>2008:05:12 17:06+03:00</XMP-xmp:ModifyDate>
+</rdf:Description>
+</rdf:RDF>]]></Value>
+    </property>
+    <property name="evaluation_MediaInfo">
+      <Value></Value>
+    </property>
+    <property name="evaluation_ffprobe">
+      <Value></Value>
+    </property>
+    <property name="evaluation_pdfdimensions">
+      <Value><![CDATA[<pdfdimensions xmlns="">
+ <page number="0">
+  <width>792</width>
+  <height>595</height>
+  <x_resolution>72 Undefined</x_resolution>
+  <y_resolution>72 Undefined</y_resolution>
+  <canvas_width>792</canvas_width>
+  <canvas_height>595</canvas_height>
+  <canvas_offset_x>+0</canvas_offset_x>
+  <canvas_offset_y>+0</canvas_offset_y>
+ </page>
+</pdfdimensions>]]></Value>
+    </property>
+  </metadata>
+</UploadJobResponse>
